@@ -28,7 +28,7 @@ const Projects = () => {
         <div className="project-wrapper">
           <Title title="Projects" />
           {projects.map((project) => {
-            const { title, info, info2, url, repo, img, id } = project;
+            const { title, info, info2, url, video, repo, img, id } = project;
 
             return (
               <Row key={id}>
@@ -53,6 +53,14 @@ const Projects = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                         className="cta-btn cta-btn--hero"
+                        href={video || '#!'}
+                      >
+                        Demo Video
+                      </a>
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="cta-btn text-color-main"
                         href={url || '#!'}
                       >
                         See Live

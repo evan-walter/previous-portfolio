@@ -22,7 +22,7 @@ const Footer = () => {
               return (
                 <a
                   key={id}
-                  href={url || 'https://github.com/cobidev/gatsby-simplefolio'}
+                  href={url || 'https://github.com/Evan-Walter'}
                   rel="noopener noreferrer"
                   target="_blank"
                   aria-label={name}

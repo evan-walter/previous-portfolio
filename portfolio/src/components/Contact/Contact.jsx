@@ -21,7 +21,7 @@ const Contact = () => {
               className="cta-btn cta-btn--resume"
               href={email ? `mailto:${email}` : 'https://www.linkedin.com/in/evan-walter-101bb739'}
             >
-              {btn || 'Connect'}
+              {btn || 'Get in Touch'}
             </a>
           </div>
         </Fade>

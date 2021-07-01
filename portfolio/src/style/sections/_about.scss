@@ -79,3 +79,14 @@
     }
   }
 }
+
+.down i {
+  color: $white-color;
+  margin: 1rem 0 $default-font-size;
+  transition: all 0.2s ease-in;
+  cursor: pointer;
+
+  &:hover {
+    transform: translateY(-2px);
+  }
+}

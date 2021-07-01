@@ -1,6 +1,7 @@
 import React, { useContext, useState, useEffect } from 'react';
 import Fade from 'react-reveal/Fade';
 import { Container, Row, Col } from 'react-bootstrap';
+import { Link } from 'react-scroll';
 import Title from '../Title/Title';
 import AboutImg from '../Image/AboutImg';
 import PortfolioContext from '../../context/context';
@@ -67,6 +68,17 @@ const About = () => {
             </Fade>
           </Col>
         </Row>
+        <Col className="justify-content-md-center">
+          <Fade bottom duration={1000} delay={1400} distance="30px">
+            <div className="about-wrapper__image">
+              <span className="down">
+                <Link to="projects" smooth duration={1000}>
+                  <i className="fa fa-angle-down fa-2x" aria-hidden="true" />
+                </Link>
+              </span>
+            </div>
+          </Fade>
+        </Col>
       </Container>
     </section>
   );

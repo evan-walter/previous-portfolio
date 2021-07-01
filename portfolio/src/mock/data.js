@@ -21,7 +21,7 @@ export const aboutData = {
   paragraphOne: `I love building things with people. Whether we showcase a business, an individual, or great products, I leverage my skills and experience to serve clients.`, // Whether we showcase a business, an individual, or great products, I bring creativity and excellence to every project.
   paragraphTwo: `I obtained a Bachelor's of Science in Electrical Engineering. After working in the field for several years, I grew interested in the software side of the field. As I continued to explore software development, I found myself building projects in my spare time, especially websites. I found opportunities to connect with others and build websites with them and for them. And I loved it.`,
   paragraphThree: `With my education and 11+ years of experience providing technical solutions, I am confident in my ability to work with clients to deliver quality results.`,
-  resume: '#', // if no resume, the button will not show up
+  resume: '', // if no resume, the button will not show up
 };
 
 // PROJECTS DATA
@@ -60,8 +60,8 @@ export const projectsData = [
 // CONTACT DATA
 export const contactData = {
   cta: '',
-  btn: '',
-  email: 'evan.walter.software@gmail.com',
+  btn: 'Connect',
+  email: '',
 };
 
 // FOOTER DATA

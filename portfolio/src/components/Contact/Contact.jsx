@@ -12,9 +12,11 @@ const Contact = () => {
     <section id="contact">
       <Container>
         <Title title="Contact" />
-        <Fade bottom duration={1000} delay={800} distance="30px">
-          <div className="contact-wrapper">
+        <div className="contact-wrapper">
+          <Fade bottom duration={1000} delay={500} distance="30px">
             <p className="contact-wrapper__text">{cta || 'Would you like to get in touch?'}</p>
+          </Fade>
+          <Fade bottom duration={1000} delay={900} distance="30px">
             <a
               target="_blank"
               rel="noopener noreferrer"
@@ -23,8 +25,8 @@ const Contact = () => {
             >
               {btn || 'Get in Touch'}
             </a>
-          </div>
-        </Fade>
+          </Fade>
+        </div>
       </Container>
     </section>
   );

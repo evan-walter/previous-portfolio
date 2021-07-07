@@ -48,7 +48,8 @@
     "eslint-plugin-react-hooks": "^4.0.4",
     "husky": "^4.2.5",
     "lint-staged": "^10.2.11",
-    "prettier": "^2.0.5"
+    "prettier": "^2.0.5",
+    "react-snap": "^1.23.0"
   },
   "repository": {
     "type": "git",

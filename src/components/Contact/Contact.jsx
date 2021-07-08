@@ -7,7 +7,7 @@ import ContactForm from './ContactForm';
 
 const Contact = () => {
   const { contact } = useContext(PortfolioContext);
-  // const { cta, btn, email } = contact;
+  const { cta, btn, email } = contact;
 
   return (
     <section id="contact">

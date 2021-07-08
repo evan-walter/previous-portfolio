@@ -18,9 +18,9 @@ export const heroData = {
 // ABOUT DATA
 export const aboutData = {
   img: 'profile.png',
-  paragraphOne: `I love building things with people. Whether we showcase a business, an individual, or great products, I leverage my skills and experience to serve clients.`, // Whether we showcase a business, an individual, or great products, I bring creativity and excellence to every project.
-  paragraphTwo: `I obtained a Bachelor's of Science in Electrical Engineering. After working in the field for several years, I grew interested in the software side of the field. As I continued to explore software development, I found myself building projects in my spare time, especially websites. I found opportunities to connect with others and build websites with them and for them. And I loved it.`,
-  paragraphThree: `With my education and 11+ years of experience providing technical solutions, I am confident in my ability to work with clients to deliver quality results.`,
+  paragraphOne: `I specialize in Shopify development and front end development.  Whether store set-up, migration, or custom features, we aim to join our clients to serve their vision together.`,
+  paragraphTwo: `Prior to development, I obtained a Bachelor's of Science in Electrical Engineering and built a career in the field.  As I explored the software side of the field, I applied communication and problem solving skills I learned along the way.  I found opportunities to serve clients by building fast websites with a seamless user experience.`,
+  paragraphThree: ``,
   resume: '', // if no resume, the button will not show up
 };
 
@@ -50,9 +50,9 @@ export const projectsData = [
 
 // CONTACT DATA
 export const contactData = {
-  cta: '',
+  cta: 'Would you like to get in touch?',
   btn: 'Connect',
-  email: '',
+  email: 'evan.walter.software@gmail.com',
 };
 
 // FOOTER DATA

@@ -32,5 +32,46 @@
         font-size: 2rem;
       }
     }
+
+    &__form {
+      text-align: left;
+      margin: 1rem 10rem;
+
+      @include respond(tab-land) {
+        margin: 1rem 4rem;
+      }
+
+      @include respond(tab-port) {
+        margin: 1rem 2rem;
+      }
+
+      @include respond(phone) {
+        margin: 1rem 1rem;
+      }
+
+      &-label {
+        font-size: 2rem;
+
+        @include respond(phone) {
+          font-size: 1.6rem;
+        }
+      }
+
+      input,
+      textarea {
+        font-size: $default-font-size;
+        padding: 1rem;
+      }
+
+      &.form-submit-btn {
+        margin-top: 2rem;
+        font-size: 2.4rem;
+
+        // Responsive for contact text
+        @include respond(phone) {
+          font-size: 2rem;
+        }
+      }
+    }
   }
 }

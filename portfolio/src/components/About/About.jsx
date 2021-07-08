@@ -26,7 +26,7 @@ const About = () => {
   return (
     <section id="about">
       <Container>
-        <Title title="About Me" />
+        <Title title="About" />
         <Row className="about-wrapper">
           <Col md={6} sm={12}>
             <Fade bottom duration={1000} delay={600} distance="30px">
@@ -69,7 +69,7 @@ const About = () => {
           </Col>
         </Row>
         <Col className="justify-content-md-center">
-          <Fade bottom duration={1000} delay={1400} distance="30px">
+          <Fade bottom duration={1000} delay={300} distance="30px">
             <div className="about-wrapper__image">
               <span className="down">
                 <Link to="projects" smooth duration={1000}>

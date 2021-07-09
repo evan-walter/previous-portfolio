@@ -35,15 +35,20 @@
 
     &__form {
       text-align: left;
-      margin: 1rem 10rem;
+      margin: 1rem 3rem;
 
-      @include respond(tab-land) {
-        margin: 1rem 4rem;
+      &-wrapper {
+        margin: auto;
+        max-width: 550px;
       }
 
-      @include respond(tab-port) {
-        margin: 1rem 2rem;
-      }
+      // @include respond(tab-land) {
+      //   margin: 1rem 4rem;
+      // }
+
+      // @include respond(tab-port) {
+      //   margin: 1rem 2rem;
+      // }
 
       @include respond(phone) {
         margin: 1rem 1rem;
@@ -57,15 +62,25 @@
         }
       }
 
-      input,
+      label > input,
       textarea {
         font-size: $default-font-size;
         padding: 1rem;
       }
 
-      &.form-submit-btn {
+      &-submit-btn {
         margin-top: 2rem;
         font-size: 2.4rem;
+
+        /* &-input {
+          // visibility: hidden;
+          // z-index: 99;
+          position: absolute;
+
+          &:hover {
+            cursor: pointer;
+          }
+        } */
 
         // Responsive for contact text
         @include respond(phone) {
@@ -74,4 +89,16 @@
       }
     }
   }
+}
+
+form > span {
+  padding: 0 !important;
+  border: 0 !important;
+}
+
+input[type='submit'] {
+  background: none;
+  border: 2px solid $white-color !important;
+  padding: 0.8rem $default-font-size !important;
+  margin: 0 !important;
 }

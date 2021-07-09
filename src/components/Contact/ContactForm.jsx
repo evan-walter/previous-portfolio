@@ -3,42 +3,50 @@ import PortfolioContext from '../../context/context';
 
 const ContactForm = () => {
   const { contact } = useContext(PortfolioContext);
-  const { cta, btn, email } = contact;
+  const { /* cta, */ btn /* , email */ } = contact;
 
   return (
-    <div className="contact-wrapper__form-container">
+    <div className="contact-wrapper__form-wrapper">
       <form action="https://mailthis.to/EvanWalter" method="POST">
         <div className="contact-wrapper__form">
-          <label className="contact-wrapper__form-label">Name</label>
-          <input type="text" className="form-control" maxlength="266" />
+          <label htmlFor="name" className="contact-wrapper__form-label">
+            Name
+            <input id="name" type="text" className="form-control" maxLength="266" />
+          </label>
         </div>
         <div className="contact-wrapper__form">
-          <label className="contact-wrapper__form-label">Email</label>
+          <label htmlFor="email" className="contact-wrapper__form-label">
+            Email
+            <input
+              id="email"
+              type="email"
+              className="form-control"
+              maxLength="256"
+              aria-describedby="emailHelp"
+            />
+          </label>
+        </div>
+        <div className="contact-wrapper__form">
+          <label htmlFor="message" className="contact-wrapper__form-label">
+            Message
+            <textarea id="message" className="form-control" rows="5" />
+          </label>
+        </div>
+        <span className="contact-wrapper__form-submit-btn cta-btn cta-btn--resume">
           <input
-            type="email"
-            className="form-control"
-            maxlength="256"
-            aria-describedby="emailHelp"
+            className="contact-wrapper__form-submit-btn cta-btn cta-btn--resume"
+            type="submit"
+            value={btn || 'Submit'}
           />
-        </div>
-        <div className="contact-wrapper__form">
-          <label className="contact-wrapper__form-label">Message</label>
-          <textarea className="form-control" rows="5" maxlength="5000" />
-        </div>
-        <div
-          type="submit"
-          className="contact-wrapper__form form-submit-btn cta-btn cta-btn--resume"
-        >
-          {btn || 'Submit'}
-        </div>
-        {/* <input type="hidden" name="_subject" value="Portfolio - Contact Form Submitted" />
-        <input type="submit" value="Send" data-wait="Please wait..." className="button w-button" />
-        <input type="hidden" name="_subject" value="Portfolio - Contact Form Submitted" /> */}
+        </span>
+        <input type="hidden" name="_subject" value="Portfolio - Contact Form Submitted" />
+        <input type="hidden" name="_after" value="https://evanwalter.dev" />
       </form>
-      {/* <div className="success-message w-form-done">
-        <p className="success-message-text">Thank you! Your submission has been received.</p>
-      </div> */}
-    </div>//
+      {/* <p className="contact-wrapper__form" name="_confirmation">Thank you! Your submission has been received!</p>
+      <p className="contact-wrapper__form">
+        Oops! Something went wrong while submitting the form :(
+      </p> */}
+    </div>
   );
 };
 

@@ -19,7 +19,7 @@ export const heroData = {
 export const aboutData = {
   img: 'profile.png',
   paragraphOne: `I specialize in Shopify development and front end development.  Whether store set-up, migration, or custom features, we aim to join our clients to serve their vision together.`,
-  paragraphTwo: `Prior to development, I obtained a Bachelor's of Science in Electrical Engineering and built a career in the field.  As I explored the software side of the field, I applied communication and problem solving skills I learned along the way.  I found opportunities to serve clients by building fast websites with a seamless user experience.`,
+  paragraphTwo: `Prior to development, I obtained a Bachelor's of Science in Electrical Engineering and built a career in the field.  As I explored the software side of the field, I applied communication and problem solving skills I learned along the way.  I found opportunities to serve clients with fast websites and a seamless user experience.`,
   paragraphThree: ``,
   resume: '', // if no resume, the button will not show up
 };

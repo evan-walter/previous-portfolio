@@ -55,6 +55,7 @@
       }
 
       &-label {
+        width: 100%;
         font-size: 2rem;
 
         @include respond(phone) {
@@ -62,7 +63,7 @@
         }
       }
 
-      label > input,
+      input,
       textarea {
         font-size: $default-font-size;
         padding: 1rem;

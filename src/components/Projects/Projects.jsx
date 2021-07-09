@@ -28,8 +28,7 @@ const Projects = () => {
         <div className="project-wrapper">
           <Title title="Projects" />
           {projects.map((project) => {
-            const { title, info, info2, url, video, repo, img, id } = project;
-
+            const { title, info, info2, /*  tags, */ url, video, repo, img, id } = project;
             return (
               <Row key={id}>
                 <Col lg={4} sm={12}>
@@ -65,7 +64,7 @@ const Projects = () => {
                         See Live
                       </a>
                       <p className="mb-4">{info2 || ''}</p>
-
+                      {/* <p className="tag">{ tags || '' }</p> */}
                       {repo && (
                         <a
                           target="_blank"
@@ -84,7 +83,7 @@ const Projects = () => {
                     right={isDesktop}
                     bottom={isMobile}
                     duration={1000}
-                    delay={1000}
+                    delay={750}
                     distance="30px"
                   >
                     <div className="project-wrapper__image">

@@ -7,7 +7,7 @@ import ContactForm from './ContactForm';
 
 const Contact = () => {
   const { contact } = useContext(PortfolioContext);
-  const { cta, btn, email } = contact;
+  const { cta /* , btn, email */ } = contact;
 
   return (
     <section id="contact">
@@ -17,7 +17,7 @@ const Contact = () => {
           <Fade bottom duration={1000} delay={500} distance="30px">
             <p className="contact-wrapper__text">{cta || 'Get in touch'}</p>
           </Fade>
-          <Fade bottom duration={1000} delay={800} distance="30px">
+          <Fade bottom duration={1000} delay={750} distance="30px">
             {/* <a
               target="_blank"
               rel="noopener noreferrer"
@@ -26,7 +26,7 @@ const Contact = () => {
             >
               {btn || 'Get in Touch'}
             </a> */}
-          <ContactForm></ContactForm>
+            <ContactForm />
           </Fade>
         </div>
       </Container>

@@ -15,7 +15,7 @@ const Contact = () => {
         <Title title="Contact" />
         <div className="contact-wrapper">
           <Fade bottom duration={1000} delay={500} distance="30px">
-            <p className="contact-wrapper__text">{cta || 'Get in touch'}</p>
+            <p className="contact-wrapper__text">{cta || ''}</p>
           </Fade>
           <Fade bottom duration={1000} delay={750} distance="30px">
             {/* <a

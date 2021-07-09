@@ -36,7 +36,7 @@ const ContactForm = () => {
           <input
             className="contact-wrapper__form-submit-btn cta-btn cta-btn--resume"
             type="submit"
-            value={btn || 'Submit'}
+            value={btn || ''}
           />
         </span>
         <input type="hidden" name="_subject" value="Portfolio - Contact Form Submitted" />

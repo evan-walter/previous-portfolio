@@ -52,7 +52,7 @@ export const projectsData = [
 
 // CONTACT DATA
 export const contactData = {
-  cta: 'Would you like to get in touch?',
+  cta: '', // Get in touch
   btn: 'Connect',
   email: 'evan.walter.software@gmail.com',
 };
@@ -72,13 +72,13 @@ export const footerData = {
     }, */
     {
       id: nanoid(),
-      name: 'linkedin',
-      url: 'https://www.linkedin.com/in/evan-walter-101bb739',
+      name: 'github',
+      url: 'https://github.com/Evan-Walter',
     },
     {
       id: nanoid(),
-      name: 'github',
-      url: 'https://github.com/Evan-Walter',
+      name: 'linkedin',
+      url: 'https://www.linkedin.com/in/evan-walter-101bb739',
     },
   ],
 };

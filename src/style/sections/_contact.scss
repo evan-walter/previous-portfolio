@@ -7,12 +7,12 @@
   margin-bottom: -1px;
   color: $white-color;
 
-  @include respond(tab-land) {
-    padding: 10rem 0;
-    clip-path: none;
-    margin-top: 0;
-    -webkit-clip-path: none;
-  }
+  // @include respond(tab-land) {
+  //   padding: 10rem 0;
+  //   clip-path: none;
+  //   margin-top: 0;
+  //   -webkit-clip-path: none;
+  // }
 
   .contact-wrapper {
     margin-top: 3.2rem;
@@ -25,12 +25,12 @@
 
     &__text,
     a {
-      font-size: 2.4rem;
+      font-size: $default-font-size; // 2.4rem
 
       // Responsive for contact text
-      @include respond(phone) {
-        font-size: 2rem;
-      }
+      // @include respond(phone) {
+      //   font-size: 2rem;
+      // }
     }
 
     &__form {
@@ -50,17 +50,17 @@
       //   margin: 1rem 2rem;
       // }
 
-      @include respond(phone) {
-        margin: 1rem 1rem;
-      }
+      // @include respond(phone) {
+      //   margin: 1rem 1rem;
+      // }
 
       &-label {
         width: 100%;
-        font-size: 2rem;
+        font-size: $default-font-size; // 2rem
 
-        @include respond(phone) {
-          font-size: 1.6rem;
-        }
+        // @include respond(phone) {
+        //   font-size: 1.6rem;
+        // }
       }
 
       input,

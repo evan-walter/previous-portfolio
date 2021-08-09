@@ -1,10 +1,5 @@
 import { nanoid } from 'nanoid';
 
-// NAVBAR DATA
-export const navBarData = {
-  
-}
-
 // HEAD DATA
 export const headData = {
   title: 'Evan Walter | Developer', // e.g: 'Name | Developer'

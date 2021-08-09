@@ -1,5 +1,10 @@
 import { nanoid } from 'nanoid';
 
+// NAVBAR DATA
+export const navBarData = {
+  
+}
+
 // HEAD DATA
 export const headData = {
   title: 'Evan Walter | Developer', // e.g: 'Name | Developer'
@@ -9,9 +14,12 @@ export const headData = {
 
 // HERO DATA
 export const heroData = {
+  img: 'profile.png',
   title: '',
   name: 'Evan Walter',
-  subtitle: 'I connect with people and build software.',
+  subtitle1: 'Shopify Development',
+  subtitle2: 'Front End Development',
+  subtitle3: 'I connect with people and build software.',
   cta: 'Know more',
 };
 
@@ -29,6 +37,7 @@ export const projectsData = [
   {
     id: nanoid(),
     img: 'drummond-home-1000.png',
+    videoImg: '',
     title: `Drummond's Clothing`,
     info: 'A dynamic clothing store with a mega menu and premium Shopify features',
     info2: 'Password: trends',
@@ -40,13 +49,25 @@ export const projectsData = [
   {
     id: nanoid(),
     img: 'galaxy-home-1000.png',
+    videoImg: '',
     title: 'Galaxy Box',
     info: `A showcase for new electronics, featuring a customized affiliate product page built in Shopify liquid code`,
     info2: 'Password: newtech',
-    tags: ['Store Setup', 'Theme Customization', 'Affiliate Functionality', 'HTML/CSS/LIQUID'],
+    tags: ['Store Setup', 'Theme Customization', 'Affiliate Functionality', 'HTML/CSS/Liquid'],
     url: 'https://1g56iv3d2f1qdbnx-57198936253.shopifypreview.com',
     video: 'https://www.loom.com/share/431ae330190442f29b4b8c8585f7195d',
     repo: '', // if no repo, the button will not show up
+  },
+  {
+    id: nanoid(),
+    // img: '',
+    videoImg: '../images/wine-pairing.mp4',
+    title: 'Wine Pairing App',
+    info: `A custom API app to pair wines with popular dishes`,
+    tags: ['API', 'Customization', 'HTML/CSS/JavaScript'],
+    url: 'https://evan-walter.github.io/wine-pairing',
+    video: '',
+    repo: 'https://github.com/Evan-Walter/wine-pairing',
   },
 ];
 

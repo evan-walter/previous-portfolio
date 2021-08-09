@@ -7,9 +7,17 @@ import Footer from './Footer/Footer';
 
 import { PortfolioProvider } from '../context/context';
 
-import { heroData, aboutData, projectsData, contactData, footerData } from '../mock/data';
+import {
+  navBarData,
+  heroData,
+  aboutData,
+  projectsData,
+  contactData,
+  footerData,
+} from '../mock/data';
 
 function App() {
+  const [navBar, setNavBar] = useState({});
   const [hero, setHero] = useState({});
   const [about, setAbout] = useState({});
   const [projects, setProjects] = useState([]);
@@ -17,6 +25,7 @@ function App() {
   const [footer, setFooter] = useState({});
 
   useEffect(() => {
+    setNavBar({ ...navBarData });
     setHero({ ...heroData });
     setAbout({ ...aboutData });
     setProjects([...projectsData]);
@@ -25,7 +34,8 @@ function App() {
   }, []);
 
   return (
-    <PortfolioProvider value={{ hero, about, projects, contact, footer }}>
+    <PortfolioProvider value={{ navBar, hero, about, projects, contact, footer }}>
+      <NavBar />
       <Hero />
       <About />
       <Projects />

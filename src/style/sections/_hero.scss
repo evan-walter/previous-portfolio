@@ -31,17 +31,16 @@
     position: absolute;
     top: 0;
     left: 0;
-  
-    &-link {
 
+    &__link {
     }
   }
 
   .hero-title {
     font-size: 5.6rem;
     font-weight: 700;
-    margin-bottom: 2.2rem;
     text-align: left;
+    margin: 0;
 
     @include respond(tab-land) {
       font-size: 4rem;
@@ -59,10 +58,14 @@
     }
   }
 
+  .hero-subtitles-container {
+    margin: 2.5rem 0;
+  }
+
   .hero-subtitle {
     font-size: 3.9rem;
     font-weight: 700;
-    margin-bottom: 3.2rem;
+    margin-bottom: 1.2rem;
     text-align: left;
 
     @include respond(tab-land) {

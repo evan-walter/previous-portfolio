@@ -1,10 +1,13 @@
 import React, { useContext, useState, useEffect } from 'react';
-import { Container } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
 import { Link } from 'react-scroll';
 import PortfolioContext from '../../context/context';
+import LogoImg from '../Image/LogoImg';
 
 const NavBar = () => {
+  // const { navbar } = useContext(PortfolioContext);
+
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
@@ -19,43 +22,31 @@ const NavBar = () => {
   }, []);
 
   return (
-    <section id="home">
+    <div id="navbar">
       <Container>
         <Fade>
           <Row>
-            <Col>
-              <Link to="home" smooth duration={1000}></Link>
-            </Col>
-            {/* logo */}
-            <Col>
-              <Link to="home" smooth duration={1000}>
-                Home
+            <Col className="link text-color-main">
+              <Link to="home">
+                <LogoImg alt="Evan Walter Developer" filename={'../../images/favicon.png'} />
               </Link>
             </Col>
-            <Col>
-              <Link to="about" smooth duration={1000}>
-                About
-              </Link>
+            <Col className="link text-color-main">
+              <Link to="home">Home</Link>
             </Col>
-            <Col>
-              <Link to="trustedBy" smooth duration={1000}>
-                Trusted By
-              </Link>
+            <Col className="link text-color-main">
+              <Link to="about">About</Link>
             </Col>
-            <Col>
-              <Link to="projects" smooth duration={1000}>
-                Works
-              </Link>
+            <Col className="link text-color-main">
+              <Link to="projects">Projects</Link>
             </Col>
-            <Col>
-              <Link to="contact" smooth duration={1000}>
-                Contact
-              </Link>
+            <Col className="link text-color-main">
+              <Link to="contact">Contact</Link>
             </Col>
           </Row>
         </Fade>
       </Container>
-    </section>
+    </div>
   );
 };
 

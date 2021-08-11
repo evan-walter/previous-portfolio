@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from 'react';
+import NavBar from './NavBar/NavBar';
 import Hero from './Hero/Hero';
 import About from './About/About';
 import Projects from './Projects/Projects';
+// import TrustedBy from './TrustedBy/TrustedBy';
+// import Technologies from './Technologies/Technologies';
 import Contact from './Contact/Contact';
 import Footer from './Footer/Footer';
 
@@ -26,11 +29,12 @@ function App() {
 
   return (
     <PortfolioProvider value={{ hero, about, projects, contact, footer }}>
-      {/* <NavBar /> */}
+      <NavBar />
       <Hero />
       <About />
       <Projects />
-      {/* <TrustedBy /> */}
+      {/* <TrustedBy /> inspired by jadjoubran.io*/}
+      {/* <Technologies /> inspired by northtwofive.com */}
       <Contact />
       <Footer />
     </PortfolioProvider>

@@ -43,9 +43,9 @@ export const projectsData = [
   },
   {
     id: nanoid(),
-    img: 'galaxy-home-1000.png',
+    img: 'iuniverse-home-1000.png',
     videoImg: '',
-    title: 'Galaxy Box',
+    title: 'iUniverse',
     info: `A showcase for new electronics, featuring a customized affiliate product page built in Shopify liquid code`,
     info2: 'Password: newtech',
     tags: ['Store Setup', 'Theme Customization', 'Affiliate Functionality', 'HTML/CSS/Liquid'],
@@ -55,8 +55,8 @@ export const projectsData = [
   },
   {
     id: nanoid(),
-    // img: '',
-    videoImg: '../images/wine-pairing.mp4',
+    img: 'iuniverse-home-1000.png',
+    // videoImg: '../images/wine-pairing.mp4',
     title: 'Wine Pairing App',
     info: `A custom API app to pair wines with popular dishes`,
     tags: ['API', 'Customization', 'HTML/CSS/JavaScript'],

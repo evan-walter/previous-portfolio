@@ -1,0 +1,21 @@
+#navbar {
+  display: flex;
+  align-items: right;
+  justify-content: right;
+  height: 10vh;
+
+  @include respond(phone) {
+    border: 0px;
+  }
+}
+
+.link {
+  margin: $default-font-size;
+  // margin: 0;
+  transition: all 0.2s ease-in;
+
+  &:hover {
+    cursor: pointer;
+    transform: translateY(-2px);
+  }
+}

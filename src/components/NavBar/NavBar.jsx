@@ -1,5 +1,5 @@
 import React, { useContext, useState, useEffect } from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
 import { Link } from 'react-scroll';
 import PortfolioContext from '../../context/context';
@@ -22,31 +22,28 @@ const NavBar = () => {
   }, []);
 
   return (
-    <div id="navbar">
-      <Container>
-        <Fade>
-          <Row>
-            <Col className="link text-color-main">
-              <Link to="home">
-                <LogoImg alt="Evan Walter Developer" filename={'../../images/favicon.png'} />
-              </Link>
-            </Col>
-            <Col className="link text-color-main">
-              <Link to="home">Home</Link>
-            </Col>
-            <Col className="link text-color-main">
-              <Link to="about">About</Link>
-            </Col>
-            <Col className="link text-color-main">
-              <Link to="projects">Projects</Link>
-            </Col>
-            <Col className="link text-color-main">
-              <Link to="contact">Contact</Link>
-            </Col>
-          </Row>
-        </Fade>
-      </Container>
-    </div>
+    <Container fluid id="navbar" className="nav-item">
+      <Fade duration={1000} delay={3000} distance="30px">
+        <LogoImg
+          className="nav-item__logo"
+          alt="Evan Walter Developer"
+          filename={'../../images/favicon.png'}
+          onClick={() => location.reload()}
+        />
+        <div className="nav-item__title">
+          <a className="text-color-main" onClick={() => location.reload()}>Evan Walter</a>
+        </div>
+        <Link to="about" smooth duration={1000}>
+          <div className="nav-item__link text-color-main">About</div>
+        </Link>
+        <Link to="projects" smooth duration={1000}>
+          <div className="nav-item__link text-color-main">Projects</div>
+        </Link>
+        <Link to="contact" smooth duration={1000}>
+          <div className="nav-item__link text-color-main">Contact</div>
+        </Link>
+      </Fade>
+    </Container>
   );
 };
 

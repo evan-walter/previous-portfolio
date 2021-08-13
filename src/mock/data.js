@@ -1,5 +1,10 @@
 import { nanoid } from 'nanoid';
 
+// NAVBAR DATA
+export const navbarData = {
+  img: 'logo.png',
+};
+
 // HEAD DATA
 export const headData = {
   title: 'Evan Walter | Developer', // e.g: 'Name | Developer'
@@ -31,6 +36,16 @@ export const aboutData = {
 export const projectsData = [
   {
     id: nanoid(),
+    img: 'w3-1000.png',
+    title: 'W3 Sales',
+    info: `An eCommerce website for a food services factory and distributor group with a large inventory of products`,
+    tags: ['Shopify', 'Customization', 'HTML/CSS/JavaScript', 'Python'],
+    url: '',
+    video: '',
+    repo: '',
+  },
+  {
+    id: nanoid(),
     img: 'drummond-home-1000.png',
     videoImg: '',
     title: `Drummond's Clothing`,
@@ -55,7 +70,7 @@ export const projectsData = [
   },
   {
     id: nanoid(),
-    img: 'iuniverse-home-1000.png',
+    img: 'wine-pairing-1000.png',
     // videoImg: '../images/wine-pairing.mp4',
     title: 'Wine Pairing App',
     info: `A custom API app to pair wines with popular dishes`,

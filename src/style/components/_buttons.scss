@@ -19,11 +19,6 @@
     z-index: -1;
     transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.3s;
   }
-
-  &:hover {
-    // transition: all 0.3s ease-in-out;
-    transform: translateX(2px);
-  }
 }
 
 /* Hero Style */
@@ -88,4 +83,10 @@
 /* Arrow Button */
 .up i {
   color: #272727;
+}
+
+/* Hover rule for See Live and Source Code */
+.cta-btn-no-background:hover {
+  transition: all 0.3s ease-in-out;
+  transform: translateX(2px);
 }

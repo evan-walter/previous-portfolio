@@ -1,8 +1,8 @@
 #navbar {
   display: flex;
   flex-direction: row;
-  // align-items: left;
-  // justify-content: center;
+  justify-content: center;
+  height: 50px;
   position: absolute;
   font-weight: bold;
   z-index: 7;
@@ -12,27 +12,31 @@
   }
 }
 
+.logo-wrapper {
+  align-self: flex-start;
+  text-align: left;
+  flex-grow: 5;
+  padding-top: 0.5rem;
+}
+
 .nav-item {
-  margin: 1.7rem 0;
+  margin: 1.5rem 0;
   text-decoration: none;
+  padding: 0 4rem;
 
   &:hover {
     cursor: pointer;
   }
 
   &__logo {
-    align-self: flex-start;
-  }
-
-  &__title {
-    align-self: flex-start;
-    text-align: left;
-    flex-grow: 5;
+    // align-self: flex-start;
+    text-align: center;
+    // flex-grow: 5;
   }
 
   &__link {
     align-self: flex-end;
-    padding: 0 1.5rem;
+    padding: 1.5rem;
     transition: all 0.2s ease-in;
     flex-grow: 1;
 

@@ -46,6 +46,8 @@ const Header = () => {
             <p className="hero-cta">
               <Link className="cta-btn cta-btn--hero" to="about" smooth duration={1000}>
                 {cta || ''}
+                {/* {<br />}
+                {<i className="fa fa-angle-down" aria-hidden="true" />} */}
               </Link>
             </p>
           </Fade>

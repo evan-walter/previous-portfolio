@@ -6,7 +6,8 @@ import PortfolioContext from '../../context/context';
 import LogoImg from '../Image/LogoImg';
 
 const NavBar = () => {
-  // const { navbar } = useContext(PortfolioContext);
+  const { navbar } = useContext(PortfolioContext);
+  const { img } = navbar;
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -24,14 +25,8 @@ const NavBar = () => {
   return (
     <Container fluid id="navbar" className="nav-item">
       <Fade duration={1000} delay={3000} distance="30px">
-        <LogoImg
-          className="nav-item__logo"
-          alt="Evan Walter Developer"
-          filename={'../../images/favicon.png'}
-          onClick={() => location.reload()}
-        />
-        <div className="nav-item__title">
-          <a className="text-color-main" onClick={() => location.reload()}>Evan Walter</a>
+        <div className="logo-wrapper" onClick={() => location.reload()}>
+          <LogoImg className="nav-item__logo" alt="Evan Walter Developer" filename={img} />
         </div>
         <Link to="about" smooth duration={1000}>
           <div className="nav-item__link text-color-main">About</div>

@@ -24,9 +24,9 @@ const NavBar = () => {
 
   return (
     <Container fluid id="navbar" className="nav-item">
-      <Fade duration={1000} delay={3000} distance="30px">
+      <Fade duration={1000} delay={3500} distance="30px">
         <div className="logo-wrapper" onClick={() => location.reload()}>
-          <LogoImg className="nav-item__logo" alt="Evan Walter Developer" filename={img} />
+          <LogoImg className="nav-item__logo" alt="Evan Walter | Developer" filename={img} />
         </div>
         <Link to="about" smooth duration={1000}>
           <div className="nav-item__link text-color-main">About</div>

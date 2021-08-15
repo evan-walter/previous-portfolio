@@ -2,9 +2,11 @@ import React, { useContext, useEffect, useState } from 'react';
 import Fade from 'react-reveal/Fade';
 import Tilt from 'react-tilt';
 import { Container, Row, Col } from 'react-bootstrap';
+import Modal from 'react-bootstrap/Modal';
 import PortfolioContext from '../../context/context';
 import Title from '../Title/Title';
 import ProjectImg from '../Image/ProjectImg';
+import Video from './Video';
 
 const Projects = () => {
   const { projects } = useContext(PortfolioContext);
@@ -12,6 +14,12 @@ const Projects = () => {
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+
+  // Video Modal
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
 
   useEffect(() => {
     if (window.innerWidth > 769) {
@@ -54,28 +62,30 @@ const Projects = () => {
                     distance="30px"
                   >
                     <div className="project-wrapper__text">
-                      <h3 className="project-wrapper__text-title">{title || 'Project Title'}</h3>
+                      <h3 className="project-wrapper__text-title">{title}</h3>
                       <div>
-                        <p>{info || ''}</p>
+                        <p>{info}</p>
                       </div>
                       <a
                         target="_blank"
                         rel="noopener noreferrer"
                         className="cta-btn cta-btn--hero"
-                        href={video || '#!'}
+                        // href={video}
+                        onClick={handleShow}
                       >
                         Demo Video
                       </a>
+                      <Modal show={show} onHide={handleClose}></Modal>
                       <a
                         target="_blank"
                         rel="noopener noreferrer"
                         className="cta-btn cta-btn-no-background text-color-main"
-                        href={url || '#!'}
+                        href={url}
                       >
                         See Live
                       </a>
-                      <p className="mb-4">{info2 || ''}</p>
-                      {/* <p className="tag">{ tags || '' }</p> */}
+                      <p className="mb-4">{info2}</p>
+                      {/* <p className="tag">{ tags }</p> */}
                       {repo && (
                         <a
                           target="_blank"
@@ -99,7 +109,7 @@ const Projects = () => {
                   >
                     <div className="project-wrapper__image">
                       <a
-                        href={url || '#!'}
+                        href={url}
                         target="_blank"
                         aria-label="Project Link"
                         rel="noopener noreferrer"

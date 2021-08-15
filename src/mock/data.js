@@ -19,14 +19,15 @@ export const heroData = {
   name: 'Evan Walter',
   subtitle1: 'Shopify Development',
   subtitle2: 'Front End Development',
-  subtitle3: 'I connect with people and build software.',
+  subtitle3: 'App Development',
+  subtitle4: 'I connect with people and build software.',
   cta: 'Know more',
 };
 
 // ABOUT DATA
 export const aboutData = {
   img: 'profile.png',
-  paragraphOne: `I specialize in Shopify development and front end development.  Whether store set-up, migration, or custom features, I aim to join my clients to serve their vision together.`,
+  paragraphOne: `I specialize in Shopify development.  Whether store set-up, migration, front end, apps, or custom features, I aim to join my clients to serve their vision.`,
   paragraphTwo: `Prior to development, I obtained a Bachelor's of Science in Electrical Engineering and built a career in the field.  As I explored the software side of the field, I applied communication and problem solving skills I learned along the way.  I found opportunities to serve clients with fast websites and a seamless user experience.`,
   paragraphThree: ``,
   resume: '', // if no resume, the button will not show up
@@ -38,7 +39,7 @@ export const projectsData = [
     id: nanoid(),
     img: 'w3-1000.png',
     title: 'W3 Sales',
-    info: `An eCommerce website for a food services factory and distributor group with a large inventory of products`,
+    info: `An Shopify website for a food services factory and distributor group with a large inventory of products`,
     tags: ['Shopify', 'Customization', 'HTML/CSS/JavaScript', 'Python'],
     url: '',
     video: '',
@@ -61,7 +62,7 @@ export const projectsData = [
     img: 'iuniverse-home-1000.png',
     videoImg: '',
     title: 'iUniverse',
-    info: `A showcase for new electronics, featuring a customized affiliate product page built in Shopify liquid code`,
+    info: `A showcase for new electronics, featuring a customized product page built in Shopify liquid code`,
     info2: 'Password: newtech',
     tags: ['Store Setup', 'Theme Customization', 'Affiliate Functionality', 'HTML/CSS/Liquid'],
     url: 'https://1g56iv3d2f1qdbnx-57198936253.shopifypreview.com',

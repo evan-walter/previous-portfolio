@@ -6,7 +6,7 @@ import PortfolioContext from '../../context/context';
 
 const Header = () => {
   const { hero } = useContext(PortfolioContext);
-  const { title, name, subtitle1, subtitle2, subtitle3, cta } = hero;
+  const { title, name, subtitle1, subtitle2, subtitle3, subtitle4, cta } = hero;
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -27,25 +27,28 @@ const Header = () => {
         <div className="column-left">
           <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
             <h1 className="hero-title">
-              {title || ''} <span className="text-color-main">{name || ''}</span>
+              {title} <span className="text-color-main">{name}</span>
               <br />
             </h1>
           </Fade>
           <div className="hero-subtitles-container">
             <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
-              <h1 className="hero-subtitle">{subtitle1 || ''}</h1>
+              <h1 className="hero-subtitle">{subtitle1}</h1>
             </Fade>
             <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1500} distance="30px">
-              <h1 className="hero-subtitle">{subtitle2 || ''}</h1>
+              <h1 className="hero-subtitle">{subtitle2}</h1>
             </Fade>
             <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={2000} distance="30px">
-              <h1 className="hero-subtitle">{subtitle3 || ''}</h1>
+              <h1 className="hero-subtitle">{subtitle3}</h1>
+            </Fade>
+            <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={2500} distance="30px">
+              <h1 className="hero-subtitle">{subtitle4}</h1>
             </Fade>
           </div>
-          <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={2500} distance="30px">
+          <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={3000} distance="30px">
             <p className="hero-cta">
               <Link className="cta-btn cta-btn--hero" to="about" smooth duration={1000}>
-                {cta || ''}
+                {cta}
                 {/* {<br />}
                 {<i className="fa fa-angle-down" aria-hidden="true" />} */}
               </Link>

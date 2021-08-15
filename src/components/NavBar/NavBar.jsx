@@ -9,19 +9,6 @@ const NavBar = () => {
   const { navbar } = useContext(PortfolioContext);
   const { img } = navbar;
 
-  const [isDesktop, setIsDesktop] = useState(false);
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    if (window.innerWidth > 769) {
-      setIsDesktop(true);
-      setIsMobile(false);
-    } else {
-      setIsMobile(true);
-      setIsDesktop(false);
-    }
-  }, []);
-
   return (
     <Container fluid id="navbar" className="nav-item">
       <Fade duration={1000} delay={3500} distance="30px">

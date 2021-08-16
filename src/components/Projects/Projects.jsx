@@ -3,24 +3,30 @@ import Fade from 'react-reveal/Fade';
 import Tilt from 'react-tilt';
 import { Container, Row, Col } from 'react-bootstrap';
 import Modal from 'react-bootstrap/Modal';
+import Collapse from 'react-bootstrap/Collapse';
 import PortfolioContext from '../../context/context';
 import Title from '../Title/Title';
 import ProjectImg from '../Image/ProjectImg';
-import Video from './Video';
 
-const Projects = () => {
+const Projects = (props) => {
   const { projects } = useContext(PortfolioContext);
   const { title, info, info2, /*  tags, */ url, video, repo, img, videoImg, id } = projects;
 
+  // Screen
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
-  // Video Modal
-  const [show, setShow] = useState(false);
+  // Video
+  const [showModal, setShowModal] = useState(false);
+  const [whichVideo, setWhichVideo] = useState('');
 
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  const handleShowModal = () => setShowModal(true);
+  const handleHideModal = () => setShowModal(false);
+  const handleClick = (video) => {
+    setWhichVideo(video);
+  };
 
+  // Screen
   useEffect(() => {
     if (window.innerWidth > 769) {
       setIsDesktop(true);
@@ -71,11 +77,35 @@ const Projects = () => {
                         rel="noopener noreferrer"
                         className="cta-btn cta-btn--hero"
                         // href={video}
-                        onClick={handleShow}
+                        onClick={() => {
+                          handleShowModal();
+                          handleClick(video);
+                        }}
                       >
                         Demo Video
                       </a>
-                      <Modal show={show} onHide={handleClose}></Modal>
+                      <Modal
+                        {...props}
+                        size="xl"
+                        aria-labelledby="contained-modal-title-vcenter"
+                        centered
+                        show={showModal}
+                        onHide={handleHideModal}
+                        closButton
+                      >
+                        <iframe
+                          src={whichVideo}
+                          className="video-modal"
+                          webkitallowfullscreen
+                          mozallowfullscreen
+                          allowfullscreen
+                        />
+                        {/* <Modal.Footer>
+                          <Button variant="secondary" onClick={handleHideModal()}>
+                            Close
+                          </Button>
+                        </Modal.Footer> */}
+                      </Modal>
                       <a
                         target="_blank"
                         rel="noopener noreferrer"
@@ -88,10 +118,10 @@ const Projects = () => {
                       {/* <p className="tag">{ tags }</p> */}
                       {repo && (
                         <a
-                          target="_blank"
                           rel="noopener noreferrer"
                           className="cta-btn cta-btn-no-background text-color-main"
                           href={repo}
+                          target="_blank"
                         >
                           Source Code
                         </a>
@@ -109,10 +139,14 @@ const Projects = () => {
                   >
                     <div className="project-wrapper__image">
                       <a
-                        href={url}
-                        target="_blank"
                         aria-label="Project Link"
                         rel="noopener noreferrer"
+                        // href={url}
+                        // target="_blank"
+                        onClick={() => {
+                          handleShowModal();
+                          handleClick(video);
+                        }}
                       >
                         <Tilt
                           options={{

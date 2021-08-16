@@ -6,17 +6,26 @@
   position: absolute;
   font-weight: bold;
   z-index: 7;
-
-  @include respond(phone) {
-    border: 0px;
-  }
 }
 
-.logo-wrapper {
+.logo-outer-wrapper {
   align-self: flex-start;
   text-align: left;
   flex-grow: 5;
   padding-top: 0.5rem;
+
+  @media only screen and (max-width: 350px) {
+    display: none;
+  }
+}
+
+.logo-inner-wrapper {
+  width: 50px;
+  margin: 0;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .nav-item {
@@ -24,14 +33,8 @@
   text-decoration: none;
   padding: 0 4rem;
 
-  &:hover {
-    cursor: pointer;
-  }
-
   &__logo {
-    // align-self: flex-start;
     text-align: center;
-    // flex-grow: 5;
   }
 
   &__link {
@@ -41,7 +44,12 @@
     flex-grow: 1;
 
     &:hover {
+      cursor: pointer;
       transform: translateY(-2px);
+    }
+
+    @media only screen and (max-width: 350px) {
+      align-self: center;
     }
   }
 }

@@ -18,14 +18,6 @@ const Contact = () => {
             <p className="contact-wrapper__text">{cta}</p>
           </Fade>
           <Fade bottom duration={1000} delay={750} distance="30px">
-            {/* <a
-              target="_blank"
-              rel="noopener noreferrer"
-              className="cta-btn cta-btn--resume"
-              href={email ? `mailto:${email}` : 'https://www.linkedin.com/in/evan-walter-101bb739'}
-            >
-              {btn}
-            </a> */}
             <ContactForm />
           </Fade>
         </div>

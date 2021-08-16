@@ -54,7 +54,7 @@ export const projectsData = [
     info2: 'Password: trends',
     tags: ['Store Setup', 'Premium Shopify Theme', 'Mega-Menu', 'Advanced Filter'],
     url: 'https://1vejgeqytc0pok6g-56525095117.shopifypreview.com',
-    video: 'https://www.loom.com/share/7e5eec45f0d047689af2eff7c8d9fc66',
+    video: 'https://www.loom.com/embed/7e5eec45f0d047689af2eff7c8d9fc66',
     repo: '', // if no repo, the button will not show up
   },
   {
@@ -66,7 +66,7 @@ export const projectsData = [
     info2: 'Password: newtech',
     tags: ['Store Setup', 'Theme Customization', 'Affiliate Functionality', 'HTML/CSS/Liquid'],
     url: 'https://1g56iv3d2f1qdbnx-57198936253.shopifypreview.com',
-    video: 'https://www.loom.com/share/431ae330190442f29b4b8c8585f7195d',
+    video: 'https://www.loom.com/embed/431ae330190442f29b4b8c8585f7195d',
     repo: '', // if no repo, the button will not show up
   },
   {

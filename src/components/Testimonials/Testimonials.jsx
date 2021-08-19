@@ -7,7 +7,7 @@ import PortfolioContext from '../../context/context';
 
 const Testimonials = () => {
   const { testimonials } = useContext(PortfolioContext);
-  const { id, body, author } = testimonials;
+  const { id, body, author, company1, company2 } = testimonials;
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -25,13 +25,31 @@ const Testimonials = () => {
   return (
     <section id="testimonials">
       <Container>
-        <Title title="Testimonials" />
-        <Row className="">
-          <Fade bottom duration={1000} delay={600} distance="30px">
-            <div className="">{body}</div>
-            <div className="">- {author}</div>
-          </Fade>
-        </Row>
+        <Fade bottom duration={1000} delay={600} distance="30px">
+          <Title title="Testimonials" />
+        </Fade>
+        <div className="t-full-wrap">
+          <Row>
+            <Col className="t-info-wrap">
+              <Fade bottom duration={1000} delay={1000} distance="30px">
+                <p className="t-info">{body}</p>
+                <p className="t-info t-author">- {author}</p>
+                <p className="t-info t-company">
+                  {company1}, {company2}
+                </p>
+              </Fade>
+            </Col>
+          </Row>
+          <Col className="justify-content-md-center">
+            <Fade bottom duration={1000} delay={1300} distance="30px">
+              <Link to="projects" smooth duration={1000}>
+                <div className="down arrow-ctl">
+                  <i className="fa fa-angle-down fa-2x" aria-hidden="true" />
+                </div>
+              </Link>
+            </Fade>
+          </Col>
+        </div>
       </Container>
     </section>
   );

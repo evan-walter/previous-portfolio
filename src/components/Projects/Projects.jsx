@@ -3,6 +3,7 @@ import Fade from 'react-reveal/Fade';
 import Tilt from 'react-tilt';
 import { Container, Row, Col } from 'react-bootstrap';
 import Modal from 'react-bootstrap/Modal';
+import { Link } from 'react-scroll';
 import PortfolioContext from '../../context/context';
 import Title from '../Title/Title';
 import ProjectImg from '../Image/ProjectImg';
@@ -51,7 +52,7 @@ const Projects = (props) => {
   return (
     <section id="projects">
       <Container>
-        <div className="project-wrapper">
+        <div className="p-wrap">
           <Title title="Projects" />
           {projects.map((project) => {
             const { title, info, info2, /*  tags, */ url, video, repo, img, videoImg, id } =
@@ -66,8 +67,8 @@ const Projects = (props) => {
                     delay={500}
                     distance="30px"
                   >
-                    <div className="project-wrapper__text">
-                      <h3 className="project-wrapper__text-title">{title}</h3>
+                    <div className="p-text">
+                      <h3 className="p-text__title">{title}</h3>
                       <div>
                         <p>{info}</p>
                       </div>
@@ -130,7 +131,7 @@ const Projects = (props) => {
                     delay={750}
                     distance="30px"
                   >
-                    <div className="project-wrapper__image">
+                    <div className="p-image">
                       <a
                         aria-label="Project Link"
                         rel="noopener noreferrer"
@@ -165,6 +166,15 @@ const Projects = (props) => {
               </Row>
             );
           })}
+          <Col className="justify-content-md-center">
+            <Fade bottom duration={1000} delay={1300} distance="30px">
+              <Link to="projects" smooth duration={1000}>
+                <div className="down arrow-ctl p-arrow-ctl">
+                  <i className="fa fa-angle-down fa-2x" aria-hidden="true" />
+                </div>
+              </Link>
+            </Fade>
+          </Col>
         </div>
       </Container>
     </section>

@@ -12,7 +12,9 @@ const Footer = () => {
       <Container>
         <span className="back-to-top">
           <Link to="hero" smooth duration={1000}>
-            <i className="fa fa-angle-up fa-2x" aria-hidden="true" />
+            <div className="arrow-ctl">
+              <i className="fa fa-angle-up fa-2x" aria-hidden="true" />
+            </div>
           </Link>
         </span>
         <div className="social-links">

@@ -28,7 +28,7 @@ export const heroData = {
 // ABOUT DATA
 export const aboutData = {
   img: 'profile.png',
-  paragraphOne: `I specialize in Shopify development.  Whether store set-up, migration, front end, apps, or custom features, I aim to join my clients to serve their vision.`,
+  paragraphOne: `I specialize in Shopify, front end, and apps.  Whether store set-up, migration, or custom features, I aim to join my clients to serve their vision.`,
   paragraphTwo: `Prior to development, I obtained a Bachelor's of Science in Electrical Engineering and began a career in the field.  As I explored the software side of the field, I applied communication and problem solving skills I learned along the way.  I found opportunities to serve clients with fast websites and a seamless user experience.`,
   paragraphThree: ``,
   resume: '', // if no resume, the button will not show up
@@ -88,6 +88,8 @@ export const testimonialsData = {
   id: 1,
   body: `Evan is a hard worker and is extremely savvy. Even if he doesn't know how to do something, he is going to get creative and figure it out, which is one of the best qualities in a developer. He takes care with his work and is extremely communicative. I would highly recommend Evan for your projects.`,
   author: `Megan Spaulding`,
+  company1: `Brand Science Co`,
+  company2: `Shasta Venture Hub`,
 };
 
 // CONTACT DATA

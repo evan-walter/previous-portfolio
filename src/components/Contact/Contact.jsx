@@ -13,7 +13,9 @@ const Contact = () => {
     <section id="contact">
       <Container>
         <Fade bottom duration={1000} delay={500} distance="30px">
-          <Title title="Contact" />
+          <h1 className="hero-title ctitle-control">
+            <span className="text-color-main">Contact</span>
+          </h1>
         </Fade>
         <Fade bottom duration={1000} delay={750} distance="30px">
           <ContactForm />

@@ -10,31 +10,31 @@ const ContactForm = () => {
     <div className="form-container">
       <form action="https://mailthis.to/EvanWalter" method="POST">
         <div>
-          <label htmlFor="name" className="form-label">
+          <label htmlFor="name" className="form-label text-color-main">
             Name
-            <input id="name" type="text" className="form-control" maxLength="266" />
           </label>
+          <input id="name" type="text" className="form-control" maxLength="266" />
         </div>
         <div>
-          <label htmlFor="email" className="form-label">
+          <label htmlFor="email" className="form-label text-color-main">
             Email
-            <input
-              id="email"
-              type="email"
-              className="form-control"
-              maxLength="256"
-              aria-describedby="emailHelp"
-            />
           </label>
+          <input
+            id="email"
+            type="email"
+            className="form-control"
+            maxLength="256"
+            aria-describedby="emailHelp"
+          />
         </div>
         <div>
-          <label htmlFor="message" className="form-label">
+          <label htmlFor="message" className="form-label text-color-main">
             Message
-            <textarea id="message" className="form-control" rows="5" />
           </label>
+          <textarea id="message" className="form-control" rows="5" />
         </div>
-        <div className="form-btn-wrapper">
-          <input className="form-btn" type="submit" value={btn} />
+        <div className="fsubmit fsubmit--hero fsubmit-wrap-ctl">
+          <input className="fsubmit-input-ctl" type="submit" value={btn} />
         </div>
         <input type="hidden" name="_subject" value="Portfolio - Contact Form Submitted" />
         <input type="hidden" name="_after" value="https://evanwalter.dev" />

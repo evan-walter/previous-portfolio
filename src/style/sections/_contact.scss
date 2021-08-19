@@ -1,6 +1,5 @@
 #contact {
   background-color: $white-color;
-  color: $dark-blue-text;
   padding: 15rem 0;
 }
 
@@ -13,6 +12,7 @@
   width: 100%;
   text-align: left;
   font-size: $default-font-size;
+  font-weight: bold;
 }
 
 .form-control {
@@ -21,44 +21,115 @@
   font-size: $default-font-size;
   padding: 1rem;
   margin-bottom: 10px;
+  resize: none;
 
   &:focus {
     background: #f0f3fa;
+    outline: none;
   }
 }
 
-/* Call to Action Button */
-.form-btn-wrapper:hover {
-  background-image: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%) !important;
-  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.3s;
+// Adapted from _typography.scss .section-title
+.ctitle-control {
+  margin: 0 0 4.5rem 0;
+  text-align: center;
+  font-size: $big-font-size;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  @include respond(phone) {
+    font-size: 2.8rem;
+  }
 }
 
-.form-btn {
-  font-size: 2.4rem;
+////// Submit Button
+//// Adapted from _buttons.scss
+// Call to Action Button
+.fsubmit {
+  display: inline-block;
+  position: relative;
+  // padding: 0.8rem $default-font-size;
   font-weight: bold;
+  // line-height: 1;
+  z-index: 1;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.6s;
 
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 0px;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.3s;
+  }
+}
+
+// Hero Style
+.fsubmit--hero {
   background-image: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-
   border-width: 2px;
   border-style: solid;
   border-image: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
   border-image-slice: 1;
+  cursor: pointer;
 
-  padding: 0.5rem $default-font-size;
-  margin-top: 4rem;
-  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.6s;
+  // Responsive Button hero style
+  @include respond(phone) {
+    background-image: none;
+    border: 2px solid $secondary-color;
+    -webkit-text-fill-color: $secondary-color;
+  }
+
+  &::after {
+    background-image: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
+    // Responsive Button hero style
+    @include respond(phone) {
+      background-image: none;
+    }
+  }
 
   &:hover {
     -webkit-text-fill-color: $white-color;
     text-decoration: none;
-  }
+    // Responsive Button hover hero style
+    @include respond(phone) {
+      -webkit-text-fill-color: $secondary-color;
+    }
 
-  // &:after {
-  //   -webkit-text-fill-color: $white-color;
-  //   text-decoration: none;
-  //   background-image: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
-  //   transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.3s;
-  // }
+    &::after {
+      width: 100%;
+    }
+  }
+}
+
+.fsubmit-wrap-ctl {
+  font-size: 2.4rem;
+  padding: 0.1rem $default-font-size;
+  margin: 4rem auto auto auto;
+}
+
+// Change the font of the child when hovering over the parent
+.fsubmit-wrap-ctl:hover .fsubmit-input-ctl,
+.fsubmit-wrap-ctl.hover .fsubmit-input-ctl {
+  -webkit-text-fill-color: $white-color;
+}
+
+// Modifications to accomodate for input
+.fsubmit-input-ctl {
+  font-size: 2.4rem;
+  font-weight: bold;
+  background-image: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border: none;
+  background: inherit;
+
+  @include respond(phone) {
+    -webkit-text-fill-color: $secondary-color;
+  }
 }

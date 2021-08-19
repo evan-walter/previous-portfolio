@@ -3,7 +3,6 @@ import Fade from 'react-reveal/Fade';
 import Tilt from 'react-tilt';
 import { Container, Row, Col } from 'react-bootstrap';
 import Modal from 'react-bootstrap/Modal';
-import Collapse from 'react-bootstrap/Collapse';
 import PortfolioContext from '../../context/context';
 import Title from '../Title/Title';
 import ProjectImg from '../Image/ProjectImg';
@@ -76,7 +75,6 @@ const Projects = (props) => {
                         target="_blank"
                         rel="noopener noreferrer"
                         className="cta-btn cta-btn--hero"
-                        // href={video}
                         onClick={() => {
                           handleShowModal();
                           handleClick(video);
@@ -91,8 +89,8 @@ const Projects = (props) => {
                         centered
                         show={showModal}
                         onHide={handleHideModal}
-                        closButton
                       >
+                        <Modal.Header closeButton className="video-modal-header"></Modal.Header>
                         <iframe
                           src={whichVideo}
                           className="video-modal"
@@ -100,11 +98,6 @@ const Projects = (props) => {
                           mozallowfullscreen
                           allowfullscreen
                         />
-                        {/* <Modal.Footer>
-                          <Button variant="secondary" onClick={handleHideModal()}>
-                            Close
-                          </Button>
-                        </Modal.Footer> */}
                       </Modal>
                       <a
                         target="_blank"

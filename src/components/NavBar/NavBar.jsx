@@ -23,6 +23,9 @@ const NavBar = () => {
         <Link to="projects" smooth duration={1000}>
           <div className="nav-item__link text-color-main">Projects</div>
         </Link>
+        <Link to="testimonials" smooth duration={1000}>
+          <div className="nav-item__link text-color-main">Testimonials</div>
+        </Link>
         <Link to="contact" smooth duration={1000}>
           <div className="nav-item__link text-color-main">Contact</div>
         </Link>

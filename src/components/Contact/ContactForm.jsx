@@ -1,4 +1,5 @@
 import React, { useContext } from 'react';
+import Fade from 'react-reveal/Fade';
 import PortfolioContext from '../../context/context';
 
 const ContactForm = () => {
@@ -6,16 +7,16 @@ const ContactForm = () => {
   const { btn } = contact;
 
   return (
-    <div className="contact-wrapper__form-wrapper">
+    <div className="form-container">
       <form action="https://mailthis.to/EvanWalter" method="POST">
-        <div className="contact-wrapper__form">
-          <label htmlFor="name" className="contact-wrapper__form-label">
+        <div>
+          <label htmlFor="name" className="form-label">
             Name
             <input id="name" type="text" className="form-control" maxLength="266" />
           </label>
         </div>
-        <div className="contact-wrapper__form">
-          <label htmlFor="email" className="contact-wrapper__form-label">
+        <div>
+          <label htmlFor="email" className="form-label">
             Email
             <input
               id="email"
@@ -26,19 +27,15 @@ const ContactForm = () => {
             />
           </label>
         </div>
-        <div className="contact-wrapper__form">
-          <label htmlFor="message" className="contact-wrapper__form-label">
+        <div>
+          <label htmlFor="message" className="form-label">
             Message
             <textarea id="message" className="form-control" rows="5" />
           </label>
         </div>
-        <span className="contact-wrapper__form-submit-btn cta-btn cta-btn--resume">
-          <input
-            className="contact-wrapper__form-submit-btn cta-btn cta-btn--resume"
-            type="submit"
-            value={btn}
-          />
-        </span>
+        <div className="form-btn-wrapper">
+          <input className="form-btn" type="submit" value={btn} />
+        </div>
         <input type="hidden" name="_subject" value="Portfolio - Contact Form Submitted" />
         <input type="hidden" name="_after" value="https://evanwalter.dev" />
       </form>

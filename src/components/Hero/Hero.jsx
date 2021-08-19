@@ -6,7 +6,7 @@ import PortfolioContext from '../../context/context';
 
 const Header = () => {
   const { hero } = useContext(PortfolioContext);
-  const { title, name, subtitle1, subtitle2, subtitle3, subtitle4, cta } = hero;
+  const { title, name, subtitle1, subtitle2, subtitle3, subtitle4, cta, video } = hero;
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -22,7 +22,7 @@ const Header = () => {
   }, []);
 
   return (
-    <section id="hero" className="jumbotron">
+    <section id="hero">
       <Container>
         <div className="column-left">
           <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
@@ -47,22 +47,11 @@ const Header = () => {
           </div>
           <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={3000} distance="30px">
             <p className="hero-cta">
-              <Link className="cta-btn cta-btn--hero" to="about" smooth duration={1000}>
+              <Link to="about" className="cta-btn cta-btn--hero" smooth duration={1000}>
                 {cta}
-                {/* {<br />}
-                {<i className="fa fa-angle-down" aria-hidden="true" />} */}
               </Link>
             </p>
           </Fade>
-        </div>
-        <div className="column-right">
-          <Fade
-            left={isDesktop}
-            bottom={isMobile}
-            duration={1000}
-            delay={2500}
-            distance="30px"
-          ></Fade>
         </div>
       </Container>
     </section>

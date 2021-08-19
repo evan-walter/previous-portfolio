@@ -62,10 +62,6 @@
         margin: 0;
       }
 
-      &:hover {
-        cursor: pointer;
-      }
-
       & .thumbnail {
         border: none;
         box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
@@ -86,4 +82,8 @@
 
 .video-modal {
   height: 80vh;
+}
+
+.video-modal-header {
+  height: 5vh;
 }

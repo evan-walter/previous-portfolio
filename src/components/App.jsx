@@ -5,6 +5,7 @@ import About from './About/About';
 import Projects from './Projects/Projects';
 // import TrustedBy from './TrustedBy/TrustedBy';
 // import Technologies from './Technologies/Technologies';
+import Testimonials from './Testimonials/Testimonials';
 import Contact from './Contact/Contact';
 import Footer from './Footer/Footer';
 
@@ -15,6 +16,7 @@ import {
   heroData,
   aboutData,
   projectsData,
+  testimonialsData,
   contactData,
   footerData,
 } from '../mock/data';
@@ -24,6 +26,7 @@ function App() {
   const [hero, setHero] = useState({});
   const [about, setAbout] = useState({});
   const [projects, setProjects] = useState([]);
+  const [testimonials, setTestimonials] = useState([]);
   const [contact, setContact] = useState({});
   const [footer, setFooter] = useState({});
 
@@ -32,18 +35,20 @@ function App() {
     setHero({ ...heroData });
     setAbout({ ...aboutData });
     setProjects([...projectsData]);
+    setTestimonials({ ...testimonialsData });
     setContact({ ...contactData });
     setFooter({ ...footerData });
   }, []);
 
   return (
-    <PortfolioProvider value={{ navbar, hero, about, projects, contact, footer }}>
+    <PortfolioProvider value={{ navbar, hero, about, projects, testimonials, contact, footer }}>
       <Navbar />
       <Hero />
       <About />
       <Projects />
       {/* <TrustedBy /> inspired by jadjoubran.io*/}
       {/* <Technologies /> inspired by northtwofive.com */}
+      <Testimonials />
       <Contact />
       <Footer />
     </PortfolioProvider>

@@ -9,7 +9,7 @@
 
   &__text {
     color: darken(white, 50%);
-    font-size: 1.3rem;
+    font-size: 1.4rem;
 
     a {
       color: darken(white, 50%);
@@ -29,9 +29,9 @@
 
   & hr {
     margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     border: 0;
-    width: 50%;
+    width: 90%;
     border-top: 2px solid rgba(255, 255, 255, 0.1);
   }
 }

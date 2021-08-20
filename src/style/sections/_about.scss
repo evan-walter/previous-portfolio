@@ -72,22 +72,3 @@
     }
   }
 }
-
-div > i {
-  display: flex;
-  height: 100%;
-  width: 5%;
-  align-items: center;
-  justify-content: center;
-  margin: 1rem 0 $default-font-size;
-  transition: all 0.2s ease-in;
-
-  @include respond(tab-port) {
-    padding-bottom: 3.4rem;
-  }
-
-  &:hover {
-    cursor: pointer;
-    transform: translateY(-3px);
-  }
-}

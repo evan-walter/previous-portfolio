@@ -65,7 +65,7 @@ const About = () => {
           <Fade bottom duration={1000} delay={1300} distance="30px">
             <Link to="projects" smooth duration={1000}>
               <div className="down arrow-ctl">
-                <i className="fa fa-angle-down fa-2x" aria-hidden="true" />
+                <i id="arrow" className="fa fa-angle-down fa-2x" aria-hidden="true" />
               </div>
             </Link>
           </Fade>

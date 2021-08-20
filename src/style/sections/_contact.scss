@@ -6,6 +6,10 @@
 .form-container {
   max-width: 525px;
   margin: auto;
+
+  @include respond (phone) {
+    margin: auto 20px;
+  }
 }
 
 .form-label {
@@ -45,7 +49,7 @@
 ////// Submit Button
 //// Adapted from _buttons.scss
 // Call to Action Button
-.fsubmit {
+.fbtn {
   display: inline-block;
   position: relative;
   // padding: 0.8rem $default-font-size;
@@ -68,7 +72,7 @@
 }
 
 // Hero Style
-.fsubmit--hero {
+.fbtn--hero {
   background-image: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -107,20 +111,20 @@
   }
 }
 
-.fsubmit-wrap-ctl {
+.fbtn-wrap-ctl {
   font-size: 2.4rem;
   padding: 0.1rem $default-font-size;
   margin: 4rem auto auto auto;
 }
 
 // Change the font of the child when hovering over the parent
-.fsubmit-wrap-ctl:hover .fsubmit-input-ctl,
-.fsubmit-wrap-ctl.hover .fsubmit-input-ctl {
+.fbtn-wrap-ctl:hover .fbtn-input-ctl,
+.fbtn-wrap-ctl.hover .fbtn-input-ctl {
   -webkit-text-fill-color: $white-color;
 }
 
 // Modifications to accomodate for input
-.fsubmit-input-ctl {
+.fbtn-input-ctl {
   font-size: 2.4rem;
   font-weight: bold;
   background-image: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
@@ -131,5 +135,42 @@
 
   @include respond(phone) {
     -webkit-text-fill-color: $secondary-color;
+  }
+}
+
+.submitted-container {
+  // display: inline-block;
+  // display: flex;
+  // justify-content: center;
+  margin: 0;
+}
+
+.ctl-check {
+  display: inline-block;
+  margin: 0;
+  color: #6fc912;
+}
+
+.ctl-x {
+  display: inline-block;
+  margin: 0;
+  color: #dd1414;
+}
+
+.submitted-msg {
+  font-size: $default-font-size;
+  margin: 0;
+}
+
+.failed-link-wrap {
+  display: inline-block;
+  width: fit-content;
+  font-weight: bold;
+  margin: 0;
+  transition: all 0.2s ease-in;
+
+  &:hover {
+    cursor: pointer;
+    transform: translateY(-2px);
   }
 }

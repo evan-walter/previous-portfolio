@@ -7,20 +7,7 @@ import PortfolioContext from '../../context/context';
 
 const Testimonials = () => {
   const { testimonials } = useContext(PortfolioContext);
-  const { id, body, author, company1, company2 } = testimonials;
-
-  const [isDesktop, setIsDesktop] = useState(false);
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    if (window.innerWidth > 769) {
-      setIsDesktop(true);
-      setIsMobile(false);
-    } else {
-      setIsMobile(true);
-      setIsDesktop(false);
-    }
-  }, []);
+  const { body, author, company1, company2 } = testimonials;
 
   return (
     <section id="testimonials">
@@ -42,9 +29,9 @@ const Testimonials = () => {
           </Row>
           <Col className="justify-content-md-center">
             <Fade bottom duration={1000} delay={1300} distance="30px">
-              <Link to="projects" smooth duration={1000}>
+              <Link to="contact" smooth duration={1000}>
                 <div className="down arrow-ctl">
-                  <i className="fa fa-angle-down fa-2x" aria-hidden="true" />
+                  <i id="arrow" className="fa fa-angle-down fa-2x" aria-hidden="true" />
                 </div>
               </Link>
             </Fade>

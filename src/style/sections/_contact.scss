@@ -1,13 +1,17 @@
 #contact {
   background-color: $white-color;
   padding: 15rem 0;
+
+  @include respond(phone) {
+    padding: 5rem 0;
+  }
 }
 
 .form-container {
   max-width: 525px;
   margin: auto;
 
-  @include respond (phone) {
+  @include respond(phone) {
     margin: auto 20px;
   }
 }
@@ -41,9 +45,10 @@
   font-weight: bold;
   text-transform: uppercase;
 
-  @include respond(phone) {
-    font-size: 2.8rem;
-  }
+  // @include respond(phone) {
+  //   font-size: 2.8rem;
+  //   margin: 0 0 2rem 0;
+  // }
 }
 
 ////// Submit Button
@@ -138,6 +143,7 @@
   }
 }
 
+// Form "validations"
 .submitted-container {
   // display: inline-block;
   // display: flex;

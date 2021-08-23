@@ -1,19 +1,18 @@
 #hero {
   background-color: $white-color;
+  position: relative;
   color: $dark-blue-text;
   font-weight: 400;
-  min-height: 90vh;
-  height: 90vh;
+  height: 70rem;
   display: flex;
   align-items: center;
   border-bottom: 0px;
-  padding: 0rem 5.6rem;
+  padding: 5rem 0;
   margin-bottom: 0;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
-  z-index: -1;
 
   // If you want to set a background image on the hero section, uncomment these with yout custom image
 
@@ -22,7 +21,7 @@
   background-size: 100%;*/
 
   @include respond(phone) {
-    padding: 0rem $default-font-size;
+    padding: 0 $default-font-size;
   }
 }
 
@@ -30,7 +29,7 @@
   font-size: 5.6rem;
   font-weight: 700;
   text-align: left;
-  margin: 0;
+  margin-bottom: 2.5rem;
 
   @include respond(tab-land) {
     font-size: 4rem;
@@ -49,7 +48,7 @@
 }
 
 .hero-subtitles-container {
-  margin: 2.5rem 0;
+  margin: 0;
 }
 
 .hero-subtitle {
@@ -58,6 +57,9 @@
   margin-bottom: 1.2rem;
   text-align: left;
 
+  &__last {
+    text-align: center;
+  }
   @include respond(tab-land) {
     font-size: 2.9rem;
   }
@@ -76,6 +78,7 @@
 
 .hero-cta {
   display: flex;
+  margin-top: 2.5rem;
 
   @include respond(tab-port) {
     justify-content: center;
@@ -88,4 +91,12 @@
       font-size: 2rem;
     }
   }
+}
+
+.hero-vid {
+  margin: 2rem 0 0 0;
+}
+
+.hero-src {
+  font-size: $default-font-size;
 }

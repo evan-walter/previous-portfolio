@@ -2,7 +2,6 @@
   background-color: $white-color;
   color: $dark-blue-text;
   margin-top: -10vh;
-  padding-top: 15rem;
 
   @include respond(tab-land) {
     margin-top: 0;
@@ -10,13 +9,17 @@
   }
 }
 
-@include respond(phone) {
-  padding-bottom: 10rem;
+.p-item {
+  padding-top: 10rem;
+  padding-bottom: 3rem;
+
+  @include respond(phone) {
+    padding-top: 5rem;
+    padding-bottom: 1.5rem;
+  }
 }
 
 .p-wrap {
-  // margin-bottom: 5rem;
-
   @include respond(phone) {
     margin: 0 auto;
   }

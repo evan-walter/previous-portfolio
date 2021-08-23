@@ -28,16 +28,39 @@ const Footer = () => {
               );
             })}
         </div>
+        <div></div>
         <hr />
         <Row xs={1} sm={1} md={3} lg={3} xl={3} xxl={3}>
           <Col>
-            <p className="footer__text">Site built with ReactJS and GatsbyJS</p>
+            <p className="footer__text">
+              <a href="https://github.com/Evan-Walter/portfolio/" target="_blank">
+                This website
+              </a>{' '}
+              was built with{' '}
+              <a href="https://reactjs.org/" target="_blank">
+                React
+              </a>{' '}
+              and{' '}
+              <a href="https://www.gatsbyjs.com/" target="_blank">
+                Gatsby
+              </a>
+            </p>
           </Col>
           <Col>
-            <p className="footer__text">© {new Date().getFullYear()} Evan Walter</p>
+            <p className="footer__text">
+              © {new Date().getFullYear()}{' '}
+              <a href="https://github.com/Evan-Walter" target="_blank">
+                Evan Walter
+              </a>
+            </p>
           </Col>
           <Col>
-            <p className="footer__text">Special thanks to cobidev/simplefolio</p>
+            <p className="footer__text">
+              Special thanks to{' '}
+              <a href="https://github.com/cobidev" target="_blank">
+                Jacobo Martínez
+              </a>
+            </p>
           </Col>
         </Row>
       </Container>

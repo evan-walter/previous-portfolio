@@ -10,19 +10,20 @@ export const headData = {
   title: 'Evan Walter | Developer', // e.g: 'Name | Developer'
   lang: 'en', // e.g: en, es, fr, jp
   description: '', // e.g: Welcome to my website
-  // video: 'https://www.loom.com/embed/9adff46da46148b1b6e195795195fe3f',
 };
 
 // HERO DATA
 export const heroData = {
   img: 'profile.png',
-  title: '',
+  title: 'Developer',
   name: 'Evan Walter',
-  subtitle1: 'Shopify Development',
-  subtitle2: 'Front End Development',
-  subtitle3: 'App Development',
+  subtitle1: 'Shopify',
+  subtitle2: 'Front End',
+  subtitle3: 'Apps',
   subtitle4: 'I connect with people and build software.',
   cta: 'Know more',
+  video: 'https://www.youtube.com/embed/7pUahF8cqvM',
+  repo: 'https://www.github.com/Evan-Walter/portfolio-start',
 };
 
 // ABOUT DATA
@@ -31,7 +32,7 @@ export const aboutData = {
   paragraphOne: `I specialize in Shopify, front end, and apps.  Whether store set-up, migration, or custom features, I aim to join my clients to serve their vision.`,
   paragraphTwo: `Prior to development, I obtained a Bachelor's of Science in Electrical Engineering and began a career in the field.  As I explored the software side of the field, I applied communication and problem solving skills I learned along the way.  I found opportunities to serve clients with fast websites and a seamless user experience.`,
   paragraphThree: ``,
-  resume: '', // if no resume, the button will not show up
+  resume: '',
 };
 
 // PROJECTS DATA

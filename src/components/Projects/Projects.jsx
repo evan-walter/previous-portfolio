@@ -58,13 +58,13 @@ const Projects = (props) => {
             const { title, info, info2, /*  tags, */ url, video, repo, img, videoImg, id } =
               project;
             return (
-              <Row key={id}>
+              <Row key={id} className="p-item">
                 <Col lg={4} sm={12}>
                   <Fade
                     left={isDesktop}
                     bottom={isMobile}
                     duration={1000}
-                    delay={500}
+                    delay={250}
                     distance="30px"
                   >
                     <div className="p-text">
@@ -128,7 +128,7 @@ const Projects = (props) => {
                     right={isDesktop}
                     bottom={isMobile}
                     duration={1000}
-                    delay={750}
+                    delay={500}
                     distance="30px"
                   >
                     <div className="p-image">
@@ -167,7 +167,7 @@ const Projects = (props) => {
             );
           })}
           <Col className="justify-content-md-center">
-            <Fade bottom duration={1000} delay={1300} distance="30px">
+            <Fade bottom duration={1000} delay={250} distance="30px">
               <Link to="testimonials" smooth duration={1000}>
                 <div className="down arrow-ctl p-arrow-ctl">
                   <i id="arrow" className="fa fa-angle-down fa-2x" aria-hidden="true" />

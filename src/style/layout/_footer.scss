@@ -10,6 +10,7 @@
   &__text {
     color: darken(white, 50%);
     font-size: 1.4rem;
+    width: 90%;
 
     a {
       color: darken(white, 50%);
@@ -20,7 +21,7 @@
 
       &:hover,
       &:active {
-        color: $primary-color;
+        color: $white-color;
         -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
         box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
       }

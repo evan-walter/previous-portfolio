@@ -54,11 +54,15 @@
 .hero-subtitle {
   font-size: 3.9rem;
   font-weight: 700;
-  margin-bottom: 1.2rem;
   text-align: left;
+  margin-bottom: 1.2rem;
 
   &__last {
+    font-size: 3.5rem;
+    font-weight: 700;
     text-align: center;
+    padding-top: 5%;
+    margin-bottom: 1.2rem;
   }
   @include respond(tab-land) {
     font-size: 2.9rem;
@@ -78,6 +82,8 @@
 
 .hero-cta {
   display: flex;
+  text-align: center;
+  justify-content: center;
   margin-top: 2.5rem;
 
   @include respond(tab-port) {
@@ -99,4 +105,5 @@
 
 .hero-src {
   font-size: $default-font-size;
+  margin-top: 20px;
 }

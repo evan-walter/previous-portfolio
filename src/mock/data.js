@@ -15,14 +15,14 @@ export const headData = {
 // HERO DATA
 export const heroData = {
   img: 'profile.png',
-  title: 'Developer',
+  title: '',
   name: 'Evan Walter',
   subtitle1: 'Shopify',
   subtitle2: 'Front End',
   subtitle3: 'Apps',
   subtitle4: 'I connect with people and build software.',
   cta: 'Know more',
-  video: 'https://www.youtube.com/embed/7pUahF8cqvM',
+  video: 'https://www.loom.com/embed/e8325acc64f74e33b1c1cd083ed62280',
   repo: 'https://www.github.com/Evan-Walter/portfolio-start',
 };
 

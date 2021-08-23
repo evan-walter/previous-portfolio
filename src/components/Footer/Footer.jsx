@@ -28,7 +28,6 @@ const Footer = () => {
               );
             })}
         </div>
-        <div></div>
         <hr />
         <Row xs={1} sm={1} md={3} lg={3} xl={3} xxl={3}>
           <Col>
@@ -47,6 +46,11 @@ const Footer = () => {
             </p>
           </Col>
           <Col>
+            <p className="footer__text">
+              <a href="https://github.com/Evan-Walter/portfolio/" target="_blank">
+                Portfolio Source Code
+              </a>
+            </p>
             <p className="footer__text">
               © {new Date().getFullYear()}{' '}
               <a href="https://github.com/Evan-Walter" target="_blank">

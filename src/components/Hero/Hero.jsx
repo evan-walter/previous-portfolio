@@ -25,37 +25,27 @@ const Header = () => {
     <section id="hero">
       <Container>
         <Row>
-          <Col>
-            <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
-              <h1 className="hero-title">
-                <span className="text-color-main">{name}</span> {title}
-                <br />
-              </h1>
+          <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
+            <h1 className="hero-title">
+              <span className="text-color-main">{name}</span> {title}
+              <br />
+            </h1>
+          </Fade>
+        </Row>
+        <Row>
+          <div className="hero-subtitles-container">
+            <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
+              <h1 className="hero-subtitle">{subtitle1}</h1>
             </Fade>
-            <div className="hero-subtitles-container">
-              <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
-                <h1 className="hero-subtitle">{subtitle1}</h1>
-              </Fade>
-              <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1250} distance="30px">
-                <h1 className="hero-subtitle">{subtitle2}</h1>
-              </Fade>
-              <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1500} distance="30px">
-                <h1 className="hero-subtitle">{subtitle3}</h1>
-              </Fade>
-              <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1750} distance="30px">
-                <h1 className="hero-subtitle">{subtitle4}</h1>
-              </Fade>
-            </div>
+            <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1500} distance="30px">
+              <h1 className="hero-subtitle">{subtitle2}</h1>
+            </Fade>
             <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={2000} distance="30px">
-              <p className="hero-cta">
-                <Link to="about" className="cta-btn cta-btn--hero" smooth duration={1000}>
-                  {cta}
-                </Link>
-              </p>
+              <h1 className="hero-subtitle">{subtitle3}</h1>
             </Fade>
-          </Col>
+          </div>
           <Col>
-            <Fade right={isDesktop} bottom={isMobile} duration={1000} delay={750} distance="30px">
+            <Fade right={isDesktop} bottom={isMobile} duration={1000} delay={3500} distance="30px">
               <iframe
                 width="560"
                 height="315"
@@ -67,21 +57,23 @@ const Header = () => {
                 src={video}
               ></iframe>
             </Fade>
-            <Fade right={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
-              <div>
-                <a
-                  className="cta-btn cta-btn-no-background text-color-main hero-src"
-                  href={repo}
-                  target="_blank"
-                >
-                  Portfolio Source Code
-                </a>
-              </div>
-            </Fade>
           </Col>
         </Row>
         <Row>
-          <Col></Col>
+          <Col>
+            <div className="hero-subtitles-container">
+              <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={2500} distance="30px">
+                <h1 className="hero-subtitle__last">{subtitle4}</h1>
+              </Fade>
+            </div>
+            <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={3000} distance="30px">
+              <p className="hero-cta">
+                <Link to="about" className="cta-btn cta-btn--hero" smooth duration={1000}>
+                  {cta}
+                </Link>
+              </p>
+            </Fade>
+          </Col>
         </Row>
       </Container>
     </section>

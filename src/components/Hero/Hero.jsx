@@ -25,30 +25,28 @@ const Header = () => {
     <section id="hero">
       <Container>
         <Row>
-          <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
-            <h1 className="hero-title">
-              <span className="text-color-main">{name}</span> {title}
-              <br />
-            </h1>
-          </Fade>
-        </Row>
-        <Row>
-          <div className="hero-subtitles-container">
-            <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
-              <h1 className="hero-subtitle">{subtitle1}</h1>
+          <Col>
+            <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
+              <h1 className="hero-title">
+                <span className="text-color-main">{name}</span> {title}
+                <br />
+              </h1>
             </Fade>
-            <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1500} distance="30px">
-              <h1 className="hero-subtitle">{subtitle2}</h1>
-            </Fade>
-            <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={2000} distance="30px">
-              <h1 className="hero-subtitle">{subtitle3}</h1>
-            </Fade>
-          </div>
+            <div className="hero-subtitles-container">
+              <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
+                <h1 className="hero-subtitle">{subtitle1}</h1>
+              </Fade>
+              <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1500} distance="30px">
+                <h1 className="hero-subtitle">{subtitle2}</h1>
+              </Fade>
+              <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={2000} distance="30px">
+                <h1 className="hero-subtitle">{subtitle3}</h1>
+              </Fade>
+            </div>
+          </Col>
           <Col>
             <Fade right={isDesktop} bottom={isMobile} duration={1000} delay={3500} distance="30px">
               <iframe
-                width="560"
-                height="315"
                 title="Welcome Video"
                 className="hero-vid"
                 frameborder="0"

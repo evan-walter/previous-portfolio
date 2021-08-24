@@ -95,7 +95,7 @@ export const testimonialsData = {
 
 // CONTACT DATA
 export const contactData = {
-  cta: '', // Get in touch
+  cta: 'Would you like to get in touch?', // Get in touch
   btn: 'Connect',
   email: '',
 };

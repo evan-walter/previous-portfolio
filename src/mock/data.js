@@ -78,7 +78,7 @@ export const projectsData = [
     title: 'Wine Pairing App',
     info: `A custom API app to pair wines with popular dishes`,
     tags: ['API', 'Customization', 'HTML/CSS/JavaScript'],
-    url: '', // 'https://evan-walter.github.io/wine-pairing',
+    url: 'https://evan-walter.github.io/wine-pairing',
     video: 'https://www.loom.com/embed/8ca49e5e8fb64bf298be6d92c6187dcd',
     repo: 'https://github.com/Evan-Walter/wine-pairing',
   },

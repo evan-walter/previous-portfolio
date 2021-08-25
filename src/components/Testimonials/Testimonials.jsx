@@ -10,8 +10,9 @@ const Testimonials = () => {
   const { body, author, company1, company2 } = testimonials;
 
   return (
-    <section id="testimonials">
+    <section id="testimonials" name="testimonials">
       <Container>
+        {/* Section Title */}
         <Fade bottom duration={1000} delay={600} distance="30px">
           <Title title="Testimonials" />
         </Fade>

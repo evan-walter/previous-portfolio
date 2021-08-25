@@ -24,24 +24,24 @@ const About = () => {
   }, []);
 
   return (
-    <section id="about">
+    <section id="about" name="about">
       <Container>
         <Title title="About" />
         <Row className="about-full-wrap">
+          {/* Image */}
           <Col md={6} sm={12}>
             <Fade bottom duration={1000} delay={600} distance="30px">
               <div className="about-image">
                 {' '}
-                {/* about-image */}
                 <AboutImg alt="Profile Picture" filename={img} />
               </div>
             </Fade>
           </Col>
           <Col md={6} sm={12}>
-            <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
+            <Fade right={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
               <div className="about-info-wrap">
                 {' '}
-                {/* about-info-wrap */}
+                {/* About Info */}
                 <p className="about-info">{paragraphOne}</p> {/* about-info */}
                 <p className="about-info">{paragraphTwo}</p> {/* about-info */}
                 <p className="about-info">{paragraphThree}</p> {/* about-info */}

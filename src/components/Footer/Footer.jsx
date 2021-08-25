@@ -32,10 +32,7 @@ const Footer = () => {
         <Row xs={1} sm={1} md={3} lg={3} xl={3} xxl={3}>
           <Col>
             <p className="footer__text">
-              <a href="https://github.com/Evan-Walter/portfolio/" target="_blank">
-                This website
-              </a>{' '}
-              was built with{' '}
+              Built with{' '}
               <a href="https://reactjs.org/" target="_blank">
                 React
               </a>{' '}
@@ -48,7 +45,7 @@ const Footer = () => {
           <Col>
             <p className="footer__text">
               <a href="https://github.com/Evan-Walter/portfolio/" target="_blank">
-                Portfolio Source Code
+                Source Code
               </a>
             </p>
             <p className="footer__text">

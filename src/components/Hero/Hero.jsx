@@ -22,9 +22,11 @@ const Header = () => {
   }, []);
 
   return (
-    <section id="hero">
+    <section id="hero" name="hero">
       <Container>
-        <Row>
+        {/* All but cta */}
+        <Row xs={1} sm={1} md={2} lg={2} xl={2} xxl={2}>
+          {/* Name and Subtitles */}
           <Col>
             <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
               <h1 className="hero-title">
@@ -32,39 +34,54 @@ const Header = () => {
                 <br />
               </h1>
             </Fade>
-            <div className="hero-subtitles-container">
+            <div className="hero-subs-container">
               <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
-                <h1 className="hero-subtitle">{subtitle1}</h1>
+                <h1 className="hero-sub">{subtitle1}</h1>
               </Fade>
               <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1500} distance="30px">
-                <h1 className="hero-subtitle">{subtitle2}</h1>
+                <h1 className="hero-sub">{subtitle2}</h1>
               </Fade>
               <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={2000} distance="30px">
-                <h1 className="hero-subtitle">{subtitle3}</h1>
+                <h1 className="hero-sub">{subtitle3}</h1>
+              </Fade>
+              <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={2500} distance="30px">
+                <h1 className="hero-sub hero-sub-last">{subtitle4}</h1>
               </Fade>
             </div>
           </Col>
-          <Col>
-            <Fade right={isDesktop} bottom={isMobile} duration={1000} delay={3500} distance="30px">
-              <iframe
-                title="Welcome Video"
-                className="hero-vid"
-                frameborder="0"
-                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-                src={video}
-              ></iframe>
-            </Fade>
-          </Col>
+          {/* Video */}
+          <div>
+            <Col className="hero-vid-col">
+              <Fade
+                className="hero-vid-fade"
+                right={isDesktop}
+                bottom={isMobile}
+                duration={1000}
+                delay={3000}
+                distance="30px"
+              >
+                {/* <Ratio aspectRatio="16x9"> */}
+                <iframe
+                  // width="560"
+                  // height="315"
+                  // width="540"
+                  // height="285"
+                  title="Welcome Video"
+                  className="hero-vid"
+                  frameBorder="0"
+                  allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  src={video}
+                ></iframe>
+                {/* </Ratio> */}
+              </Fade>
+            </Col>
+          </div>
         </Row>
+        {/* cta */}
         <Row>
           <Col>
-            <div className="hero-subtitles-container">
-              <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={2500} distance="30px">
-                <h1 className="hero-subtitle__last">{subtitle4}</h1>
-              </Fade>
-            </div>
-            <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={3000} distance="30px">
+            <Fade bottom duration={1000} delay={3500} distance="30px">
               <p className="hero-cta">
                 <Link to="about" className="cta-btn cta-btn--hero" smooth duration={1000}>
                   {cta}

@@ -3,16 +3,16 @@
   position: relative;
   color: $dark-blue-text;
   font-weight: 400;
-  height: 70rem;
+  height: 67rem;
   display: flex;
   align-items: center;
   border-bottom: 0px;
-  padding: 4rem 0;
-  margin-bottom: 0;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
+  padding: 60px 5rem 4rem 5rem;
+  margin: 0;
 
   // If you want to set a background image on the hero section, uncomment these with yout custom image
 
@@ -21,7 +21,7 @@
   background-size: 100%;*/
 
   @include respond(phone) {
-    padding: 0 $default-font-size;
+    padding: 75px $default-font-size 0 $default-font-size;
   }
 }
 
@@ -32,10 +32,10 @@
   margin-bottom: 2.5rem;
 
   @include respond(tab-land) {
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
   @include respond(tab-port) {
-    font-size: 3.6rem;
+    font-size: 3.5rem;
     text-align: center;
   }
   @include respond(phone) {
@@ -47,23 +47,16 @@
   }
 }
 
-.hero-subtitles-container {
+.hero-subs-container {
   margin: 0;
 }
 
-.hero-subtitle {
+.hero-sub {
   font-size: 3.9rem;
   font-weight: 700;
   text-align: left;
   margin-bottom: 1.2rem;
 
-  &__last {
-    font-size: 3.5rem;
-    font-weight: 700;
-    text-align: center;
-    padding-top: 5%;
-    margin-bottom: 1.2rem;
-  }
   @include respond(tab-land) {
     font-size: 2.9rem;
   }
@@ -80,11 +73,15 @@
   }
 }
 
+.hero-sub-last {
+  padding-top: 3%;
+}
+
 .hero-cta {
   display: flex;
   text-align: center;
   justify-content: center;
-  margin-top: 2.5rem;
+  margin-top: 5rem;
 
   @include respond(tab-port) {
     justify-content: center;
@@ -99,15 +96,57 @@
   }
 }
 
-.hero-vid {
-  height: 315px;
-  width: 560px;
-  margin: 2rem 0 0 0;
+.hero-vid-col {
+  background: pink;
+}
 
-  @include respond(phone) {
-    height: 126px;
-    width: 112px;
-  }
+.hero-vid-fade {
+  background: purple;
+}
+
+.hero-vid-wrap {
+  // width: 560px;
+  // height: 315px;
+
+  // margin: 0;
+}
+
+.hero-vid {
+  // height: auto;
+  // max-width: 100%;
+  // object-fit: scale-down;
+  // width: $hero-vid-w-desk;
+  // max-width: 560px;
+  // height: $hero-vid-h-desk;
+  // max-height: 315px;
+
+  // @media only screen and (max-width: 950px) {
+  // width: calc($hero-vid-w-desk * 0.8); // 448px
+  // height: calc($hero-vid-h-desk * 0.8); // 252px
+  // width: 448px;
+  // height: 252px;
+  // }
+
+  // @include respond(tab-land) {
+  // width: calc($hero-vid-w-desk * 0.8); // 448px
+  // height: calc($hero-vid-h-desk * 0.8); // 252px
+  // width: 448px;
+  // height: 252px;
+  // }
+
+  // @include respond(tab-port) {
+  // width: calc($hero-vid-w-desk * 0.6); // 336px
+  // height: calc($hero-vid-h-desk * 0.6); // 189px
+  // width: 336px;
+  // height: 189px;
+  // }
+
+  // @include respond(phone) {
+  // width: calc($hero-vid-w-desk * 0.4); // 224px
+  // height: calc($hero-vid-h-desk * 0.4); // 126px
+  // width: 224px;
+  // height: 126px;
+  // }
 }
 
 .hero-src {

@@ -50,7 +50,7 @@ const Projects = (props) => {
   };
 
   return (
-    <section id="projects">
+    <section id="projects" name="projects">
       <Container>
         <div className="p-wrap">
           <Title title="Projects" />
@@ -95,9 +95,9 @@ const Projects = (props) => {
                         <iframe
                           src={whichVideo}
                           className="video-modal"
-                          webkitallowfullscreen
-                          mozallowfullscreen
-                          allowfullscreen
+                          webkitAllowFullScreen
+                          mozAllowFullScreen
+                          allowFullScreen
                         />
                       </Modal>
                       <a

@@ -100,14 +100,16 @@ const Projects = (props) => {
                           allowFullScreen
                         />
                       </Modal>
-                      <a
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="cta-btn cta-btn-no-background text-color-main"
-                        href={url}
-                      >
-                        See Live
-                      </a>
+                      {url && (
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="cta-btn cta-btn-no-background text-color-main"
+                          href={url}
+                        >
+                          See Live
+                        </a>
+                      )}
                       <p className="mb-4">{info2}</p>
                       {/* <p className="tag">{ tags }</p> */}
                       {repo && (

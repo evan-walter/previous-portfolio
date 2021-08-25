@@ -60,6 +60,6 @@ a:active {
   // Responsive text secondary style
   @include respond(phone) {
     background-image: none;
-    -webkit-text-fill-color: $secondary-color;
+    -webkit-text-fill-color: $primary-color;
   }
 }

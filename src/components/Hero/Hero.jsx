@@ -25,7 +25,7 @@ const Header = () => {
     <section id="hero" name="hero">
       <Container>
         {/* All but cta */}
-        <Row xs={1} sm={1} md={2} lg={2} xl={2} xxl={2}>
+        <Row xs={1} sm={1} md={1} lg={2} xl={2} xxl={2}>
           {/* Name and Subtitles */}
           <Col>
             <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
@@ -50,33 +50,24 @@ const Header = () => {
             </div>
           </Col>
           {/* Video */}
-          <div>
-            <Col className="hero-vid-col">
-              <Fade
-                className="hero-vid-fade"
-                right={isDesktop}
-                bottom={isMobile}
-                duration={1000}
-                delay={3000}
-                distance="30px"
-              >
-                {/* <Ratio aspectRatio="16x9"> */}
-                <iframe
-                  // width="560"
-                  // height="315"
-                  // width="540"
-                  // height="285"
-                  title="Welcome Video"
-                  className="hero-vid"
-                  frameBorder="0"
-                  allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                  src={video}
-                ></iframe>
-                {/* </Ratio> */}
-              </Fade>
-            </Col>
-          </div>
+          <Col className="hero-vid-col">
+            <Fade right={isDesktop} bottom={isMobile} duration={1000} delay={3000} distance="30px">
+              {/* <Ratio aspectRatio="16x9"> */}
+              <iframe
+                width="590"
+                height="345"
+                // width="560"
+                // height="315"
+                className="hero-vid"
+                title="Welcome Video"
+                frameBorder="0"
+                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                src={video}
+              ></iframe>
+              {/* </Ratio> */}
+            </Fade>
+          </Col>
         </Row>
         {/* cta */}
         <Row>

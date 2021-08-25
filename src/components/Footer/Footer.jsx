@@ -11,7 +11,7 @@ const Footer = () => {
     <footer className="footer navbar-static-bottom">
       <Container>
         <span className="back-to-top">
-          <Link to="hero" smooth duration={1000}>
+          <Link to="navbar" smooth duration={1000}>
             <div className="arrow-ctl">
               <i id="arrow" className="fa fa-angle-up fa-2x" aria-hidden="true" />
             </div>

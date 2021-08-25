@@ -3,7 +3,7 @@
   position: relative;
   color: $dark-blue-text;
   font-weight: 400;
-  height: 67rem;
+  height: 65rem;
   display: flex;
   align-items: center;
   border-bottom: 0px;
@@ -11,7 +11,7 @@
   left: 0;
   bottom: 0;
   right: 0;
-  padding: 60px 5rem 4rem 5rem;
+  padding: 60px inherit 4rem inherit;
   margin: 0;
 
   // If you want to set a background image on the hero section, uncomment these with yout custom image
@@ -20,8 +20,18 @@
   background-position: right;
   background-size: 100%;*/
 
+  @include respond(tab-land) {
+    height: 75rem;
+  }
+  @include respond(tab-port) {
+    height: 75rem;
+  }
   @include respond(phone) {
-    padding: 75px $default-font-size 0 $default-font-size;
+    height: 60rem;
+    padding: 30px $default-font-size 0 $default-font-size;
+  }
+  @include respond(phone-xs) {
+    height: 45rem;
   }
 }
 
@@ -31,8 +41,9 @@
   text-align: left;
   margin-bottom: 2.5rem;
 
-  @include respond(tab-land) {
+  @media only screen and (max-width: 992px) {
     font-size: 3.5rem;
+    text-align: center;
   }
   @include respond(tab-port) {
     font-size: 3.5rem;
@@ -59,22 +70,25 @@
 
   @include respond(tab-land) {
     font-size: 2.9rem;
+    margin-bottom: 1.1rem;
   }
-  @include respond(tab-port) {
+  @media only screen and (max-width: 992px) {
     font-size: 2.4rem;
     text-align: center;
+    margin-bottom: 1rem;
   }
   @include respond(phone) {
-    font-size: 2.1rem;
-    line-height: 1.5;
+    font-size: 1.9rem;
+    margin-bottom: 0.8rem;
   }
   @include respond(phone-xs) {
     font-size: 1.8rem;
+    margin-bottom: 0.6rem;
   }
 }
 
 .hero-sub-last {
-  padding-top: 3%;
+  padding: 3% 0;
 }
 
 .hero-cta {
@@ -83,8 +97,21 @@
   justify-content: center;
   margin-top: 5rem;
 
-  @include respond(tab-port) {
-    justify-content: center;
+  @include respond(tab-land) {
+    font-size: 2.9rem;
+    margin-top: 4rem;
+  }
+  // @include respond(tab-port) {
+  //   justify-content: center;
+  // }
+  @media only screen and (max-width: 992px) {
+    margin-top: 4rem;
+  }
+  @include respond(phone) {
+    margin-top: 3rem;
+  }
+  @include respond(phone-xs) {
+    margin-top: 2rem;
   }
 
   & a {
@@ -96,57 +123,59 @@
   }
 }
 
+// .hero-vid-col is for development
 .hero-vid-col {
-  background: pink;
+  // background: pink;
 }
 
-.hero-vid-fade {
-  background: purple;
-}
-
-.hero-vid-wrap {
-  // width: 560px;
-  // height: 315px;
-
-  // margin: 0;
-}
+// width: 540;
+// height: 285;
 
 .hero-vid {
-  // height: auto;
-  // max-width: 100%;
-  // object-fit: scale-down;
-  // width: $hero-vid-w-desk;
-  // max-width: 560px;
-  // height: $hero-vid-h-desk;
-  // max-height: 315px;
-
-  // @media only screen and (max-width: 950px) {
-  // width: calc($hero-vid-w-desk * 0.8); // 448px
-  // height: calc($hero-vid-h-desk * 0.8); // 252px
-  // width: 448px;
-  // height: 252px;
-  // }
-
-  // @include respond(tab-land) {
-  // width: calc($hero-vid-w-desk * 0.8); // 448px
-  // height: calc($hero-vid-h-desk * 0.8); // 252px
-  // width: 448px;
-  // height: 252px;
-  // }
-
-  // @include respond(tab-port) {
-  // width: calc($hero-vid-w-desk * 0.6); // 336px
-  // height: calc($hero-vid-h-desk * 0.6); // 189px
-  // width: 336px;
-  // height: 189px;
-  // }
-
-  // @include respond(phone) {
-  // width: calc($hero-vid-w-desk * 0.4); // 224px
-  // height: calc($hero-vid-h-desk * 0.4); // 126px
-  // width: 224px;
-  // height: 126px;
-  // }
+  @media only screen and (max-width: 1400px) {
+    width: 560px;
+    height: 315px;
+  }
+  @media only screen and (max-width: 1310px) {
+    width: 520px;
+    height: 292px;
+  }
+  @media only screen and (max-width: 1235px) {
+    width: 500px;
+    height: 281px;
+  }
+  @media only screen and (max-width: 1165px) {
+    width: 470px;
+    height: 264px;
+  }
+  @media only screen and (max-width: 1100px) {
+    width: 470px;
+    height: 247px;
+  }
+  @media only screen and (max-width: 575px) {
+    width: 400px;
+    height: 225px;
+  }
+  @media only screen and (max-width: 500px) {
+    width: 350px;
+    height: 197px;
+  }
+  @media only screen and (max-width: 450px) {
+    width: 300px;
+    height: 167px;
+  }
+  @media only screen and (max-width: 375px) {
+    width: 250px;
+    height: 141px;
+  }
+  @media only screen and (max-width: 375px) {
+    width: 225px;
+    height: 127px;
+  }
+  @media only screen and (max-width: 340px) {
+    width: 200px;
+    height: 113px;
+  }
 }
 
 .hero-src {

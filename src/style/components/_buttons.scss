@@ -35,8 +35,8 @@
   // Responsive Button hero style
   @include respond(phone) {
     background-image: none;
-    border: 2px solid $secondary-color;
-    -webkit-text-fill-color: $secondary-color;
+    border: 2px solid $primary-color;
+    -webkit-text-fill-color: $primary-color;
   }
 
   &::after {

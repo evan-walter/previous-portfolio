@@ -28,7 +28,7 @@ export const heroData = {
 
 // ABOUT DATA
 export const aboutData = {
-  img: 'profile.png',
+  img: 'ewalter-11.jpg',
   paragraphOne: `I specialize in Shopify, front end, and apps.  Whether store set-up, migration, or custom features, I aim to join my clients to serve their vision.`,
   paragraphTwo: `Prior to development, I obtained a Bachelor's of Science in Electrical Engineering and began a career in the field.  As I explored the software side of the field, I applied communication and problem solving skills I learned along the way.  I found opportunities to serve clients with fast websites and a seamless user experience.`,
   paragraphThree: ``,
@@ -38,20 +38,24 @@ export const aboutData = {
 // PROJECTS DATA
 export const projectsData = [
   {
-    id: 1,
-    img: 'w3-1000.png',
+    number: 1,
+    id: 'w3',
     title: 'W3 Sales',
+    img: 'w3-1000.png',
+    videoImg: '',
     info: `An Shopify website for a food services factory and distributor group with a large inventory of products`,
+    info2: '',
     tags: ['Shopify', 'Customization', 'HTML/CSS/JavaScript', 'Python'],
     url: '',
     video: 'https://www.loom.com/embed/3b0aa0cd448b4e41964e8e2cb5cffdf1',
     repo: '',
   },
   {
-    id: 2,
+    number: 2,
+    id: 'drummond',
+    title: `Drummond's Clothing`,
     img: 'drummond-home-1000.png',
     videoImg: '',
-    title: `Drummond's Clothing`,
     info: 'A dynamic clothing store with a mega menu and premium Shopify features',
     info2: '', // 'Password: trends',
     tags: ['Store Setup', 'Premium Shopify Theme', 'Mega-Menu', 'Advanced Filter'],
@@ -60,10 +64,11 @@ export const projectsData = [
     repo: '',
   },
   {
-    id: 3,
+    number: 3,
+    id: 'iuniverse',
+    title: 'iUniverse',
     img: 'iuniverse-home-1000.png',
     videoImg: '',
-    title: 'iUniverse',
     info: `A showcase for new electronics, featuring a customized product page built in Shopify liquid code`,
     info2: '', // 'Password: newtech',
     tags: ['Store Setup', 'Theme Customization', 'Affiliate Functionality', 'HTML/CSS/Liquid'],
@@ -72,10 +77,11 @@ export const projectsData = [
     repo: '',
   },
   {
-    id: 4,
-    img: 'wine-pairing-1000.png',
-    // videoImg: '../images/wine-pairing.mp4',
+    number: 4,
+    id: 'wine-pairing',
     title: 'Wine Pairing App',
+    img: 'wine-pairing-1000.png',
+    videoImg: '', // '../images/wine-pairing.mp4',
     info: `A custom API app to pair wines with popular dishes`,
     tags: ['API', 'Customization', 'HTML/CSS/JavaScript'],
     url: 'https://evan-walter.github.io/wine-pairing',
@@ -86,7 +92,7 @@ export const projectsData = [
 
 // TESTIMONIALS DATA
 export const testimonialsData = {
-  id: 1,
+  number: 1,
   body: `Evan is a hard worker and is extremely savvy. Even if he doesn't know how to do something, he is going to get creative and figure it out, which is one of the best qualities in a developer. He takes care with his work and is extremely communicative. I would highly recommend Evan for your projects.`,
   author: `Megan Spaulding`,
   company1: `Brand Science Co`,

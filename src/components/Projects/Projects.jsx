@@ -10,7 +10,7 @@ import ProjectImg from '../Image/ProjectImg';
 
 const Projects = (props) => {
   const { projects } = useContext(PortfolioContext);
-  const { title, info, info2, /*  tags, */ url, video, repo, img, videoImg, id } = projects;
+  const { number, id, title, info, info2, /*  tags, */ url, video, repo, img, videoImg } = projects;
 
   // Screen
   const [isDesktop, setIsDesktop] = useState(false);
@@ -55,10 +55,10 @@ const Projects = (props) => {
         <div className="p-wrap">
           <Title title="Projects" />
           {projects.map((project) => {
-            const { title, info, info2, /*  tags, */ url, video, repo, img, videoImg, id } =
+            const { number, id, title, info, info2, /*  tags, */ url, video, repo, img, videoImg } =
               project;
             return (
-              <Row key={id} className="p-item">
+              <Row id={id} key={number} className="p-item">
                 <Col lg={4} sm={12}>
                   <Fade
                     left={isDesktop}
@@ -67,6 +67,7 @@ const Projects = (props) => {
                     delay={250}
                     distance="30px"
                   >
+                    {/* Project Text and Buttons */}
                     <div className="p-text">
                       <h3 className="p-text__title">{title}</h3>
                       <div>
@@ -83,28 +84,12 @@ const Projects = (props) => {
                       >
                         Demo Video
                       </a>
-                      <Modal
-                        {...props}
-                        size="xl"
-                        aria-labelledby="contained-modal-title-vcenter"
-                        centered
-                        show={showModal}
-                        onHide={handleHideModal}
-                      >
-                        <Modal.Header closeButton className="video-modal-header"></Modal.Header>
-                        <iframe
-                          src={whichVideo}
-                          className="video-modal"
-                          webkitAllowFullScreen
-                          mozAllowFullScreen
-                          allowFullScreen
-                        />
-                      </Modal>
+
                       {url && (
                         <a
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="cta-btn cta-btn-no-background text-color-main"
+                          className="cta-btn cta-btn-no-background color-main"
                           href={url}
                         >
                           See Live
@@ -115,7 +100,7 @@ const Projects = (props) => {
                       {repo && (
                         <a
                           rel="noopener noreferrer"
-                          className="cta-btn cta-btn-no-background text-color-main"
+                          className="cta-btn cta-btn-no-background color-main"
                           href={repo}
                           target="_blank"
                         >
@@ -178,6 +163,24 @@ const Projects = (props) => {
             </Fade>
           </Col>
         </div>
+        {/* Video Modal */}
+        <Modal
+          {...props}
+          size="xl"
+          aria-labelledby="contained-modal-title-vcenter"
+          centered
+          show={showModal}
+          onHide={handleHideModal}
+        >
+          <Modal.Header closeButton className="video-modal-header"></Modal.Header>
+          <iframe
+            src={whichVideo}
+            className="video-modal"
+            webkitAllowFullScreen
+            mozAllowFullScreen
+            allowFullScreen
+          />
+        </Modal>
       </Container>
     </section>
   );

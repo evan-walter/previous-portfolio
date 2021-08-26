@@ -13,7 +13,7 @@ const Failed = () => {
           issue persists, please feel free to reach out to me on{' '}
           <div className="submitted-msg failed-link-wrap">
             <a
-              className="failed-link text-color-main"
+              className="failed-link color-main"
               href="https://www.linkedin.com/in/evan-walter-101bb739/"
               target="_blank"
             >

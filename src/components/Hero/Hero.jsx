@@ -30,7 +30,7 @@ const Header = () => {
           <Col>
             <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
               <h1 className="hero-title">
-                <span className="text-color-main">{name}</span> {title}
+                <span className="color-main">{name}</span> {title}
                 <br />
               </h1>
             </Fade>

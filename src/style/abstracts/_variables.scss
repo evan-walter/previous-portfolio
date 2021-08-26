@@ -8,17 +8,15 @@
 //// Adapted from webgradient.com - "077 Cold Evening" - background-image: linear-gradient(to top, #0c3483 0%, #a2b6df 100%, #6b8cce 100%, #a2b6df 100%);
 $primary-color: #0c3483;
 $secondary-color: #6b8cce;
-
 $white-color: #fff;
-
 $dark-grey: #333333;
-
 $dark-blue-text: #272341; // For Headings
+$gradient: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
 
 // FONT SIZE
 // original $default-font-size: 1.6rem;
 $default-font-size: 1.9rem;
-$small-font-size: 1.7rem;
+$small-font-size: 1.7rem; // 17px;
 $mid-font-size: 2.2rem;
 $big-font-size: 4rem;
 

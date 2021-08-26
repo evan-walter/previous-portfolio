@@ -50,7 +50,7 @@ const ContactForm = () => {
       <div className="form-container">
         <form onSubmit={onSubmit} className="contact-form">
           <div>
-            <label htmlFor="name" className="form-label text-color-main">
+            <label htmlFor="name" className="form-label color-main">
               Name
             </label>
             <input
@@ -65,7 +65,7 @@ const ContactForm = () => {
             />
           </div>
           <div>
-            <label htmlFor="email" className="form-label text-color-main">
+            <label htmlFor="email" className="form-label color-main">
               Email
             </label>
             <input
@@ -81,7 +81,7 @@ const ContactForm = () => {
             />
           </div>
           <div>
-            <label htmlFor="message" className="form-label text-color-main">
+            <label htmlFor="message" className="form-label color-main">
               Message
             </label>
             <textarea

@@ -1,10 +1,29 @@
 #contact {
-  background-color: $white-color;
+  // background-color: $white-color;
+  position: relative;
+  display: block;
   padding: 15rem 0;
+  background-repeat: no-repeat;
 
   @include respond(phone) {
     padding: 5rem 0;
   }
+}
+
+#contact::after {
+  height: 100vh;
+  content: '';
+  background: url('../images/ewalter-4.jpg');
+  background-position: right;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  opacity: 0.3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
 }
 
 .form-container {

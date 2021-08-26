@@ -1,6 +1,7 @@
 #hero {
-  background-color: $white-color;
+  // background-color: $white-color;
   position: relative;
+  display: block;
   color: $dark-blue-text;
   font-weight: 400;
   height: 65rem;
@@ -13,12 +14,7 @@
   right: 0;
   padding: 60px inherit 4rem inherit;
   margin: 0;
-
-  // If you want to set a background image on the hero section, uncomment these with yout custom image
-
-  /*background: url('../images/hero.jpg');
-  background-position: right;
-  background-size: 100%;*/
+  background-repeat: no-repeat;
 
   @include respond(tab-land) {
     height: 75rem;
@@ -33,6 +29,21 @@
   @include respond(phone-xs) {
     height: 45rem;
   }
+}
+#hero::after {
+  height: 100vh;
+  content: '';
+  background: url('../images/ewalter-3.jpg');
+  background-position: right;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
 }
 
 .hero-title {
@@ -132,6 +143,9 @@
 // height: 285;
 
 .hero-vid {
+  width: 560px;
+  height: 315px;
+
   @media only screen and (max-width: 1400px) {
     width: 560px;
     height: 315px;

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Navbar from './Navbar/Navbar';
+import NavbarPortfolio from './Navbar/NavbarPortfolio';
 import Hero from './Hero/Hero';
 import About from './About/About';
 import Projects from './Projects/Projects';
@@ -19,7 +19,7 @@ import {
   testimonialsData,
   contactData,
   footerData,
-} from '../mock/data';
+} from '../data/data';
 
 function App() {
   const [navbar, setNavbar] = useState({});
@@ -42,7 +42,7 @@ function App() {
 
   return (
     <PortfolioProvider value={{ navbar, hero, about, projects, testimonials, contact, footer }}>
-      <Navbar />
+      <NavbarPortfolio />
       <Hero />
       <About />
       <Projects />

@@ -1,67 +1,95 @@
 #navbar {
   height: 75px;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   font-size: $small-font-size;
   font-weight: bold;
+  position: absolute;
+  top: 0;
+  left: 0;
   padding: 15px 40px; // 1.5rem 4rem 0 4rem
   margin: 0;
   z-index: 7;
-
+  @include respond(tab-land) {
+    justify-content: flex-end;
+  }
+  @include respond(tab-port) {
+    justify-content: flex-end;
+  }
   @include respond(phone) {
-    display: none;
+    justify-content: flex-end;
   }
 }
-
 .logo-outer-wrap {
   height: 50px;
   align-self: flex-start;
   text-align: left;
   flex-grow: 5;
-  // padding-top: 5px; // 0.5rem
+  padding-top: 7px; // 0.5rem
   margin: 0;
 
   @media only screen and (max-width: 350px) {
     display: none;
   }
 }
-
 .logo-inner-wrap {
   width: 50px;
   margin: 0;
-
+  transition: all 0.2s ease-in;
   &:hover {
     cursor: pointer;
   }
 }
-
-.nav-item {
+#nav-dropdown-ctl {
+  color: $primary-color;
+  // from .color-main
+  background-image: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 0;
+  margin: 0;
+  transition: all 0.2s ease-in;
+  &:hover {
+    cursor: pointer;
+    transform: translateY(-2px);
+  }
+}
+#nav-dropdown-item-ctl {
+  color: $primary-color;
+  font-size: $small-font-size;
+  font-weight: bold;
+  padding: 15px;
+  // from .color-main
+  background-image: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+  transition: all 0.2s ease-in;
+  &:hover {
+    cursor: pointer;
+    transform: translateX(2px);
+  }
+}
+#nav-toggler-ctl {
+  display: flex;
+  align-self: flex-end;
+}
+.nav-sec-link {
   display: flex;
   align-items: center;
   text-decoration: none;
-  padding: 0 40px; // 0 4rem
+  align-self: flex-end;
+  padding: 8px 14px; // 1.5rem
   // margin-top: 15px; // 1.5rem
-
-  &__logo {
-    text-align: center;
+  transition: all 0.2s ease-in;
+  flex-grow: 1;
+  &:hover {
+    cursor: pointer;
+    transform: translateY(-2px);
   }
-
-  &__link {
-    align-self: flex-end;
-    // padding: 15px; // 1.5rem
-    padding: 8px 14px; // 1.5rem
-
-    transition: all 0.2s ease-in;
-    flex-grow: 1;
-
-    &:hover {
-      cursor: pointer;
-      transform: translateY(-2px);
-    }
-
-    @media only screen and (max-width: 350px) {
-      align-self: center;
-    }
+  @media only screen and (max-width: 350px) {
+    align-self: center;
   }
 }

@@ -175,6 +175,7 @@ const Projects = (props) => {
           <Modal.Header closeButton className="video-modal-header"></Modal.Header>
           <iframe
             src={whichVideo}
+            title={title}
             className="video-modal"
             webkitAllowFullScreen
             mozAllowFullScreen

@@ -15,7 +15,6 @@
   padding: 60px inherit 4rem inherit;
   margin: 0;
   background-repeat: no-repeat;
-
   @include respond(tab-land) {
     height: 75rem;
   }
@@ -45,13 +44,11 @@
   position: absolute;
   z-index: -1;
 }
-
 .hero-title {
   font-size: 5.6rem;
   font-weight: 700;
   text-align: left;
   margin-bottom: 2.5rem;
-
   @media only screen and (max-width: 992px) {
     font-size: 3.5rem;
     text-align: center;
@@ -68,17 +65,14 @@
     font-size: 2.8rem;
   }
 }
-
 .hero-subs-container {
   margin: 0;
 }
-
 .hero-sub {
   font-size: 3.9rem;
   font-weight: 700;
   text-align: left;
   margin-bottom: 1.2rem;
-
   @include respond(tab-land) {
     font-size: 2.9rem;
     margin-bottom: 1.1rem;
@@ -97,17 +91,14 @@
     margin-bottom: 0.6rem;
   }
 }
-
 .hero-sub-last {
   padding: 3% 0;
 }
-
 .hero-cta {
   display: flex;
   text-align: center;
   justify-content: center;
   margin-top: 5rem;
-
   @include respond(tab-land) {
     font-size: 2.9rem;
     margin-top: 4rem;
@@ -124,24 +115,19 @@
   @include respond(phone-xs) {
     margin-top: 2rem;
   }
-
   & a {
     font-size: 2.4rem;
-
     @include respond(phone) {
       font-size: 2rem;
     }
   }
 }
-
 // .hero-vid-col is for development
 .hero-vid-col {
   // background: pink;
 }
-
 // width: 540;
 // height: 285;
-
 .hero-vid {
   width: 560px;
   height: 315px;
@@ -191,7 +177,6 @@
     height: 113px;
   }
 }
-
 .hero-src {
   font-size: $default-font-size;
   margin-top: 20px;

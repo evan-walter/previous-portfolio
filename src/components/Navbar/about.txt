@@ -1,0 +1,17 @@
+line-height: 1.5;
+text-align: center;
+background-color: transparent;
+cursor: pointer;
+background-image: linear-gradient(135deg, rgb(12, 52, 131) 0%, rgb(107, 140, 206) 100%);
+background-clip: text;
+-webkit-text-fill-color: transparent;
+display: flex;
+align-items: center;
+align-self: flex-end;
+padding: 8px 14px;
+transition: all 0.2s ease-in 0s;
+flex-grow: 1;
+text-decoration: none;
+padding-right: 0.5rem;
+padding-left: 0.5rem;
+color: rgba(0, 0, 0, 0.5);

@@ -12,6 +12,15 @@
   padding: 15px 40px; // 1.5rem 4rem 0 4rem
   margin: 0;
   z-index: 7;
+  @include respond(tab-land) {
+    height: fit-content;
+  }
+  @include respond(tab-port) {
+    height: fit-content;
+  }
+  @include respond(phone) {
+    height: fit-content;
+  }
 }
 #responsive-navbar-nav {
   justify-content: flex-end;
@@ -19,33 +28,10 @@
 .navbar-wrap {
   justify-content: flex-end;
 }
-.nav-ctl {
-  
-}
-// .logo-outer-wrap {
-//   height: 50px;
-//   align-self: flex-start;
-//   text-align: left;
-//   flex-grow: 5;
-//   padding-top: 7px; // 0.5rem
-//   margin: 0;
-
-//   @media only screen and (max-width: 350px) {
-//     display: none;
-//   }
-// }
-// .logo-inner-wrap {
-//   width: 50px;
-//   margin: 0;
-//   transition: all 0.2s ease-in;
-//   &:hover {
-//     cursor: pointer;
-//   }
-// }
 #nav-dropdown-ctl {
   display: flex;
   align-items: center;
-  color: $dark-blue-text !important;
+  color: $primary-color !important;
   text-decoration: none;
   align-self: flex-end;
   padding: 8px 14px; // 1.5rem
@@ -57,7 +43,7 @@
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
   &::after {
-    color: $dark-blue-text !important;
+    color: $primary-color !important;
     background-image: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%) !important;
     -webkit-background-clip: text !important;
     -webkit-text-fill-color: transparent !important;
@@ -65,19 +51,21 @@
   &:hover {
     cursor: pointer;
     transform: translateY(-2px);
-    color: $dark-blue-text !important;
+    color: $primary-color !important;
     background-image: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%) !important;
     -webkit-background-clip: text !important;
     -webkit-text-fill-color: transparent;
   }
   @include respond(tab-land) {
-    align-self: center !important;
+    justify-content: center;
   }
   @include respond(tab-port) {
-    align-self: center !important;
+    justify-content: center;
   }
   @include respond(phone) {
-    align-self: center !important;
+    justify-content: center;
+    background-image: none;
+    -webkit-text-fill-color: $primary-color !important;
   }
 }
 #nav-dropdown-item-ctl {
@@ -95,25 +83,28 @@
     transform: translateX(2px);
   }
   @include respond(tab-land) {
-    align-self: center;
+    text-align: center;
   }
   @include respond(tab-port) {
-    align-self: center;
+    text-align: center;
   }
   @include respond(phone) {
-    align-self: center;
+    text-align: center;
   }
 }
 #nav-toggler-ctl {
   display: flex;
   align-self: flex-end;
   @include respond(tab-land) {
+    // background: $white-color !important;
     align-self: center;
   }
   @include respond(tab-port) {
+    // background: $white-color !important;
     align-self: center;
   }
   @include respond(phone) {
+    // background: $white-color !important;
     align-self: center;
   }
 }
@@ -131,15 +122,19 @@
     transform: translateY(-2px);
   }
   @include respond(tab-land) {
+    // background: $white-color !important;
     align-self: center;
   }
   @include respond(tab-port) {
+    // background: $white-color !important;
     align-self: center;
   }
   @include respond(phone) {
+    // background: $white-color !important;
     align-self: center;
   }
   @media only screen and (max-width: 350px) {
+    // background: $white-color !important;
     align-self: center;
   }
 }

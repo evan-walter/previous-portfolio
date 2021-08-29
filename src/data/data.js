@@ -14,7 +14,7 @@ export const headData = {
 
 // HERO DATA
 export const heroData = {
-  img: 'profile.png',
+  backgroundImg: 'ewalter-3.jpg',
   title: '',
   name: 'Evan Walter',
   subtitle1: 'Shopify',
@@ -101,9 +101,9 @@ export const testimonialsData = {
 
 // CONTACT DATA
 export const contactData = {
-  cta: 'Would you like to get in touch?', // Get in touch
+  backgroundImg: 'ewalter-4.jpg',
+  cta: '', // Get in touch
   btn: 'Connect',
-  email: '',
 };
 
 // FOOTER DATA

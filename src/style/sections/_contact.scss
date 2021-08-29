@@ -8,21 +8,21 @@
     padding: 5rem 0;
   }
 }
-#contact::after {
-  height: 100vh;
-  content: '';
-  background: url('../images/ewalter-4.jpg');
-  background-position: right;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  opacity: 0.3;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1;
-}
+// #contact::after {
+//   height: 100vh;
+//   content: '';
+//   background: url('../images/ewalter-4.jpg');
+//   background-position: right;
+//   background-size: 100%;
+//   background-repeat: no-repeat;
+//   opacity: 0.3;
+//   top: 0;
+//   left: 0;
+//   bottom: 0;
+//   right: 0;
+//   position: absolute;
+//   z-index: -1;
+// }
 .form-container {
   max-width: 525px;
   margin: auto;

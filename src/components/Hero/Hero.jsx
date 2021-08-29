@@ -2,11 +2,23 @@ import React, { useContext, useState, useEffect } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
 import { Link } from 'react-scroll';
+import BackgroundImg from '../Image/BackgroundImg';
 import PortfolioContext from '../../context/context';
 
 const Header = () => {
   const { hero } = useContext(PortfolioContext);
-  const { title, name, subtitle1, subtitle2, subtitle3, subtitle4, cta, video, repo } = hero;
+  const {
+    backgroundImg,
+    title,
+    name,
+    subtitle1,
+    subtitle2,
+    subtitle3,
+    subtitle4,
+    cta,
+    video,
+    repo,
+  } = hero;
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -84,7 +96,7 @@ const Header = () => {
         <Row>
           <Col>
             <Fade bottom duration={1000} delay={4000} distance="30px">
-              <Link to="testimonials" smooth duration={1000}>
+              <Link to="about" smooth duration={1000}>
                 <div className="down arrow-ctl p-arrow-ctl">
                   <i id="arrow" className="fa fa-angle-down fa-2x" aria-hidden="true" />
                 </div>

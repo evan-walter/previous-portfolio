@@ -29,21 +29,21 @@
     height: 45rem;
   }
 }
-#hero::after {
-  height: 100vh;
-  content: '';
-  background: url('../images/ewalter-3.jpg');
-  background-position: right;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  opacity: 0.5;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1;
-}
+// #hero::after {
+//   height: 100vh;
+//   content: '';
+//   background: url('../images/ewalter-3.jpg');
+//   background-position: right;
+//   background-size: 100%;
+//   background-repeat: no-repeat;
+//   opacity: 0.5;
+//   top: 0;
+//   left: 0;
+//   bottom: 0;
+//   right: 0;
+//   position: absolute;
+//   z-index: -1;
+// }
 .hero-title {
   font-size: 5.6rem;
   font-weight: 700;

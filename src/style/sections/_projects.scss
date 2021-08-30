@@ -68,6 +68,15 @@
 }
 .video-modal {
   height: 80vh;
+  @media only screen and (max-width: 1000px) {
+    height: 60vh;
+  }
+  @include respond(phone) {
+    height: 40vh;
+  }
+  @include respond(phone-xs) {
+    height: 40vh;
+  }
 }
 .video-modal-header {
   height: 5vh;

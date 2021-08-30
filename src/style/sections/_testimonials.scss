@@ -1,5 +1,7 @@
 #testimonials {
-  background-color: $primary-color;
+  position: relative;
+  // background-color: $primary-color;
+  // background: transparent !important;
   background-image: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
   color: $white-color;
   height: 100%;
@@ -9,12 +11,11 @@
   padding-top: 15%;
   padding-bottom: 10%;
   @include respond(tab-land) {
-    height: 100%;
     -webkit-clip-path: none;
     clip-path: none;
   }
 }
-.t-full-wrap {
+t-full-wrap {
 }
 .t-image {
   display: flex;

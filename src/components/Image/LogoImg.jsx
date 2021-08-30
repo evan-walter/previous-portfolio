@@ -13,7 +13,7 @@ const LogoImg = ({ filename, alt }) => (
               relativePath
               name
               childImageSharp {
-                fixed(width: 350) {
+                fixed(width: 50) {
                   ...GatsbyImageSharpFixed
                 }
               }

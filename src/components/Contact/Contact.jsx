@@ -1,14 +1,9 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import { Container } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
-import BackgroundImg from '../Image/BackgroundImg';
-import PortfolioContext from '../../context/context';
 import ContactForm from './ContactForm';
 
 const Contact = () => {
-  const { contact } = useContext(PortfolioContext);
-  const { backgroundImg, cta, btn } = contact;
-
   return (
     <section id="contact" name="contact">
       <Container>

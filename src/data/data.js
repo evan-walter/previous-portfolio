@@ -14,7 +14,7 @@ export const headData = {
 
 // HERO DATA
 export const heroData = {
-  backgroundImg: 'ewalter-3.jpg',
+  // backgroundImg: 'ewalter-3.jpg',
   title: '',
   name: 'Evan Walter',
   subtitle1: 'Shopify',
@@ -22,13 +22,12 @@ export const heroData = {
   subtitle3: 'Apps',
   subtitle4: 'I connect with people and build software.',
   cta: 'Know more',
-  video: 'https://www.loom.com/embed/e8325acc64f74e33b1c1cd083ed62280',
-  repo: 'https://www.github.com/Evan-Walter/portfolio-start',
+  video: 'https://www.loom.com/embed/e8325acc64f74e33b1c1cd083ed62280?autoplay=0',
 };
 
 // ABOUT DATA
 export const aboutData = {
-  img: 'ewalter-11.jpg',
+  img: 'ewalter-11-350.jpg',
   paragraphOne: `I specialize in Shopify, front end, and apps.  Whether store set-up, migration, or custom features, I aim to join my clients to serve their vision.`,
   paragraphTwo: `Prior to development, I obtained a Bachelor's of Science in Electrical Engineering and began a career in the field.  As I explored the software side of the field, I applied communication and problem solving skills I learned along the way.  I found opportunities to serve clients with fast websites and a seamless user experience.`,
   paragraphThree: ``,
@@ -97,13 +96,6 @@ export const testimonialsData = {
   author: `Megan Spaulding`,
   company1: `Brand Science Co`,
   company2: `Shasta Venture Hub`,
-};
-
-// CONTACT DATA
-export const contactData = {
-  backgroundImg: 'ewalter-4.jpg',
-  cta: '', // Get in touch
-  btn: 'Connect',
 };
 
 // FOOTER DATA

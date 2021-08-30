@@ -2,23 +2,11 @@ import React, { useContext, useState, useEffect } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
 import { Link } from 'react-scroll';
-import BackgroundImg from '../Image/BackgroundImg';
 import PortfolioContext from '../../context/context';
 
 const Header = () => {
   const { hero } = useContext(PortfolioContext);
-  const {
-    backgroundImg,
-    title,
-    name,
-    subtitle1,
-    subtitle2,
-    subtitle3,
-    subtitle4,
-    cta,
-    video,
-    repo,
-  } = hero;
+  const { title, name, subtitle1, subtitle2, subtitle3, subtitle4, cta, video } = hero;
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -76,7 +64,7 @@ const Header = () => {
                 allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
                 src={video}
-              ></iframe>
+              />
               {/* </Ratio> */}
             </Fade>
           </Col>

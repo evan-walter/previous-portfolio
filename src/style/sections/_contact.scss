@@ -1,5 +1,4 @@
 #contact {
-  // background-color: $white-color;
   position: relative;
   display: block;
   padding: 15rem 0;
@@ -8,21 +7,22 @@
     padding: 5rem 0;
   }
 }
-// #contact::after {
-//   height: 100vh;
-//   content: '';
-//   background: url('../images/ewalter-4.jpg');
-//   background-position: right;
-//   background-size: 100%;
-//   background-repeat: no-repeat;
-//   opacity: 0.3;
-//   top: 0;
-//   left: 0;
-//   bottom: 0;
-//   right: 0;
-//   position: absolute;
-//   z-index: -1;
-// }
+#contact::after {
+  height: 100%;
+  content: '';
+  background: url('../images/ewalter-4-2600.jpg');
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  opacity: 0.3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
 .form-container {
   max-width: 525px;
   margin: auto;
@@ -37,14 +37,14 @@
   font-weight: bold;
 }
 .form-control {
-  background: #f0f3fa;
+  // background: #f0f3fa;
   color: $dark-blue-text !important;
   font-size: $default-font-size;
   padding: 1rem;
   margin-bottom: 10px;
   resize: none;
   &:focus {
-    background: #f0f3fa;
+    // background: #f0f3fa;
     outline: none;
   }
 }

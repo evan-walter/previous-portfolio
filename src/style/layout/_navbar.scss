@@ -5,10 +5,7 @@
   flex-direction: row;
   font-size: $small-font-size;
   font-weight: bold;
-  // position: absolute;
   position: relative;
-  // top: 0;
-  // left: 0;
   padding: 15px 40px; // 1.5rem 4rem 0 4rem
   margin: 0;
   z-index: 7;
@@ -28,14 +25,13 @@
 .navbar-wrap {
   justify-content: flex-end;
 }
-#nav-dropdown-ctl {
+#nav-drop-ctl {
   display: flex;
   align-items: center;
   color: $primary-color !important;
   text-decoration: none;
   align-self: flex-end;
-  padding: 8px 14px; // 1.5rem
-  // margin-top: 15px; // 1.5rem
+  padding: 8px 14px;
   transition: all 0.2s ease-in;
   flex-grow: 1;
   // from .color-main
@@ -64,11 +60,11 @@
   }
   @include respond(phone) {
     justify-content: center;
-    background-image: none;
+    background-image: none !important;
     -webkit-text-fill-color: $primary-color !important;
   }
 }
-#nav-dropdown-item-ctl {
+#nav-drop-item-ctl {
   font-size: $small-font-size;
   font-weight: bold;
   padding: 15px;
@@ -90,51 +86,30 @@
   }
   @include respond(phone) {
     text-align: center;
+    background-image: none !important;
+    -webkit-text-fill-color: $primary-color !important;
   }
 }
-#nav-toggler-ctl {
-  display: flex;
-  align-self: flex-end;
-  @include respond(tab-land) {
-    // background: $white-color !important;
-    align-self: center;
-  }
-  @include respond(tab-port) {
-    // background: $white-color !important;
-    align-self: center;
-  }
-  @include respond(phone) {
-    // background: $white-color !important;
-    align-self: center;
-  }
+.nav-drop-link-ctl {
+  width: 100% !important;
 }
 .nav-sec-link {
-  // display: flex;
-  // text-decoration: none;
-  // justify-content: flex-end;
-  // align-self: flex-end;
-  padding: 8px 14px !important; // 1.5rem
-  // margin-top: 15px; // 1.5rem
+  padding: 8px 14px !important;
   transition: all 0.2s ease-in;
-  // flex-grow: 1;
   &:hover {
     cursor: pointer;
     transform: translateY(-2px);
   }
   @include respond(tab-land) {
-    // background: $white-color !important;
     align-self: center;
   }
   @include respond(tab-port) {
-    // background: $white-color !important;
     align-self: center;
   }
   @include respond(phone) {
-    // background: $white-color !important;
     align-self: center;
   }
   @media only screen and (max-width: 350px) {
-    // background: $white-color !important;
     align-self: center;
   }
 }

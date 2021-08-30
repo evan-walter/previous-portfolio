@@ -33,7 +33,7 @@ const About = () => {
             <Fade bottom duration={1000} delay={600} distance="30px">
               <div className="about-image">
                 {' '}
-                <AboutImg alt="Profile Picture" filename={img} />
+                <AboutImg alt="about-img" filename={img} />
               </div>
             </Fade>
           </Col>

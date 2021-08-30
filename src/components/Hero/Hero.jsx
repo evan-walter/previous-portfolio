@@ -52,7 +52,6 @@ const Header = () => {
           {/* Video */}
           <Col className="hero-vid-col">
             <Fade right={isDesktop} bottom={isMobile} duration={1000} delay={3000} distance="30px">
-              {/* <Ratio aspectRatio="16x9"> */}
               <iframe
                 width="590"
                 height="345"
@@ -65,7 +64,6 @@ const Header = () => {
                 allowFullScreen
                 src={video}
               />
-              {/* </Ratio> */}
             </Fade>
           </Col>
         </Row>

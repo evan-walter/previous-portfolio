@@ -30,7 +30,7 @@
   align-items: center;
   color: $primary-color !important;
   text-decoration: none;
-  align-self: flex-end;
+  align-self: center;
   padding: 8px 14px;
   transition: all 0.2s ease-in;
   flex-grow: 1;
@@ -94,6 +94,7 @@
   width: 100% !important;
 }
 .nav-sec-link {
+  align-self: center;
   padding: 8px 14px !important;
   transition: all 0.2s ease-in;
   &:hover {

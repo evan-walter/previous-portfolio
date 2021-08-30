@@ -1,14 +1,10 @@
-import React, { useContext, useState } from 'react';
+import React, { useState } from 'react';
 import { send } from 'emailjs-com';
-import PortfolioContext from '../../context/context';
 import Loading from './Loading';
 import Success from './Success';
 import Failed from './Failed';
 
 const ContactForm = () => {
-  const { contact } = useContext(PortfolioContext);
-  const { btn } = contact;
-
   const [formData, setFormData] = useState({
     fromName: '',
     fromEmail: '',
@@ -96,7 +92,7 @@ const ContactForm = () => {
             />
           </div>
           <div className="fbtn fbtn--hero fbtn-wrap-ctl">
-            <input className="fbtn-input-ctl" type="submit" value={btn} />
+            <input className="fbtn-input-ctl" type="submit" value="Connect" />
           </div>
         </form>
       </div>

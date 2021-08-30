@@ -42,9 +42,9 @@ const About = () => {
               <div className="about-info-wrap">
                 {' '}
                 {/* About Info */}
-                <p className="about-info">{paragraphOne}</p> {/* about-info */}
-                <p className="about-info">{paragraphTwo}</p> {/* about-info */}
-                <p className="about-info">{paragraphThree}</p> {/* about-info */}
+                <p className="about-info">{paragraphOne}</p>
+                <p className="about-info">{paragraphTwo}</p>
+                <p className="about-info">{paragraphThree}</p>
                 {resume && (
                   <span className="d-flex mt-3">
                     <a

@@ -22,7 +22,7 @@ export const heroData = {
   subtitle3: 'Apps',
   subtitle4: 'I connect with people and build software.',
   cta: 'Know more',
-  video: 'https://www.loom.com/embed/e8325acc64f74e33b1c1cd083ed62280?autoplay=0',
+  video: 'https://www.loom.com/embed/827a46150562456bbc1e654e568c2abe?autoplay=0',
 };
 
 // ABOUT DATA
@@ -84,7 +84,7 @@ export const projectsData = [
     info: `A custom API app to pair wines with popular dishes`,
     tags: ['API', 'Customization', 'HTML/CSS/JavaScript'],
     url: 'https://evan-walter.github.io/wine-pairing',
-    video: 'https://www.loom.com/embed/8ca49e5e8fb64bf298be6d92c6187dcd',
+    video: 'https://www.loom.com/embed/b65b0fb0d9a94902a272216645706fb4',
     repo: 'https://github.com/Evan-Walter/wine-pairing',
   },
 ];

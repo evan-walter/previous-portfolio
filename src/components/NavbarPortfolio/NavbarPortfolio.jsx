@@ -5,8 +5,8 @@ import PortfolioContext from '../../context/context';
 import LogoImg from '../Image/LogoImg';
 
 const NavbarPortfolio = () => {
-  const { navbar } = useContext(PortfolioContext);
-  const { img } = navbar;
+  const { navbarPortfolio } = useContext(PortfolioContext);
+  const { img } = navbarPortfolio;
 
   return (
     <Navbar id="navbar" name="navbar" className="justify-content-end" collapseOnSelect expand="lg">

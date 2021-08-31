@@ -2,21 +2,15 @@
 
 I built this portfolio using React and Gatsby.
 
-To run this project, visit the following link.
+To view this project live, visit [evanwalter.dev](https://evanwalter.dev).
 
-- [evanwalter.dev](https://evanwalter.dev)
-
-For more information on this project, please see the links below.
+For more information on this project, see the links below.
 
 ## Getting Started
 
-To get started with React, visit
+To get started with React, visit [reactjs.org](https://reactjs.org/).
 
-- [React](https://reactjs.org/)
-
-To get started with Gatsby, visit
-
-- [Gatsby](https://www.gatsbyjs.com/)
+To get started with Gatsby, visit [gatsbyjs.com](https://www.gatsbyjs.com/).
 
 To get started with Web Development, including HTML, CSS, and JavaScript, visit
 

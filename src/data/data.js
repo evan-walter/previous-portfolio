@@ -1,7 +1,7 @@
 import { nanoid } from 'nanoid';
 
 // NAVBAR DATA
-export const navbarData = {
+export const navbarPortfolioData = {
   img: 'logo.png',
 };
 

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import NavbarPortfolio from './Navbar/NavbarPortfolio';
+import NavbarPortfolio from './NavbarPortfolio/NavbarPortfolio';
 import Hero from './Hero/Hero';
 import About from './About/About';
 import Projects from './Projects/Projects';
@@ -12,7 +12,7 @@ import Footer from './Footer/Footer';
 import { PortfolioProvider } from '../context/context';
 
 import {
-  navbarData,
+  navbarPortfolioData,
   heroData,
   aboutData,
   projectsData,
@@ -22,7 +22,7 @@ import {
 } from '../data/data';
 
 function App() {
-  const [navbar, setNavbar] = useState({});
+  const [navbarPortfolio, setNavbarPortfolio] = useState({});
   const [hero, setHero] = useState({});
   const [about, setAbout] = useState({});
   const [projects, setProjects] = useState([]);
@@ -31,7 +31,7 @@ function App() {
   const [footer, setFooter] = useState({});
 
   useEffect(() => {
-    setNavbar({ ...navbarData });
+    setNavbarPortfolio({ ...navbarPortfolioData });
     setHero({ ...heroData });
     setAbout({ ...aboutData });
     setProjects([...projectsData]);
@@ -42,13 +42,13 @@ function App() {
 
   return (
     <PortfolioProvider
-      value={{ navbar, hero, about, projects, testimonials, /* contact */ footer }}
+      value={{ navbarPortfolio, hero, about, projects, testimonials, /* contact */ footer }}
     >
       <NavbarPortfolio />
       <Hero />
       <About />
       <Projects />
-      {/* <TrustedBy /> inspired by jadjoubran.io*/}
+      {/* <TrustedBy /> inspired by jadjoubran.io */}
       {/* <Technologies /> inspired by northtwofive.com */}
       <Testimonials />
       <Contact />

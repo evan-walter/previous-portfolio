@@ -2,7 +2,9 @@
 
 I built this portfolio using React and Gatsby.
 
-To view this project live, visit [evanwalter.dev](https://evanwalter.dev).
+To view the live version of this project, visit [evanwalter.dev](https://evanwalter.dev).
+
+To view the "final" build source code for this project, visit [github.com/Evan-Walter/portfolio](https://github.com/Evan-Walter/portfolio).
 
 For more information on this project, see the links below.
 

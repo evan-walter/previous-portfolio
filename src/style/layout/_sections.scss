@@ -1,0 +1,12 @@
+// Section
+section {
+  padding: 10rem;
+  @media only screen and (max-width: 1400px) {
+    padding: 10rem 5rem;
+  }
+  @include respond(phone) {
+    border: none;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}

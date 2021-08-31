@@ -1,0 +1,184 @@
+#hero {
+  position: relative;
+  display: block;
+  color: $dark-blue-text;
+  font-weight: 400;
+  height: 65rem;
+  display: flex;
+  align-items: center;
+  border-bottom: 0px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 65px inherit 4rem inherit;
+  margin: 0;
+  @include respond(tab-land) {
+    height: 75rem;
+  }
+  @include respond(tab-port) {
+    height: 75rem;
+  }
+  @include respond(phone) {
+    height: 60rem;
+    padding: 50px $default-font-size 0 $default-font-size;
+  }
+  @include respond(phone-xs) {
+    height: 50rem;
+  }
+}
+#hero::after {
+  height: 108vh;
+  content: '';
+  background: url('../images/ewalter-3-2600.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  opacity: 0.3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+// body {
+//   background: url('../images/ewalter-3.jpg') center center cover no-repeat fixed;
+//   @media only screen and (max-width: 767px) {
+//     /* The file size of this background image is 93% smaller
+//     to improve page load speed on mobile internet connections */
+//     // background-image: url(images/background-photo-mobile-devices.jpg);
+//   }
+// }
+.hero-title {
+  font-size: 5.6rem;
+  font-weight: 700;
+  text-align: left;
+  margin-bottom: 2.5rem;
+  @media only screen and (max-width: 992px) {
+    font-size: 3.5rem;
+    text-align: center;
+  }
+  @include respond(tab-port) {
+    font-size: 3.5rem;
+    text-align: center;
+  }
+  @include respond(phone) {
+    font-size: 3.5rem;
+    line-height: 1.5;
+  }
+  @include respond(phone-xs) {
+    font-size: 2.8rem;
+  }
+}
+.hero-subs-container {
+  margin: 0;
+}
+.hero-sub {
+  font-size: 3.9rem;
+  font-weight: 700;
+  text-align: left;
+  margin-bottom: 1.2rem;
+  @include respond(tab-land) {
+    font-size: 2.9rem;
+    margin-bottom: 1.1rem;
+  }
+  @media only screen and (max-width: 992px) {
+    font-size: 2.4rem;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  @include respond(phone) {
+    font-size: 1.9rem;
+    margin-bottom: 0.8rem;
+  }
+  @include respond(phone-xs) {
+    font-size: 1.8rem;
+    margin-bottom: 0.6rem;
+  }
+}
+.hero-sub-last {
+  padding: 3% 0;
+}
+.hero-cta {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-top: 5rem;
+  @include respond(tab-land) {
+    font-size: 2.9rem;
+    margin-top: 4rem;
+  }
+  // @include respond(tab-port) {
+  //   justify-content: center;
+  // }
+  @media only screen and (max-width: 992px) {
+    margin-top: 4rem;
+  }
+  @include respond(phone) {
+    margin-top: 3rem;
+  }
+  @include respond(phone-xs) {
+    margin-top: 2rem;
+  }
+  & a {
+    font-size: 2.4rem;
+    @include respond(phone) {
+      font-size: 2rem;
+    }
+  }
+}
+.hero-vid {
+  width: 560px;
+  height: 315px;
+
+  @media only screen and (max-width: 1400px) {
+    width: 560px;
+    height: 315px;
+  }
+  @media only screen and (max-width: 1310px) {
+    width: 520px;
+    height: 292px;
+  }
+  @media only screen and (max-width: 1235px) {
+    width: 500px;
+    height: 281px;
+  }
+  @media only screen and (max-width: 1165px) {
+    width: 470px;
+    height: 264px;
+  }
+  @media only screen and (max-width: 1100px) {
+    width: 470px;
+    height: 247px;
+  }
+  @media only screen and (max-width: 575px) {
+    width: 400px;
+    height: 225px;
+  }
+  @media only screen and (max-width: 500px) {
+    width: 350px;
+    height: 197px;
+  }
+  @media only screen and (max-width: 450px) {
+    width: 300px;
+    height: 167px;
+  }
+  @media only screen and (max-width: 375px) {
+    width: 250px;
+    height: 141px;
+  }
+  @media only screen and (max-width: 375px) {
+    width: 225px;
+    height: 127px;
+  }
+  @media only screen and (max-width: 340px) {
+    width: 200px;
+    height: 113px;
+  }
+}
+.hero-src {
+  font-size: $default-font-size;
+  margin-top: 20px;
+}

@@ -1,0 +1,67 @@
+#testimonials {
+  position: relative;
+  // background-color: $primary-color;
+  // background: transparent !important;
+  background-image: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
+  color: $white-color;
+  height: 100%;
+  border-top: 0px;
+  -webkit-clip-path: polygon(0 20%, 100% 0, 80% 100%, 0 100%);
+  clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
+  padding-top: 15%;
+  padding-bottom: 10%;
+  @include respond(tab-land) {
+    -webkit-clip-path: none;
+    clip-path: none;
+  }
+}
+// t-full-wrap {
+// }
+.t-image {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.t-info-wrap {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 3rem;
+  @include respond(phone) {
+    align-items: center;
+  }
+}
+.t-info {
+  font-size: $mid-font-size;
+  width: 80%;
+  text-align: center;
+  margin: auto;
+  @include respond(tab-port) {
+    font-size: 1.5rem;
+  }
+  @include respond(phone) {
+    font-size: 1.6rem;
+  }
+  &--important {
+    background: darken($secondary-color, 1%);
+    display: inline-block;
+    font-style: italic;
+    padding: 0 0.3rem;
+    margin: 0.3rem 0;
+    line-height: 1.6;
+    @include respond(phone) {
+      display: inline;
+      margin: 0;
+      padding: 0;
+      background: transparent;
+      font-style: normal;
+    }
+  }
+}
+.t-author,
+.t-company {
+  padding-top: 2rem;
+  font-style: italic;
+}

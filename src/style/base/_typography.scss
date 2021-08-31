@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+h1,
+h2 {
+  font-weight: 700;
+}
+a,
+a:link,
+a:hover,
+a:visited,
+a:active {
+  // font-size: $small-font-size;
+  text-decoration: none;
+}
+.arrow-ctl {
+  font-size: $default-font-size;
+  margin: auto;
+}
+#arrow {
+  height: 100%;
+  width: 5%;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 $default-font-size;
+  transition: all 0.2s ease-in;
+  @include respond(tab-port) {
+    padding-bottom: 3.4rem;
+  }
+  &:hover {
+    cursor: pointer;
+    transform: translateY(-3px);
+  }
+}
+.section-title {
+  margin: 0 0 4.5rem 0;
+  font-size: $big-font-size;
+  font-weight: bold;
+  text-transform: uppercase;
+  @include respond(phone) {
+    font-size: 2.8rem;
+  }
+}
+.dark-blue-text {
+  color: $dark-blue-text !important;
+}
+.color-main {
+  background-image: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  // Responsive text secondary style
+  @include respond(phone) {
+    background-image: none;
+    -webkit-text-fill-color: $primary-color !important;
+  }
+}

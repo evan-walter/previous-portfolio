@@ -1,0 +1,175 @@
+#contact {
+  position: relative;
+  display: block;
+  padding: 15rem 0;
+  background-repeat: no-repeat;
+  @include respond(phone) {
+    padding: 5rem 0;
+  }
+}
+#contact::after {
+  height: 100%;
+  content: '';
+  background: url('../images/ewalter-4-2600.jpg');
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  opacity: 0.3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+.form-container {
+  max-width: 525px;
+  margin: auto;
+  @include respond(phone) {
+    margin: auto 20px;
+  }
+}
+.form-label {
+  width: 100%;
+  text-align: left;
+  font-size: $default-font-size;
+  font-weight: bold;
+}
+.form-control {
+  // background: #f0f3fa;
+  color: $dark-blue-text !important;
+  font-size: $default-font-size;
+  padding: 1rem;
+  margin-bottom: 10px;
+  resize: none;
+  &:focus {
+    // background: #f0f3fa;
+    outline: none;
+  }
+}
+// Adapted from _typography.scss .section-title
+.ctitle-control {
+  margin: 0 0 4.5rem 0;
+  text-align: center;
+  font-size: $big-font-size;
+  font-weight: bold;
+  text-transform: uppercase;
+  // @include respond(phone) {
+  //   font-size: 2.8rem;
+  //   margin: 0 0 2rem 0;
+  // }
+}
+// Submit Button
+// Adapted from _buttons.scss
+// Call to Action Button
+.fbtn {
+  display: inline-block;
+  position: relative;
+  // padding: 0.8rem $default-font-size;
+  font-weight: bold;
+  // line-height: 1;
+  z-index: 1;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.6s;
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 0px;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.3s;
+  }
+}
+// Hero Style
+.fbtn--hero {
+  background-image: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-width: 2px;
+  border-style: solid;
+  border-image: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
+  border-image-slice: 1;
+  cursor: pointer;
+  // Responsive Button hero style
+  @include respond(phone) {
+    background-image: none;
+    border: 2px solid $primary-color;
+    -webkit-text-fill-color: $primary-color;
+  }
+  &::after {
+    background-image: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
+    // Responsive Button hero style
+    @include respond(phone) {
+      background-image: none;
+    }
+  }
+  &:hover {
+    -webkit-text-fill-color: $white-color;
+    text-decoration: none;
+    // Responsive Button hover hero style
+    @include respond(phone) {
+      -webkit-text-fill-color: $secondary-color;
+    }
+    &::after {
+      width: 100%;
+    }
+  }
+}
+.fbtn-wrap-ctl {
+  font-size: 2.4rem;
+  padding: 0.1rem $default-font-size;
+  margin: 4rem auto auto auto;
+}
+// Change the font of the child when hovering over the parent
+.fbtn-wrap-ctl:hover .fbtn-input-ctl,
+.fbtn-wrap-ctl.hover .fbtn-input-ctl {
+  -webkit-text-fill-color: $white-color;
+}
+// Modifications to accomodate for input
+.fbtn-input-ctl {
+  font-size: 2.4rem;
+  font-weight: bold;
+  background-image: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border: none;
+  background: inherit;
+  @include respond(phone) {
+    -webkit-text-fill-color: $primary-color;
+  }
+}
+// Form "validations"
+.submitted-container {
+  // display: inline-block;
+  // display: flex;
+  // justify-content: center;
+  margin: 0;
+}
+.ctl-check {
+  display: inline-block;
+  margin: 0;
+  color: #6fc912;
+}
+.ctl-x {
+  display: inline-block;
+  margin: 0;
+  color: #dd1414;
+}
+.submitted-msg {
+  font-size: $default-font-size;
+  margin: 0;
+}
+.failed-link-wrap {
+  display: inline-block;
+  width: fit-content;
+  font-weight: bold;
+  margin: 0;
+  transition: all 0.2s ease-in;
+  &:hover {
+    cursor: pointer;
+    transform: translateY(-2px);
+  }
+}

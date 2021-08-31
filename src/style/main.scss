@@ -1,0 +1,23 @@
+@import './abstracts/mixins';
+@import './abstracts/variables';
+@import './abstracts/helpers';
+
+@import './base/base';
+@import './base/typography';
+
+@import './components/buttons';
+@import './components/tags';
+
+// @import './effects/shimmer';
+
+@import './layout/navbar';
+@import './layout/footer';
+@import './layout/sections';
+
+@import './sections/hero';
+@import './sections/about';
+@import './sections/projects';
+@import './sections/testimonials';
+@import './sections/contact';
+
+@import './vendor/css/font-awesome.min.css';

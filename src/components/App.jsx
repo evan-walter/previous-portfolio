@@ -17,7 +17,7 @@ import {
   aboutData,
   projectsData,
   testimonialsData,
-  contactData,
+  // contactData,
   footerData,
 } from '../data/data';
 
@@ -27,7 +27,7 @@ function App() {
   const [about, setAbout] = useState({});
   const [projects, setProjects] = useState([]);
   const [testimonials, setTestimonials] = useState([]);
-  const [contact, setContact] = useState({});
+  // const [contact, setContact] = useState({});
   const [footer, setFooter] = useState({});
 
   useEffect(() => {
@@ -36,12 +36,14 @@ function App() {
     setAbout({ ...aboutData });
     setProjects([...projectsData]);
     setTestimonials({ ...testimonialsData });
-    setContact({ ...contactData });
+    // setContact({ ...contactData });
     setFooter({ ...footerData });
   }, []);
 
   return (
-    <PortfolioProvider value={{ navbar, hero, about, projects, testimonials, contact, footer }}>
+    <PortfolioProvider
+      value={{ navbar, hero, about, projects, testimonials, /* contact */ footer }}
+    >
       <NavbarPortfolio />
       <Hero />
       <About />

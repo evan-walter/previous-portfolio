@@ -41,6 +41,7 @@
     "react-tilt": "^0.1.4"
   },
   "devDependencies": {
+    "@babel/plugin-transform-react-display-name": "^7.15.1",
     "babel-eslint": "^10.1.0",
     "eslint": "7.2.0",
     "eslint-config-airbnb": "^18.2.0",

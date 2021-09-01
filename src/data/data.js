@@ -22,7 +22,7 @@ export const heroData = {
   subtitle3: 'Apps',
   subtitle4: 'I connect with people and build software.',
   cta: 'Know more',
-  video: 'https://www.loom.com/embed/827a46150562456bbc1e654e568c2abe?autoplay=0',
+  video: 'https://www.loom.com/embed/cfb7f4e0581d48cc98a3ebb8c2ca4a06?autoplay=0',
 };
 
 // ABOUT DATA

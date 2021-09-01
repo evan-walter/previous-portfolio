@@ -42,7 +42,7 @@ export const projectsData = [
     title: 'W3 Sales',
     img: 'w3-1000.png',
     videoImg: '',
-    info: `An Shopify website for a food services factory and distributor group with a large inventory of products`,
+    info: `A Shopify website for a food services factory and distributor group with a large inventory of products`,
     info2: '',
     tags: ['Shopify', 'Customization', 'HTML/CSS/JavaScript', 'Python'],
     url: '',

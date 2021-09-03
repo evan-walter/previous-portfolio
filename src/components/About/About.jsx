@@ -38,7 +38,7 @@ const About = () => {
             </Fade>
           </Col>
           <Col md={6} sm={12}>
-            <Fade right={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
+            <Fade right={isDesktop} bottom={isMobile} duration={1000} delay={600} distance="30px">
               <div className="about-info-wrap">
                 {' '}
                 {/* About Info */}
@@ -62,7 +62,7 @@ const About = () => {
           </Col>
         </Row>
         <Col className="justify-content-md-center">
-          <Fade bottom duration={1000} delay={1300} distance="30px">
+          <Fade bottom duration={1000} delay={600} distance="30px">
             <Link to="projects" smooth duration={1000}>
               <div className="down arrow-ctl">
                 <i id="arrow" className="fa fa-angle-down fa-2x" aria-hidden="true" />

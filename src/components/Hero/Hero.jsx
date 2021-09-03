@@ -81,7 +81,7 @@ const Header = () => {
         </Row>
         <Row>
           <Col>
-            <Fade bottom duration={1000} delay={4000} distance="30px">
+            <Fade bottom duration={1000} delay={3750} distance="30px">
               <Link to="about" smooth duration={1000}>
                 <div className="down arrow-ctl p-arrow-ctl">
                   <i id="arrow" className="fa fa-angle-down fa-2x" aria-hidden="true" />

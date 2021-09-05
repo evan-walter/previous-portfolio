@@ -27,7 +27,7 @@ export const heroData = {
 
 // ABOUT DATA
 export const aboutData = {
-  img: 'ewalter-11-350.jpg',
+  img: 'ewalter-11.jpg',
   paragraphOne: `I specialize in Shopify, front end, and apps.  Whether store set-up, migration, or custom features, I aim to join my clients to serve their vision.`,
   paragraphTwo: `Prior to development, I obtained a Bachelor's of Science in Electrical Engineering and began a career in the field.  As I explored the software side of the field, I applied communication and problem solving skills I learned along the way.  I found opportunities to serve clients with fast websites and a seamless user experience.`,
   paragraphThree: ``,

@@ -9,7 +9,7 @@ const Contact = () => {
       <Container>
         <Fade bottom duration={1000} delay={500} distance="30px">
           <h1 className="hero-title ctitle-control">
-            <span className="color-main">Contact</span>
+            <span className="color-main">Let's Connect</span>
           </h1>
         </Fade>
         <Fade bottom duration={1000} delay={750} distance="30px">

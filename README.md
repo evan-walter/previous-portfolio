@@ -6,7 +6,7 @@ To view the live version of this project, visit [evanwalter.dev](https://evanwal
 
 To view the "final," deployment source code for this project, visit [github.com/Evan-Walter/portfolio](https://github.com/Evan-Walter/portfolio).
 
-To view the "raw," development source code for this project, visit [github.com/Evan-Walter/portfolio-dev](https://github.com/Evan-Walter/portfolio-dev).
+To view the "raw," development source code for this project, visit [github.com/Evan-Walter/portfolio/tree/develop](https://github.com/Evan-Walter/portfolio/tree/develop).
 
 For more information on this project, see the links below.
 

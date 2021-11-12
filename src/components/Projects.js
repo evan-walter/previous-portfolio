@@ -3,7 +3,7 @@ import React from 'react';
 export default function Projects() {
   return (
     <div>
-      <h1>Projects</h1>
+      <p>(Here is where the projects would be.)</p>
       <h2>React Projects</h2>
       <h3>Client Projects and Personal Projects</h3>
       <div>

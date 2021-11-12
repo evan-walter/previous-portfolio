@@ -7,9 +7,6 @@ module.exports = {
         primary: '#0c3483',
         secondary: '#6b8cce',
       },
-      fontFamily: {
-        body: ['Roboto'],
-      },
     },
   },
   variants: {

@@ -1,6 +1,10 @@
 {
   "name": "portfolio",
-  "version": "0.1.0",
+  "author": "Evan Walter (https://evanwalter.dev)",
+  "version": "1.0.0",
+  "license": "MIT",
+  "repository": "github:Evan-Walter/portfolio.git",
+  "main": "src/index.js",
   "private": true,
   "dependencies": {
     "@craco/craco": "^6.4.0",

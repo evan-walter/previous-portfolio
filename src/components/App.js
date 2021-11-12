@@ -13,13 +13,13 @@ export default function App() {
     <div>
       <NavbarPortfolio />
       <Hero />
-      <Section title='About'>
+      <Section title='About' bgColored>
         <About />
       </Section>
       <Section title='Projects'>
         <Projects />
       </Section>
-      <Section title='Testimonials'>
+      <Section title='Testimonials' bgColored>
         <Testimonials />
       </Section>
       <Section title="Let's Connect">

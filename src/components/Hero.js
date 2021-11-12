@@ -1,14 +1,18 @@
 import React from 'react';
+import { DownArrow } from './Arrows';
 
 export default function Hero() {
   return (
     <div>
       <h2>Hello, my name is Evan.</h2>
       <h2>I am a Software Engineer specializing in React.</h2>
-      <h2>I connect with people and build software.</h2>
-      <i className='fa fa-github' style={{ fontSize: '32px' }} />
-      <i className='fa fa-linkedin' style={{ fontSize: '32px' }} />
-      <i className='fa fa-angle-down fa-2x' />
+      <div className='cursor-pointer' style={{ fontSize: '32px' }}>
+        <div><i className='fa fa-github' /></div>        
+        <div><i className='fa fa-linkedin' /></div> 
+      </div>
+      <div className='cursor-pointer'>
+        <i className='fa fa-angle-down fa-2x' />
+      </div>
     </div>
   );
 }

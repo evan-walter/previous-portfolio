@@ -7,6 +7,7 @@ module.exports = {
         primary: '#0c3483',
         secondary: '#6b8cce',
         footerbg: '#333333',
+        footertext: '#808080',
       },
     },
   },

@@ -6,6 +6,7 @@ module.exports = {
       colors: {
         primary: '#0c3483',
         secondary: '#6b8cce',
+        footerbg: '#333333',
       },
     },
   },

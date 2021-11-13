@@ -3,12 +3,8 @@ import { DownArrow } from './Arrows';
 
 export default function Hero() {
   return (
-    <div
-      className='bg-opacity-30'
-      style={{
-        backgroundImage: 'url("../images/ewalter-3-2600.jpg")',
-      }}
-    >
+    <div style={{ height: '87vh' }}>
+      <div className='hero-background'></div>
       <h2>Hello, my name is Evan.</h2>
       <h2>I am a Software Engineer specializing in React.</h2>
       <div className='cursor-pointer' style={{ fontSize: '32px' }}>

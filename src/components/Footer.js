@@ -2,10 +2,10 @@ import React from 'react';
 import { UpArrow } from './Arrows';
 
 export default function Footer() {
-  const backgroundColor = 'bg-footerbg';
+  const classNames = 'bg-footerbg text-footertext';
 
   return (
-    <div className={backgroundColor}>
+    <div className={classNames}>
       <div>Footer</div>
       <UpArrow />
       <div className='cursor-pointer' style={{ fontSize: '32px' }}>

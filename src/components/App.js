@@ -5,7 +5,7 @@ import Footer from './Footer';
 import Hero from './Hero';
 import NavbarPortfolio from './NavbarPortfolio';
 import Projects from './Projects';
-import Section from './Section';
+import SectionNormal from './SectionNormal';
 import Testimonials from './Testimonials';
 
 export default function App() {
@@ -13,18 +13,16 @@ export default function App() {
     <div>
       <NavbarPortfolio />
       <Hero />
-      <Section title='About' bgColored>
+      <SectionNormal title='About' bgColored>
         <About />
-      </Section>
-      <Section title='Projects'>
+      </SectionNormal>
+      <SectionNormal title='Projects'>
         <Projects />
-      </Section>
-      <Section title='Testimonials' bgColored>
+      </SectionNormal>
+      <SectionNormal title='Testimonials' bgColored>
         <Testimonials />
-      </Section>
-      <Section title="Let's Connect">
-        <Contact />
-      </Section>
+      </SectionNormal>
+      <Contact />
       <Footer />
     </div>
   );

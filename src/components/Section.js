@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { Link } from 'react-scroll';
-import { DownArrow } from './Arrows';
+import MyLink from './buttons/MyLink';
+import { DownArrow } from './buttons/Arrows';
 
 export default function Section({
   id,
@@ -24,9 +24,9 @@ export default function Section({
       {titleShown && <h1>{titleShown}</h1>}
       {children}
       {!last && (
-        <Link to={next} smooth duration={850}>
+        <MyLink to={next}>
           <DownArrow />
-        </Link>
+        </MyLink>
       )}
     </div>
   );

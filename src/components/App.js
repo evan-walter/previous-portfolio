@@ -13,9 +13,9 @@ export default function App() {
     <div id='top'>
       <Navbar />
       <Section id='hero' next='about' hasBgImgClassName='bg-img-hero'>
-        <Hero />
+        <Hero next='about' />
       </Section>
-      <Section  id='about' next='projects' titleShown='About' bgColored>
+      <Section id='about' next='projects' titleShown='About' bgColored>
         <About />
       </Section>
       <Section  id='projects' next='testimonials' titleShown='Projects' fluidHeight>

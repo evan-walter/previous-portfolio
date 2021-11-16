@@ -5,24 +5,28 @@ import Footer from './Footer';
 import Hero from './Hero';
 import NavbarPortfolio from './NavbarPortfolio';
 import Projects from './Projects';
-import SectionNormal from './SectionNormal';
+import Section from './Section';
 import Testimonials from './Testimonials';
 
 export default function App() {
   return (
     <div>
       <NavbarPortfolio />
-      <Hero />
-      <SectionNormal title='About' bgColored>
+      <Section hasBgImgClassName='bg-img-hero'>
+        <Hero />
+      </Section>
+      <Section titleShown='About' bgColored>
         <About />
-      </SectionNormal>
-      <SectionNormal title='Projects'>
+      </Section>
+      <Section titleShown='Projects'>
         <Projects />
-      </SectionNormal>
-      <SectionNormal title='Testimonials' bgColored>
+      </Section>
+      <Section titleShown='Testimonials' bgColored>
         <Testimonials />
-      </SectionNormal>
-      <Contact />
+      </Section>
+      <Section titleShown="Let's Connect" hasBgImgClassName='bg-img-contact'>
+        <Contact />
+      </Section>
       <Footer />
     </div>
   );

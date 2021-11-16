@@ -1,6 +1,7 @@
 import React from 'react';
 import MyLink from './buttons/MyLink';
 import { UpArrow } from './buttons/Arrows';
+import Socials from './buttons/Socials';
 
 export default function Footer() {
   const classNames = 'bg-footerbg text-footertext';
@@ -11,10 +12,7 @@ export default function Footer() {
       <MyLink to='top'>
         <UpArrow />
       </MyLink>
-      <div className='cursor-pointer' style={{ fontSize: '32px' }}>
-        <i className='fa fa-github fa-inverse' />
-        <i className='fa fa-linkedin fa-inverse' />
-      </div>
+      <Socials addClassNames='fa-inverse' />
     </div>
   );
 }

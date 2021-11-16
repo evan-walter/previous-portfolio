@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-scroll';
 import { UpArrow } from './Arrows';
 
 export default function Footer() {
@@ -7,7 +8,9 @@ export default function Footer() {
   return (
     <div className={classNames}>
       <div>Footer</div>
-      <UpArrow />
+      <Link to='top' smooth duration={850}>
+          <UpArrow />
+        </Link>
       <div className='cursor-pointer' style={{ fontSize: '32px' }}>
         <i className='fa fa-github fa-inverse' />
         <i className='fa fa-linkedin fa-inverse' />

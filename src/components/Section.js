@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
+import { Link } from 'react-scroll';
 import { DownArrow } from './Arrows';
 
 export default function Section({
   id,
+  next,
+  last,
   titleShown,
   bgColored,
   hasBgImgClassName,
@@ -20,7 +23,11 @@ export default function Section({
       )} */}
       {titleShown && <h1>{titleShown}</h1>}
       {children}
-      <DownArrow />
+      {!last && (
+        <Link to={next} smooth duration={850}>
+          <DownArrow />
+        </Link>
+      )}
     </div>
   );
 }

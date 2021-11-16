@@ -17,7 +17,7 @@ export default function Projects() {
               <p key={id}>{desc1}</p>
               <p key={id}>{desc2}</p>
               <div className=''>
-                <img src={img} />
+                <img src={img} alt={title + ' image'} />
               </div>
             </div>
           );
@@ -33,7 +33,7 @@ export default function Projects() {
               <p key={id}>{desc1}</p>
               <p key={id}>{desc2}</p>
               <div className=''>
-                <img src={img} />
+                <img src={img} alt={title + ' image'} />
               </div>
             </div>
           );

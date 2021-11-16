@@ -13,7 +13,7 @@ export default function Navbar() {
 
   return (
     <div className=''>
-      <img src={logo} className={logoClassNames} />
+      <img src={logo} alt='logo' className={logoClassNames} />
       <div className={linksClassNames}>
         {aboutLink}
         {projectsLink}

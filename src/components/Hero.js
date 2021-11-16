@@ -1,7 +1,6 @@
 import React from 'react';
 import MyLink from './buttons/MyLink';
 import Button from './buttons/Button';
-import { DownArrow } from './buttons/Arrows';
 import Socials from './buttons/Socials';
 
 export default function Hero({ next }) {

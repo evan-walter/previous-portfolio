@@ -15,33 +15,36 @@ export default function Footer() {
         </MyLink>
       </div>
       <Socials addClassNames='fa-inverse' />
-      <hr className='border-footertext' />
-      <div className='grid grid-cols-3'>
-        <div>I built this portfolio from scratch with{' '}
-          <a href='https://reactjs.org/' target='_blank' rel='noreferrer' className={textLinks}>
-            ReactJS
-          </a>
-          {' '}and{' '}
-          <a href='https://tailwindcss.com/' target='_blank' rel='noreferrer' className={textLinks}>
-            Tailwind CSS
-          </a>
+      <div className='w-11/12 m-auto text-sm'>
+        <hr className='border-footertext' />
+        <div className='pt-8 grid grid-cols-3'>
+          <div>I built this portfolio from scratch with{' '}
+            <a href='https://reactjs.org/' target='_blank' rel='noreferrer' className={textLinks}>
+              ReactJS
+            </a>
+            {' '}and{' '}
+            <a href='https://tailwindcss.com/' target='_blank' rel='noreferrer' className={textLinks}>
+              Tailwind CSS
+            </a>
+            .
+          </div>
+          <div>
+            <a href='https://github.com/Evan-Walter/portfolio/' target='_blank' rel='noreferrer' className={textLinks}>
+            Source Code
+            </a>
+          </div>
+          <div>Design inspired by{' '}
+            <a href='https://github.com/cobidev' target='_blank' rel='noreferrer' className={textLinks}>
+              Jacobo Martínez
+            </a>
+          </div>
         </div>
-        <div>
-          <a href='https://github.com/Evan-Walter/portfolio/' target='_blank' rel='noreferrer' className={textLinks}>
-          Source Code
-          </a>
-        </div>
-        <div>Design inspired by{' '}
-          <a href='https://github.com/cobidev' target='_blank' rel='noreferrer' className={textLinks}>
-            Jacobo Martínez
-          </a>
-        </div>
-      </div>
-        <div className='text-center'>© {new Date().getFullYear()}{' '}
+        <div>© {new Date().getFullYear()}{' '}
           <a href='https://github.com/Evan-Walter' target='_blank' rel='noreferrer' className={textLinks}>
             Evan Walter
           </a>
         </div>
+      </div>
     </div>
   );
 }

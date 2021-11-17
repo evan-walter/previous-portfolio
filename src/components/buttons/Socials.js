@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default function Socials({ addClassNames }) {
-  const more = 'fa cursor-pointer social ';
+  const more = 'fa p-8 social cursor-pointer transform hover:-translate-y-0.5 transition duration-200 ease-in ';
   const added = () => {
     if (addClassNames) {
       return more + addClassNames;
@@ -10,7 +10,7 @@ export default function Socials({ addClassNames }) {
   };
 
   return (
-    <div>
+    <div className=''>
       <a href='https://github.com/Evan-Walter/' target='_blank' rel='noreferrer'>
         <i className={'fa-github ' + added()} />
       </a>

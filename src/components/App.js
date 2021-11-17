@@ -15,13 +15,13 @@ export default function App() {
       <Section id='hero' next='about' hasBgImgClassName='bg-img-hero'>
         <Hero next='about' />
       </Section>
-      <Section id='about' next='projects' titleShown='About' bgColored>
+      <Section id='about' next='projects' titleShown='ABOUT' bgColored>
         <About />
       </Section>
-      <Section  id='projects' next='testimonials' titleShown='Projects' fluidHeight>
+      <Section  id='projects' next='testimonials' titleShown='PROJECTS' fluidHeight>
         <Projects />
       </Section>
-      <Section  id='testimonials' next='contact' titleShown='Testimonials' bgColored>
+      <Section  id='testimonials' next='contact' titleShown='TESTIMONIALS' bgColored>
         <Testimonials />
       </Section>
       <Section id='contact' last titleShown="Let's Connect" hasBgImgClassName='bg-img-contact'>

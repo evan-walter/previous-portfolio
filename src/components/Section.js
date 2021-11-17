@@ -12,28 +12,31 @@ export default function Section({
   fluidHeight,
   children,
 }) {
-  const classNames1 =
+  const containerStart =
+    'p-8 ' +
     (!fluidHeight && 'section ') +
     (bgColored && 'bg-gradient-to-br from-primary to-secondary text-white ');
 
-  const classNames = () => {
+  const container = () => {
     if (hasBgImgClassName) {
-      return classNames1 + hasBgImgClassName;
+      return containerStart + hasBgImgClassName;
     }
-    return classNames1;
+    return containerStart;
   };
 
   return (
-    <div id={id} className={classNames()}>
+    <div id={id} className={container()}>
       {/* {!!hasBgImgClassName && (
         <div className={'bg-img ' + hasBgImgClassName}></div>
       )} */}
-      {titleShown && <h1>{titleShown}</h1>}
+      {titleShown && <div className='text-4xl font-bold text-center pb-12'>{titleShown}</div>}
       {children}
       {!last && (
-        <MyLink to={next}>
-          <DownArrow />
-        </MyLink>
+        <div className='grid justify-items-center py-4'>
+          <MyLink to={next}>
+            <DownArrow />
+          </MyLink>
+        </div>
       )}
     </div>
   );

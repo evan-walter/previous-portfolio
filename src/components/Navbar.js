@@ -12,7 +12,7 @@ export default function Navbar() {
   const linksClassNames = 'cursor-pointer';
 
   return (
-    <div className=''>
+    <div className='px-8 py-4 '>
       <img src={logo} alt='logo' className={logoClassNames} />
       <div className={linksClassNames}>
         {aboutLink}

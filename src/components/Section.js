@@ -13,7 +13,7 @@ export default function Section({
   children,
 }) {
   const containerStart =
-    'p-8 ' +
+    'py-16 px-44 ' +
     (!fluidHeight && 'section ') +
     (bgColored && 'bg-gradient-to-br from-primary to-secondary text-white ');
 

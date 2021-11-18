@@ -4,7 +4,7 @@ import { UpArrow } from './buttons/Arrows';
 import Socials from './buttons/Socials';
 
 export default function Footer() {
-  const container = 'p-8 bg-footerbg text-center text-footertext';
+  const container = 'px-8 py-16 bg-footerbg text-center text-footertext';
   const textLinks = 'hover:text-white transition duration-150 ease-in';
 
   return (

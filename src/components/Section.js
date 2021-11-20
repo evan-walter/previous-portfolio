@@ -32,7 +32,7 @@ export default function Section({
       {titleShown && <div className='text-4xl font-bold text-center pb-12'>{titleShown}</div>}
       {children}
       {!last && (
-        <div className='grid justify-items-center py-4'>
+        <div className='py-4 grid justify-items-center'>
           <MyLink to={next}>
             <DownArrow />
           </MyLink>

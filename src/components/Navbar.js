@@ -4,8 +4,8 @@ import logo from '../images/logo.png';
 
 export default function Navbar() {
   const logoClassNames = 'cursor-pointer';
-  const linkClassNames = 'p-2 transform hover:-translate-y-1 transition duration-200 ease-in';
-  const linksClassNames = 'cursor-pointer grid grid-cols-5 w-max text-center items-center justify-center';
+  const linkClassNames = 'py-2 px-4 transform hover:-translate-y-1 transition duration-200 ease-in'; // w-min
+  const linksClassNames = 'flex text-center items-center justify-end cursor-pointer';
 
   const homeLink = <div className={linkClassNames}>Home</div>
   const aboutLink = <MyLink to='about'><div className={linkClassNames}>About</div></MyLink>;

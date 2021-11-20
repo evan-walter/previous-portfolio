@@ -8,6 +8,7 @@ module.exports = {
         secondary: '#6b8cce',
         footerbg: '#333333',
         footertext: '#808080',
+        footerhr: '#484848',
       },
     },
   },

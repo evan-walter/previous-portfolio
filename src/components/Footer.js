@@ -1,4 +1,5 @@
 import React from 'react';
+import A from './buttons/A';
 import MyLink from './buttons/MyLink';
 import { UpArrow } from './buttons/Arrows';
 import Socials from './buttons/Socials';
@@ -14,35 +15,35 @@ export default function Footer() {
           <UpArrow />
         </MyLink>
       </div>
-      <Socials addClassNames='fa-inverse' />
+      <Socials addClassNames='fa-inverse p-8 social-32' />
       <div className='w-11/12 m-auto text-sm'>
         <hr className='border-footertext' />
         <div className='pt-8 grid grid-cols-3'>
           <div>I built this portfolio from scratch with{' '}
-            <a href='https://reactjs.org/' target='_blank' rel='noreferrer' className={textLinks}>
+            <A h='https://reactjs.org/' className={textLinks}>
               ReactJS
-            </a>
+            </A>
             {' '}and{' '}
-            <a href='https://tailwindcss.com/' target='_blank' rel='noreferrer' className={textLinks}>
+            <A h='https://tailwindcss.com/' className={textLinks}>
               Tailwind CSS
-            </a>
+            </A>
             .
           </div>
           <div>
-            <a href='https://github.com/Evan-Walter/portfolio/' target='_blank' rel='noreferrer' className={textLinks}>
+            <A h='https://github.com/Evan-Walter/portfolio/' className={textLinks}>
             Source Code
-            </a>
+            </A>
           </div>
           <div>Design inspired by{' '}
-            <a href='https://github.com/cobidev' target='_blank' rel='noreferrer' className={textLinks}>
+            <A h='https://github.com/cobidev' className={textLinks}>
               Jacobo Martínez
-            </a>
+            </A>
           </div>
         </div>
         <div>© {new Date().getFullYear()}{' '}
-          <a href='https://github.com/Evan-Walter' target='_blank' rel='noreferrer' className={textLinks}>
+          <A h='https://github.com/Evan-Walter' className={textLinks}>
             Evan Walter
-          </a>
+          </A>
         </div>
       </div>
     </div>

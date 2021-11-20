@@ -33,6 +33,9 @@ body {
 .bg-img-contact {
   background: url('./images/ewalter-4-2600.jpg');
 }
-.social {
+.social-32 {
   font-size: 32px;
+}
+.social-24 {
+  font-size: 24px;
 }

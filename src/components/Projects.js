@@ -1,4 +1,6 @@
 import React from 'react';
+import A from './buttons/A';
+import Button from './buttons/Button';
 import heyfioImg from '../images/heyfio-1000.png';
 import puppyFinderImg from '../images/heyfio-1000.png';
 import confcoImg from '../images/confco-1000.png';
@@ -15,13 +17,16 @@ export default function Projects() {
       {reactProjects.map(
         ({ number, id, title, desc1, desc2, img, video, website, repo }) => {
           return (
-            <div id={id} className='pt-4 grid grid-cols-2' key={number}>
-              <div className=''>
-                <h3 className='font-bold' key={number}>{title}</h3>
+            <div id={id} className='py-16 grid grid-cols-5' key={number}>
+              <div className='pr-16 col-start-1 col-end-3'>
+                <h3 className='pb-4 text-xl font-bold' key={number}>{title}</h3>
                 <p className='' key={number}>{desc1}</p>
                 <p className='' key={number}>{desc2}</p>
+                {video && <Button text='Demo Video' />}
+                {website && <A h={website}><Button text='See Live' /></A>}
+                {repo && <A h={repo}><Button text='Source Code' /></A>}
               </div>
-              <div className='' key={number}>
+              <div className='col-start-3 col-end-6' key={number}>
                 <img src={img} alt={title + ' image'} width='1000' key={number} />
               </div>
             </div>
@@ -33,13 +38,16 @@ export default function Projects() {
       {shopifyProjects.map(
         ({ number, id, title, desc1, desc2, img, video, website, repo }) => {
           return (
-            <div id={id} className='pt-4 grid grid-cols-2' key={number}>
-              <div className=''>
-                <h3 className='font-bold' key={number}>{title}</h3>
+            <div id={id} className='py-16 grid grid-cols-5' key={number}>
+              <div className='pr-16 col-start-1 col-end-3'>
+                <h3 className='pb-4 text-xl font-bold' key={number}>{title}</h3>
                 <p className='' key={number}>{desc1}</p>
                 <p className='' key={number}>{desc2}</p>
+                {video && <Button text='Demo Video' />}
+                {website && <A h={website}><Button text='See Live' /></A>}
+                {repo && <A h={repo}><Button text='Source Code' /></A>}
               </div>
-              <div className='' key={number}>
+              <div className='col-start-3 col-end-6' key={number}>
                 <img src={img} alt={title + ' image'} width='1000' key={number} />
               </div>
             </div>
@@ -55,11 +63,11 @@ const reactProjects = [
     number: 1,
     id: '',
     title: 'HeyFIO',
-    desc1: 'A Full Stack Software Engineering Part-Time Contract',
+    desc1: 'A Full Stack Software Engineering Contract',
     desc2: 'React + MySQL + NodeJS + ExpressJS',
     img: heyfioImg,
-    video: '',
-    website: '',
+    video: '#',
+    website: 'https://beta.heyfio.com',
     repo: '',
   },
   {

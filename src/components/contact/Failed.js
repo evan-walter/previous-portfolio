@@ -1,4 +1,5 @@
 import React from 'react';
+import A from '../buttons/A';
 
 export default function Failed() {
   return (
@@ -8,10 +9,7 @@ export default function Failed() {
         Oops! It looks like there was an issue with the form submission. Please
         try again. If the issue persists, please feel free to reach out to me on{' '}
       </div>
-      <a href='https://linkedin.com/in/~evanwalter/' target='_blank' rel='noreferrer'>
-        LinkedIn
-      </a>
-      .
+      <A h='https://linkedin.com/in/~evanwalter/'>LinkedIn</A>.
     </div>
   );
 }

@@ -1,7 +1,8 @@
 import React from 'react';
+import A from './A';
 
 export default function Socials({ addClassNames }) {
-  const more = 'fa p-8 social cursor-pointer transform hover:-translate-y-0.5 transition duration-200 ease-in ';
+  const more = 'fa cursor-pointer transform hover:-translate-y-0.5 transition duration-200 ease-in ';
   const added = () => {
     if (addClassNames) {
       return more + addClassNames;
@@ -11,12 +12,12 @@ export default function Socials({ addClassNames }) {
 
   return (
     <div className=''>
-      <a href='https://github.com/Evan-Walter/' target='_blank' rel='noreferrer'>
+      <A h='https://github.com/Evan-Walter/'>
         <i className={'fa-github ' + added()} />
-      </a>
-      <a href='https://linkedin.com/in/~evanwalter/' target='_blank' rel='noreferrer'>
+      </A>
+      <A h='https://linkedin.com/in/~evanwalter/'>
         <i className={'fa-linkedin ' + added()} />
-      </a>
+      </A>
     </div>
   );
 }

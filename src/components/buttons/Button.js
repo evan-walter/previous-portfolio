@@ -2,8 +2,7 @@ import React from 'react';
 
 export default function Button({ textB, textNoB, addClassNames }) {
   const textBCName = 'p-4 box-border h-8 w-max border-2 bg-gradient-to-r hover:from-primary hover:to-secondary';
-  const textNoBCName =
-    'font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary';
+  const textNoBCName = 'font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary';
 
   return (
     <div className='cursor-pointer'>

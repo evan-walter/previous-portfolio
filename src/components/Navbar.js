@@ -15,7 +15,7 @@ export default function Navbar() {
   const contactLink = <MyLink to='contact'><div className={linkClassNames}><Button textNoB='Contact' /></div></MyLink>;
 
   return (
-    <div className='px-44 py-4 grid grid-cols-2 text-right'>
+    <div id='navbar' className='px-44 py-4 grid grid-cols-2 text-right'>
       <img src={logo} alt='logo' className={logoClassNames} onClick={function() {window.location.reload()}} />
       <div className={linksClassNames}>
         {homeLink}

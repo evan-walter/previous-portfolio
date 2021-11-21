@@ -25,7 +25,12 @@ export default function Contact() {
     //   setSuccess(true);
     // }, 2000);
 
-    send('service_83npejq', 'template_5kr2cjb', formData, 'user_AIUe2OzEEkBrATar3Pq1P')
+    send(
+      'service_83npejq',
+      'template_5kr2cjb',
+      formData,
+      'user_AIUe2OzEEkBrATar3Pq1P'
+    )
       .then((res) => {
         setSuccess(true);
         setLoading(false);
@@ -41,14 +46,12 @@ export default function Contact() {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  if (!submitted && !loading) {
-    return (
-      <div>
+  return (
+    <div>
+      {!submitted && !loading && (
         <form onSubmit={onSubmit}>
           <div>
-            <label htmlFor='name'>
-              Name
-            </label>
+            <label htmlFor='name'>Name</label>
             <input
               id='name'
               type='text'
@@ -60,9 +63,7 @@ export default function Contact() {
             />
           </div>
           <div>
-            <label htmlFor='email'>
-              Email
-            </label>
+            <label htmlFor='email'>Email</label>
             <input
               id='email'
               type='text'
@@ -75,9 +76,7 @@ export default function Contact() {
             />
           </div>
           <div>
-            <label htmlFor='message'>
-              Message
-            </label>
+            <label htmlFor='message'>Message</label>
             <textarea
               id='message'
               type='text'
@@ -92,13 +91,14 @@ export default function Contact() {
             <input type='submit' value='Connect' />
           </div>
         </form>
-      </div>
-    );
-  } else if (submitted && loading) {
-    return <Loading />;
-  } else if (submitted && !loading && success) {
-    return <Success />;
-  } else if (submitted && !loading && !success) {
-    return <Failed />;
-  }
+      )}
+      {submitted && (
+        (loading && <Loading />)
+        (!loading &&
+          (success && <Success />)
+          (!success && <Failed />)
+        )
+      )}
+    </div>
+  );
 }

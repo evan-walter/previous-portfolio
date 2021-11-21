@@ -1,14 +1,14 @@
 import React from 'react';
 
-export default function Button({ textB, textNoB, className, children }) {
-  const textBCName = ' p-4 box-border h-8 w-max border-2 bg-gradient-to-r from-primary to-secondary hover:from-primary hover:to-secondary';
+export default function Button({ textB, textNoB, addClassNames, children }) {
+  const textBCName = 'p-4 box-border h-8 w-max border-2 bg-gradient-to-r hover:from-primary hover:to-secondary';
   const textNoBCName =
-    ' font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary';
+    'font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary';
 
   return (
     <div className='cursor-pointer'>
-      {textB && <button className={(className && className) + textBCName}>{textB}</button>}
-      {textNoB && <button className={(className && className) + textNoBCName}>{textNoB}</button>}
+      {textB && <button className={addClassNames + ' ' + textBCName}>{textB}</button>}
+      {textNoB && <button className={addClassNames + textNoBCName}>{textNoB}</button>}
     </div>
   );
 }

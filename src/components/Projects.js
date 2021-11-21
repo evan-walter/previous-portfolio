@@ -24,8 +24,8 @@ export default function Projects() {
                 <p className='' key={number}>{desc1}</p>
                 <p className='' key={number}>{desc2}</p>
                 {video && <Button textB='Demo Video' />}
-                {website && <A h={website}><Button textNoB='See Live' className={buttonTextNoB} /></A>}
-                {repo && <A h={repo}><Button textNoB='Source Code' className={buttonTextNoB} /></A>}
+                {website && <A h={website}><Button textNoB='See Live' addClassNames={buttonTextNoB} /></A>}
+                {repo && <A h={repo}><Button textNoB='Source Code' addClassNames={buttonTextNoB} /></A>}
               </div>
               <div className='col-start-3 col-end-6' key={number}>
                 <img src={img} alt={title + ' image'} width='1000' key={number} />
@@ -45,8 +45,8 @@ export default function Projects() {
                 <p className='' key={number}>{desc1}</p>
                 <p className='' key={number}>{desc2}</p>
                 {video && <Button textB='Demo Video' />}
-                {website && <A h={website}><Button textNoB='See Live' className={buttonTextNoB} /></A>}
-                {repo && <A h={repo}><Button textNoB='Source Code' className={buttonTextNoB} /></A>}
+                {website && <A h={website}><Button textNoB='See Live' addClassNames={buttonTextNoB} /></A>}
+                {repo && <A h={repo}><Button textNoB='Source Code' addClassNames={buttonTextNoB} /></A>}
               </div>
               <div className='col-start-3 col-end-6' key={number}>
                 <img src={img} alt={title + ' image'} width='1000' key={number} />

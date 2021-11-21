@@ -2,10 +2,10 @@ import React from 'react';
 import A from './A';
 
 export default function Socials({ addClassNames }) {
-  const more = 'fa cursor-pointer transform hover:-translate-y-0.5 transition duration-200 ease-in ';
+  const more = 'fa cursor-pointer transform hover:-translate-y-0.5 transition duration-200 ease-in';
   const added = () => {
     if (addClassNames) {
-      return more + addClassNames;
+      return more + ' ' + addClassNames;
     }
     return more;
   };

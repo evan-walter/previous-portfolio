@@ -12,7 +12,7 @@ export default function App() {
   return (
     <div id='top'>
       <Navbar />
-      <Section id='hero' next='about' hasBgImgClassName='bg-img-hero'>
+      <Section id='hero' next='about'>
         <Hero next='about' />
       </Section>
       <Section id='about' next='projects' titleShown='ABOUT' bgColored>
@@ -24,7 +24,7 @@ export default function App() {
       <Section  id='testimonials' next='contact' titleShown='TESTIMONIALS' bgColored>
         <Testimonials />
       </Section>
-      <Section id='contact' last titleShown="Let's Connect" hasBgImgClassName='bg-img-contact'>
+      <Section id='contact' last titleShown="Let's Connect">
         <Contact />
       </Section>
       <Footer />

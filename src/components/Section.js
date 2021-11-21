@@ -14,8 +14,8 @@ export default function Section({
 }) {
   const containerStart =
     'py-16 px-44 ' +
-    (!fluidHeight && 'section ') +
-    (bgColored && 'bg-gradient-to-br from-primary to-secondary text-white ');
+    (!fluidHeight ? 'section ' : '') +
+    (bgColored ? 'bg-gradient-to-br from-primary to-secondary text-white' : '');
 
   const container = () => {
     if (hasBgImgClassName) {

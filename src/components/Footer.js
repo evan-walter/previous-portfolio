@@ -22,24 +22,24 @@ export default function Footer() {
           <div>
             <div>I built this website from scratch</div>
             <div>with{' '}
-              <A h='https://reactjs.org/' className={textLink}>ReactJS</A>
+              <A h='https://reactjs.org/' addClassNames={textLink}>ReactJS</A>
               {' '}and{' '}
-              <A h='https://tailwindcss.com/' className={textLink}>Tailwind CSS</A>
+              <A h='https://tailwindcss.com/' addClassNames={textLink}>Tailwind CSS</A>
               .
             </div>
           </div>
           <div>
             <div>
-              <A h='https://github.com/Evan-Walter/portfolio/' className={textLink}>Source Code</A>
+              <A h='https://github.com/Evan-Walter/portfolio/' addClassNames={textLink}>Source Code</A>
             </div>
             <div>© {new Date().getFullYear()}{' '}
-              <A h='https://github.com/Evan-Walter' className={textLink}>Evan Walter</A>
+              <A h='https://github.com/Evan-Walter' addClassNames={textLink}>Evan Walter</A>
             </div>
           </div>
           <div>
             <div>Design inspired by{' '}</div>
             <div>
-              <A h='https://github.com/cobidev' className={textLink}>Jacobo Martínez</A>
+              <A h='https://github.com/cobidev' addClassNames={textLink}>Jacobo Martínez</A>
             </div>
           </div>
         </div>

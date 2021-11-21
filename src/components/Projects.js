@@ -9,6 +9,7 @@ import w3Img from '../images/w3-1000.png';
 export default function Projects() {
   const subtitle1 = 'pt-12 pb-4 text-3xl font-bold text-center';
   const subtitle2 = 'pb-8 text-2xl font-bold text-center';
+  const buttonTextNoB = 'p-2 transform hover:translate-x-1 transition duration-300 ease-in';
 
   return (
     <div className='pb-12'>
@@ -22,9 +23,9 @@ export default function Projects() {
                 <h3 className='pb-4 text-xl font-bold' key={number}>{title}</h3>
                 <p className='' key={number}>{desc1}</p>
                 <p className='' key={number}>{desc2}</p>
-                {video && <Button text='Demo Video' />}
-                {website && <A h={website}><Button text='See Live' /></A>}
-                {repo && <A h={repo}><Button text='Source Code' /></A>}
+                {video && <Button textB='Demo Video' />}
+                {website && <A h={website}><Button textNoB='See Live' className={buttonTextNoB} /></A>}
+                {repo && <A h={repo}><Button textNoB='Source Code' className={buttonTextNoB} /></A>}
               </div>
               <div className='col-start-3 col-end-6' key={number}>
                 <img src={img} alt={title + ' image'} width='1000' key={number} />
@@ -43,9 +44,9 @@ export default function Projects() {
                 <h3 className='pb-4 text-xl font-bold' key={number}>{title}</h3>
                 <p className='' key={number}>{desc1}</p>
                 <p className='' key={number}>{desc2}</p>
-                {video && <Button text='Demo Video' />}
-                {website && <A h={website}><Button text='See Live' /></A>}
-                {repo && <A h={repo}><Button text='Source Code' /></A>}
+                {video && <Button textB='Demo Video' />}
+                {website && <A h={website}><Button textNoB='See Live' className={buttonTextNoB} /></A>}
+                {repo && <A h={repo}><Button textNoB='Source Code' className={buttonTextNoB} /></A>}
               </div>
               <div className='col-start-3 col-end-6' key={number}>
                 <img src={img} alt={title + ' image'} width='1000' key={number} />

@@ -25,12 +25,7 @@ export default function Contact() {
     //   setSuccess(true);
     // }, 2000);
 
-    send(
-      'service_83npejq',
-      'template_5kr2cjb',
-      formData,
-      'user_AIUe2OzEEkBrATar3Pq1P'
-    )
+    send('service_83npejq', 'template_5kr2cjb', formData, 'user_AIUe2OzEEkBrATar3Pq1P')
       .then((res) => {
         setSuccess(true);
         setLoading(false);
@@ -51,54 +46,35 @@ export default function Contact() {
       {!submitted && !loading && (
         <form onSubmit={onSubmit}>
           <div>
-            <label htmlFor='name'>Name</label>
-            <input
-              id='name'
-              type='text'
-              maxLength='256'
-              required
-              name='fromName'
-              value={formData.fromName}
-              onChange={handleChange}
-            />
+            <label htmlFor='name'>Name
+              <input id='name' type='text' maxLength='256' required name='fromName'
+              value={formData.fromName} onChange={handleChange} />
+            </label>
           </div>
           <div>
-            <label htmlFor='email'>Email</label>
-            <input
-              id='email'
-              type='text'
-              maxLength='256'
-              aria-describedby='emailHelp'
-              required
-              name='fromEmail'
-              value={formData.fromEmail}
-              onChange={handleChange}
-            />
+            <label htmlFor='email'>Email
+              <input id='email' type='text' maxLength='256' aria-describedby='emailHelp' required name='fromEmail'
+                value={formData.fromEmail} onChange={handleChange} />
+            </label>
           </div>
           <div>
-            <label htmlFor='message'>Message</label>
-            <textarea
-              id='message'
-              type='text'
-              rows='5'
-              required
-              name='message'
-              value={formData.message}
-              onChange={handleChange}
-            />
+            <label htmlFor='message'>Message
+              <textarea id='message' type='text' rows='5' required name='message'
+                value={formData.message} onChange={handleChange} />
+            </label>
           </div>
           <div>
             <input type='submit' value='Connect' />
           </div>
         </form>
       )}
-      {submitted && (
+      {submitted &&
         (loading && <Loading />)
         (!loading &&
           (success && <Success />)
           (!success && <Failed />)
         )
-      )}
+      }
     </div>
   );
 }

@@ -5,13 +5,13 @@ import Socials from './buttons/Socials';
 
 export default function Hero({ next }) {
   const text = 'text-4xl font-bold py-4 leading-relaxed';
-  const name = 'text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary';
+  // const name = 'text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary';
 
   return (
     <div>
       <div className='grid grid-cols-2'>
         <div>
-          <h2 className={text + ' '}>Hi, my name is <span className={name}>Evan Walter</span>.</h2> {/* 'text-5xl font-bold' */}
+          <h2 className={text + ' '}>Hi, my name is Evan Walter.</h2> {/* 'text-5xl font-bold' */} {/* <h2 className={text + ' '}>Hi, my name is <span className={name}>Evan Walter</span>.</h2> */}
           <h2 className={text}>
             I am a Software Engineer specializing in React.
           </h2>

@@ -21,7 +21,9 @@ export default function Footer() {
           <div>
             <div>I built this portfolio from scratch</div>
             <div>with{' '}
-              <A h='https://reactjs.org/' addClassNames={textLink}>ReactJS</A>
+              <A h='https://reactjs.org/' addClassNames={textLink}>ReactJS,</A>
+              {' '}
+              <A h='https://gatsbyjs.com/' addClassNames={textLink}>Gatsby,</A>
               {' '}and{' '}
               <A h='https://tailwindcss.com/' addClassNames={textLink}>Tailwind CSS</A>
               .

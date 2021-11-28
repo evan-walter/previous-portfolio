@@ -1,1 +1,1 @@
-import './src/global.css';
+import './src/style/global.css';

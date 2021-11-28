@@ -1,22 +1,16 @@
 import React from 'react';
 
 export default function Button({ textB, textNoB, addClassNames }) {
-  const base = 'cursor-pointer '
-  const textBCName = base + 'p-4 box-border h-8 w-max border-2 bg-gradient-to-r hover:from-primary hover:to-secondary';
-  const textNoBCName = base + 'font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary';
+  // const base = 'font-bold cursor-pointer text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary ';
+  // const bBase = base + 'p-4 m-auto h-8 w-max flex items-center btn ';
+  // const textBCName = bBase;
+  // const textNoBCName = base;
+  const textNoBCName = 'font-bold cursor-pointer text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary ';
 
   return (
     <div>
-      {textB && <button className={textBCName + ' ' + (addClassNames ? addClassNames : '')}>
-        <div className='grid'>{textB}</div>
-      </button>}
+      {textB && <button className={'btn ' + (addClassNames ? addClassNames : '')}>{textB}</button>}
       {textNoB && <button className={textNoBCName + ' ' + (addClassNames ? addClassNames : '')}>{textNoB}</button>}
     </div>
   );
 }
-
-/*
-<h1 class="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-pink-400 to-red-600">
-  Hello, world!
-</h1>
-*/

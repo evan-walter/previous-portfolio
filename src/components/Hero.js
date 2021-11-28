@@ -34,7 +34,7 @@ export default function Hero({ next }) {
       </div>
       <div className='pt-16 pb-2 text-center'>
       <MyLink to={next}>
-        <Button textB='Know More' />
+        <Button textB='Know more' />
       </MyLink>
       </div>
     </div>

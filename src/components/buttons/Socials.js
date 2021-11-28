@@ -13,10 +13,10 @@ export default function Socials({ addClassNames }) {
   return (
     <div className=''>
       <A h='https://github.com/Evan-Walter/'>
-        {/* <i className={'fa-github ' + added()} /> */}
+        <i className={'fa-github ' + added()} />
       </A>
       <A h='https://linkedin.com/in/~evanwalter/'>
-        {/* <i className={'fa-linkedin ' + added()} /> */}
+        <i className={'fa-linkedin ' + added()} />
       </A>
     </div>
   );

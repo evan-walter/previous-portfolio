@@ -5,7 +5,7 @@ import logo from '../images/logo.png';
 
 export default function Navbar() {
   const logoClassNames = 'cursor-pointer';
-  const linkClassNames = 'py-2 px-4 transform hover:-translate-y-1 transition duration-200 ease-in'; // w-min
+  const linkClassNames = 'py-2 px-4 transform hover:-translate-y-1 transition duration-200 ease-in';
   const linksClassNames = 'flex text-center items-center justify-end cursor-pointer';
 
   const homeLink = <div className={linkClassNames}><Button textNoB='Home' /></div>
@@ -18,9 +18,9 @@ export default function Navbar() {
 
   return (
     <div id='navbar' className='px-44 py-4 grid grid-cols-2 text-right'>
-      <div onClick={handleClick} onKeyDown={handleClick}>
+      <button onClick={handleClick} onKeyDown={handleClick}>
         <img src={logo} alt='logo' className={logoClassNames} />
-      </div>
+      </button>
       <div className={linksClassNames}>
         {homeLink}
         {aboutLink}

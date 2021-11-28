@@ -14,9 +14,13 @@ export default function Navbar() {
   const testimonialsLink = <MyLink to='testimonials'><div className={linkClassNames}><Button textNoB='Testimonials' /></div></MyLink>;
   const contactLink = <MyLink to='contact'><div className={linkClassNames}><Button textNoB='Contact' /></div></MyLink>;
 
+  function handleClick() {window.location.reload()};
+
   return (
     <div id='navbar' className='px-44 py-4 grid grid-cols-2 text-right'>
-      <img src={logo} alt='logo' className={logoClassNames} onClick={function() {window.location.reload()}} />
+      <div onClick={handleClick} onKeyDown={handleClick}>
+        <img src={logo} alt='logo' className={logoClassNames} />
+      </div>
       <div className={linksClassNames}>
         {homeLink}
         {aboutLink}

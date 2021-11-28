@@ -28,10 +28,10 @@ body {
   z-index: -1;
 }
 .bg-img-hero {
-  background: url('./images/ewalter-3-2600.jpg');
+  background: url('../images/ewalter-3-2600.jpg');
 }
 .bg-img-contact {
-  background: url('./images/ewalter-4-2600.jpg');
+  background: url('../images/ewalter-4-2600.jpg');
 }
 .social-32 {
   font-size: 32px;

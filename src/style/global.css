@@ -33,14 +33,14 @@ body {
 .bg-img-contact {
   background: url('../images/ewalter-4-2600.jpg');
 }
-.btn {
-  font-size: 1.5rem;
+.btn-b {
+  /* font-size: 1.5rem;
   display: inline-block;
   position: relative;
   padding: 0.5rem 1.3rem;
   font-weight: bold;
   line-height: 1;
-  z-index: 1;
+  z-index: 1; */
   transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.6s;
   background-image: linear-gradient(90deg, #0c3483 0%, #6b8cce 100%);
   -webkit-background-clip: text;
@@ -51,7 +51,7 @@ body {
   border-image-slice: 1;
   cursor: pointer;
 }
-.btn::after {
+.btn-b::after {
   content: '';
   display: block;
   position: absolute;
@@ -63,10 +63,13 @@ body {
   transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.3s;
   background-image: linear-gradient(90deg, #0c3483 0%, #6b8cce 100%);
 }
-.btn:hover {
+.btn-b:hover {
   -webkit-text-fill-color: white;
   text-decoration: none;
 }
-.btn:hover::after {
+.btn-b:hover::after {
   width: 100%;
+}
+.social-32 {
+  font-size: 32px;
 }

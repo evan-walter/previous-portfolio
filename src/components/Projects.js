@@ -1,4 +1,5 @@
 import React from 'react';
+import Tilt from 'react-parallax-tilt';
 import A from './buttons/A';
 import Button from './buttons/Button';
 import heyfioImg from '../images/heyfio-1000.png';
@@ -30,9 +31,9 @@ export default function Projects() {
                   {repo && <A h={repo}><Button textNoB='Source Code' addClassNames={btnNoB} /></A>}
                 </div>
               </div>
-              <div className='col-start-3 col-end-6' key={number}>
+              <Tilt className='col-start-3 col-end-6' key={number}>
                 <img src={img} alt={title + ' image'} width='1000' key={number} />
-              </div>
+              </Tilt>
             </div>
           );
         }
@@ -53,9 +54,9 @@ export default function Projects() {
                   {repo && <A h={repo}><Button textNoB='Source Code' addClassNames={btnNoB} /></A>}
                 </div>
               </div>
-              <div className='col-start-3 col-end-6' key={number}>
+              <Tilt className='col-start-3 col-end-6' key={number}>
                 <img src={img} alt={title + ' image'} width='1000' key={number} />
-              </div>
+              </Tilt>
             </div>
           );
         }

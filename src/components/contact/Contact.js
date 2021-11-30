@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { send } from 'emailjs-com';
+import Button from '../buttons/Button';
 import Loading from './Loading';
 import Success from './Success';
 import Failed from './Failed';
@@ -41,30 +42,36 @@ export default function Contact() {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
+  const label = ''; // color-main
+  const formCtl = '';
+
+
   return (
     <div>
       {!submitted && !loading && (
-        <form onSubmit={onSubmit}>
+        <form onSubmit={onSubmit} className=''>
           <div>
-            <label htmlFor='name'>Name
+            <label htmlFor='name' className={label}>Name
               <input id='name' type='text' maxLength='256' required name='fromName'
-              value={formData.fromName} onChange={handleChange} />
+              value={formData.fromName} onChange={handleChange} className={formCtl} />
             </label>
           </div>
           <div>
-            <label htmlFor='email'>Email
+            <label htmlFor='email' className={label}>Email
               <input id='email' type='text' maxLength='256' aria-describedby='emailHelp' required name='fromEmail'
-                value={formData.fromEmail} onChange={handleChange} />
+                value={formData.fromEmail} onChange={handleChange} className={formCtl} />
             </label>
           </div>
           <div>
-            <label htmlFor='message'>Message
+            <label htmlFor='message' className={label}>Message
               <textarea id='message' type='text' rows='5' required name='message'
-                value={formData.message} onChange={handleChange} />
+                value={formData.message} onChange={handleChange} className={formCtl} />
             </label>
           </div>
           <div>
-            <input type='submit' value='Connect' />
+            <Button textB>
+              <input type='submit' value='Connect' className={formCtl} />
+            </Button>
           </div>
         </form>
       )}

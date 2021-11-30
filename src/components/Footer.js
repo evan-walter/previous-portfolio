@@ -14,7 +14,7 @@ export default function Footer() {
           <UpArrow />
         </MyLink>
       </div>
-      <Socials addClassNames='fa-inverse pt-16 pb-8 px-8 social-32' />
+      <Socials addClassNames='fa-inverse mt-16 mb-8 mx-8 social-32' />
       <div className='w-11/12 m-auto text-sm'>
         <hr className='border-footerhr' />
         <div className='pt-8 m-auto grid grid-cols-3 grid-flow-row'>

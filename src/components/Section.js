@@ -1,5 +1,4 @@
 import React from 'react';
-import Button from './buttons/Button';
 import MyLink from './buttons/MyLink';
 import { DownArrow } from './buttons/Arrows';
 

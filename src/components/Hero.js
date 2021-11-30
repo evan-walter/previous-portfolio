@@ -15,7 +15,7 @@ export default function Hero({ next }) {
           <h2 className={text}>
             I am a Software Engineer specializing in React.
           </h2>
-          <Socials addClassNames='px-4 py-4 text-3xl' />
+          <Socials addClassNames='mx-4 my-4 text-3xl' />
         </div>
         <div>
           <iframe

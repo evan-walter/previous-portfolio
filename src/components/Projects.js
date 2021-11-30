@@ -15,7 +15,7 @@ export default function Projects() {
   return (
     <div className='pb-12'>
       {projects.map(
-        ({ type, subtitle1, subtitle2, items }) => {
+        ({ type, subtitle1, items }) => { // subtitle2
           return (
             <div>
               <h2 id={type} className={sub1CNames} key={type}>{subtitle1}</h2>

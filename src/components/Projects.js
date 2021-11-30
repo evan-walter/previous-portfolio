@@ -9,8 +9,8 @@ import w3Img from '../images/w3-1000.png';
 export default function Projects() {
   const sub1CName = 'pt-12 pb-4 text-3xl font-bold text-center';
   const sub2CName = 'pb-8 text-2xl font-bold text-center';
-  const btnB = 'py-2 mr-4 px-4 text-lg';
-  const btnNoB = 'mr-4 text-lg transform hover:translate-x-1 transition duration-300 ease-in';
+  const btnB = 'py-2 mr-4 px-4 text-lg'; // lg:text-md
+  const btnNoB = 'mr-4 text-lg transform hover:translate-x-1 transition duration-300 ease-in'; // lg:text-md
   
   return (
     <div className='pb-12'>
@@ -25,10 +25,10 @@ export default function Projects() {
                   return (
                     <div id={id} className='py-16 grid grid-cols-1 lg:grid-cols-5' key={number}>
                       <div className='py-8 grid-cols-1 lg:pr-16 lg:col-start-1 lg:col-end-3'>
-                        <h3 className='pb-4 text-xl font-bold' key={number}>{title}</h3>
-                        <p className='' key={number}>{desc1}</p>
-                        <p className='' key={number}>{desc2}</p>
-                        <div className='my-4 flex items-center'>
+                        <h3 className='pb-4 font-bold text-xl text-center lg:text-left' key={number}>{title}</h3>
+                        <p className='text-center lg:text-left' key={number}>{desc1}</p>
+                        <p className='text-center lg:text-left' key={number}>{desc2}</p>
+                        <div className='my-4 flex items-center justify-center lg:justify-start'>
                           {video && <Button textB='Demo Video' addClassNames={btnB} />}
                           {website && <A h={website}><Button textNoB='See Live' addClassNames={btnNoB} /></A>}
                           {repo && <A h={repo}><Button textNoB='Source Code' addClassNames={btnNoB} /></A>}

@@ -9,7 +9,7 @@ export default function Hero({ next }) {
 
   return (
     <div>
-      <div className='grid grid-cols-2'>
+      <div className='grid grid-cols-1 lg:grid-cols-2'>
         <div>
           <h2 className={text + ' '}>Hi, my name is Evan Walter.</h2> {/* 'text-5xl font-bold' */} {/* <h2 className={text + ' '}>Hi, my name is <span className={name}>Evan Walter</span>.</h2> */}
           <h2 className={text}>

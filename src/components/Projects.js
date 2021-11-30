@@ -9,7 +9,7 @@ import w3Img from '../images/w3-1000.png';
 export default function Projects() {
   const subtitle1 = 'pt-12 pb-4 text-3xl font-bold text-center';
   const subtitle2 = 'pb-8 text-2xl font-bold text-center';
-  const btnB = 'py-2 px-4 my-4 text-lg'; // my-4 mx-1
+  const btnB = 'py-2 px-4 text-lg';
   const btnNoB = 'text-lg transform hover:translate-x-1 transition duration-300 ease-in';
 
   return (
@@ -24,7 +24,7 @@ export default function Projects() {
                 <h3 className='pb-4 text-xl font-bold' key={number}>{title}</h3>
                 <p className='' key={number}>{desc1}</p>
                 <p className='' key={number}>{desc2}</p>
-                <div className='grid grid-cols-2 align-center justify-start'>
+                <div className='my-4 grid grid-cols-2 items-center'>
                   {video && <Button textB='Demo Video' addClassNames={btnB} />}
                   {website && <A h={website}><Button textNoB='See Live' addClassNames={btnNoB} /></A>}
                   {repo && <A h={repo}><Button textNoB='Source Code' addClassNames={btnNoB} /></A>}
@@ -47,9 +47,11 @@ export default function Projects() {
                 <h3 className='pb-4 text-xl font-bold' key={number}>{title}</h3>
                 <p className='' key={number}>{desc1}</p>
                 <p className='' key={number}>{desc2}</p>
-                {video && <Button textB='Demo Video' addClassNames={btnB} />}
-                {website && <A h={website}><Button textNoB='See Live' addClassNames={btnNoB} /></A>}
-                {repo && <A h={repo}><Button textNoB='Source Code' addClassNames={btnNoB} /></A>}
+                <div className='my-4 grid grid-cols-2 items-center'>
+                  {video && <Button textB='Demo Video' addClassNames={btnB} />}
+                  {website && <A h={website}><Button textNoB='See Live' addClassNames={btnNoB} /></A>}
+                  {repo && <A h={repo}><Button textNoB='Source Code' addClassNames={btnNoB} /></A>}
+                </div>
               </div>
               <div className='col-start-3 col-end-6' key={number}>
                 <img src={img} alt={title + ' image'} width='1000' key={number} />

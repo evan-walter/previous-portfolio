@@ -19,7 +19,7 @@ export default function Projects() {
           return (
             <div>
               <h2 id={type} className={sub1CNames} key={type}>{subtitle1}</h2>
-              <h3 className={sub2CNames} key={type}>{subtitle2}</h3>
+              {/* <h3 className={sub2CNames} key={type}>{subtitle2}</h3> */}
               {items.map(
                 ({ number, id, title, desc1, desc2, img, video, website, repo }) => {
                   return (

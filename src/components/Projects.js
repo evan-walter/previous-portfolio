@@ -8,7 +8,7 @@ import w3Img from '../images/w3-1000.png';
 
 export default function Projects() {
   const sub1CNames = 'pt-12 pb-4 text-3xl font-bold text-center';
-  const sub2CNames = 'pb-8 text-2xl font-bold text-center';
+  // const sub2CNames = 'pb-8 text-2xl font-bold text-center';
   const btnB = 'py-2 px-4 text-lg';
   const btnNoB = 'text-lg transform hover:translate-x-1 transition duration-300 ease-in';
   

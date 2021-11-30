@@ -8,18 +8,18 @@ import w3Img from '../images/w3-1000.png';
 
 export default function Projects() {
   const sub1CNames = 'pt-12 pb-4 text-3xl font-bold text-center';
-  // const sub2CNames = 'pb-8 text-2xl font-bold text-center';
+  const sub2CNames = 'pb-8 text-2xl font-bold text-center';
   const btnB = 'py-2 px-4 text-lg';
   const btnNoB = 'text-lg transform hover:translate-x-1 transition duration-300 ease-in';
   
   return (
     <div className='pb-12'>
       {projects.map(
-        ({ type, subtitle1, items }) => { // subtitle2
+        ({ type, subtitle1, subtitle2, items }) => {
           return (
             <div>
               <h2 id={type} className={sub1CNames} key={type}>{subtitle1}</h2>
-              {/* <h3 className={sub2CNames} key={type}>{subtitle2}</h3> */}
+              <h3 className={sub2CNames} key={type}>{subtitle2}</h3>
               {items.map(
                 ({ number, id, title, desc1, desc2, img, video, website, repo }) => {
                   return (

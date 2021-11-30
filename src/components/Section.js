@@ -17,7 +17,7 @@ export default function Section({
   const gradient = ' text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary'
 
   const containerStart =
-    'py-16 px-44 ' +
+    'py-8 px-36 xl:py-16 xl:px-44 ' +
     (!fluidHeight ? 'section ' : '') +
     (bgColored ? 'bg-gradient-to-br from-primary to-secondary text-white' : '');
 

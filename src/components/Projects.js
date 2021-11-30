@@ -26,8 +26,8 @@ export default function Projects() {
                     <div id={id} className='py-16 grid grid-cols-1 lg:grid-cols-5' key={number}>
                       <div className='py-8 grid-cols-1 lg:pr-16 lg:col-start-1 lg:col-end-3'>
                         <h3 className='pb-4 font-bold text-xl text-center lg:text-left' key={number}>{title}</h3>
-                        <p className='text-center lg:text-left' key={number}>{desc1}</p>
-                        <p className='text-center lg:text-left' key={number}>{desc2}</p>
+                        <p className='text-center md:px-28 lg:text-left' key={number}>{desc1}</p>
+                        <p className='text-center md:px-28 lg:text-left' key={number}>{desc2}</p>
                         <div className='my-4 flex items-center justify-center lg:justify-start'>
                           {video && <Button textB='Demo Video' addClassNames={btnB} />}
                           {website && <A h={website}><Button textNoB='See Live' addClassNames={btnNoB} /></A>}

@@ -42,35 +42,32 @@ export default function Contact() {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const label = ''; // color-main
-  const formCtl = '';
-
+  const fieldWrap = 'grid grid-cols-1';
+  const labelCtl = 'py-1 text-lg'; // color-main
+  const inputCtl = 'p-2 focus:outline-none';
 
   return (
-    <div>
+    <div className='m-auto max-w-lg'>
       {!submitted && !loading && (
         <form onSubmit={onSubmit} className=''>
-          <div>
-            <label htmlFor='name' className={label}>Name
-              <input id='name' type='text' maxLength='256' required name='fromName'
-              value={formData.fromName} onChange={handleChange} className={formCtl} />
-            </label>
+          <div className={fieldWrap}>
+            <label htmlFor='name' className={labelCtl}><Button textNoB='Name' /></label>
+            <input id='name' type='text' maxLength='256' required name='fromName'
+              value={formData.fromName} onChange={handleChange} className={inputCtl} />
           </div>
-          <div>
-            <label htmlFor='email' className={label}>Email
-              <input id='email' type='text' maxLength='256' aria-describedby='emailHelp' required name='fromEmail'
-                value={formData.fromEmail} onChange={handleChange} className={formCtl} />
-            </label>
+          <div className={fieldWrap}>
+            <label htmlFor='email' className={labelCtl}><Button textNoB='Email' /></label>
+            <input id='email' type='text' maxLength='256' aria-describedby='emailHelp' required name='fromEmail'
+              value={formData.fromEmail} onChange={handleChange} className={inputCtl} />
           </div>
-          <div>
-            <label htmlFor='message' className={label}>Message
-              <textarea id='message' type='text' rows='5' required name='message'
-                value={formData.message} onChange={handleChange} className={formCtl} />
-            </label>
+          <div className={fieldWrap}>
+            <label htmlFor='message' className={labelCtl}><Button textNoB='Message' /></label>
+            <textarea id='message' type='text' rows='5' required name='message'
+              value={formData.message} onChange={handleChange} className={inputCtl} />
           </div>
-          <div>
-            <Button textB>
-              <input type='submit' value='Connect' className={formCtl} />
+          <div className='pt-12 m-auto text-center'>
+            <Button textB='Connect'>
+              <input type='submit' className={inputCtl} />
             </Button>
           </div>
         </form>

@@ -24,9 +24,11 @@ export default function App() {
       <Section  id='testimonials' next='contact' titleShown='TESTIMONIALS' bgColored>
         <Testimonials />
       </Section>
-      <Section id='contact' last titleShown="Let's Connect">
-        <Contact />
-      </Section>
+      <div className='bg-gray-200'>
+        <Section id='contact' last titleShown="LET'S CONNECT" titleGradient>
+          <Contact />
+        </Section>
+      </div>
       <Footer />
     </div>
   );

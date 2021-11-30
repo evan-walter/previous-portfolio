@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from './buttons/Button';
 import MyLink from './buttons/MyLink';
 import { DownArrow } from './buttons/Arrows';
 
@@ -7,11 +8,15 @@ export default function Section({
   next,
   last,
   titleShown,
+  titleGradient,
   bgColored,
   hasBgImgClassName,
   fluidHeight,
   children,
 }) {
+  const titleCtl = 'text-4xl font-bold text-center pb-12';
+  const gradient = ' text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary'
+
   const containerStart =
     'py-16 px-44 ' +
     (!fluidHeight ? 'section ' : '') +
@@ -29,7 +34,8 @@ export default function Section({
       {/* {!!hasBgImgClassName && (
         <div className={'bg-img ' + hasBgImgClassName}></div>
       )} */}
-      {titleShown && <div className='text-4xl font-bold text-center pb-12'>{titleShown}</div>}
+      {titleShown && titleGradient && <div className={titleCtl + gradient}>{titleShown}</div>}
+      {titleShown && !titleGradient && <div className={titleCtl}>{titleShown}</div>}
       {children}
       {!last && (
         <div className='py-4 grid justify-items-center'>

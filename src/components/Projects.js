@@ -60,7 +60,7 @@ const projects = [
         number: 1,
         id: '',
         title: 'HeyFIO',
-        desc1: 'A Full Stack Software Engineering Contract',
+        desc1: 'A Full Stack Software Engineering Contract building a Blockchain web application',
         desc2: 'React + MySQL + NodeJS + ExpressJS',
         img: heyfioImg,
         video: '#',
@@ -79,7 +79,7 @@ const projects = [
         id: '',
         title: 'Confidence Co',
         desc1:
-          'A new design for a health and wellness Shopify store involving theme customization and theme creation',
+          'Custom theme development to implement a new design for a health and wellness Shopify store',
         desc2: '',
         img: confcoImg,
         video: 'https://www.loom.com/embed/505d28067eb3491a8e27dc222c21ad12',
@@ -91,7 +91,7 @@ const projects = [
         id: '',
         title: 'W3 Sales',
         desc1:
-          'A Shopify website for a food services factory and distributor group with a large inventory of products',
+          'Custom Shopify development for a food services factory and distributor group with a large inventory of products',
         desc2: '',
         img: w3Img,
         video: 'https://www.loom.com/embed/3b0aa0cd448b4e41964e8e2cb5cffdf1',

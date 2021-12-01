@@ -15,33 +15,33 @@ export default function Footer() {
           <UpArrow />
         </MyLink>
       </div>
-      <Socials addClassNames='fa-inverse mt-16 mb-8 mx-8 social-32' />
+      <Socials addClassName='fa-inverse mt-16 mb-8 mx-8 social-32' />
       <div className='w-11/12 m-auto text-sm'>
         <hr className='border-footerhr' />
         <div className='pt-8 m-auto grid grid-cols-1 lg:grid-cols-3 grid-flow-row'>
           <div>
             <div className={text}>I built this portfolio from scratch</div>
             <div className={text}>with{' '}
-              <A h='https://reactjs.org/' addClassNames={textLink}>React,</A>
+              <A h='https://reactjs.org/' addClassName={textLink}>React,</A>
               {' '}
-              <A h='https://gatsbyjs.com/' addClassNames={textLink}>Gatsby,</A>
+              <A h='https://gatsbyjs.com/' addClassName={textLink}>Gatsby,</A>
               {' '}and{' '}
-              <A h='https://tailwindcss.com/' addClassNames={textLink}>Tailwind</A>
+              <A h='https://tailwindcss.com/' addClassName={textLink}>Tailwind</A>
               .
             </div>
           </div>
           <div>
             <div className={text}>
-              <A h='https://github.com/Evan-Walter/portfolio/' addClassNames={textLink}>Source Code</A>
+              <A h='https://github.com/Evan-Walter/portfolio/' addClassName={textLink}>Source Code</A>
             </div>
             <div className={text}>© {new Date().getFullYear()}{' '}
-              <A h='https://github.com/Evan-Walter' addClassNames={textLink}>Evan Walter</A>
+              <A h='https://github.com/Evan-Walter' addClassName={textLink}>Evan Walter</A>
             </div>
           </div>
           <div>
             <div className={text}>Design inspired by{' '}</div>
             <div className={text}>
-              <A h='https://github.com/cobidev' addClassNames={textLink}>Jacobo Martínez</A>
+              <A h='https://github.com/cobidev' addClassName={textLink}>Jacobo Martínez</A>
             </div>
           </div>
         </div>

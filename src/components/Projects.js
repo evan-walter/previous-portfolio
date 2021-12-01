@@ -30,9 +30,9 @@ export default function Projects() {
                         <p className={p} key={number}>{desc1}</p>
                         <p className={p} key={number}>{desc2}</p>
                         <div className='my-4 flex items-center justify-center lg:justify-start'>
-                          {video && <Button textB='Demo Video' addClassNames={btnB} />}
-                          {website && <A h={website}><Button textNoB='See Live' addClassNames={btnNoB} /></A>}
-                          {repo && <A h={repo}><Button textNoB='Source Code' addClassNames={btnNoB} /></A>}
+                          {video && <Button textB='Demo Video' addClassName={btnB} />}
+                          {website && <A h={website}><Button textNoB='See Live' addClassName={btnNoB} /></A>}
+                          {repo && <A h={repo}><Button textNoB='Source Code' addClassName={btnNoB} /></A>}
                         </div>
                       </div>
                       <Tilt className='lg:col-start-3 lg:col-end-6' key={number}>

@@ -15,7 +15,7 @@ export default function Hero({ next }) {
           <h2 className={text}>
             I am a Software Engineer specializing in React.
           </h2>
-          <Socials addClassNames='mx-4 my-4 text-3xl' />
+          <Socials addClassName='mx-4 my-4 text-3xl' />
         </div>
         <div>
           <iframe
@@ -34,7 +34,7 @@ export default function Hero({ next }) {
       </div>
       <div className='pt-16 pb-2 text-center'>
       <MyLink to={next}>
-        <Button textB='Know more' addClassNames='text-lg lg:text-xl' />
+        <Button textB='Know more' addClassName='text-lg lg:text-xl' />
       </MyLink>
       </div>
     </div>

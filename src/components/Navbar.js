@@ -1,32 +1,24 @@
 import React from 'react';
-import Button from './buttons/Button';
-import MyLink from './buttons/MyLink';
-import logo from '../images/logo.png';
+// import Button from './buttons/Button';
+// import MyLink from './buttons/MyLink';
+// import logo from '../images/logo.png';
 
 export default function Navbar() {
-  const logoClassNames = 'cursor-pointer';
-  const linkClassNames = 'py-2 px-4 transform hover:-translate-y-1 transition duration-200 ease-in';
-  const linksClassNames = 'flex text-center items-center justify-end cursor-pointer';
-
-  const homeLink = <div className={linkClassNames}><Button textNoB='Home' /></div>
-  const aboutLink = <MyLink to='about'><div className={linkClassNames}><Button textNoB='About' /></div></MyLink>;
-  const projectsLink = <MyLink to='projects'><div className={linkClassNames}><Button textNoB='Projects' /></div></MyLink>;
-  const testimonialsLink = <MyLink to='testimonials'><div className={linkClassNames}><Button textNoB='Testimonials' /></div></MyLink>;
-  const contactLink = <MyLink to='contact'><div className={linkClassNames}><Button textNoB='Contact' /></div></MyLink>;
-
   function handleClick() {window.location.reload();}
 
   return (
-    <div id='navbar' className='px-44 py-4 grid grid-cols-2 text-lg text-right'>
-      <button onClick={handleClick} onKeyDown={handleClick}>
-        <img src={logo} alt='logo' className={logoClassNames} />
-      </button>
-      <div className={linksClassNames}>
-        {homeLink}
-        {aboutLink}
-        {projectsLink}
-        {testimonialsLink}
-        {contactLink}
+    <div className='bg-indigo-700 shadow-lg'>
+      <div className='container mx-auto'>
+        <div className='sm:flex justify-around'>
+          {/* Site Title */}
+          <div className='text-white text-3xl font-bold p-3'>WEB ZONE</div>
+          {/* Menu Items */}
+          <div className='text-gray-400 sm:self-center text-xl border-t sm:border-none'>
+            <div className='sm:inline-block'>
+              <div className='p-3 hover:text-white'>Home</div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

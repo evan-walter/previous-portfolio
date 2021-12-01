@@ -11,6 +11,26 @@ body {
   min-height: 92vh;
   height: fit-content;
 }
+.bg-img {
+  height: 100vh;
+  width: 100%;
+  content: '';
+  /* background: url('./images/ewalter-3-2600.jpg'); */
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  opacity: 0.3;
+  /* position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0; */
+  z-index: -1;
+}
+.bg-img-hero {
+  background: url('../images/ewalter-3-2600.jpg');
+}
 .hero-vid {
   width: 560px;
   height: 315px;
@@ -81,25 +101,8 @@ body {
     height: 113px;
   }
 }
-.bg-img {
-  height: 100vh;
-  width: 100%;
-  content: '';
-  /* background: url('./images/ewalter-3-2600.jpg'); */
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  opacity: 0.3;
-  /* position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0; */
-  z-index: -1;
-}
-.bg-img-hero {
-  background: url('../images/ewalter-3-2600.jpg');
+.contact-ctl {
+  max-width: 525px;
 }
 .bg-img-contact {
   background: url('../images/ewalter-4-2600.jpg');

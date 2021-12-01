@@ -5,10 +5,11 @@ import { UpArrow } from './buttons/Arrows';
 import Socials from './buttons/Socials';
 
 export default function Footer() {
+  const text = 'pb-0.5'
   const textLink = 'hover:text-white transition duration-150 ease-in';
 
   return (
-    <div id='footer' className='px-32 py-16 bg-footerbg text-center text-footertext'>
+    <div id='footer' className='py-16 px-8 sm:px-36 xl:px-32 bg-footerbg text-center text-footertext'>
       <div className='text-white grid justify-items-center'>
         <MyLink to='top'>
           <UpArrow />
@@ -19,8 +20,8 @@ export default function Footer() {
         <hr className='border-footerhr' />
         <div className='pt-8 m-auto grid grid-cols-1 lg:grid-cols-3 grid-flow-row'>
           <div>
-            <div>I built this portfolio from scratch</div>
-            <div>with{' '}
+            <div className={text}>I built this portfolio from scratch</div>
+            <div className={text}>with{' '}
               <A h='https://reactjs.org/' addClassNames={textLink}>React,</A>
               {' '}
               <A h='https://gatsbyjs.com/' addClassNames={textLink}>Gatsby,</A>
@@ -30,16 +31,16 @@ export default function Footer() {
             </div>
           </div>
           <div>
-            <div>
+            <div className={text}>
               <A h='https://github.com/Evan-Walter/portfolio/' addClassNames={textLink}>Source Code</A>
             </div>
-            <div>© {new Date().getFullYear()}{' '}
+            <div className={text}>© {new Date().getFullYear()}{' '}
               <A h='https://github.com/Evan-Walter' addClassNames={textLink}>Evan Walter</A>
             </div>
           </div>
           <div>
-            <div>Design inspired by{' '}</div>
-            <div>
+            <div className={text}>Design inspired by{' '}</div>
+            <div className={text}>
               <A h='https://github.com/cobidev' addClassNames={textLink}>Jacobo Martínez</A>
             </div>
           </div>

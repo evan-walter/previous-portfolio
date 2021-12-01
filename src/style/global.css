@@ -8,8 +8,8 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 .section {
+  min-height: 92vh;
   height: fit-content;
-  /* height: 92vh; */
 }
 .hero-vid {
   width: 560px;

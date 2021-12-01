@@ -47,7 +47,7 @@ export default function Contact() {
   const inputCtl = 'p-2 focus:outline-none';
 
   return (
-    <div className='m-auto max-w-lg'>
+    <div className='p-32 m-auto w-full'> {/* m-auto max-w-lg */}
       {!submitted && !loading && (
         <form onSubmit={onSubmit} className=''>
           <div className={fieldWrap}>

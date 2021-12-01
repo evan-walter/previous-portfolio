@@ -8,7 +8,7 @@ export default function Footer() {
   const textLink = 'hover:text-white transition duration-150 ease-in';
 
   return (
-    <div id='footer' className={'px-32 py-16 bg-footerbg text-center text-footertext'}>
+    <div id='footer' className='px-32 py-16 bg-footerbg text-center text-footertext'>
       <div className='text-white grid justify-items-center'>
         <MyLink to='top'>
           <UpArrow />

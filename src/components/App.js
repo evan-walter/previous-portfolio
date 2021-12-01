@@ -18,7 +18,7 @@ export default function App() {
       <Section id='about' next='projects' titleShown='ABOUT' bgColored>
         <About />
       </Section>
-      <Section  id='projects' next='testimonials' titleShown='PROJECTS' fluidHeight>
+      <Section  id='projects' next='testimonials' titleShown='PROJECTS'>
         <Projects />
       </Section>
       <Section  id='testimonials' next='contact' titleShown='TESTIMONIALS' bgColored>

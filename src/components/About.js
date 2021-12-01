@@ -2,7 +2,7 @@ import React from 'react';
 import aboutImg from '../images/ewalter-11-700.jpg';
 
 export default function About() {
-  const p = 'py-2 text-xl text-center lg:text-left';
+  const p = 'py-2 md:text-lg lg:text-xl text-center lg:text-left';
 
   return (
     <div className='grid grid-cols-1 gap-12 justify-items-center lg:grid-cols-2 lg:gap-32 lg:justify-items-end'>

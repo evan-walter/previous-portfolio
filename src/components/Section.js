@@ -13,7 +13,7 @@ export default function Section({
   fluidHeight,
   children,
 }) {
-  const titleCtl = 'text-4xl font-bold text-center pb-12';
+  const titleCtl = 'pb-8 lg:pb-12 text-3xl lg:text-4xl font-bold text-center';
   const gradient = ' text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary'
 
   const containerStart =

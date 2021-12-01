@@ -19,11 +19,11 @@ export default function Hero({ next }) {
         </div>
         <div>
           <iframe
-            width="560"
-            height="315"
+            width='560'
+            height='315'
             // width='590'
             // height='345'
-            className=''
+            className='hero-vid'
             title='Welcome Video'
             frameBorder='0'
             allow='accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture'

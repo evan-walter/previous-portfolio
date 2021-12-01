@@ -11,7 +11,7 @@ export default function Projects() {
   const sub2CName = 'pb-8 text-2xl font-bold text-center';
   const btnB = 'py-2 mr-4 px-4 text-lg'; // lg:text-md
   const btnNoB = 'mr-4 text-lg transform hover:translate-x-1 transition duration-300 ease-in'; // lg:text-md
-  const p = 'text-center px-28 lg:p-0 lg:text-left';
+  const p = 'text-center px-0 md:px-16 lg:px-0 lg:text-left';
   
   return (
     <div className='pb-12'>
@@ -24,7 +24,7 @@ export default function Projects() {
               {items.map(
                 ({ number, id, title, desc1, desc2, img, video, website, repo }) => {
                   return (
-                    <div id={id} className='py-16 grid grid-cols-1 lg:grid-cols-5' key={number}>
+                    <div id={id} className='py-12 grid grid-cols-1 lg:grid-cols-5' key={number}>
                       <div className='py-8 grid-cols-1 lg:pr-16 lg:col-start-1 lg:col-end-3'>
                         <h3 className='pb-4 font-bold text-xl text-center lg:text-left' key={number}>{title}</h3>
                         <p className={p} key={number}>{desc1}</p>

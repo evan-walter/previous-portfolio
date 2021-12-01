@@ -17,7 +17,7 @@ export default function Section({
   const gradient = ' text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary'
 
   const containerStart =
-    'py-8 px-36 xl:py-16 xl:px-44 ' +
+    'px-8 py-16 sm:px-36 xl:px-44 ' +
     (!fluidHeight ? 'section ' : '') +
     (bgColored ? 'bg-gradient-to-br from-primary to-secondary text-white' : '');
 
@@ -37,7 +37,7 @@ export default function Section({
       {titleShown && !titleGradient && <div className={titleCtl}>{titleShown}</div>}
       {children}
       {!last && (
-        <div className='py-4 grid justify-items-center'>
+        <div className='pt-8 grid justify-items-center'>
           <MyLink to={next}>
             <DownArrow />
           </MyLink>

@@ -10,15 +10,12 @@ export default function Navbar() {
 
   return (
     <div id='home'>
-      <div className='py-4 px-44 mx-auto'>
-        <div className='sm:flex justify-around'>
-          {/* Logo */}
-          {/* <div className='text-white text-3xl font-bold p-3'>LOGO</div> */}
-          <button onClick={handleClick} onKeyDown={handleClick} className='cursor-pointer'>
-            <img src={logo} alt='logo' />
-          </button>
-          {/* Nav Links */}
-          <ul className='text-gray-400 sm:self-center text-xl border-t sm:border-none'>
+      <div className='py-4 px-8 sm:px-36 xl:px-44 mx-auto flex flex-wrap'>
+        <button onClick={handleClick} onKeyDown={handleClick} className='one cursor-pointer'>
+          <img src={logo} alt='logo' />
+        </button>
+        <div className='two'>
+          <ul>
             {links.map(
               (value) => {
                 return (

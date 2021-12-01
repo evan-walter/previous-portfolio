@@ -2,7 +2,7 @@ import React from 'react';
 import A from './A';
 
 export default function Socials({ addClassName }) {
-  const more = 'fa cursor-pointer transform hover:-translate-y-0.5 transition duration-200 ease-in ';
+  const more = 'fa cursor-pointer transform hover:-translate-y-1 transition duration-200 ease-in ';
   const added = () => {
     if (addClassName) {
       return more + addClassName;

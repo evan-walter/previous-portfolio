@@ -3,7 +3,7 @@ import About from './About';
 import Contact from './contact/Contact';
 import Footer from './Footer';
 import Hero from './Hero';
-// import Navbar from './Navbar';
+import Navbar from './Navbar';
 import Projects from './Projects';
 import Section from './Section';
 import Testimonials from './Testimonials';
@@ -11,7 +11,7 @@ import Testimonials from './Testimonials';
 export default function App() {
   return (
     <div id='top'>
-      {/* <Navbar /> */}
+      <Navbar />
       <Section id='hero' next='about'>
         <Hero next='about' />
       </Section>

@@ -18,14 +18,14 @@ export default function Navbar() {
   }
 
   return (
-    <header id='home' class='bg-gray-100'>
-      <div class='flex items-center justify-between py-4 px-8 sm:px-36 xl:px-44'>
+    <header id='home' class='text-lg lg:flex lg:justify-between py-2 px-8 sm:px-36 xl:px-44'>
+      <div class='flex items-center justify-between'>
         <div className=''>
           <button onClick={handleLogo} onKeyDown={handleLogo} className='cursor-pointer'>
             <img src={logo} alt='logo' />
           </button>
         </div>
-        <div className=''>
+        <div className='lg:hidden'>
           <button 
             className='text-gray-600'
             onClick={handleBars}
@@ -37,23 +37,21 @@ export default function Navbar() {
           </button>
         </div>
       </div>
-      <div className={'pb-4 focus:outline-none ' + (expanded ? 'block' : 'hidden') }>
-        <ul className=''>
-          {links.map(
-            (value) => {
-              return (
-                <li className=''>
-                  <div className='block text-center py-2 transform hover:-translate-y-1 transition duration-200 ease-in'>
-                    <MyLink to={value}>
-                      <Button textNoB={value.charAt(0).toUpperCase() + value.slice(1)} />
-                    </MyLink>
-                  </div>
-                </li>
-              )
-            }
-            )}
-        </ul>
-      </div>
+      <ul className={'focus:outline-none ' + (expanded ? 'block pb-4' : 'hidden lg:flex lg:items-center') }>
+        {links.map(
+          (value) => {
+            return (
+              <li className=''>
+                <div className='block text-center p-2 m-2 transform hover:-translate-y-1 transition duration-200 ease-in'>
+                  <MyLink to={value}>
+                    <Button textNoB={value.charAt(0).toUpperCase() + value.slice(1)} />
+                  </MyLink>
+                </div>
+              </li>
+            )
+          }
+          )}
+      </ul>
     </header>
   );
 }

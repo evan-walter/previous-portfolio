@@ -11,18 +11,6 @@ body {
   min-height: 92vh;
   height: fit-content;
 }
-// Nav
-.container-my-nav {
-  display: flex;
-  flex-wrap: wrap;
-}
-.one, .two {
-  flex-basis: 50%;
-}
-.two {
-  text-align: right;
-}
-// end Nav
 .bg-img {
   height: 100vh;
   width: 100%;

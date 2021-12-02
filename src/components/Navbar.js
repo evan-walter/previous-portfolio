@@ -13,49 +13,22 @@ export default function Navbar() {
     window.location.reload();
   }
 
-  function handleBars() {
-    setExpanded(s => !s);
-  }
-
   return (
-    <div id='home' className='flex container-my-nav py-4 px-8 sm:px-36 xl:px-44'>
-      <div className='one'>
-        <button onClick={handleLogo} onKeyDown={handleLogo} className='one cursor-pointer'>
-          <img src={logo} alt='logo' />
-        </button>
-      </div>
-      <div className='two text-lg'>
-        <div className='visible lg:invisible' onClick={handleBars}>
-          <i className='fa fa-bars' aria-hidden='true'></i>
+    <div id='home' class='py-4 px-8 sm:px-36 xl:px-44'>
+      <div className='flex'>
+        <div class='flex-none'>
+          <button onClick={handleLogo} onKeyDown={handleLogo} className='cursor-pointer'>
+            <img src={logo} alt='logo' />
+          </button>
         </div>
-        <ul className=''> {/* m-auto grid grid-cols-1 lg:grid-cols-3 grid-flow-row */}
-          {links.map(
-            (value) => {
-              return (
-                <li className='invisible lg:visible lg:inline-block'> {/* sm:inline-block */}
-                  <div className='p-3'> {/* transform hover:-translate-y-1 transition duration-200 ease-in */}
-                    <MyLink to={value}>
-                      <Button textNoB={value.charAt(0).toUpperCase() + value.slice(1)} />
-                    </MyLink>
-                  </div>
-                </li>
-              )
-            }
-          )}
-        </ul>
-      </div>
-
-      {/* <div className='py-4 px-8 sm:px-36 xl:px-44 mx-auto flex flex-wrap'>
-        <button onClick={handleClick} onKeyDown={handleClick} className='one cursor-pointer'>
-          <img src={logo} alt='logo' />
-        </button>
-        <div className='two'>
-          <ul>
+        <div class='flex-grow'></div>
+        <div class='flex-none'>
+          <ul className=''> {/* hidden lg:visible m-auto grid grid-cols-1 lg:grid-cols-3 grid-flow-row */}
             {links.map(
               (value) => {
                 return (
-                  <li className='sm:inline-block'>
-                    <div className='p-3 transform hover:-translate-y-1 transition duration-200 ease-in'>
+                  <li className='inline-block'> {/* lg:inline-block */}
+                    <div className='p-3'> {/* transform hover:-translate-y-1 transition duration-200 ease-in */}
                       <MyLink to={value}>
                         <Button textNoB={value.charAt(0).toUpperCase() + value.slice(1)} />
                       </MyLink>
@@ -66,12 +39,7 @@ export default function Navbar() {
             )}
           </ul>
         </div>
-      </div> */}
-
+      </div>
     </div>
   );
 }
-
-/* <button onClick={handleClick} onKeyDown={handleClick} className='one cursor-pointer'><img src={logo} alt='logo' /></button>
-    //       
-    //     </button> */

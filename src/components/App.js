@@ -11,7 +11,9 @@ import Testimonials from './Testimonials';
 export default function App() {
   return (
     <div id='top'>
-      <Navbar />
+      <div className=''>
+        <Navbar />
+      </div>
       <Section id='hero' next='about'>
         <Hero next='about' />
       </Section>

@@ -27,7 +27,7 @@ export default function Navbar() {
         </div>
         <div className=''>
           <button 
-            className='text-gray-600 hover:text-gray-500 focus:text-gray-500'
+            className='text-gray-600'
             onClick={handleBars}
           >
             <svg className='h-6 w-6 fill-current' viewBox='0 0 24 24'>
@@ -37,7 +37,7 @@ export default function Navbar() {
           </button>
         </div>
       </div>
-      <div className={'pb-4 ' + 'transform translate-y-0 transition duration-300 ease-in ' + (expanded ? 'block' : 'transform translate-y-full transition duration-300 ease-in') }>
+      <div className={'pb-4 focus:outline-none ' + (expanded ? 'block' : 'hidden') }>
         <ul className=''>
           {links.map(
             (value) => {

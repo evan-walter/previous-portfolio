@@ -1,27 +1,27 @@
 import React, { useState } from 'react';
 import Button from './buttons/Button';
 import MyLink from './buttons/MyLink';
+import NavProjects from './NavProjects';
 import logo from '../images/logo.png';
 
 export default function Navbar() {
   const links = ['home', 'about', 'projects', 'testimonials', 'contact'];
-  const carot = <i className={'fa fa-caret-' + projsExpanded ? 'down' : 'right'} aria-hidden='true' />;
-
+  
   const [barsExpanded, setBarsExpanded] = useState(false);
   const [projsExpanded, setProjsExpanded] = useState(false);
-
+  
   function handleLogo() {
     window.location.reload();
   }
-
+  
   function handleBars() {
     setBarsExpanded(s => !s);
   }
-
+  
   function handleProjects() {
     setProjsExpanded(s => !s);
   }
-
+  
   return (
     <header id='home' class='text-lg lg:flex lg:justify-between py-2 px-8 sm:px-36 xl:px-44'>
       <div class='flex items-center justify-between'>
@@ -46,14 +46,20 @@ export default function Navbar() {
         {links.map(
           (value) => {
             return (
-              <li className=''>
+              <li className='cursor-pointer'>
                 <div className='block text-center p-2 m-2 transform hover:-translate-y-1 transition duration-200 ease-in'>
-                  {(value === 'projects') &&
-                    {carot} + <Button textNoB={value.charAt(0).toUpperCase() + value.slice(1)} />
+                  {(value === 'projects') ?
+                    <div onClick={handleProjects} className={projsExpanded ? 'flex items-center' : ''}>
+                      <i className={'pr-1 fa fa-caret-' + (projsExpanded ? 'down' : 'right')} aria-hidden='true' />
+                      <Button textNoB={value.charAt(0).toUpperCase() + value.slice(1)} />
+                      <div className={'hidden' + projsExpanded ? 'block' : 'hidden'}>
+                        <NavProjects />
+                      </div>
+                    </div> :
+                    <MyLink to={value}>
+                      <Button textNoB={value.charAt(0).toUpperCase() + value.slice(1)} />
+                    </MyLink>
                   }
-                  <MyLink to={value}>
-                    <Button textNoB={value.charAt(0).toUpperCase() + value.slice(1)} />
-                  </MyLink>
                 </div>
               </li>
             )

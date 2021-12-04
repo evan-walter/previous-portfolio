@@ -7,14 +7,9 @@ export default function Button({ textB, textNoB, noCursorPointer, addClassName }
   
   const more = function() {
     return (
-      (
-        addClassName ?
+      (addClassName ?
         addClassName :
         (textB ? btnBDefaultSize : '')
-      ) +
-      (
-        noCursorPointer ?
-        'cursor-text' : 'cursor-pointer '
       )
     );
   }

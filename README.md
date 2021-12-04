@@ -1,9 +1,40 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
+# Portfolio - Evan Walter | Software Engineer
+
+I built this portfolio with [React](https://reactjs.org/), [Gatsby](https://www.gatsbyjs.com/), and [Tailwind](https://tailwindcss.com/).
+
+To view the live version of this project, visit [evanwalter.dev](https://evanwalter.dev).
+
+To view the source code for this project, visit [github.com/Evan-Walter/portfolio](https://github.com/Evan-Walter/portfolio).
+
+For more information on this project, see the links below.
+
+## Getting Started
+
+To get started with React, visit [reactjs.org](https://reactjs.org/).
+
+To get started with Gatsby, visit [gatsbyjs.com](https://www.gatsbyjs.com/).
+
+To get started with Tailwind, visit [tailwindcss.com](https://tailwindcss.com/).
+
+To get started with Web Development, including HTML, CSS, and JavaScript, visit
+
+- [W3Schools](https://www.w3schools.com/)
+- [Mozilla Development Network](https://developer.mozilla.org/)
+
+These resources offer documentation, tutorials, samples, and guidance on web development.
+
+Design inspired by [Jacobo Martínez](https://github.com/cobidev)
+
+Started with...
+
+#
+
+<p align='center'>
+  <a href='https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter'>
+    <img alt='Gatsby' src='https://www.gatsbyjs.com/Gatsby-Monogram.svg' width='60' />
   </a>
 </p>
-<h1 align="center">
+<h1 align='center'>
   Gatsby minimal starter
 </h1>
 

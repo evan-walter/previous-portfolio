@@ -55,17 +55,17 @@ export default function Contact() {
         (!loading ?
           <form onSubmit={onSubmit} className=''>
             <div className={fieldWrap}>
-              <label htmlFor='name' className={labelCtl}><Button textNoB='Name' /></label>
+              <label htmlFor='name' className={labelCtl}><Button textNoB='Name' noCursorPointer /></label>
               <input id='name' type='text' maxLength='256' required name='fromName'
                 value={formData.fromName} onChange={handleChange} className={inputCtl} />
             </div>
             <div className={fieldWrap}>
-              <label htmlFor='email' className={labelCtl}><Button textNoB='Email' /></label>
+              <label htmlFor='email' className={labelCtl}><Button textNoB='Email' noCursorPointer /></label>
               <input id='email' type='text' maxLength='256' aria-describedby='emailHelp' required name='fromEmail'
                 value={formData.fromEmail} onChange={handleChange} className={inputCtl} />
             </div>
             <div className={fieldWrap}>
-              <label htmlFor='message' className={labelCtl}><Button textNoB='Message' /></label>
+              <label htmlFor='message' className={labelCtl}><Button textNoB='Message' noCursorPointer /></label>
               <textarea id='message' type='text' rows='5' required name='message'
                 value={formData.message} onChange={handleChange} className={inputCtl} />
             </div>

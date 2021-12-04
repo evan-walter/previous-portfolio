@@ -4,7 +4,7 @@ export default function Loading() {
   return (
     <div>
       <div>
-        Contact form received. I look forward to being in touch. Thank you.
+        Loading...
       </div>
     </div>
   );

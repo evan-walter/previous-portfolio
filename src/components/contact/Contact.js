@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
 // import { send } from 'emailjs-com';
 import Button from '../buttons/Button';
-import Loading from './Loading';
-import Success from './Success';
-import Failed from './Failed';
+import StatusWrap from './StatusWrap';
+import { Loading, Success, Failed } from './Status';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -12,8 +11,8 @@ export default function Contact() {
     message: '',
   });
 
-  const [submitted, setSubmitted] = useState(false);
-  const [loading, setLoading] = useState(false);
+  const [submitted, setSubmitted] = useState(true);
+  const [loading, setLoading] = useState(true);
   const [success, setSuccess] = useState(false);
 
   const onSubmit = (e) => {
@@ -49,9 +48,11 @@ export default function Contact() {
   return (
     <div className='contact-ctl m-auto w-full'> {/* m-auto max-w-lg */}
       {submitted ?
-        (loading ? <Loading /> :
-          (success ? <Success /> : <Failed />)
-        ) :
+        <StatusWrap>
+          {(loading ? <Loading /> :
+            (success ? <Success /> : <Failed />)
+          )}
+        </StatusWrap> :
         (!loading ?
           <form onSubmit={onSubmit} className=''>
             <div className={fieldWrap}>

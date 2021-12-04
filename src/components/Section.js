@@ -17,17 +17,10 @@ export default function Section({
 
   const containerStart =
     'section px-8 py-16 sm:px-36 xl:px-44 grid grid-cols-1 self-center ' +
-    (bgColored ? 'bg-gradient-to-br from-primary to-secondary text-white' : '');
-
-  const container = () => {
-    if (hasBgImgClassName) {
-      return containerStart + hasBgImgClassName;
-    }
-    return containerStart;
-  };
+    (bgColored ? 'bg-gradient-to-br from-primary to-secondary text-white ' : '');
 
   return (
-    <div id={id} className={container()}>
+    <div id={id} className={containerStart + (hasBgImgClassName ? hasBgImgClassName : '')}>
       {/* {!!hasBgImgClassName && (
         <div className={'bg-img ' + hasBgImgClassName}></div>
       )} */}

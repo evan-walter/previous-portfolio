@@ -2,7 +2,27 @@ import React from 'react';
 import Button from '../buttons/Button';
 import A from '../buttons/A';
 
-export default function Failed() {
+export function Loading() {
+  return (
+    <div>
+      <div>
+        Loading...
+      </div>
+    </div>
+  );
+}
+
+export function Success() {
+  return (
+    <div>
+      <div>
+        Contact form received. I look forward to being in touch. Thank you.
+      </div>
+    </div>
+  );
+}
+
+export function Failed() {
   return (
     <div>
       <i className='fa fa-times' aria-hidden='true' />

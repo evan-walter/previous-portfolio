@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 // import { send } from 'emailjs-com';
 import Button from '../buttons/Button';
-import StatusWrap from './StatusWrap';
 import { Loading, Success, Failed } from './Status';
 
 export default function Contact() {
@@ -11,8 +10,8 @@ export default function Contact() {
     message: '',
   });
 
-  const [submitted, setSubmitted] = useState(true);
-  const [loading, setLoading] = useState(true);
+  const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
 
   const onSubmit = (e) => {
@@ -21,8 +20,8 @@ export default function Contact() {
     setLoading(true);
     // For testing without sending emails.  Uncomment the lines below and comment the emailjs import along with the send method.
     setTimeout(() => {
-      setLoading(false);
-      setSuccess(true);
+      // setLoading(false);
+      // setSuccess(true);
     }, 2000);
 
     // send('service_83npejq', 'template_5kr2cjb', formData, 'user_AIUe2OzEEkBrATar3Pq1P')
@@ -48,11 +47,11 @@ export default function Contact() {
   return (
     <div className='contact-ctl m-auto w-full'> {/* m-auto max-w-lg */}
       {submitted ?
-        <StatusWrap>
+        <div className='items-start'> {/**transform transition-opacity duration-200 ease-in-out */}
           {(loading ? <Loading /> :
             (success ? <Success /> : <Failed />)
           )}
-        </StatusWrap> :
+        </div> :
         (!loading ?
           <form onSubmit={onSubmit} className=''>
             <div className={fieldWrap}>

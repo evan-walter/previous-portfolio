@@ -15,6 +15,9 @@ export function Loading() {
 export function Success() {
   return (
     <div>
+      <div className=''> {/**ctl-check */}
+        <i className='fa fa-check' aria-hidden='true' />
+      </div>{' '}
       <div>
         Contact form received. I look forward to being in touch. Thank you.
       </div>
@@ -25,7 +28,9 @@ export function Success() {
 export function Failed() {
   return (
     <div>
-      <i className='fa fa-times' aria-hidden='true' />
+      <div className=''> {/**ctl-x */}
+        <i className='fa fa-times' aria-hidden='true' />
+      </div>{' '}
       <div>
         Oops! It looks like there was an issue with the form submission. Please
         try again. If the issue persists, please feel free to reach out to me on{' '}

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Button from './buttons/Button';
 import MyLink from './buttons/MyLink';
+import NavProjects from './NavProjects';
 import logo from '../images/logo.png';
 
 export default function Navbar() {
@@ -23,7 +24,7 @@ export default function Navbar() {
   }
   
   return (
-    <header id='home' class='bg-gray-300 text-lg lg:flex lg:justify-between py-2 px-8 sm:px-36 xl:px-44'>
+    <header id='home' class='text-lg lg:flex lg:justify-between py-2 px-8 sm:px-36 xl:px-44'>
       <div class='flex items-center justify-between'>
         <div className=''>
           <button onClick={handleLogo} onKeyDown={handleLogo} className='cursor-pointer'>
@@ -42,35 +43,27 @@ export default function Navbar() {
           </button>
         </div>
       </div>
-      <ul className={'focus:outline-none ' + (barsExpanded ? 'block pb-4' : 'hidden lg:flex lg:items-center') }>
+      <ul className={barsExpanded ? 'block pb-4' : 'hidden lg:flex lg:items-center'}>
         {links.map(
           (value) => {
             return (
-              <li className='cursor-pointer'>
-                <div className='block text-center p-2 m-2 transform hover:-translate-y-1 transition duration-200 ease-in'>
-                  {(value === 'projects') ?
-                    <div>
-                      <div onClick={handleProjects} className='flex items-center'>
-                        <i className={'w-4 pr-1 fa fa-caret-' + (projsExpanded ? 'down' : 'right') + ' text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary'} aria-hidden='true' />
-                        <Button textNoB={value.charAt(0).toUpperCase() + value.slice(1)} />
-                      </div>
-                      <div className={'absolute z-50 ' + (projsExpanded ? '' : '')}> {/**{projsExpanded ? 'block' : 'hidden'}; shadow-lg */}
-                        <MyLink to='heyfio' className='transform hover:translate-y-x transition duration-200 ease-in'>
-                          <Button textNoB='HeyFIO' />
-                        </MyLink>
-                        <MyLink to='confco' className='transform hover:translate-y-x transition duration-200 ease-in'>
-                          <Button textNoB='The Confidence Co' />
-                        </MyLink>
-                        <MyLink to='w3sales' className='transform hover:translate-y-x transition duration-200 ease-in'>
-                          <Button textNoB='W3 Sales' />
-                        </MyLink>
-                      </div>
-                    </div> :
+              <li className='block text-center p-2 m-2 cursor-pointer'>
+                {(value === 'projects') ?
+                  <div>
+                    <div onClick={handleProjects} className='flex items-center transform hover:-translate-y-1 transition duration-200 ease-in focus:outline-none'>
+                      <i className={'w-4 pr-1 fa fa-caret-' + (projsExpanded ? 'down' : 'right') + ' text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary'} aria-hidden='true' />
+                      <Button textNoB={value.charAt(0).toUpperCase() + value.slice(1)} />
+                    </div>
+                    <div className={'pt-2 absolute ' + (projsExpanded ? 'block' : 'hidden')}> {/**{projsExpanded ? 'block' : 'hidden'}; shadow-lg */}
+                      <NavProjects />
+                    </div>
+                  </div> :
+                  <div className='transform hover:-translate-y-1 transition duration-200 ease-in focus:outline-none'>
                     <MyLink to={value}>
                       <Button textNoB={value.charAt(0).toUpperCase() + value.slice(1)} />
                     </MyLink>
-                  }
-                </div>
+                  </div>
+                }
               </li>
             )
           }

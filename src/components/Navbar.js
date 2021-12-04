@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import Button from './buttons/Button';
 import MyLink from './buttons/MyLink';
-import NavProjects from './NavProjects';
 import logo from '../images/logo.png';
 
 export default function Navbar() {
   const links = ['home', 'about', 'projects', 'testimonials', 'contact'];
+  const navProjects = ['heyfio', 'confco', 'w3sales'];
   
   const [barsExpanded, setBarsExpanded] = useState(false);
   const [projsExpanded, setProjsExpanded] = useState(false);
@@ -51,11 +51,19 @@ export default function Navbar() {
                   {(value === 'projects') ?
                     <div>
                       <div onClick={handleProjects} className='flex items-center'>
-                        <i className={'w-4 pr-1 fa fa-caret-' + (projsExpanded ? 'down' : 'right')} aria-hidden='true' />
+                        <i className={'w-4 pr-1 fa fa-caret-' + (projsExpanded ? 'down' : 'right') + ' text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary'} aria-hidden='true' />
                         <Button textNoB={value.charAt(0).toUpperCase() + value.slice(1)} />
                       </div>
-                      <div className={'hidden z-50 ' + (projsExpanded ? '' : '')}> {/**{projsExpanded ? 'block' : 'hidden'} */}
-                        <NavProjects />
+                      <div className={'absolute z-50 ' + (projsExpanded ? '' : '')}> {/**{projsExpanded ? 'block' : 'hidden'}; shadow-lg */}
+                        <MyLink to='heyfio' className='transform hover:translate-y-x transition duration-200 ease-in'>
+                          <Button textNoB='HeyFIO' />
+                        </MyLink>
+                        <MyLink to='confco' className='transform hover:translate-y-x transition duration-200 ease-in'>
+                          <Button textNoB='The Confidence Co' />
+                        </MyLink>
+                        <MyLink to='w3sales' className='transform hover:translate-y-x transition duration-200 ease-in'>
+                          <Button textNoB='W3 Sales' />
+                        </MyLink>
                       </div>
                     </div> :
                     <MyLink to={value}>

@@ -58,7 +58,7 @@ const projects = [
     items: [
       {
         number: 1,
-        id: '',
+        id: 'heyfio',
         title: 'HeyFIO',
         desc1: 'A Full Stack Software Engineering Contract building a Blockchain web application',
         desc2: 'React + MySQL + NodeJS + ExpressJS',
@@ -76,7 +76,7 @@ const projects = [
     items: [
       {
         number: 1,
-        id: '',
+        id: 'confco',
         title: 'Confidence Co',
         desc1:
           'Custom theme development to implement a new design for a health and wellness Shopify store',
@@ -88,7 +88,7 @@ const projects = [
       },
       {
         number: 2,
-        id: '',
+        id: 'w3sales',
         title: 'W3 Sales',
         desc1:
           'Custom Shopify development for a food services factory and distributor group with a large inventory of products',

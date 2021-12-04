@@ -25,7 +25,7 @@ export default function Projects() {
                 ({ number, id, title, desc1, desc2, img, video, website, repo }) => {
                   return (
                     <div id={id} className='py-4 lg:py-12 grid grid-cols-1 lg:grid-cols-5' key={number}>
-                      <div className='py-4 lg:py-8 grid-cols-1 lg:pr-16 lg:col-start-1 lg:col-end-3'>
+                      <div className='py-4 lg:py-8 lg:pr-16 grid-cols-1 lg:col-start-1 lg:col-end-3'>
                         <h3 className='pb-4 font-bold text-xl text-center lg:text-left' key={number}>{title}</h3>
                         <p className={p} key={number}>{desc1}</p>
                         <p className={p} key={number}>{desc2}</p>

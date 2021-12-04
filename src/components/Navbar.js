@@ -23,7 +23,7 @@ export default function Navbar() {
   }
   
   return (
-    <header id='home' class='text-lg lg:flex lg:justify-between py-2 px-8 sm:px-36 xl:px-44'>
+    <header id='home' class='bg-gray-300 text-lg lg:flex lg:justify-between py-2 px-8 sm:px-36 xl:px-44'>
       <div class='flex items-center justify-between'>
         <div className=''>
           <button onClick={handleLogo} onKeyDown={handleLogo} className='cursor-pointer'>
@@ -49,10 +49,12 @@ export default function Navbar() {
               <li className='cursor-pointer'>
                 <div className='block text-center p-2 m-2 transform hover:-translate-y-1 transition duration-200 ease-in'>
                   {(value === 'projects') ?
-                    <div onClick={handleProjects} className={projsExpanded ? 'flex items-center' : ''}>
-                      <i className={'pr-1 fa fa-caret-' + (projsExpanded ? 'down' : 'right')} aria-hidden='true' />
-                      <Button textNoB={value.charAt(0).toUpperCase() + value.slice(1)} />
-                      <div className={'hidden' + projsExpanded ? 'block' : 'hidden'}>
+                    <div>
+                      <div onClick={handleProjects} className='flex items-center'>
+                        <i className={'w-4 pr-1 fa fa-caret-' + (projsExpanded ? 'down' : 'right')} aria-hidden='true' />
+                        <Button textNoB={value.charAt(0).toUpperCase() + value.slice(1)} />
+                      </div>
+                      <div className={'hidden z-50 ' + (projsExpanded ? '' : '')}> {/**{projsExpanded ? 'block' : 'hidden'} */}
                         <NavProjects />
                       </div>
                     </div> :

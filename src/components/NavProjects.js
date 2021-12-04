@@ -6,7 +6,7 @@ export default function NavProjects() {
   const link = 'py-2 transform hover:translate-x-1 transition duration-200 ease-in focus:outline-none ';
 
   return (
-    <div className='text-left border border-gray-300 bg-white'>
+    <div className='text-center lg:text-left border border-gray-300 bg-white'>
       <div className='py-2 pl-4 pr-8 border-b border-gray-300'>
         <div className={link}>
           <MyLink to='projects'>

@@ -47,18 +47,18 @@ export default function Navbar() {
         {links.map(
           (value) => {
             return (
-              <li className='block text-center p-2 m-2 cursor-pointer'>
+              <li className='block p-2 m-2 cursor-pointer'>
                 {(value === 'projects') ?
                   <div>
-                    <div onClick={handleProjects} className='flex items-center transform hover:-translate-y-1 transition duration-200 ease-in focus:outline-none'>
-                      <i className={'w-4 pr-1 fa fa-caret-' + (projsExpanded ? 'down' : 'right') + ' text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary'} aria-hidden='true' />
+                    <div onClick={handleProjects} className='flex items-center justify-center transform hover:-translate-y-1 transition duration-200 ease-in'>
+                      <i className={'w-4 pr-1 fa fa-caret-' + (projsExpanded ? 'down' : 'right') + ' text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary focus:outline-none'} aria-hidden='true' />
                       <Button textNoB={value.charAt(0).toUpperCase() + value.slice(1)} />
                     </div>
                     <div className={'pt-2 absolute ' + (projsExpanded ? 'block' : 'hidden')}> {/**{projsExpanded ? 'block' : 'hidden'}; shadow-lg */}
                       <NavProjects />
                     </div>
                   </div> :
-                  <div className='transform hover:-translate-y-1 transition duration-200 ease-in focus:outline-none'>
+                  <div className='text-center transform hover:-translate-y-1 transition duration-200 ease-in focus:outline-none'>
                     <MyLink to={value}>
                       <Button textNoB={value.charAt(0).toUpperCase() + value.slice(1)} />
                     </MyLink>

@@ -1,6 +1,4 @@
 import React from 'react';
-import { send } from 'emailjs-com';
-import Button from '../buttons/Button';
 
 export default function Button({ textB, textNoB, addClassName }) {
   const btnBBase = 'py-2 px-5 font-bold cursor-pointer inline-block relative leading-none z-10 ';

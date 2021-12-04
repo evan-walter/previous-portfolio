@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { send } from 'emailjs-com';
+// import { send } from 'emailjs-com';
 import Button from '../buttons/Button';
 import Loading from './Loading';
 import Success from './Success';
@@ -21,21 +21,21 @@ export default function Contact() {
     setSubmitted(true);
     setLoading(true);
     // For testing without sending emails.  Uncomment the lines below and comment the emailjs import along with the send method.
-    // setTimeout(() => {
-    //   setLoading(false);
-    //   setSuccess(true);
-    // }, 2000);
+    setTimeout(() => {
+      setLoading(false);
+      setSuccess(true);
+    }, 2000);
 
-    send('service_83npejq', 'template_5kr2cjb', formData, 'user_AIUe2OzEEkBrATar3Pq1P')
-      .then((res) => {
-        setSuccess(true);
-        setLoading(false);
-        console.log('Success ', res.status, res.text);
-      })
-      .catch((err) => {
-        setLoading(false);
-        console.log('Failed ', err);
-      });
+    // send('service_83npejq', 'template_5kr2cjb', formData, 'user_AIUe2OzEEkBrATar3Pq1P')
+    //   .then((res) => {
+    //     setSuccess(true);
+    //     setLoading(false);
+    //     console.log('Success ', res.status, res.text);
+    //   })
+    //   .catch((err) => {
+    //     setLoading(false);
+    //     console.log('Failed ', err);
+    //   });
   };
 
   const handleChange = (e) => {

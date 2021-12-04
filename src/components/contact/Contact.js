@@ -48,35 +48,33 @@ export default function Contact() {
 
   return (
     <div className='contact-ctl m-auto w-full'> {/* m-auto max-w-lg */}
-      {!submitted && !loading && (
-        <form onSubmit={onSubmit} className=''>
-          <div className={fieldWrap}>
-            <label htmlFor='name' className={labelCtl}><Button textNoB='Name' /></label>
-            <input id='name' type='text' maxLength='256' required name='fromName'
-              value={formData.fromName} onChange={handleChange} className={inputCtl} />
-          </div>
-          <div className={fieldWrap}>
-            <label htmlFor='email' className={labelCtl}><Button textNoB='Email' /></label>
-            <input id='email' type='text' maxLength='256' aria-describedby='emailHelp' required name='fromEmail'
-              value={formData.fromEmail} onChange={handleChange} className={inputCtl} />
-          </div>
-          <div className={fieldWrap}>
-            <label htmlFor='message' className={labelCtl}><Button textNoB='Message' /></label>
-            <textarea id='message' type='text' rows='5' required name='message'
-              value={formData.message} onChange={handleChange} className={inputCtl} />
-          </div>
-          <div className='pt-12 m-auto text-center'>
-            <Button textB='Connect'>
-              <input type='submit' className={inputCtl} />
-            </Button>
-          </div>
-        </form>
-      )}
-      {submitted &&
-        (loading && <Loading />)
-        (!loading &&
-          (success && <Success />)
-          (!success && <Failed />)
+      {submitted ?
+        (loading ? <Loading /> :
+          (success ? <Success /> : <Failed />)
+        ) :
+        (!loading ?
+          <form onSubmit={onSubmit} className=''>
+            <div className={fieldWrap}>
+              <label htmlFor='name' className={labelCtl}><Button textNoB='Name' /></label>
+              <input id='name' type='text' maxLength='256' required name='fromName'
+                value={formData.fromName} onChange={handleChange} className={inputCtl} />
+            </div>
+            <div className={fieldWrap}>
+              <label htmlFor='email' className={labelCtl}><Button textNoB='Email' /></label>
+              <input id='email' type='text' maxLength='256' aria-describedby='emailHelp' required name='fromEmail'
+                value={formData.fromEmail} onChange={handleChange} className={inputCtl} />
+            </div>
+            <div className={fieldWrap}>
+              <label htmlFor='message' className={labelCtl}><Button textNoB='Message' /></label>
+              <textarea id='message' type='text' rows='5' required name='message'
+                value={formData.message} onChange={handleChange} className={inputCtl} />
+            </div>
+            <div className='pt-12 m-auto text-center'>
+              <Button textB='Connect'>
+                <input type='submit' className={inputCtl} />
+              </Button>
+            </div>
+          </form> : ''
         )
       }
     </div>

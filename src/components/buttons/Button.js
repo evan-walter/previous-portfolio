@@ -1,4 +1,6 @@
 import React from 'react';
+import { send } from 'emailjs-com';
+import Button from '../buttons/Button';
 
 export default function Button({ textB, textNoB, addClassName }) {
   const btnBBase = 'py-2 px-5 font-bold cursor-pointer inline-block relative leading-none z-10 ';
@@ -11,8 +13,8 @@ export default function Button({ textB, textNoB, addClassName }) {
 
   return (
     <div>
-      {textB && <button className={btnBBase + 'btn-b ' + more()}>{textB}</button>}
-      {textNoB && <button className={btnNoB + more()}>{textNoB}</button>}
+      {textB ? <button className={btnBBase + 'btn-b ' + more()}>{textB}</button> : ''}
+      {textNoB ? <button className={btnNoB + more()}>{textNoB}</button> : ''}
     </div>
   );
 }

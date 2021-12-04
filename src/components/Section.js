@@ -31,16 +31,16 @@ export default function Section({
       {/* {!!hasBgImgClassName && (
         <div className={'bg-img ' + hasBgImgClassName}></div>
       )} */}
-      {titleShown && titleGradient && <div className={titleCtl + gradient}>{titleShown}</div>}
-      {titleShown && !titleGradient && <div className={titleCtl}>{titleShown}</div>}
+      {(titleShown && titleGradient) ? <div className={titleCtl + gradient}>{titleShown}</div> : ''}
+      {(titleShown && !titleGradient) ? <div className={titleCtl}>{titleShown}</div> : ''}
       {children}
-      {!last && (
+      {!last ? (
         <div className='pt-8 grid justify-items-center'>
           <MyLink to={next}>
             <DownArrow />
           </MyLink>
         </div>
-      )}
+      ) : ''}
     </div>
   );
 }

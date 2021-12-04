@@ -24,9 +24,9 @@ export default function Navbar() {
   }
   
   return (
-    <header id='home' class='text-lg lg:flex lg:justify-between py-2 px-8 sm:px-36 xl:px-44'>
-      <div class='flex items-center justify-between'>
-        <div className=''>
+    <header id='home' className='text-lg lg:flex lg:justify-between py-4 px-8 sm:px-36 xl:px-44 border-b shadow-lg'>
+      <div className='flex items-center justify-between'>
+        <div className='flex items-center'>
           <button onClick={handleLogo} onKeyDown={handleLogo} className='cursor-pointer'>
             <img src={logo} alt='logo' />
           </button>
@@ -54,7 +54,7 @@ export default function Navbar() {
                       <i className={'w-4 pr-1 fa fa-caret-' + (projsExpanded ? 'down' : 'right') + ' text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary focus:outline-none'} aria-hidden='true' />
                       <Button textNoB={value.charAt(0).toUpperCase() + value.slice(1)} />
                     </div>
-                    <div className={'pt-2 m-auto w-max lg:absolute ' + (projsExpanded ? 'block' : 'hidden')}> {/**{projsExpanded ? 'block' : 'hidden'}; shadow-lg */}
+                    <div className={'pt-2 m-auto w-max lg:absolute ' + (projsExpanded ? 'block' : 'hidden')}>
                       <NavProjects />
                     </div>
                   </div> :

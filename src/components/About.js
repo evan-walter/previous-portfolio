@@ -22,10 +22,10 @@ export default function About() {
         </p>
         <p className={p}>
           As I learned the tools and built personal projects, I found
-          opportunities to serve previously as a Freelance Shopify developer and
-          recently as a Contract React Engineer. With a focus on React, I am
-          excited to continue to leverage and grow my skill set to serve on a
-          team.
+          opportunities to serve clients. I recently served as a Contract Full
+          Stack Software Engineer and previously as a Freelance Shopify
+          Developer. I am excited to continue to leverage
+          and grow my skills in a full time role.
         </p>
       </div>
     </div>

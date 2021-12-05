@@ -19,7 +19,7 @@ export default function Contact() {
     setSubmitted(true);
     setLoading(true);
 
-    // For testing without sending emails.  Uncomment the lines below and comment the emailjs import along with the send method.
+    // For testing without sending emails. Uncomment the lines below and comment the emailjs import along with the send method.
     // setTimeout(() => {
     //   setLoading(false);
     //   setSuccess(true);

@@ -43,6 +43,7 @@ export default function Navbar() {
           </button>
         </div>
       </div>
+      <div className={barsExpanded ? 'my-4 border-t border-gray-300' : 'hidden'}></div>
       <ul className={barsExpanded ? 'block pb-4' : 'hidden lg:flex lg:items-center'}>
         {links.map(
           (value) => {
@@ -54,7 +55,7 @@ export default function Navbar() {
                       <i className={'text-center w-4 pr-1 fa fa-caret-' + (projsExpanded ? 'down' : 'right') + ' text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary focus:outline-none'} aria-hidden='true' />
                       <Button textNoB={value.charAt(0).toUpperCase() + value.slice(1)} />
                     </div>
-                    <div className={'pt-2 m-auto w-max lg:absolute ' + (projsExpanded ? 'block' : 'hidden')}>
+                    <div className={'pt-2 m-auto w-max lg:absolute z-50 ' + (projsExpanded ? 'block' : 'hidden')}>
                       <NavProjects />
                     </div>
                   </div> :

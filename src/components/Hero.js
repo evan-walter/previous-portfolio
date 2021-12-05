@@ -38,8 +38,8 @@ export default function Hero({ next }) {
         </div>
       </div>
       <div className='mt-12'>
-        <div className='m-auto w-max bg-white bg-opacity-10 rounded-xl shadow-2xl'>
-          <p className={'p-4 font-bold text-lg text-center text-primary '}>I built this portfolio from scratch with{' '}
+        <div className='m-auto bg-white bg-opacity-10 rounded-xl shadow-2xl'>
+          <p className='p-4 font-bold text-lg text-center text-primary'>I built this portfolio from scratch with{' '}
             <A h='https://reactjs.org/' addClassName={textLink}>React,</A>
             {' '}
             <A h='https://gatsbyjs.com/' addClassName={textLink}>Gatsby,</A>

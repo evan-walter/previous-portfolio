@@ -38,7 +38,8 @@ export default function Hero({ next }) {
         </div>
       </div>
       <div className='mt-12 flex justify-center'>
-        <p className='p-4 inline-block font-bold text-lg text-center text-primary bg-white bg-opacity-10 rounded-xl shadow-2xl'>I built this portfolio from scratch with{' '}
+        <p className='p-4 inline-block font-bold text-lg text-center text-primary bg-white bg-opacity-10 rounded-xl shadow-2xl'>
+          I built this portfolio from scratch with{' '}
           <A h='https://reactjs.org/' addClassName={textLink}>React,</A>
           {' '}
           <A h='https://gatsbyjs.com/' addClassName={textLink}>Gatsby,</A>

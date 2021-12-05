@@ -6,10 +6,10 @@ export default function Section({
   id,
   next,
   last,
-  titleShown,
-  titleGradient,
   bgColored,
   bgImg,
+  titleShown,
+  titleGradient,
   children,
 }) {
   
@@ -17,16 +17,16 @@ export default function Section({
     (bgImg ? 'bg-img bg-img-hero' : '') +
     (bgColored ? 'bg-gradient-to-br from-primary to-secondary text-white ' : '');
 
-  const containerStyle = bgImg ? {
-    height : '100%',
-    width : '100%',
-    content : '',
-    backgroundPosition : 'center',
-    backgroundRepeat : 'noRepeat',
-    backgroundAttachment : 'fixed',
-    backgroundSize : 'cover',
-    backgroundImage  : `url(../images/${bgImg}` }
-    : {};
+  // const containerStyle = bgImg ? {
+  //   height : '100%',
+  //   width : '100%',
+  //   content : '',
+  //   backgroundPosition : 'center',
+  //   backgroundRepeat : 'noRepeat',
+  //   backgroundAttachment : 'fixed',
+  //   backgroundSize : 'cover',
+  //   backgroundImage  : `url(../images/${bgImg}` }
+  //   : {};
 
   const tBaseCName = 'pb-8 lg:pb-12 text-3xl lg:text-4xl font-bold text-center';
   const tGradientCName = ' text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary';
@@ -35,7 +35,7 @@ export default function Section({
     (titleGradient ? (tBaseCName + tGradientCName) : '');
   
   return (
-    <div id={id} className={containerCName}> {/**style={containerStyle} */}
+    <section id={id} className={containerCName}> {/**className={containerCName} style={containerStyle} */}
       <div className={titleCName}>
         {titleShown}
       </div>
@@ -47,6 +47,6 @@ export default function Section({
           </MyLink>
         </div>
       ) : ''}
-    </div>
+    </section>
   );
 }

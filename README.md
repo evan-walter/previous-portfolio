@@ -1,14 +1,21 @@
-# Portfolio - Evan Walter | Software Engineer
+<div align='center' class='flex'>
+  <a href='https://evanwalter.dev'>
+    <img alt='Evan Walter | Software Engineer' src='./src/images/favicon-90.ico' width='90' />
+    <h1>
+      Evan Walter | Software Engineer — Portfolio
+    </h1>
+  </a>
+</div>
 
-I built this portfolio with [React](https://reactjs.org/), [Gatsby](https://www.gatsbyjs.com/), and [Tailwind](https://tailwindcss.com/).
+🔥 I built this portfolio with [React](https://reactjs.org/), [Gatsby](https://www.gatsbyjs.com/), and [Tailwind](https://tailwindcss.com/).
 
-To view the live version of this project, visit [evanwalter.dev](https://evanwalter.dev).
+🎙️ To view the live version of this project, visit [evanwalter.dev](https://evanwalter.dev).
 
-To view the source code for this project, visit [github.com/Evan-Walter/portfolio](https://github.com/Evan-Walter/portfolio).
+🫀 To view the source code for this project, visit [github.com/Evan-Walter/portfolio](https://github.com/Evan-Walter/portfolio).
 
 For more information on this project, see the links below.
 
-## Getting Started
+## Getting Started 🎬
 
 To get started with React, visit [reactjs.org](https://reactjs.org/).
 
@@ -23,17 +30,17 @@ To get started with Web Development, including HTML, CSS, and JavaScript, visit
 
 These resources offer documentation, tutorials, samples, and guidance on web development.
 
-Design inspired by [Jacobo Martínez](https://github.com/cobidev)
+🙏 Design inspired by [Jacobo Martínez](https://github.com/cobidev)
 
-Started with...
+Initiated with...
 
 #
 
-<p align='center'>
+<div align='center'>
   <a href='https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter'>
     <img alt='Gatsby' src='https://www.gatsbyjs.com/Gatsby-Monogram.svg' width='60' />
   </a>
-</p>
+</div>
 <h1 align='center'>
   Gatsby minimal starter
 </h1>

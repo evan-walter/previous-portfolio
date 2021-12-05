@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 // import { send } from 'emailjs-com';
-import Button from '../buttons/Button';
-// import { Loading, Success, Failed } from './Status';
-import Status from './Status';
+import Button from './buttons/Button';
+import {Loading, Success, Failed} from './ContactStatus';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -11,49 +10,29 @@ export default function Contact() {
     message: '',
   });
 
-  // const [submitted, setSubmitted] = useState(false);
-  // const [loading, setLoading] = useState(false);
-  // const [success, setSuccess] = useState(false);
-
-  const [status, setStatus] = useState({
-    submitted: false,
-    loading: false,
-    success: false
-  });
+  const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [success, setSuccess] = useState(false);
 
   const onSubmit = (e) => {
     e.preventDefault();
-    // setSubmitted(true);
-    // setLoading(true);
-    setStatus({
-      submitted: true,
-      loading: true,
-    });
+    setSubmitted(true);
+    setLoading(true);
+
     // For testing without sending emails.  Uncomment the lines below and comment the emailjs import along with the send method.
     setTimeout(() => {
-      // setLoading(false);
-      // setSuccess(true);
-      setStatus({
-        loading: false,
-        success: true
-      });
+      setLoading(false);
+      setSuccess(true);
     }, 2000);
 
     // send('service_83npejq', 'template_5kr2cjb', formData, 'user_AIUe2OzEEkBrATar3Pq1P')
     //   .then((res) => {
     //     // setLoading(false);
     //     // setSuccess(true);
-    //     setStatus({
-    //       loading: false,
-    //       success: true
-    //     });
     //     console.log('Success ', res.status, res.text);
     //   })
     //   .catch((err) => {
     //     // setLoading(false);
-    //     setStatus({
-    //       loading: false
-    //     });
     //     console.log('Failed ', err);
     //   });
   };
@@ -64,13 +43,21 @@ export default function Contact() {
 
   const fieldWrap = 'grid grid-cols-1';
   const labelCtl = 'py-1 text-lg'; // color-main
-  const inputCtl = 'p-2 focus:outline-none rounded'; //shadow-2xl
+  const inputCtl = 'p-2 focus:outline-none rounded shadow-2xl';
 
   return (
-    <div className='contact-ctl m-auto w-full'> {/* m-auto max-w-lg */}
-      {status.submitted ? <Status status={status} /> :
-        (!status.loading ?
-          <form onSubmit={onSubmit} className='p-8 bg-white bg-opacity-25 rounded-md shadow-2xl'>
+    <div className='contact-ctl m-auto w-full'> {/* m-auto max-w-lg */}{/**transform transition-opacity duration-200 ease-in-out */}
+      {submitted ?
+        <div className='mt-12 flex justify-center'>
+          <div className='p-4 font-bold text-xl text-center text-primary bg-white rounded-xl shadow-2xl'>
+            {
+              loading ? <Loading /> :
+              (success ? <Success />  : <Failed />)
+            }
+          </div>
+        </div> :
+        (!loading ?
+          <form onSubmit={onSubmit}>
             <div className={fieldWrap}>
               <label htmlFor='name' className={labelCtl}><Button textNoB='Name' addClassName='cursor-text' /></label>
               <input id='name' type='text' maxLength='256' required name='fromName'

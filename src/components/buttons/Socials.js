@@ -11,7 +11,7 @@ export default function Socials({ addClassName }) {
   };
 
   return (
-    <div className=''>
+    <div>
       <A h='https://github.com/Evan-Walter/'>
         <i className={'i-ctl fa-github ' + added()} />
       </A>

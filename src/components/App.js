@@ -1,6 +1,6 @@
 import React from 'react';
 import About from './About';
-import Contact from './contact/Contact';
+import Contact from './Contact';
 import Footer from './Footer';
 import Hero from './Hero';
 import Navbar from './Navbar';

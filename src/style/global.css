@@ -11,19 +11,44 @@ body {
   min-height: 92vh;
   height: fit-content;
 }
-.bg-img {
+#hero {
+  display: block;
+  position: relative;
 }
-.bg-img-hero {
+#hero::after {
   content: '';
   background: url('../images/ewalter-3-2600.jpg');
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
   opacity: 0.3;
+  z-index: -1;
 }
-.bg-img-contact {
+#contact {
+  display: block;
+  position: relative;
+}
+#contact::after {
+  height: 100%;
+  content: '';
   background: url('../images/ewalter-4-2600.jpg');
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  opacity: 0.3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
 }
 .contact-ctl {
   max-width: 525px;

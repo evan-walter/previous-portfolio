@@ -34,41 +34,41 @@ export default function Projects() {
         {projects.map(
           ({ type, subtitle1, subtitle2, items }) => {
             return (
-              <div>
-                <h2 id={type} className={sub1CName} key={type}>{subtitle1}</h2>
-                <h3 className={sub2CName} key={type}>{subtitle2}</h3>
+              <div key={type}>
+                <h2 id={type} className={sub1CName}>{subtitle1}</h2>
+                <h3 className={sub2CName}>{subtitle2}</h3>
                 {items.map(
                   ({ number, id, title, desc1, desc2, img, video, website, repo }) => {
                     return (
                       <div key={number}>
-                        <div className={showModal ? 'block' : 'hidden'} key={number}>
-                          <div className='m-0 w-full z-50 absolute bg-gray-300' key={number}>
-                            <div key={number}>
-                              <iframe src={whichVideo} title={whichTitle} className='video-modal' webkitAllowFullScreen mozAllowFullScreen allowFullScreen key={number} />
+                        <div className={showModal ? 'block' : 'hidden'}>
+                          <div className='m-0 w-full z-50 absolute bg-gray-300'>
+                            <div>
+                              <iframe src={whichVideo} title={whichTitle} className='video-modal' /> {/** webkitAllowFullScreen mozAllowFullScreen allowFullScreen */}
                             </div>
-                            <div key={number}>{whichVideo}hello</div>
+                            <div>{whichVideo}hello</div>
                           </div>
                         </div>
 
-                        <div id={id} className='py-4 lg:py-12 grid grid-cols-1 lg:grid-cols-5' key={number}>
-                          <div className='py-4 lg:py-8 lg:pr-16 grid-cols-1 lg:col-start-1 lg:col-end-3' key={number}>
-                            <h3 className='pb-4 font-bold text-xl text-center lg:text-left' key={number}>{title}</h3>
-                            <p className={p} key={number}>{desc1}</p>
-                            <p className={p} key={number}>{desc2}</p>
-                            <div className='my-4 flex items-center justify-center lg:justify-start' key={number}>
-                              {video ? <div onClick={handleModal} key={number}><Button textB='Demo Video' addClassName={btnB} /></div> : ''}
+                        <div id={id} className='py-4 lg:py-12 grid grid-cols-1 lg:grid-cols-5'>
+                          <div className='py-4 lg:py-8 lg:pr-16 grid-cols-1 lg:col-start-1 lg:col-end-3'>
+                            <h3 className='pb-4 font-bold text-xl text-center lg:text-left'>{title}</h3>
+                            <p className={p}>{desc1}</p>
+                            <p className={p}>{desc2}</p>
+                            <div className='my-4 flex items-center justify-center lg:justify-start'>
+                              {video ? <div onClick={handleModal}><Button textB='Demo Video' addClassName={btnB} /></div> : ''}
                               {website ?
-                                <A h={website} key={number}>
-                                  <Button textNoB='See Live' addClassName={btnNoB} key={number} />
+                                <A h={website}>
+                                  <Button textNoB='See Live' addClassName={btnNoB} />
                                 </A> : ''}
                               {repo ?
-                                <A h={repo} key={number}>
-                                  <Button textNoB='Source Code' addClassName={btnNoB} key={number} />
+                                <A h={repo}>
+                                  <Button textNoB='Source Code' addClassName={btnNoB} />
                                 </A> : ''}
                             </div>
                           </div>
-                          <Tilt className='lg:col-start-3 lg:col-end-6' key={number}>
-                            <img src={img} alt={title + ' image'} width='1000' key={number} />
+                          <Tilt className='lg:col-start-3 lg:col-end-6'>
+                            <img src={img} alt={title + ' image'} width='1000' />
                           </Tilt>
                         </div>
                       </div>

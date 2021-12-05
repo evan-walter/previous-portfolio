@@ -31,6 +31,44 @@ body {
 .bg-img-hero {
   background: url('../images/ewalter-3-2600.jpg');
 }
+.bg-img-contact {
+  background: url('../images/ewalter-4-2600.jpg');
+}
+.contact-ctl {
+  max-width: 525px;
+}
+.btn-b {
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.6s;
+  background-image: linear-gradient(90deg, #0c3483 0%, #6b8cce 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-width: 2px;
+  border-style: solid;
+  border-image: linear-gradient(90deg, #0c3483 0%, #6b8cce 100%);
+  border-image-slice: 1;
+}
+.btn-b::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 0px;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.3s;
+  background-image: linear-gradient(90deg, #0c3483 0%, #6b8cce 100%);
+}
+.btn-b:hover {
+  -webkit-text-fill-color: white;
+  text-decoration: none;
+}
+.btn-b:hover::after {
+  width: 100%;
+}
+.social-32 {
+  font-size: 32px;
+}
 .hero-vid {
   width: 560px;
   height: 315px;
@@ -100,42 +138,4 @@ body {
     width: 200px;
     height: 113px;
   }
-}
-.contact-ctl {
-  max-width: 525px;
-}
-.bg-img-contact {
-  background: url('../images/ewalter-4-2600.jpg');
-}
-.btn-b {
-  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.6s;
-  background-image: linear-gradient(90deg, #0c3483 0%, #6b8cce 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  border-width: 2px;
-  border-style: solid;
-  border-image: linear-gradient(90deg, #0c3483 0%, #6b8cce 100%);
-  border-image-slice: 1;
-}
-.btn-b::after {
-  content: '';
-  display: block;
-  position: absolute;
-  width: 0px;
-  height: 100%;
-  left: 0;
-  bottom: 0;
-  z-index: -1;
-  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.3s;
-  background-image: linear-gradient(90deg, #0c3483 0%, #6b8cce 100%);
-}
-.btn-b:hover {
-  -webkit-text-fill-color: white;
-  text-decoration: none;
-}
-.btn-b:hover::after {
-  width: 100%;
-}
-.social-32 {
-  font-size: 32px;
 }

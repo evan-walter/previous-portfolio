@@ -10,7 +10,7 @@ export default function Hero({ next }) {
   const textL = 'text-2xl sm:text-4xl lg:text-5xl ';
   const gradient = 'text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary'; // pr-0.5
 
-  const textLink = textBase;
+  const textLink = textBase + 'hover:text-black';
 
   return (
     <div>
@@ -43,7 +43,7 @@ export default function Hero({ next }) {
         <A h='https://gatsbyjs.com/' addClassName={textLink}>Gatsby,</A>
         {' '}and{' '}
         <A h='https://tailwindcss.com/' addClassName={textLink}>Tailwind</A>
-        . Check out the source code{' '}
+        . Check out my source code{' '}
         <A h='https://github.com/Evan-Walter/portfolio/' addClassName={textLink}>
           here
         </A>.

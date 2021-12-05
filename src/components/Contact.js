@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-// import { send } from 'emailjs-com';
+import { send } from 'emailjs-com';
 import Button from './buttons/Button';
 import {Loading, Success, Failed} from './ContactStatus';
 
@@ -20,21 +20,21 @@ export default function Contact() {
     setLoading(true);
 
     // For testing without sending emails.  Uncomment the lines below and comment the emailjs import along with the send method.
-    setTimeout(() => {
-      setLoading(false);
-      setSuccess(true);
-    }, 2000);
+    // setTimeout(() => {
+    //   setLoading(false);
+    //   setSuccess(true);
+    // }, 2000);
 
-    // send('service_83npejq', 'template_5kr2cjb', formData, 'user_AIUe2OzEEkBrATar3Pq1P')
-    //   .then((res) => {
-    //     // setLoading(false);
-    //     // setSuccess(true);
-    //     console.log('Success ', res.status, res.text);
-    //   })
-    //   .catch((err) => {
-    //     // setLoading(false);
-    //     console.log('Failed ', err);
-    //   });
+    send('service_83npejq', 'template_5kr2cjb', formData, 'user_AIUe2OzEEkBrATar3Pq1P')
+      .then((res) => {
+        setLoading(false);
+        setSuccess(true);
+        console.log('Success ', res.status, res.text);
+      })
+      .catch((err) => {
+        setLoading(false);
+        console.log('Failed ', err);
+      });
   };
 
   const handleChange = (e) => {
@@ -46,10 +46,10 @@ export default function Contact() {
   const inputCtl = 'p-2 focus:outline-none rounded shadow-2xl';
 
   return (
-    <div className='contact-ctl m-auto w-full'> {/* m-auto max-w-lg */}{/**transform transition-opacity duration-200 ease-in-out */}
+    <div className='contact-ctl m-auto w-full'> {/** */}
       {submitted ?
         <div className='mt-12 flex justify-center'>
-          <div className='p-4 font-bold text-xl text-center text-primary bg-white rounded-xl shadow-2xl'>
+          <div className='p-4 font-bold text-xl text-center text-primary bg-white rounded-xl shadow-2xl'> {/**transform transition-opacity duration-200 ease-in-out */}
             {
               loading ? <Loading /> :
               (success ? <Success />  : <Failed />)

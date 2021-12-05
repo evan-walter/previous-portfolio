@@ -12,7 +12,7 @@ export default function App() {
   return (
     <div id='top'>
       <Navbar />
-      <Section id='hero' next='about'>
+      <Section id='hero' next='about' bgImg='ewalter-3-2600.jpg'>
         <Hero next='about' />
       </Section>
       <Section id='about' next='projects' titleShown='ABOUT' bgColored>
@@ -24,11 +24,9 @@ export default function App() {
       <Section  id='testimonials' next='contact' titleShown='TESTIMONIALS' bgColored>
         <Testimonials />
       </Section>
-      <div className='bg-gray-200'>
-        <Section id='contact' last titleShown="LET'S CONNECT" titleGradient>
-          <Contact />
-        </Section>
-      </div>
+      <Section id='contact' last bgImg='ewalter-4-2600.jpg' titleShown="LET'S CONNECT" titleGradient>
+        <Contact />
+      </Section>
       <Footer />
     </div>
   );

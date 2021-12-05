@@ -9,23 +9,34 @@ export default function Section({
   titleShown,
   titleGradient,
   bgColored,
-  hasBgImgClassName,
+  bgImg,
   children,
 }) {
-  const titleCtl = 'pb-8 lg:pb-12 text-3xl lg:text-4xl font-bold text-center';
-  const gradient = ' text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary';
-
-  const containerStart =
-    'section px-8 py-16 sm:px-36 xl:px-44 grid grid-cols-1 self-center ' +
+  
+  const containerCName = 'section px-8 py-16 sm:px-36 xl:px-44 grid grid-cols-1 self-center ' +
+    (bgImg ? 'bg-fixed' : '') +
     (bgColored ? 'bg-gradient-to-br from-primary to-secondary text-white ' : '');
 
+  const containerStyle = bgImg ? { backgroundImage : `url(../images/${bgImg})` } : {};
+
+  const titleCtl = 'pb-8 lg:pb-12 text-3xl lg:text-4xl font-bold text-center';
+  const gradient = ' text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary';
+  
   return (
-    <div id={id} className={containerStart + (hasBgImgClassName ? hasBgImgClassName : '')}>
-      {/* {!!hasBgImgClassName && (
-        <div className={'bg-img ' + hasBgImgClassName}></div>
-      )} */}
-      {(titleShown && titleGradient) ? <div className={titleCtl + gradient}>{titleShown}</div> : ''}
-      {(titleShown && !titleGradient) ? <div className={titleCtl}>{titleShown}</div> : ''}
+    <div id={id} className={containerCName} style={containerStyle}>
+      {titleShown ? 
+        (titleGradient ?
+          (<div className={titleCtl + gradient}>
+              {titleShown}
+            </div>
+          ) :
+          (<div className={titleCtl}>
+            {titleShown}
+          </div>
+          )
+        ) : ''
+      }
+      <div className=''></div>
       {children}
       {!last ? (
         <div className='pt-8 grid justify-items-center'>

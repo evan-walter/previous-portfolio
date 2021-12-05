@@ -5,19 +5,19 @@ import Button from './buttons/Button';
 import Socials from './buttons/Socials';
 
 export default function Hero({ next }) {
-  const textBase = 'text-center lg:text-left font-bold py-4 leading-relaxed '
-  const textN = 'text-xl sm:text-3xl lg:text-4xl ';
-  const textL = 'text-2xl sm:text-4xl lg:text-5xl ';
+  const textBigBase = 'text-center lg:text-left font-bold py-4 leading-relaxed '
+  const textBigN = 'text-xl sm:text-3xl lg:text-4xl ';
+  const textBigL = 'text-2xl sm:text-4xl lg:text-5xl ';
   const gradient = 'text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary'; // pr-0.5
 
-  const textLink = textBase + 'hover:text-black';
+  const textLink = 'italic hover:text-black';
 
   return (
     <div>
       <div className='grid grid-cols-1 gap-2 lg:grid-cols-2'> {/* justify-self-center lg:justify-self-start */}
         <div className='text-center lg:text-left'>
-          <h2 className={textBase + textL + gradient}>Evan Walter</h2> {/* <h2 className={text}>Hi, my name is <span className={gradient}>Evan Walter</span></h2> */}
-          <h2 className={textBase + textN}>
+          <h2 className={textBigBase + textBigL + gradient}>Evan Walter</h2> {/* <h2 className={text}>Hi, my name is <span className={gradient}>Evan Walter</span></h2> */}
+          <h2 className={textBigBase + textBigN}>
             I am a Software Engineer specializing in React.
           </h2>
           <Socials addClassName='mx-4 my-4 text-3xl' />
@@ -37,16 +37,20 @@ export default function Hero({ next }) {
           />
         </div>
       </div>
-      <div className={'pt-12 text-lg text-center ' + gradient}>I built this portfolio from scratch with{' '}
-        <A h='https://reactjs.org/' addClassName={textLink}>React,</A>
-        {' '}
-        <A h='https://gatsbyjs.com/' addClassName={textLink}>Gatsby,</A>
-        {' '}and{' '}
-        <A h='https://tailwindcss.com/' addClassName={textLink}>Tailwind</A>
-        . Check out my source code{' '}
-        <A h='https://github.com/Evan-Walter/portfolio/' addClassName={textLink}>
-          here
-        </A>.
+      <div className='mt-12'>
+        <div className='m-auto w-max bg-white bg-opacity-10 rounded-xl shadow-2xl'>
+          <p className={'p-4 font-bold text-lg text-center text-primary '}>I built this portfolio from scratch with{' '}
+            <A h='https://reactjs.org/' addClassName={textLink}>React,</A>
+            {' '}
+            <A h='https://gatsbyjs.com/' addClassName={textLink}>Gatsby,</A>
+            {' '}and{' '}
+            <A h='https://tailwindcss.com/' addClassName={textLink}>Tailwind</A>
+            . Check out my source code{' '}
+            <A h='https://github.com/Evan-Walter/portfolio/' addClassName={textLink}>
+              here
+            </A>.
+          </p>
+        </div>
       </div>
       <div className='pt-12 pb-2 text-center'>
         <MyLink to={next}>

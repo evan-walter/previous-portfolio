@@ -48,7 +48,7 @@ export default function Navbar() {
         {links.map(
           (value) => {
             return (
-              <li className='block p-2 m-2 cursor-pointer'>
+              <li className='block p-2 m-2 cursor-pointer' key={value}>
                 {(value === 'projects') ?
                   <div>
                     <div onClick={handleProjects} className='flex items-center justify-center transform hover:-translate-y-1 transition duration-200 ease-in'>

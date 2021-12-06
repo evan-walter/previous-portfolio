@@ -18,19 +18,16 @@ export default function Projects(props) {
   const [showModal, setShowModal] = useState(false);
   const [whichVideo, setWhichVideo] = useState(null);
 
-  const handleModal = () => setShowModal(s => !s);
-  const handleVideo = (video) => setWhichVideo(video);
-  const handleClick = (video) => {
-    handleModal();
-    handleVideo(video);
-  };
+  function handleModal(video, title) {
+    setShowModal(s => !s);
+    setWhichVideo(video);
+    setWhichTitle(title);
+  }
   
   return (
     <div>
-      <Modal {...props} show={showModal} onHide={handleModal} size='xl' centered aria-labelledby='contained-modal-title-vcenter'>
-        <Modal.Header closeButton className='video-modal-header'></Modal.Header>
-        <iframe src={whichVideo} className='video-modal' webkitAllowFullScreen mozAllowFullScreen allowFullScreen /> {/**webkitAllowFullScreen mozAllowFullScreen allowFullScreen */}
-      </Modal>
+      {/* {showModal ? <ProjModal whichVideo={whichVideo} title={whichTitle} /> : null} */}
+      <ProjModal whichVideo={whichVideo} title={whichTitle} />
       <div className='pb-12'>
         {projects.map(
           ({ type, subtitle1, subtitle2, items }) => {

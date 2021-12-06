@@ -9,15 +9,15 @@ export default function Button({ textB, textNoB, noCursorPointer, addClassName }
     return (
       (addClassName ?
         addClassName :
-        (textB ? btnBDefaultSize : '')
+        (textB ? btnBDefaultSize : null)
       )
     );
   }
 
   return (
     <div>
-      {textB ? <button className={btnBBase + 'btn-b ' + more()}>{textB}</button> : ''}
-      {textNoB ? <button className={btnNoB + more()}>{textNoB}</button> : ''}
+      {textB ? <button className={btnBBase + 'btn-b ' + more()}>{textB}</button> : null}
+      {textNoB ? <button className={btnNoB + more()}>{textNoB}</button> : null}
     </div>
   );
 }

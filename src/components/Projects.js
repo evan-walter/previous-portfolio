@@ -15,8 +15,8 @@ export default function Projects() {
   const p = 'text-center px-0 md:px-16 lg:px-0 lg:text-left';
 
   const [showModal, setShowModal] = useState(false);
-  const [whichVideo, setWhichVideo] = useState('');
-  const [whichTitle, setWhichTitle] = useState('');
+  const [whichVideo, setWhichVideo] = useState(null);
+  const [whichTitle, setWhichTitle] = useState(null);
 
   function handleModal(e, video, title) {
     e.preventDefault();
@@ -27,9 +27,9 @@ export default function Projects() {
   
   return (
     <div>
-      <div className={showModal ? 'block' : 'hidden'}>
+      {showModal ? null : null}
         {/* <ProjModal whichVideo={whichVideo} title={whichTitle} /> */}
-      </div>
+      
       <div className='pb-12'>
         {projects.map(
           ({ type, subtitle1, subtitle2, items }) => {
@@ -46,15 +46,15 @@ export default function Projects() {
                           <p className={p}>{desc1}</p>
                           <p className={p}>{desc2}</p>
                           <div className='my-4 flex items-center justify-center lg:justify-start'>
-                            {video ? <div onClick={handleModal}><Button textB='Demo Video' addClassName={btnB} /></div> : ''}
+                            {video ? <div onClick={handleModal}><Button textB='Demo Video' addClassName={btnB} /></div> : null}
                             {website ?
                               <A h={website}>
                                 <Button textNoB='See Live' addClassName={btnNoB} />
-                              </A> : ''}
+                              </A> : null}
                             {repo ?
                               <A h={repo}>
                                 <Button textNoB='Source Code' addClassName={btnNoB} />
-                              </A> : ''}
+                              </A> : null}
                           </div>
                         </div>
                         <Tilt className='lg:col-start-3 lg:col-end-6'>
@@ -88,7 +88,7 @@ const projects = [
         img: heyfioImg,
         video: 'https://www.loom.com/embed/505d28067eb3491a8e27dc222c21ad12',
         website: 'https://beta.heyfio.com',
-        repo: '',
+        repo: null,
       },
     ],
   },
@@ -102,22 +102,22 @@ const projects = [
         id: 'confco',
         title: 'Confidence Co',
         desc1: 'Custom theme development to implement a new design for a health and wellness Shopify store',
-        desc2: '',
+        desc2: null,
         img: confcoImg,
         video: 'https://www.loom.com/embed/505d28067eb3491a8e27dc222c21ad12',
         website: 'https://www.theconfidence.co/',
-        repo: '',
+        repo: null,
       },
       {
         number: 2,
         id: 'w3sales',
         title: 'W3 Sales',
         desc1: 'Custom Shopify development for a food services factory and distributor group with a large inventory of products',
-        desc2: '',
+        desc2: null,
         img: w3Img,
         video: 'https://www.loom.com/embed/3b0aa0cd448b4e41964e8e2cb5cffdf1',
         website: 'https://w3salesonline.com/',
-        repo: '',
+        repo: null,
       },
     ]
   },

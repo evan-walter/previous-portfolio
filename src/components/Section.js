@@ -14,14 +14,14 @@ export default function Section({
 }) {
   
   const containerCName = 'px-8 py-16 sm:px-36 xl:px-44 grid grid-cols-1 self-center ' +
-    (bgColored ? 'bg-gradient-to-br from-primary to-secondary text-white ' : '');
+    (bgColored ? 'bg-gradient-to-br from-primary to-secondary text-white ' : null);
 
   const tBaseCName = 'pb-8 lg:pb-12 text-3xl lg:text-4xl font-bold text-center ';
   const tGradientCName = 'text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary';
   
   return (
     <section id={id} className={containerCName}> {/**style={containerStyle} */}
-      <div className={tBaseCName + (titleGradient ? tGradientCName : '')}>
+      <div className={tBaseCName + (titleGradient ? tGradientCName : null)}>
         {titleShown}
       </div>
       {children}
@@ -31,7 +31,7 @@ export default function Section({
             <DownArrow />
           </MyLink>
         </div>
-      ) : ''}
+      ) : null}
     </section>
   );
 }

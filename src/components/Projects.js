@@ -9,8 +9,8 @@ import w3Img from '../images/w3-1000.png';
 export default function Projects(props) {
   const sub1CName = 'pt-4 pb-4 lg:pt-12 lg:pb-4 text-3xl font-bold text-center';
   const sub2CName = 'pb-4 lg:pb-8 text-2xl font-bold text-center';
-  const btnB = 'py-2 mr-4 px-4 text-lg';
-  const btnNoB = 'mr-4 text-lg transform hover:translate-x-1 transition duration-300 ease-in';
+  const btnB = 'py-2 mr-4 px-4';
+  const btnNoB = 'mr-4 transform hover:translate-x-1 transition duration-300 ease-in';
   const p = 'text-center px-0 md:px-16 lg:px-0 lg:text-left';
 
   const [showModal, setShowModal] = useState(false);

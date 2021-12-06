@@ -24,8 +24,14 @@ export default function Projects(props) {
   return (
     <div>
       {showModal ?
-        <div className='py-16 px-36 h-screen w-screen fixed inset-0 z-50 bg-black bg-opacity-60'>
-          <div className='h-full border-2 border-black'>
+        <div className='z-30 py-16 px-36 h-screen w-screen fixed inset-0 bg-black bg-opacity-60'>
+          <div onClick={handleModal}>
+            <div className='z-40 w-screen h-16 fixed inset-x-0 top-0 bg-transparent'></div>
+            <div className='z-40 h-screen w-36 fixed inset-y-0 right-0 bg-transparent'></div>
+            <div className='z-40 w-screen h-16 fixed inset-x-0 bottom-0 bg-transparent'></div>
+            <div className='z-40 h-screen w-36 fixed inset-y-0 left-0 bg-transparent'></div>
+          </div>
+          <div className='z-50 h-full border-2 border-black'>
             <div className='p-2 m-auto bg-white flex items-center justify-end border-b border-gray-400'>
               <button onClick={handleModal}>
                 <i className='fa fa-times' aria-hidden='true' />

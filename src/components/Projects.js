@@ -1,33 +1,44 @@
 import React, { useState } from 'react';
-import Modal from 'react-bootstrap/Modal';
 import Tilt from 'react-parallax-tilt';
 import A from './buttons/A';
 import Button from './buttons/Button';
-// import ProjModal from './ProjModal';
 import heyfioImg from '../images/heyfio-1000.png';
 import confcoImg from '../images/confco-1000.png';
 import w3Img from '../images/w3-1000.png';
 
 export default function Projects(props) {
   const sub1CName = 'pt-4 pb-4 lg:pt-12 lg:pb-4 text-3xl font-bold text-center';
-  const sub2CName = 'pb-4 lg:pb-8 text-2xl font-bold text-center'; // pb-4
-  const btnB = 'py-2 mr-4 px-4 text-lg'; // lg:text-md
-  const btnNoB = 'mr-4 text-lg transform hover:translate-x-1 transition duration-300 ease-in'; // lg:text-md
+  const sub2CName = 'pb-4 lg:pb-8 text-2xl font-bold text-center';
+  const btnB = 'py-2 mr-4 px-4 text-lg';
+  const btnNoB = 'mr-4 text-lg transform hover:translate-x-1 transition duration-300 ease-in';
   const p = 'text-center px-0 md:px-16 lg:px-0 lg:text-left';
 
   const [showModal, setShowModal] = useState(false);
   const [whichVideo, setWhichVideo] = useState(null);
 
-  function handleModal(video, title) {
+  function handleModal(video) {
     setShowModal(s => !s);
     setWhichVideo(video);
-    setWhichTitle(title);
   }
   
   return (
     <div>
-      {/* {showModal ? <ProjModal whichVideo={whichVideo} title={whichTitle} /> : null} */}
-      <ProjModal whichVideo={whichVideo} title={whichTitle} />
+      {showModal ?
+        <div className='py-16 px-36 h-screen w-screen fixed inset-0 z-50 bg-black bg-opacity-60'>
+          <div className='h-full border-2 border-black'>
+            <div className='p-2 m-auto bg-white flex items-center justify-end border-b border-gray-400'>
+              <button onClick={handleModal}>
+                <i className='fa fa-times' aria-hidden='true' />
+              </button>
+            </div>
+            <div className='flex justify-center'>
+              <div className=''>
+                <iframe src={whichVideo} className='video-modal' />
+              </div>
+            </div>
+          </div>
+        </div> : null
+      }
       <div className='pb-12'>
         {projects.map(
           ({ type, subtitle1, subtitle2, items }) => {
@@ -45,7 +56,7 @@ export default function Projects(props) {
                           <p className={p}>{desc2}</p>
                           <div className='my-4 flex items-center justify-center lg:justify-start'>
                             {video ?
-                              <div onClick={() => handleClick(video)}>
+                              <div onClick={() => handleModal(video)}>
                                 <Button textB='Demo Video' addClassName={btnB} />
                               </div> : null
                             }

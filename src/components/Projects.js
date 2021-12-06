@@ -18,8 +18,7 @@ export default function Projects() {
   const [whichVideo, setWhichVideo] = useState(null);
   const [whichTitle, setWhichTitle] = useState(null);
 
-  function handleModal(e, video, title) {
-    e.preventDefault();
+  function handleModal(video, title) {
     setShowModal(s => !s);
     setWhichVideo(video);
     setWhichTitle(title);
@@ -27,9 +26,8 @@ export default function Projects() {
   
   return (
     <div>
-      {showModal ? null : null}
-        {/* <ProjModal whichVideo={whichVideo} title={whichTitle} /> */}
-      
+      {/* {showModal ? <ProjModal whichVideo={whichVideo} title={whichTitle} /> : null} */}
+      <ProjModal whichVideo={whichVideo} title={whichTitle} />
       <div className='pb-12'>
         {projects.map(
           ({ type, subtitle1, subtitle2, items }) => {
@@ -86,7 +84,7 @@ const projects = [
         desc1: 'A Full Stack Software Engineering Contract building a Blockchain web application',
         desc2: 'React + MySQL + NodeJS + ExpressJS',
         img: heyfioImg,
-        video: 'https://www.loom.com/embed/505d28067eb3491a8e27dc222c21ad12',
+        video: null,
         website: 'https://beta.heyfio.com',
         repo: null,
       },

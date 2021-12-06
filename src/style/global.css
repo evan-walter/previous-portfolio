@@ -163,3 +163,6 @@ section {
     height: 60vh;
   }
 }
+.video-modal-header {
+  height: 5vh;
+}

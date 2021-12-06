@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
+import Modal from 'react-bootstrap/Modal';
 import Tilt from 'react-parallax-tilt';
 import A from './buttons/A';
 import Button from './buttons/Button';
-import ProjModal from './ProjModal';
+// import ProjModal from './ProjModal';
 import heyfioImg from '../images/heyfio-1000.png';
 import confcoImg from '../images/confco-1000.png';
 import w3Img from '../images/w3-1000.png';
 
-export default function Projects() {
+export default function Projects(props) {
   const sub1CName = 'pt-4 pb-4 lg:pt-12 lg:pb-4 text-3xl font-bold text-center';
   const sub2CName = 'pb-4 lg:pb-8 text-2xl font-bold text-center'; // pb-4
   const btnB = 'py-2 mr-4 px-4 text-lg'; // lg:text-md
@@ -16,20 +17,20 @@ export default function Projects() {
 
   const [showModal, setShowModal] = useState(false);
   const [whichVideo, setWhichVideo] = useState(null);
-  const [whichTitle, setWhichTitle] = useState(null);
 
-  function handleModal(e, video, title) {
-    e.preventDefault();
-    setShowModal(s => !s);
-    setWhichVideo(video);
-    setWhichTitle(title);
-  }
+  const handleModal = () => setShowModal(s => !s);
+  const handleVideo = (video) => setWhichVideo(video);
+  const handleClick = (video) => {
+    handleModal();
+    handleVideo(video);
+  };
   
   return (
     <div>
-      {showModal ? null : null}
-        {/* <ProjModal whichVideo={whichVideo} title={whichTitle} /> */}
-      
+      <Modal {...props} show={showModal} onHide={handleModal} size='xl' centered aria-labelledby='contained-modal-title-vcenter'>
+        <Modal.Header closeButton className='video-modal-header'></Modal.Header>
+        <iframe src={whichVideo} className='video-modal' webkitAllowFullScreen mozAllowFullScreen allowFullScreen /> {/**webkitAllowFullScreen mozAllowFullScreen allowFullScreen */}
+      </Modal>
       <div className='pb-12'>
         {projects.map(
           ({ type, subtitle1, subtitle2, items }) => {
@@ -46,15 +47,21 @@ export default function Projects() {
                           <p className={p}>{desc1}</p>
                           <p className={p}>{desc2}</p>
                           <div className='my-4 flex items-center justify-center lg:justify-start'>
-                            {video ? <div onClick={handleModal}><Button textB='Demo Video' addClassName={btnB} /></div> : null}
+                            {video ?
+                              <div onClick={() => handleClick(video)}>
+                                <Button textB='Demo Video' addClassName={btnB} />
+                              </div> : null
+                            }
                             {website ?
                               <A h={website}>
                                 <Button textNoB='See Live' addClassName={btnNoB} />
-                              </A> : null}
+                              </A> : null
+                            }
                             {repo ?
                               <A h={repo}>
                                 <Button textNoB='Source Code' addClassName={btnNoB} />
-                              </A> : null}
+                              </A> : null
+                            }
                           </div>
                         </div>
                         <Tilt className='lg:col-start-3 lg:col-end-6'>
@@ -86,7 +93,7 @@ const projects = [
         desc1: 'A Full Stack Software Engineering Contract building a Blockchain web application',
         desc2: 'React + MySQL + NodeJS + ExpressJS',
         img: heyfioImg,
-        video: 'https://www.loom.com/embed/505d28067eb3491a8e27dc222c21ad12',
+        video: null,
         website: 'https://beta.heyfio.com',
         repo: null,
       },

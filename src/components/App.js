@@ -5,7 +5,6 @@ import Footer from './Footer';
 import Hero from './Hero';
 import Navbar from './Navbar';
 import Projects from './Projects';
-import ProjModal from './ProjModal';
 import Section from './Section';
 import Testimonials from './Testimonials';
 
@@ -19,7 +18,6 @@ export default function App() {
       <Section id='about' next='projects' titleShown='ABOUT' bgColored>
         <About />
       </Section>
-      <ProjModal />
       <Section  id='projects' next='testimonials' titleShown='PROJECTS'>
         <Projects />
       </Section>

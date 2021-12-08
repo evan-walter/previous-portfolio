@@ -182,15 +182,54 @@ section {
 .video-padding {
   padding-top: 56.25%;
 }
-.fade-in-section {
+.fade-from-top {
   opacity: 0;
-  transform: translateY(20vh);
+  transform: translateY(-10%); /* -25% */
   visibility: hidden;
-  transition: opacity 1200ms ease-out, transform 600ms ease-out,
+  transition: opacity 1200ms ease-out, transform 1200ms ease-out,
     visibility 1200ms ease-out;
   will-change: opacity, transform, visibility;
 }
-.fade-in-section.is-visible {
+.fade-from-top.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}
+.fade-from-right {
+  opacity: 0;
+  transform: translateX(10%);
+  visibility: hidden;
+  transition: opacity 1200ms ease-out, transform 1200ms ease-out,
+    visibility 1200ms ease-out;
+  will-change: opacity, transform, visibility;
+}
+.fade-from-right.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}
+.fade-from-bottom {
+  opacity: 0;
+  transform: translateY(10%);
+  visibility: hidden;
+  transition: opacity 1200ms ease-out, transform 1200ms ease-out,
+    visibility 1200ms ease-out;
+  will-change: opacity, transform, visibility;
+}
+.fade-from-bottom.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}
+.fade-from-left {
+  opacity: 0;
+  transform: translateX(-10%);
+  visibility: hidden;
+  transition: opacity 1200ms ease-out, transform 1200ms ease-out,
+    visibility 1200ms ease-out;
+  will-change: opacity, transform, visibility;
+}
+.fade-from-left.is-visible {
   opacity: 1;
   transform: none;
   visibility: visible;

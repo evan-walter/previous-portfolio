@@ -17,13 +17,17 @@ export default function Hero({ next }) {
     <div>
       <div className='grid grid-cols-1 gap-2 lg:grid-cols-2'> {/* justify-self-center lg:justify-self-start */}
         <div className='text-center lg:text-left'>
-          <Fade>
+          <Fade from='left'>
             <h2 className={textBigBase + textBigL + gradient}>Evan Walter</h2> {/* <h2 className={text}>Hi, my name is <span className={gradient}>Evan Walter</span></h2> */}
           </Fade>
-          <h2 className={textBigBase + textBigN}>
-            I am a Software Engineer specializing in React.
-          </h2>
-          <Socials addClassName='mx-4 my-4 text-3xl' />
+          <Fade from='left'>
+            <h2 className={textBigBase + textBigN}>
+              I am a Software Engineer specializing in React.
+            </h2>
+          </Fade>
+          <Fade from='left'>
+            <Socials addClassName='mx-4 my-4 text-3xl' />
+          </Fade>
         </div>
         <div>
           <iframe

@@ -1,4 +1,5 @@
 import React from 'react';
+import Fade from './Fade';
 import aboutImg from '../images/ewalter-11-700.jpg';
 
 export default function About() {
@@ -9,25 +10,27 @@ export default function About() {
       <div>
         <img src={aboutImg} alt='about' width='350' />
       </div>
-      <div className='self-center'>
-        <p className={p}>
-          I am a Software Engineer specializing in React. I love what I do. I
-          care for the people I work with and focus on real business results.
-        </p>
-        <p className={p}>
-          Prior to Software, I obtained a Bachelor's of Science in Electrical
-          Engineering and began a career in the field. As I explored the
-          software side of the field, I applied communication and problem
-          solving skills I learned along the way.
-        </p>
-        <p className={p}>
-          As I learned the tools and built personal projects, I found
-          opportunities to serve clients. I recently served as a Contract Full
-          Stack Software Engineer and previously as a Shopify Developer. I am
-          excited to continue to leverage and grow my skills in a full time
-          role.
-        </p>
-      </div>
+      <Fade>
+        <div className='self-center'>
+          <p className={p}>
+            I am a Software Engineer specializing in React. I love what I do. I
+            care for the people I work with and focus on real business results.
+          </p>
+          <p className={p}>
+            Prior to Software, I obtained a Bachelor's of Science in Electrical
+            Engineering and began a career in the field. As I explored the
+            software side of the field, I applied communication and problem
+            solving skills I learned along the way.
+          </p>
+          <p className={p}>
+            As I learned the tools and built personal projects, I found
+            opportunities to serve clients. I recently served as a Contract Full
+            Stack Software Engineer and previously as a Shopify Developer. I am
+            excited to continue to leverage and grow my skills in a full time
+            role.
+          </p>
+        </div>
+      </Fade>
     </div>
   );
 }

@@ -38,19 +38,21 @@ export default function Projects(props) {
               </button>
             </div>
             <div className='flex justify-center'>
-              <div className=''> {/**video-modal */}
-              <iframe
-                src={whichVideo}
-                width='560'
-                height='315'
-                // width='590'
-                // height='345'
-                className='video-modal m-auto'
-                title='Welcome Video'
-                frameBorder='0'
-                allow='accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
-                allowFullScreen
-              />
+              {/* <div className='relative w-full overflow-hidden'>
+                <iframe
+                  src={whichVideo}
+                  className='h-full inset-0 border-none'
+                  title='Welcome Video'
+                  frameBorder='0'
+                  allow='accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+                  allowFullScreen
+                />
+              </div> */}
+              <div className='container'>
+                <iframe
+                  className='responsive-iframe'
+                  src='https://www.youtube.com/embed/tgbNymZ7vqY'
+                ></iframe>
               </div>
             </div>
           </div>

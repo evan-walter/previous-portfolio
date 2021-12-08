@@ -30,7 +30,7 @@ export default function Hero({ next }) {
           </Fade>
         </div>
         <Fade from='right'>
-          <div>
+          <div> {/**className='border border-gray-400' */}
             <iframe
               width='560'
               height='315'

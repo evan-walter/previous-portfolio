@@ -19,7 +19,7 @@ export default function About() {
             care for the people I work with and focus on real business results.
           </p>
           <p className={p}>
-            Prior to Software, I obtained a Bachelor's of Science in Electrical
+            Prior to Software Engineering, I obtained a Bachelor's of Science in Electrical
             Engineering and began a career in the field. As I explored the
             software side of the field, I applied communication and problem
             solving skills I learned along the way.
@@ -28,7 +28,7 @@ export default function About() {
             As I learned the tools and built personal projects, I found
             opportunities to serve clients. I recently served as a Contract Full
             Stack Software Engineer and previously as a Shopify Developer. I am
-            excited to continue to leverage and grow my skills in a full time
+            excited to continue to leverage and grow my skills in a new full time
             role.
           </p>
         </div>

@@ -9,7 +9,7 @@ export default function Button({ textB, textNoB, noCursorPointer, addClassName }
     return (
       (addClassName ?
         addClassName :
-        (textB ? btnBDefaultSize : null)
+        (textB ? btnBDefaultSize : '')
       )
     );
   }

@@ -21,7 +21,7 @@ export default function Section({
   
   return (
     <section id={id} className={containerCName}> {/**style={containerStyle} */}
-      <div className={tBaseCName + (titleGradient ? tGradientCName : null)}>
+      <div className={tBaseCName + (titleGradient ? tGradientCName : '')}>
         {titleShown}
       </div>
       {children}

@@ -1,16 +1,23 @@
 import { useStaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 
-export default function Image() {
+export default function Image({ src, alt, fluid, maxWidth, fixedWidth }) {
   const data = useStaticQuery(graphql`
     query {
-      file(relativePath: { eq: "images/default.jpg" }) {
+      file(relativePath: { eq: ${src} }) {
         childImageSharp {
           # Specify a fluid image and fragment
           # The default maxWidth is 800 pixels
-          fluid {
-            ...GatsbyImageSharpFluid
-          }
+          ${fluid} ? 
+            fluid(maxWidth: ${maxWidth}) {
+              ...GatsbyImageSharpFluid
+            } :
+            ${fixedWidth} ?
+              fixed(width: ${fixedWidth}) {
+                ...GatsbyImageSharpFixed
+              } : null 
+            
+          
         }
       }
     }
@@ -20,7 +27,7 @@ export default function Image() {
       <h1>Hello gatsby-image</h1>
       <Img
         fluid={data.file.childImageSharp.fluid}
-        alt='Gatsby Docs are awesome'
+        alt={alt}
       />
     </div>
   );

@@ -1,5 +1,6 @@
 import React from 'react';
 import Fade from './Fade';
+import Img from './Image';
 import aboutImg from '../images/ewalter-11-700.jpg';
 
 export default function About() {
@@ -9,7 +10,8 @@ export default function About() {
     <div className='grid grid-cols-1 gap-12 justify-items-center lg:grid-cols-2 lg:gap-32 lg:justify-items-end'>
       <Fade from='left'>
         <div>
-          <img src={aboutImg} alt='about' width='350' />
+          {/* <img src={aboutImg} alt='about' width='350' /> */}
+          <Image src={aboutImg} alt='about-image' fixedWidth='350' />
         </div>
       </Fade>
       <Fade from='right'>

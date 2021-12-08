@@ -25,6 +25,9 @@ export default function Navbar() {
   
   return (
     <header id='home' className='text-lg lg:flex lg:justify-between py-4 px-8 sm:px-36 xl:px-44 border-b shadow-lg'>
+      {/* <div className={projsExpanded ? 'absolute' : 'hidden'} onClick={handleProjects}>
+        <div className='z-40 w-screen h-screen fixed inset-0 top-0 bg-transparent'></div>
+      </div> */}
       <div className='flex items-center justify-between'>
         <div className='flex items-center'>
           <button onClick={handleLogo} onKeyDown={handleLogo} className='cursor-pointer'>

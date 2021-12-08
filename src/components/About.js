@@ -7,10 +7,12 @@ export default function About() {
 
   return (
     <div className='grid grid-cols-1 gap-12 justify-items-center lg:grid-cols-2 lg:gap-32 lg:justify-items-end'>
-      <div>
-        <img src={aboutImg} alt='about' width='350' />
-      </div>
-      <Fade>
+      <Fade from='left'>
+        <div>
+          <img src={aboutImg} alt='about' width='350' />
+        </div>
+      </Fade>
+      <Fade from='right'>
         <div className='self-center'>
           <p className={p}>
             I am a Software Engineer specializing in React. I love what I do. I

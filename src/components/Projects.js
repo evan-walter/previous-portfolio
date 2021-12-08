@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Tilt from 'react-parallax-tilt';
+import Fade from './Fade';
 import A from './buttons/A';
 import Button from './buttons/Button';
 import heyfioImg from '../images/heyfio-1000.png';
@@ -52,37 +53,45 @@ export default function Projects(props) {
           ({ type, subtitle1, subtitle2, items }) => {
             return (
               <div key={type}>
-                <h2 id={type} className={sub1CName}>{subtitle1}</h2>
-                <h3 className={sub2CName}>{subtitle2}</h3>
+                <Fade from='bottom'>
+                  <h2 id={type} className={sub1CName}>{subtitle1}</h2>
+                </Fade>
+                <Fade from='bottom'>
+                  <h3 className={sub2CName}>{subtitle2}</h3>
+                </Fade>
                 {items.map(
                   ({ number, id, title, desc1, desc2, img, video, website, repo }) => {
                     return (
                       <div id={id} className='py-4 lg:py-12 grid grid-cols-1 lg:grid-cols-5' key={number}>
                         <div className='py-4 lg:py-8 lg:pr-16 grid-cols-1 lg:col-start-1 lg:col-end-3'>
-                          <h3 className='pb-4 font-bold text-xl text-center lg:text-left'>{title}</h3>
-                          <p className={p}>{desc1}</p>
-                          <p className={p}>{desc2}</p>
-                          <div className='my-4 flex items-center justify-center lg:justify-start'>
-                            {video ?
-                              <div onClick={() => handleModal(video)}>
-                                <Button textB='Demo Video' addClassName={btnB} />
-                              </div> : null
-                            }
-                            {website ?
-                              <A h={website}>
-                                <Button textNoB='See Live' addClassName={btnNoB} />
-                              </A> : null
-                            }
-                            {repo ?
-                              <A h={repo}>
-                                <Button textNoB='Source Code' addClassName={btnNoB} />
-                              </A> : null
-                            }
-                          </div>
+                          <Fade from='left'>
+                            <h3 className='pb-4 font-bold text-xl text-center lg:text-left'>{title}</h3>
+                            <p className={p}>{desc1}</p>
+                            <p className={p}>{desc2}</p>
+                            <div className='my-4 flex items-center justify-center lg:justify-start'>
+                              {video ?
+                                <div onClick={() => handleModal(video)}>
+                                  <Button textB='Demo Video' addClassName={btnB} />
+                                </div> : null
+                              }
+                              {website ?
+                                <A h={website}>
+                                  <Button textNoB='See Live' addClassName={btnNoB} />
+                                </A> : null
+                              }
+                              {repo ?
+                                <A h={repo}>
+                                  <Button textNoB='Source Code' addClassName={btnNoB} />
+                                </A> : null
+                              }
+                            </div>
+                          </Fade>
                         </div>
-                        <Tilt className='lg:col-start-3 lg:col-end-6'>
-                          <img src={img} alt={title + ' image'} width='1000' />
-                        </Tilt>
+                          <Tilt className='lg:col-start-3 lg:col-end-6'>
+                            <Fade from='right'>
+                              <img src={img} alt={title + ' image'} width='1000' />
+                            </Fade>
+                          </Tilt>
                       </div>
                     );
                   }

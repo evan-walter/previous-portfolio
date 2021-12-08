@@ -1,4 +1,5 @@
 import React from 'react';
+import Fade from './Fade';
 import MyLink from './buttons/MyLink';
 import { DownArrow } from './buttons/Arrows';
 
@@ -21,9 +22,11 @@ export default function Section({
   
   return (
     <section id={id} className={containerCName}> {/**style={containerStyle} */}
-      <div className={tBaseCName + (titleGradient ? tGradientCName : '')}>
-        {titleShown}
-      </div>
+      <Fade from='bottom'>
+        <div className={tBaseCName + (titleGradient ? tGradientCName : '')}>
+          {titleShown}
+        </div>
+      </Fade>
       {children}
       {!last ? (
         <div className='pt-8 grid justify-items-center'>

@@ -29,40 +29,46 @@ export default function Hero({ next }) {
             <Socials addClassName='mx-4 my-4 text-3xl' />
           </Fade>
         </div>
-        <div>
-          <iframe
-            width='560'
-            height='315'
-            // width='590'
-            // height='345'
-            className='hero-vid m-auto'
-            title='Welcome Video'
-            frameBorder='0'
-            allow='accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
-            allowFullScreen
-            src='https://www.loom.com/embed/cfb7f4e0581d48cc98a3ebb8c2ca4a06?autoplay=0'
-          />
+        <Fade from='right'>
+          <div>
+            <iframe
+              width='560'
+              height='315'
+              // width='590'
+              // height='345'
+              className='hero-vid m-auto'
+              title='Welcome Video'
+              frameBorder='0'
+              allow='accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+              allowFullScreen
+              src='https://www.loom.com/embed/cfb7f4e0581d48cc98a3ebb8c2ca4a06?autoplay=0'
+            />
+          </div>
+        </Fade>
+      </div>
+      <Fade from='bottom'>
+        <div className='mt-12 flex justify-center'>
+          <p className='p-4 inline-block font-bold text-lg text-center text-primary bg-white bg-opacity-10 rounded-xl shadow-2xl'>
+            I built this portfolio with{' '}
+            <A h='https://reactjs.org/' addClassName={textLink}>React,</A>
+            {' '}
+            <A h='https://gatsbyjs.com/' addClassName={textLink}>Gatsby,</A>
+            {' '}and{' '}
+            <A h='https://tailwindcss.com/' addClassName={textLink}>Tailwind</A>
+            . Check out my source code{' '}
+            <A h='https://github.com/Evan-Walter/portfolio/' addClassName={textLink}>
+              here
+            </A>.
+          </p>
         </div>
-      </div>
-      <div className='mt-12 flex justify-center'>
-        <p className='p-4 inline-block font-bold text-lg text-center text-primary bg-white bg-opacity-10 rounded-xl shadow-2xl'>
-          I built this portfolio with{' '}
-          <A h='https://reactjs.org/' addClassName={textLink}>React,</A>
-          {' '}
-          <A h='https://gatsbyjs.com/' addClassName={textLink}>Gatsby,</A>
-          {' '}and{' '}
-          <A h='https://tailwindcss.com/' addClassName={textLink}>Tailwind</A>
-          . Check out my source code{' '}
-          <A h='https://github.com/Evan-Walter/portfolio/' addClassName={textLink}>
-            here
-          </A>.
-        </p>
-      </div>
-      <div className='pt-12 pb-2 text-center'>
-        <MyLink to={next}>
-          <Button textB='Know more' />
-        </MyLink>
-      </div>
+      </Fade>
+      <Fade from='bottom'>
+        <div className='pt-12 pb-2 text-center'>
+          <MyLink to={next}>
+            <Button textB='Know more' />
+          </MyLink>
+        </div>
+      </Fade>
     </div>
   );
 }

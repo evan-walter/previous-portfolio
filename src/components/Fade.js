@@ -19,7 +19,7 @@ export default function Fade({ children, from }) {
   }, []);
 
   return (
-    <div className={fadeBase + (visible ? 'is-visible' : '')} ref={domRef}>
+    <div ref={domRef} className={fadeBase + (visible ? 'is-visible' : '')}>
       {children}
     </div>
   );

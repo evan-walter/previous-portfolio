@@ -184,10 +184,10 @@ section {
 }
 .fade-from-top {
   opacity: 0;
-  transform: translateY(-10%); /* -25% */
+  transform: translateY(-9%); /* -25% */
   visibility: hidden;
-  transition: opacity 1200ms ease-out, transform 1200ms ease-out,
-    visibility 1200ms ease-out;
+  transition: opacity 600ms ease-out, transform 900ms ease-out,
+    visibility 900ms ease-out;
   will-change: opacity, transform, visibility;
 }
 .fade-from-top.is-visible {
@@ -197,10 +197,10 @@ section {
 }
 .fade-from-right {
   opacity: 0;
-  transform: translateX(10%);
+  transform: translateX(9%);
   visibility: hidden;
-  transition: opacity 1200ms ease-out, transform 1200ms ease-out,
-    visibility 1200ms ease-out;
+  transition: opacity 600ms ease-out, transform 900ms ease-out,
+    visibility 900ms ease-out;
   will-change: opacity, transform, visibility;
 }
 .fade-from-right.is-visible {
@@ -210,10 +210,10 @@ section {
 }
 .fade-from-bottom {
   opacity: 0;
-  transform: translateY(10%);
+  transform: translateY(9%);
   visibility: hidden;
-  transition: opacity 1200ms ease-out, transform 1200ms ease-out,
-    visibility 1200ms ease-out;
+  transition: opacity 600ms ease-out, transform 900ms ease-out,
+    visibility 900ms ease-out;
   will-change: opacity, transform, visibility;
 }
 .fade-from-bottom.is-visible {
@@ -223,10 +223,10 @@ section {
 }
 .fade-from-left {
   opacity: 0;
-  transform: translateX(-10%);
+  transform: translateX(-9%);
   visibility: hidden;
-  transition: opacity 1200ms ease-out, transform 1200ms ease-out,
-    visibility 1200ms ease-out;
+  transition: opacity 600ms ease-out, transform 900ms ease-out,
+    visibility 900ms ease-out;
   will-change: opacity, transform, visibility;
 }
 .fade-from-left.is-visible {

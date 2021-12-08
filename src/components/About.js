@@ -23,9 +23,9 @@ export default function About() {
         <p className={p}>
           As I learned the tools and built personal projects, I found
           opportunities to serve clients. I recently served as a Contract Full
-          Stack Software Engineer and previously as a Freelance Shopify
-          Developer. I am excited to continue to leverage
-          and grow my skills in a full time role.
+          Stack Software Engineer and previously as a Shopify Developer. I am
+          excited to continue to leverage and grow my skills in a full time
+          role.
         </p>
       </div>
     </div>

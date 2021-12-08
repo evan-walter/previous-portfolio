@@ -179,3 +179,6 @@ section {
   height: 100%;
   border: none;
 }
+.video-padding {
+  padding-top: 56.25%;
+}

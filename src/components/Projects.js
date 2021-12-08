@@ -37,16 +37,15 @@ export default function Projects(props) {
                 <i className='fa fa-times' aria-hidden='true' />
               </button>
             </div>
-            <div className='flex justify-center'>
-              <div className=''> {/**video-modal */}
+            <div className=''> {/**flex justify-center */}
+              <div className='video-container'> {/**video-modal */}
               <iframe
                 src={whichVideo}
-                width='560'
-                height='315'
+                // width='560'
+                // height='315'
                 // width='590'
                 // height='345'
-                className='video-modal m-auto'
-                title='Welcome Video'
+                className='video-modal'
                 frameBorder='0'
                 allow='accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
                 allowFullScreen

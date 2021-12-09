@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
 import Button from './buttons/Button';
 import MyLink from './buttons/MyLink';
-import NavProjects from './NavProjects';
+import NavProjs from './NavProjs';
 import logo from '../images/logo.png';
 
 export default function Navbar() {
   const links = ['home', 'about', 'projects', 'testimonials', 'contact'];
-  const navProjects = ['heyfio', 'confco', 'w3sales'];
   
   const [barsExpanded, setBarsExpanded] = useState(false);
   const [projsExpanded, setProjsExpanded] = useState(false);
@@ -19,13 +18,13 @@ export default function Navbar() {
     setBarsExpanded(s => !s);
   }
   
-  function handleProjects() {
+  function handleShowProjs() {
     setProjsExpanded(s => !s);
   }
   
   return (
     <header id='home' className='text-lg lg:flex lg:justify-between py-4 px-8 sm:px-36 xl:px-44 border-b shadow-lg'>
-      {/* <div className={projsExpanded ? 'absolute' : 'hidden'} onClick={handleProjects}>
+      {/* <div className={projsExpanded ? 'absolute' : 'hidden'} onClick={handleShowProjs}>
         <div className='z-40 w-screen h-screen fixed inset-0 top-0 bg-transparent'></div>
       </div> */}
       <div className='flex items-center justify-between'>
@@ -54,12 +53,12 @@ export default function Navbar() {
               <li className='block p-2 m-2 cursor-pointer' key={value}>
                 {(value === 'projects') ?
                   <div>
-                    <div onClick={handleProjects} className='flex items-center justify-center transform hover:-translate-y-1 transition duration-200 ease-in'>
+                    <div onClick={handleShowProjs} className='flex items-center justify-center transform hover:-translate-y-1 transition duration-200 ease-in'>
                       <i className={'text-center w-4 pr-1 fa fa-caret-' + (projsExpanded ? 'down' : 'right') + ' text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary focus:outline-none'} aria-hidden='true' />
                       <Button textNoB={value.charAt(0).toUpperCase() + value.slice(1)} />
                     </div>
                     <div className={'pt-2 m-auto w-max lg:absolute z-50 ' + (projsExpanded ? 'block' : 'hidden')}>
-                      <NavProjects />
+                      <NavProjs />
                     </div>
                   </div> :
                   <div className='text-center transform hover:-translate-y-1 transition duration-200 ease-in focus:outline-none'>

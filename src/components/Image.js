@@ -1,34 +1,7 @@
-import { useStaticQuery, graphql } from 'gatsby';
-import Img from 'gatsby-image';
+import React from 'react';
+import { StaticImage } from 'gatsby-plugin-image';
+import aboutImg from '../images/ewalter-11-700.jpg';
 
-export default function Image({ src, alt, fluid, maxWidth, fixedWidth }) {
-  const data = useStaticQuery(graphql`
-    query {
-      file(relativePath: { eq: ${src} }) {
-        childImageSharp {
-          # Specify a fluid image and fragment
-          # The default maxWidth is 800 pixels
-          ${fluid} ? 
-            fluid(maxWidth: ${maxWidth}) {
-              ...GatsbyImageSharpFluid
-            } :
-            ${fixedWidth} ?
-              fixed(width: ${fixedWidth}) {
-                ...GatsbyImageSharpFixed
-              } : null 
-            
-          
-        }
-      }
-    }
-  `);
-  return (
-    <div>
-      <h1>Hello gatsby-image</h1>
-      <Img
-        fluid={data.file.childImageSharp.fluid}
-        alt={alt}
-      />
-    </div>
-  );
+export default function Image({ src, alt, maxWidth }) {
+  return <div><StaticImage src={aboutImg} alt={alt} width={maxWidth} /></div>;
 }

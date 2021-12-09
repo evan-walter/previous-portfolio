@@ -2,7 +2,7 @@ import React from 'react';
 import Button from './buttons/Button';
 import MyLink from './buttons/MyLink';
 
-export default function NavProjects() {
+export default function NavProjs() {
   const link = 'py-4 transform hover:translate-x-1 transition duration-200 ease-in focus:outline-none ';
 
   return (

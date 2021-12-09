@@ -6,7 +6,7 @@ import Button from './buttons/Button';
 import Socials from './buttons/Socials';
 
 export default function Hero({ next }) {
-  const textBigBase = 'text-center font-bold py-4 leading-relaxed ' // lg:text-left
+  const textBigBase = 'text-center lg:text-left font-bold py-4 leading-relaxed '
   const textBigN = 'text-xl sm:text-3xl lg:text-4xl ';
   const textBigL = 'text-2xl sm:text-4xl lg:text-5xl ';
   const gradient = 'text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary'; // pr-0.5
@@ -15,22 +15,22 @@ export default function Hero({ next }) {
 
   return (
     <div>
-      <div className='grid grid-cols-1 gap-2'> {/**lg:grid-cols-2 */}
-        <div className='text-center'> {/**lg:text-left */}
-          <Fade from='top'> {/**left */}
-            <h2 className={textBigBase + textBigL + gradient}>Evan Walter</h2>
+      <div className='grid grid-cols-1 gap-2 lg:grid-cols-2'> {/* justify-self-center lg:justify-self-start */}
+        <div className='text-center lg:text-left'>
+          <Fade from='left'>
+            <h2 className={textBigBase + textBigL + gradient}>Evan Walter</h2> {/* <h2 className={text}>Hi, my name is <span className={gradient}>Evan Walter</span></h2> */}
           </Fade>
-          <Fade from='top'> {/**left */}
+          <Fade from='left'>
             <h2 className={textBigBase + textBigN}>
               I am a Software Engineer specializing in React.
             </h2>
           </Fade>
-          <Fade from='top'> {/**left */}
+          <Fade from='left'>
             <Socials addClassName='mx-4 my-4 text-3xl' />
           </Fade>
         </div>
-        {/* <Fade from='right'>
-          <div>
+        <Fade from='right'>
+          <div> {/**className='border border-gray-400' */}
             <iframe
               width='560'
               height='315'
@@ -44,7 +44,7 @@ export default function Hero({ next }) {
               src='https://www.loom.com/embed/cfb7f4e0581d48cc98a3ebb8c2ca4a06?autoplay=0'
             />
           </div>
-        </Fade> */}
+        </Fade>
       </div>
       <Fade from='bottom'>
         <div className='mt-12 flex justify-center'>

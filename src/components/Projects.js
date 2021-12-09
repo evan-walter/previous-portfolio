@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-// import Image from './Image';
+import { graphql } from 'gatsby';
+import { GatsbyImage } from 'gatsby-plugin-image';
 import Tilt from 'react-parallax-tilt';
 import Fade from './Fade';
 import A from './buttons/A';
@@ -90,8 +91,8 @@ export default function Projects(props) {
                         </div>
                           <Tilt className='lg:col-start-3 lg:col-end-6'>
                             <Fade from='right'>
-                              <img src={img} alt={title + ' image'} width='1000' />
-                              {/* <Image src={img} alt={title + '-image'} maxWidth='1000' /> */}
+                              {/* <img src={img} alt={title + ' image'} width='1000' /> */}
+                              <GatsbyImage image={img.childImageSharp.gatsbyImageData} alt={title + '-image'} width='1000' />
                             </Fade>
                           </Tilt>
                       </div>
@@ -156,3 +157,14 @@ const projects = [
     ]
   },
 ];
+
+const pageQuery = graphql`
+  query {
+    childImageSharp {
+      gatsbyImageData(
+        width: 1000
+        placeholder: BLURRED
+      )
+    }
+  }
+`

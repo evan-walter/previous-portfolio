@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { StaticImage } from 'gatsby-plugin-image';
 import Tilt from 'react-parallax-tilt';
 import Fade from './Fade';
 import A from './buttons/A';
@@ -141,14 +140,6 @@ export default function Projects(props) {
                           <Tilt className='lg:col-start-3 lg:col-end-6'>
                             <Fade from='right'>
                               <img src={img} alt={title + ' image'} width='1000' />
-                              {/* {img === heyfioImg ?
-                              <StaticImage src='../images/heyfio-1000.png' alt='heyfio-image' width='1000' />
-                              : img === confcoImg ?
-                              <StaticImage src='../images/confco-1000.png' alt='confco-image' width='1000' />
-                              : img === w3Img ?
-                              <StaticImage src='../images/w3-1000.png' alt='w3-image' width='1000' />
-                              : null
-                              } */}
                             </Fade>
                           </Tilt>
                       </div>

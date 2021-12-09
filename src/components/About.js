@@ -1,8 +1,6 @@
 import React from 'react';
-import Fade from './Fade';
-// import Image from './Image';
 import { StaticImage } from 'gatsby-plugin-image';
-import aboutImg from '../images/ewalter-11-700.jpg';
+import Fade from './Fade';
 
 export default function About() {
   const p = 'py-2 md:text-lg lg:text-xl text-center lg:text-left';
@@ -12,7 +10,7 @@ export default function About() {
       <Fade from='left'>
         <div>
           {/* <img src={aboutImg} alt='about' width='350' /> */}
-          <StaticImage src={aboutImg} alt='about-image' width={350} />
+          <StaticImage src='../images/ewalter-11-700.jpg' alt='about-image' width={350} />
         </div>
       </Fade>
       <Fade from='right'>

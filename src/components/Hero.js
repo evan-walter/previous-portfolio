@@ -11,7 +11,7 @@ export default function Hero({ next }) {
   const textBigL = 'text-2xl sm:text-4xl lg:text-5xl ';
   const gradient = 'text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary'; // pr-0.5
 
-  const textLink = 'italic hover:text-black';
+  const textLink = 'italic hover:text-secondarybg';
 
   return (
     <div>

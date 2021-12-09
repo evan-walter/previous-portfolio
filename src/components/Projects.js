@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { graphql } from 'gatsby';
-import { GatsbyImage } from 'gatsby-plugin-image';
+import { StaticImage } from 'gatsby-plugin-image';
 import Tilt from 'react-parallax-tilt';
 import Fade from './Fade';
 import A from './buttons/A';
@@ -10,6 +9,56 @@ import confcoImg from '../images/confco-1000.png';
 import w3Img from '../images/w3-1000.png';
 
 export default function Projects(props) {
+  const projects = [
+    {
+      type: 'react',
+      subtitle1: 'React Projects',
+      subtitle2: 'Client Projects',
+      items: [
+        {
+          number: 1,
+          id: 'heyfio',
+          title: 'HeyFIO',
+          desc1: 'A Full Stack Software Engineering Contract building a Blockchain web application',
+          desc2: 'React + MySQL + NodeJS + ExpressJS',
+          img: heyfioImg,
+          video: null,
+          website: 'https://beta.heyfio.com',
+          repo: null,
+        },
+      ],
+    },
+    {
+      type: 'shopify',
+      subtitle1: 'Shopify Projects',
+      subtitle2: 'Client Projects',
+      items: [
+        {
+          number: 1,
+          id: 'confco',
+          title: 'Confidence Co',
+          desc1: 'Custom theme development to implement a new design for a health and wellness Shopify store',
+          desc2: null,
+          img: confcoImg,
+          video: 'https://www.loom.com/embed/505d28067eb3491a8e27dc222c21ad12',
+          website: 'https://www.theconfidence.co/',
+          repo: null,
+        },
+        {
+          number: 2,
+          id: 'w3sales',
+          title: 'W3 Sales',
+          desc1: 'Custom Shopify development for a food services factory and distributor group with a large inventory of products',
+          desc2: null,
+          img: w3Img,
+          video: 'https://www.loom.com/embed/3b0aa0cd448b4e41964e8e2cb5cffdf1',
+          website: 'https://w3salesonline.com/',
+          repo: null,
+        },
+      ]
+    },
+  ];
+
   const sub1CName = 'pt-4 pb-4 lg:pt-12 lg:pb-4 text-3xl font-bold text-center';
   const sub2CName = 'pb-4 lg:pb-8 text-2xl font-bold text-center';
   const btnB = 'py-2 mr-4 px-4';
@@ -91,8 +140,15 @@ export default function Projects(props) {
                         </div>
                           <Tilt className='lg:col-start-3 lg:col-end-6'>
                             <Fade from='right'>
-                              {/* <img src={img} alt={title + ' image'} width='1000' /> */}
-                              <GatsbyImage image={img.childImageSharp.gatsbyImageData} alt={title + '-image'} width='1000' />
+                              <img src={img} alt={title + ' image'} width='1000' />
+                              {/* {img === heyfioImg ?
+                              <StaticImage src='../images/heyfio-1000.png' alt='heyfio-image' width='1000' />
+                              : img === confcoImg ?
+                              <StaticImage src='../images/confco-1000.png' alt='confco-image' width='1000' />
+                              : img === w3Img ?
+                              <StaticImage src='../images/w3-1000.png' alt='w3-image' width='1000' />
+                              : null
+                              } */}
                             </Fade>
                           </Tilt>
                       </div>
@@ -107,64 +163,3 @@ export default function Projects(props) {
     </div>
   );
 }
-
-const projects = [
-  {
-    type: 'react',
-    subtitle1: 'React Projects',
-    subtitle2: 'Client Projects',
-    items: [
-      {
-        number: 1,
-        id: 'heyfio',
-        title: 'HeyFIO',
-        desc1: 'A Full Stack Software Engineering Contract building a Blockchain web application',
-        desc2: 'React + MySQL + NodeJS + ExpressJS',
-        img: heyfioImg,
-        video: null,
-        website: 'https://beta.heyfio.com',
-        repo: null,
-      },
-    ],
-  },
-  {
-    type: 'shopify',
-    subtitle1: 'Shopify Projects',
-    subtitle2: 'Client Projects',
-    items: [
-      {
-        number: 1,
-        id: 'confco',
-        title: 'Confidence Co',
-        desc1: 'Custom theme development to implement a new design for a health and wellness Shopify store',
-        desc2: null,
-        img: confcoImg,
-        video: 'https://www.loom.com/embed/505d28067eb3491a8e27dc222c21ad12',
-        website: 'https://www.theconfidence.co/',
-        repo: null,
-      },
-      {
-        number: 2,
-        id: 'w3sales',
-        title: 'W3 Sales',
-        desc1: 'Custom Shopify development for a food services factory and distributor group with a large inventory of products',
-        desc2: null,
-        img: w3Img,
-        video: 'https://www.loom.com/embed/3b0aa0cd448b4e41964e8e2cb5cffdf1',
-        website: 'https://w3salesonline.com/',
-        repo: null,
-      },
-    ]
-  },
-];
-
-const pageQuery = graphql`
-  query {
-    childImageSharp {
-      gatsbyImageData(
-        width: 1000
-        placeholder: BLURRED
-      )
-    }
-  }
-`

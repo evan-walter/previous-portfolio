@@ -18,15 +18,12 @@ export default function Navbar() {
     setBarsExpanded(s => !s);
   }
   
-  function handleShowProjs() {
+  function handleProjs() {
     setProjsExpanded(s => !s);
   }
   
   return (
     <header id='home' className='text-lg lg:flex lg:justify-between py-4 px-8 sm:px-36 xl:px-44 border-b shadow-lg'>
-      {/* <div className={projsExpanded ? 'absolute' : 'hidden'} onClick={handleShowProjs}>
-        <div className='z-40 w-screen h-screen fixed inset-0 top-0 bg-transparent'></div>
-      </div> */}
       <div className='flex items-center justify-between'>
         <div className='flex items-center'>
           <button onClick={handleLogo} onKeyDown={handleLogo} className='cursor-pointer'>
@@ -50,10 +47,10 @@ export default function Navbar() {
         {links.map(
           (value) => {
             return (
-              <li className='block p-2 m-2 cursor-pointer' key={value}>
+              <li className='block py-2 my-2 lg:px-2 lg:mx-2 cursor-pointer' key={value}>
                 {(value === 'projects') ?
                   <div>
-                    <div onClick={handleShowProjs} className='flex items-center justify-center transform hover:-translate-y-1 transition duration-200 ease-in'>
+                    <div onClick={handleProjs} className='flex items-center justify-center transform hover:-translate-y-1 transition duration-200 ease-in'>
                       <i className={'text-center w-4 pr-1 fa fa-caret-' + (projsExpanded ? 'down' : 'right') + ' text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary focus:outline-none'} aria-hidden='true' />
                       <Button text={value.charAt(0).toUpperCase() + value.slice(1)} NoBg />
                     </div>

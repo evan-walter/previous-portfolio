@@ -110,7 +110,7 @@ const projects = [
   {
     type: 'react',
     subtitle1: 'React Projects',
-    subtitle2: 'Client Projects',
+    subtitle2: 'Client Project',
     items: [
       {
         number: 1,

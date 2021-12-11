@@ -1,6 +1,6 @@
 <div align='center' class='flex'>
   <a href='https://evanwalter.dev'>
-    <img alt='Evan Walter | Software Engineer' src='./src/images/favicon-90.ico' width='90' />
+    <img alt='Evan Walter | Software Engineer' src='./src/assets/images/favicon-90.ico' width='90' />
     <h1>
       Evan Walter | Software Engineer — Portfolio
     </h1>

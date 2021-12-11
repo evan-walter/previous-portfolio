@@ -22,7 +22,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images/`,
+        path: `${__dirname}/src/assets/images/`,
       },
     },
     {
@@ -34,7 +34,7 @@ module.exports = {
         background_color: `#fff`,
         theme_color: `#0c3483`,
         display: `standalone`,
-        icon: `src/images/favicon.ico`, // This path is relative to the root of the site.
+        icon: `src/assets/images/favicon.ico`, // This path is relative to the root of the site.
         // An optional attribute which provides support for CORS check.
         // If you do not provide a crossOrigin option, it will skip CORS for manifest.
         // Any invalid keyword or empty string defaults to `anonymous`

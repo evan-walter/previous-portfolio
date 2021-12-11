@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Button from './buttons/Button';
 import MyLink from './buttons/MyLink';
 import NavProjs from './NavProjs';
-import logo from '../images/logo.png';
+import logo from '../assets/images/logo.png';
 
 export default function Navbar() {
   const links = ['home', 'about', 'projects', 'testimonials', 'contact'];

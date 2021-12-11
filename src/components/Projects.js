@@ -3,10 +3,10 @@ import Tilt from 'react-parallax-tilt';
 import Fade from './Fade';
 import A from './buttons/A';
 import Button from './buttons/Button';
-import heyfioImg from '../images/heyfio-1000.png';
-import wineImg from '../images/wine-pairing-1000.png';
-import confcoImg from '../images/confco-1000.png';
-import w3Img from '../images/w3-1000.png';
+import heyfioImg from '../assets/images/heyfio-1000.png';
+import wineImg from '../assets/images/wine-pairing-1000.png';
+import confcoImg from '../assets/images/confco-1000.png';
+import w3Img from '../assets/images/w3-1000.png';
 
 export default function Projects(props) {
   const sub1CName = 'pt-4 pb-4 lg:pt-12 lg:pb-4 text-3xl font-bold text-center';

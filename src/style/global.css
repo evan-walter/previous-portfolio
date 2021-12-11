@@ -11,6 +11,9 @@ section {
   min-height: 92vh;
   height: fit-content;
 }
+.nav-projs {
+  font-size: 0.95rem;
+}
 #hero {
   display: block;
   position: relative;

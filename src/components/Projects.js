@@ -11,7 +11,7 @@ import w3Img from '../images/w3-1000.png';
 export default function Projects(props) {
   const sub1CName = 'pt-4 pb-4 lg:pt-12 lg:pb-4 text-3xl font-bold text-center';
   const sub2CName = 'pb-4 lg:pb-8 text-2xl font-bold text-center';
-  const btnBase = 'mr-8 whitespace-nowrap ';
+  const btnBase = 'mx-4 lg:ml-0 lg:mr-8 whitespace-nowrap ';
   const btnB = btnBase + 'py-2 px-4';
   const btnNoB = btnBase + 'py-4 transform hover:translate-x-1 transition duration-300 ease-in';
   const p = 'text-center px-0 md:px-16 lg:px-0 lg:text-left';

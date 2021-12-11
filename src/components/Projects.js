@@ -4,60 +4,11 @@ import Fade from './Fade';
 import A from './buttons/A';
 import Button from './buttons/Button';
 import heyfioImg from '../images/heyfio-1000.png';
+import wineImg from '../images/wine-pairing-1000.png';
 import confcoImg from '../images/confco-1000.png';
 import w3Img from '../images/w3-1000.png';
 
 export default function Projects(props) {
-  const projects = [
-    {
-      type: 'react',
-      subtitle1: 'React Projects',
-      subtitle2: 'Client Projects',
-      items: [
-        {
-          number: 1,
-          id: 'heyfio',
-          title: 'HeyFIO',
-          desc1: 'A Full Stack Software Engineering Contract building a Blockchain web application',
-          desc2: 'React + MySQL + NodeJS + ExpressJS',
-          img: heyfioImg,
-          video: null,
-          website: 'https://beta.heyfio.com',
-          repo: null,
-        },
-      ],
-    },
-    {
-      type: 'shopify',
-      subtitle1: 'Shopify Projects',
-      subtitle2: 'Client Projects',
-      items: [
-        {
-          number: 1,
-          id: 'confco',
-          title: 'Confidence Co',
-          desc1: 'Custom theme development to implement a new design for a health and wellness Shopify store',
-          desc2: null,
-          img: confcoImg,
-          video: 'https://www.loom.com/embed/505d28067eb3491a8e27dc222c21ad12',
-          website: 'https://www.theconfidence.co/',
-          repo: null,
-        },
-        {
-          number: 2,
-          id: 'w3sales',
-          title: 'W3 Sales',
-          desc1: 'Custom Shopify development for a food services factory and distributor group with a large inventory of products',
-          desc2: null,
-          img: w3Img,
-          video: 'https://www.loom.com/embed/3b0aa0cd448b4e41964e8e2cb5cffdf1',
-          website: 'https://w3salesonline.com/',
-          repo: null,
-        },
-      ]
-    },
-  ];
-
   const sub1CName = 'pt-4 pb-4 lg:pt-12 lg:pb-4 text-3xl font-bold text-center';
   const sub2CName = 'pb-4 lg:pb-8 text-2xl font-bold text-center';
   const btnB = 'py-2 mr-4 px-4';
@@ -154,3 +105,71 @@ export default function Projects(props) {
     </div>
   );
 }
+
+const projects = [
+  {
+    type: 'react',
+    subtitle1: 'React Projects',
+    subtitle2: 'Client Projects',
+    items: [
+      {
+        number: 1,
+        id: 'heyfio',
+        title: 'HeyFIO',
+        desc1: 'A Full Stack Software Engineering Contract building a Blockchain web application',
+        desc2: 'React + MySQL + NodeJS + ExpressJS',
+        img: heyfioImg,
+        video: null,
+        website: 'https://beta.heyfio.com',
+        repo: null,
+      },
+    ],
+  },
+  {
+    type: 'js',
+    subtitle1: 'Vanilla JavaScript',
+    subtitle2: 'Personal Project',
+    items: [
+      {
+        number: 1,
+        id: 'wine',
+        title: 'Wine Pairing App',
+        desc1: 'A custom API app to pair wines with popular dishes',
+        desc2: '',
+        img: wineImg,
+        video: 'https://www.loom.com/embed/b65b0fb0d9a94902a272216645706fb4',
+        website: 'https://evan-walter.github.io/wine-pairing',
+        repo: 'https://github.com/Evan-Walter/wine-pairing',
+      },
+    ],
+  },
+  {
+    type: 'shopify',
+    subtitle1: 'Shopify Projects',
+    subtitle2: 'Client Projects',
+    items: [
+      {
+        number: 1,
+        id: 'confco',
+        title: 'Confidence Co',
+        desc1: 'Custom theme development to implement a new design for a health and wellness Shopify store',
+        desc2: null,
+        img: confcoImg,
+        video: 'https://www.loom.com/embed/505d28067eb3491a8e27dc222c21ad12',
+        website: 'https://www.theconfidence.co/',
+        repo: null,
+      },
+      {
+        number: 2,
+        id: 'w3sales',
+        title: 'W3 Sales',
+        desc1: 'Custom Shopify development for a food services factory and distributor group with a large inventory of products',
+        desc2: null,
+        img: w3Img,
+        video: 'https://www.loom.com/embed/3b0aa0cd448b4e41964e8e2cb5cffdf1',
+        website: 'https://w3salesonline.com/',
+        repo: null,
+      },
+    ]
+  },
+];

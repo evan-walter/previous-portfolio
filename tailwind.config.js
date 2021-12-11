@@ -1,8 +1,7 @@
 module.exports = {
-  purge: [],
-  purge: ['./src/**/*.{js,jsx,ts,tsx}'],
-   darkMode: false, // or 'media' or 'class'
-   theme: {
+  content: ['./src/**/*.{js,jsx,ts,tsx}'],
+  darkMode: false, // or 'media' or 'class'
+  theme: {
     extend: {
       colors: {
         primary: '#0c3483',
@@ -16,9 +15,8 @@ module.exports = {
       },
     },
   },
-   variants: {
-     extend: {},
-   },
-   plugins: [],
- }
- 
+  variants: {
+    extend: {},
+  },
+  plugins: [],
+};

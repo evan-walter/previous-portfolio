@@ -21,6 +21,11 @@ export default function NavProjs() {
           </MyLink>
         </div>
         <div className={link}>
+          <MyLink to='wine'>
+            <Button textNoB='Wine Pairing App' />
+          </MyLink>
+        </div>
+        <div className={link}>
           <MyLink to='confco'>
             <Button textNoB='The Confidence Co' />
           </MyLink>

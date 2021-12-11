@@ -65,7 +65,7 @@ export default function Hero({ next }) {
       <Fade from='bottom'>
         <div className='pt-12 pb-2 text-center'>
           <MyLink to={next}>
-            <Button textB='Know more' />
+            <Button text='Know more' Bg />
           </MyLink>
         </div>
       </Fade>

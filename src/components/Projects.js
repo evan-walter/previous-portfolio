@@ -75,17 +75,17 @@ export default function Projects(props) {
                             <div className='my-4 flex flex-wrap items-center justify-center lg:justify-start'>
                               {video ?
                                 <div onClick={() => handleModal(video)}>
-                                  <Button textB='Demo Video' addClassName={btnB} />
+                                  <Button text='Demo Video' addClassName={btnB} Bg />
                                 </div> : null
                               }
                               {website ?
                                 <A h={website}>
-                                  <Button textNoB='See Live' addClassName={btnNoB} />
+                                  <Button text='See Live' addClassName={btnNoB} NoBg />
                                 </A> : null
                               }
                               {repo ?
                                 <A h={repo}>
-                                  <Button textNoB='Source Code' addClassName={btnNoB} />
+                                  <Button text='Source Code' addClassName={btnNoB} NoBg />
                                 </A> : null
                               }
                             </div>

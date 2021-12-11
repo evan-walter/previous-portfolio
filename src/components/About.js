@@ -1,6 +1,9 @@
 import React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
 import Fade from './Fade';
+import A from './buttons/A';
+import Button from './buttons/Button';
+import resume from '../assets/resume.pdf';
 
 export default function About() {
   const p = 'py-2 md:text-lg lg:text-xl text-center lg:text-left';
@@ -10,7 +13,7 @@ export default function About() {
       <Fade from='left'>
         <div>
           {/* <img src={aboutImg} alt='about' width='350' /> */}
-          <StaticImage src='../images/ewalter-11-700.jpg' alt='about-image' width={350} />
+          <StaticImage src='../assets/images/ewalter-11-700.jpg' alt='about-image' width={350} />
         </div>
       </Fade>
       <Fade from='right'>
@@ -32,6 +35,11 @@ export default function About() {
             excited to continue to leverage and grow my skills in a new full time
             role.
           </p>
+          <div className='mt-4 block absolute'>
+            <A h={resume}>
+              <Button text='Resume' BgS />
+            </A> 
+          </div>
         </div>
       </Fade>
     </div>

@@ -55,7 +55,7 @@ export default function Navbar() {
                   <div>
                     <div onClick={handleShowProjs} className='flex items-center justify-center transform hover:-translate-y-1 transition duration-200 ease-in'>
                       <i className={'text-center w-4 pr-1 fa fa-caret-' + (projsExpanded ? 'down' : 'right') + ' text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary focus:outline-none'} aria-hidden='true' />
-                      <Button textNoB={value.charAt(0).toUpperCase() + value.slice(1)} />
+                      <Button text={value.charAt(0).toUpperCase() + value.slice(1)} NoBg />
                     </div>
                     <div className={'pt-2 m-auto w-max lg:absolute z-50 ' + (projsExpanded ? 'block' : 'hidden')}>
                       <NavProjs />
@@ -63,7 +63,7 @@ export default function Navbar() {
                   </div> :
                   <div className='text-center transform hover:-translate-y-1 transition duration-200 ease-in focus:outline-none'>
                     <MyLink to={value}>
-                      <Button textNoB={value.charAt(0).toUpperCase() + value.slice(1)} />
+                      <Button text={value.charAt(0).toUpperCase() + value.slice(1)} NoBg />
                     </MyLink>
                   </div>
                 }

@@ -76,7 +76,7 @@ export default function Contact() {
                   value={formData.message} onChange={handleChange} className={inputCtl} />
               </div>
               <div className='pt-12 m-auto text-center'>
-                <Button textB='Connect'>
+                <Button text='Connect' Bg>
                   <input type='submit' className={inputCtl} />
                 </Button>
               </div>

@@ -93,9 +93,14 @@ export default function Projects(props) {
                         </div>
                           <Tilt className='lg:col-start-3 lg:col-end-6'>
                             <Fade from='right'>
-                              <div onClick={() => handleModal(video)} className='cursor-pointer'>
-                                <img src={img} alt={title + ' image'} width='1000' />
-                              </div>
+                              {video ?
+                                <div onClick={() => handleModal(video)} className='cursor-pointer'>
+                                  <img src={img} alt={title + ' image'} width='1000' />
+                                </div> :
+                                <A h={website}>
+                                  <img src={img} alt={title + ' image'} width='1000' />
+                                </A>
+                              }
                             </Fade>
                           </Tilt>
                       </div>

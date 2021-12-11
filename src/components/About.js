@@ -35,7 +35,7 @@ export default function About() {
             excited to continue to leverage and grow my skills in a new full time
             role.
           </p>
-          <div className='mt-4 block absolute'>
+          <div className='mt-4 text-center lg:text-left'>
             <A h={resume}>
               <Button text='Resume' BgS />
             </A> 

@@ -24,9 +24,6 @@ export default function Hero({ next }) {
             <h2 className={textBigBase + textBigN}>
               I am a Software Engineer specializing in React.
             </h2>
-            <h2 className={textBigBase + textBigN}>
-              I am seeking a new full time role.
-            </h2>
           </Fade>
           <Fade from='left'>
             <Socials addClassName='mx-4 my-4 text-3xl' />

@@ -11,8 +11,9 @@ import w3Img from '../images/w3-1000.png';
 export default function Projects(props) {
   const sub1CName = 'pt-4 pb-4 lg:pt-12 lg:pb-4 text-3xl font-bold text-center';
   const sub2CName = 'pb-4 lg:pb-8 text-2xl font-bold text-center';
-  const btnB = 'py-2 mr-4 px-4';
-  const btnNoB = 'mr-4 transform hover:translate-x-1 transition duration-300 ease-in';
+  const btnBase = 'mr-8 whitespace-nowrap ';
+  const btnB = btnBase + 'py-2 px-4';
+  const btnNoB = btnBase + 'py-4 transform hover:translate-x-1 transition duration-300 ease-in';
   const p = 'text-center px-0 md:px-16 lg:px-0 lg:text-left';
 
   const [showModal, setShowModal] = useState(false);
@@ -71,7 +72,7 @@ export default function Projects(props) {
                             <h3 className='pb-4 font-bold text-xl text-center lg:text-left'>{title}</h3>
                             <p className={p}>{desc1}</p>
                             <p className={p}>{desc2}</p>
-                            <div className='my-4 flex items-center justify-center lg:justify-start'>
+                            <div className='my-4 flex flex-wrap items-center justify-center lg:justify-start'>
                               {video ?
                                 <div onClick={() => handleModal(video)}>
                                   <Button textB='Demo Video' addClassName={btnB} />

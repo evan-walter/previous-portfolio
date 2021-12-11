@@ -17,22 +17,22 @@ export default function NavProjs() {
       <div className='pt-2 pr-8 pb-1 pl-4'>
         <div className={link}>
           <MyLink to='heyfio'>
-            <Button textNoB='HeyFIO' />
+            <Button textNoB='HeyFIO — React' />
           </MyLink>
         </div>
         <div className={link}>
           <MyLink to='wine'>
-            <Button textNoB='Wine Pairing App' />
+            <Button textNoB='Wine Pairing App — Vanilla JS' />
           </MyLink>
         </div>
         <div className={link}>
           <MyLink to='confco'>
-            <Button textNoB='The Confidence Co' />
+            <Button textNoB='The Confidence Co — Shopify' />
           </MyLink>
         </div>
         <div className={link}>
           <MyLink to='w3sales'>
-            <Button textNoB='W3 Sales' />
+            <Button textNoB='W3 Sales — Shopify' />
           </MyLink>
         </div>
       </div>

@@ -19,8 +19,10 @@ export default function Projects(props) {
   const [whichVideo, setWhichVideo] = useState(null);
 
   function handleModal(video) {
-    setShowModal(s => !s);
-    setWhichVideo(video);
+    if (video) {
+      setShowModal(s => !s);
+      setWhichVideo(video);
+    }
   }
   
   return (
@@ -90,7 +92,9 @@ export default function Projects(props) {
                         </div>
                           <Tilt className='lg:col-start-3 lg:col-end-6'>
                             <Fade from='right'>
-                              <img src={img} alt={title + ' image'} width='1000' />
+                              <div onClick={() => handleModal(video)} className='cursor-pointer'>
+                                <img src={img} alt={title + ' image'} width='1000' />
+                              </div>
                             </Fade>
                           </Tilt>
                       </div>

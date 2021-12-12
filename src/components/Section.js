@@ -21,7 +21,7 @@ export default function Section({
   const tGradientCName = 'text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary';
   
   return (
-    <section id={id} className={containerCName}> {/**style={containerStyle} */}
+    <section id={id} className={containerCName}>
       <Fade from='bottom'>
         <div className={tBaseCName + (titleGradient ? tGradientCName : '')}>
           {titleShown}

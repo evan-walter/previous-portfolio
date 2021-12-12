@@ -15,10 +15,10 @@ export default function Hero({ next }) {
 
   return (
     <div>
-      <div className='grid grid-cols-1 gap-8 lg:grid-cols-2'> {/* justify-self-center lg:justify-self-start */}
+      <div className='grid grid-cols-1 gap-8 lg:grid-cols-2'>
         <div className='text-center lg:text-left'>
           <Fade from='left'>
-            <h2 className={textBigBase + textBigL + gradient}>Evan Walter</h2> {/* <h2 className={text}>Hi, my name is <span className={gradient}>Evan Walter</span></h2> */}
+            <h2 className={textBigBase + textBigL + gradient}>Evan Walter</h2>
           </Fade>
           <Fade from='left'>
             <h2 className={textBigBase + textBigN}>
@@ -30,7 +30,7 @@ export default function Hero({ next }) {
           </Fade>
         </div>
         <Fade from='right'>
-          <div> {/**className='border border-gray-400' */}
+          <div>
             <iframe
               width='560'
               height='315'

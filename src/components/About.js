@@ -12,7 +12,6 @@ export default function About() {
     <div className='grid grid-cols-1 gap-12 justify-items-center lg:grid-cols-2 lg:gap-32 lg:justify-items-end'>
       <Fade from='left'>
         <div>
-          {/* <img src={aboutImg} alt='about' width='350' /> */}
           <StaticImage src='../assets/images/ewalter-11-700.jpg' alt='about-image' width={350} />
         </div>
       </Fade>

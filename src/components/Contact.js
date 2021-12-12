@@ -43,14 +43,14 @@ export default function Contact() {
   };
 
   const fieldWrap = 'grid grid-cols-1';
-  const labelCtl = 'py-1 text-lg'; // color-main
+  const labelCtl = 'py-1 text-lg';
   const inputCtl = 'p-2 focus:outline-none rounded shadow-2xl';
 
   return (
-    <div className='contact-ctl m-auto w-full'> {/** */}
+    <div className='contact-ctl m-auto w-full'>
       {submitted ?
         <div className='mt-12 flex justify-center'>
-          <div className='p-4 font-bold text-xl text-center text-primary bg-white rounded-xl shadow-2xl'> {/**transform transition-opacity duration-200 ease-in-out */}
+          <div className='p-4 font-bold text-xl text-center text-primary bg-white rounded-xl shadow-2xl'>
             {
               loading ? <Loading /> :
               (success ? <Success />  : <Failed />)

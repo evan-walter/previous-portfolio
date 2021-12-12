@@ -16,7 +16,7 @@ export function Loading() {
 export function Success() {
   return (
     <div className={wrapCName}>
-      <div className='text-green-600'> {/**ctl-check */}
+      <div className='text-green-600'>
         <i className='fa fa-check' aria-hidden='true' />
       </div>{' '}
       <div>

@@ -12,32 +12,32 @@ export default function About() {
     <div className='grid grid-cols-1 gap-12 justify-items-center lg:grid-cols-2 lg:gap-32 lg:justify-items-end'>
       <Fade from='left'>
         <div>
-          <StaticImage src='../assets/images/ewalter-11-700.jpg' alt='about-image' width={350} />
+          <StaticImage
+            src='../assets/images/ewalter-11-700.jpg'
+            alt='about-image'
+            width={350}
+          />
         </div>
       </Fade>
       <Fade from='right'>
         <div className='self-center'>
           <p className={p}>
-            I am a Software Engineer specializing in React. I love what I do. I
-            care for the people I work with and focus on real business results.
+            I am a Software Engineer specializing in React. With over 10 years
+            of experience delivering technical solutions, I bring real business
+            value in a timely manner.
           </p>
           <p className={p}>
-            Prior to Software Engineering, I obtained a Bachelor's of Science in Electrical
-            Engineering and began a career in the field. As I explored the
-            software side of the field, I applied communication and problem
-            solving skills I learned along the way.
-          </p>
-          <p className={p}>
-            As I learned the tools and built personal projects, I found
-            opportunities to serve clients. I recently served as a Contract Full
-            Stack Software Engineer and previously as a Shopify Developer. I am
-            excited to continue to leverage and grow my skills in a new full time
-            role.
+            With experience managing technical projects, I leverage leadership
+            skills to serve teams with Full Stack, Front End, and React
+            solutions. I recently served as a Contract Full Stack Software
+            Engineer and previously as a Shopify Developer and Web Developer. I
+            am excited to grow my skills in a new, full time Software
+            Engineering role.
           </p>
           <div className='mt-4 text-center lg:text-left'>
             <A h={resume}>
               <Button text='Resume' BgS />
-            </A> 
+            </A>
           </div>
         </div>
       </Fade>

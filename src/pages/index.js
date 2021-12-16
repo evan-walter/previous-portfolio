@@ -11,7 +11,7 @@ export default function IndexPage() {
         <title>Evan Walter | Software Engineer</title>
         <meta
           name='description'
-          content='I am a Software Engineer specializing in React. I recently served as a Contract Full Stack Software Engineer and previously as a Shopify Developer and Web Developer. I am excited to continue to leverage and grow my skills in a new full time role.'
+          content='I am a Software Engineer specializing in React. I recently served as a Contract Full Stack Software Engineer and previously as a Shopify Developer and Web Developer. I am excited to grow my skills in a new, full time Software Engineering role.'
         />
       </Helmet>
       <App />

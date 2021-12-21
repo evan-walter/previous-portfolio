@@ -10,10 +10,6 @@ export default function Navbar() {
   const [barsExpanded, setBarsExpanded] = useState(false);
   const [projsExpanded, setProjsExpanded] = useState(false);
   
-  function handleLogo() {
-    window.location.reload();
-  }
-  
   function handleBars() {
     setBarsExpanded(s => !s);
   }
@@ -26,9 +22,9 @@ export default function Navbar() {
     <header id='home' className='text-lg lg:flex lg:justify-between py-4 px-8 sm:px-36 xl:px-44 border-b shadow-lg'>
       <div className='flex items-center justify-between'>
         <div className='flex items-center'>
-          <button onClick={handleLogo} onKeyDown={handleLogo} className='cursor-pointer'>
+          <a href='https://evanwalter.dev' className='cursor-pointer'>
             <img src={logo} alt='logo' />
-          </button>
+          </a>
         </div>
         <div className='lg:hidden'>
           <button 

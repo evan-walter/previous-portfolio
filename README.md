@@ -30,7 +30,7 @@ To get started with Web Development, including HTML, CSS, and JavaScript, visit
 
 These resources offer documentation, tutorials, samples, and guidance on web development.
 
-🙏 Design inspired by [Jacobo Martínez](https://github.com/cobidev)
+🙏 Design inspired by [Cobi](https://github.com/cobiwave)
 
 Initiated with...
 

@@ -8,7 +8,7 @@ import wineImg from '../assets/images/wine-pairing-1000.png';
 import confcoImg from '../assets/images/confco-1000.png';
 import w3Img from '../assets/images/w3-1000.png';
 
-export default function Projects(props) {
+export default function Projects() {
   const sub1CName = 'pt-4 pb-4 lg:pt-12 lg:pb-4 text-3xl font-bold text-center';
   const sub2CName = 'pb-4 lg:pb-8 text-2xl font-bold text-center';
   const btnBase = 'mx-4 lg:ml-0 lg:mr-8 whitespace-nowrap ';
@@ -155,14 +155,14 @@ const projects = [
   },
   {
     type: 'shopify',
-    subtitle1: 'Shopify Projects',
+    subtitle1: 'Web Development and Shopify Development',
     subtitle2: 'Client Projects',
     items: [
       {
         number: 1,
         id: 'confco',
         title: 'Confidence Co',
-        desc1: 'Custom theme development to implement a new design for a health and wellness Shopify store',
+        desc1: 'Custom web development and theme development to implement a new design for a health and wellness Shopify store',
         desc2: null,
         img: confcoImg,
         video: 'https://www.loom.com/embed/505d28067eb3491a8e27dc222c21ad12',
@@ -173,7 +173,7 @@ const projects = [
         number: 2,
         id: 'w3sales',
         title: 'W3 Sales',
-        desc1: 'Custom Shopify development for a food services factory and distributor group with a large inventory of products',
+        desc1: 'Custom web development and Shopify development for a food services factory and distributor group with a large inventory of products',
         desc2: null,
         img: w3Img,
         video: 'https://www.loom.com/embed/3b0aa0cd448b4e41964e8e2cb5cffdf1',

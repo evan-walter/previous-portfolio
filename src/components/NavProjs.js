@@ -27,12 +27,12 @@ export default function NavProjs() {
         </div>
         <div className={link}>
           <MyLink to='shopify'>
-            <Button text='The Confidence Co (Shopify)' NoBg />
+            <Button text='The Confidence Co (Web Development)' NoBg />
           </MyLink>
         </div>
         <div className={link}>
           <MyLink to='w3sales'>
-            <Button text='W3 Sales — (Shopify)' NoBg />
+            <Button text='W3 Sales — (Web Development)' NoBg />
           </MyLink>
         </div>
       </div>

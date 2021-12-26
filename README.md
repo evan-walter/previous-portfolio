@@ -15,7 +15,7 @@
 
 For more information on this project, see the links below.
 
-## Getting Started 🎬
+## 🎬 Getting Started
 
 To get started with React, visit [reactjs.org](https://reactjs.org/).
 

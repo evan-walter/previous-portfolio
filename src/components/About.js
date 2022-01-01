@@ -30,8 +30,8 @@ export default function About() {
             With experience managing technical projects, I leverage leadership
             skills to serve teams with Full Stack, Front End, and React
             solutions. I recently served as a Contract Full Stack Software
-            Engineer and previously as a Shopify Developer and Web Developer. I
-            am excited to grow my skills in a new, full time Software
+            Engineer and previously as a Web Developer and Shopify Developer. I
+            am excited to grow my skills in a new, full time, Software
             Engineering role.
           </p>
           <div className='mt-4 text-center lg:text-left'>

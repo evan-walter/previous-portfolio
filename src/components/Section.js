@@ -10,7 +10,6 @@ export default function Section({
   titleShown,
   titleGradient,
   bgColored,
-  bgImg,
   children,
 }) {
   

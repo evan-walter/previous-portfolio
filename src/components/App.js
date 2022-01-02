@@ -23,7 +23,7 @@ export default function App() {
   return (
     <div id='top' onClick={handleGlobalCollapseProjs}>
       <Navbar projsExpanded={projsExpanded} handleProjs={handleProjs} />
-      <Section id='hero' next='about' bgImg='ewalter-3-2600.jpg'>
+      <Section id='hero' next='about'>
         <Hero next='about' />
       </Section>
       <Section id='about' next='projects' titleShown='ABOUT' bgColored>
@@ -35,7 +35,7 @@ export default function App() {
       <Section  id='testimonials' next='contact' titleShown='TESTIMONIALS' bgColored>
         <Testimonials />
       </Section>
-      <Section id='contact' last bgImg='ewalter-4-2600.jpg' titleShown="LET'S CONNECT" titleGradient>
+      <Section id='contact' last titleShown="LET'S CONNECT" titleGradient>
         <Contact />
       </Section>
       <Footer />

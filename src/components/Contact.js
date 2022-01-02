@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { send } from 'emailjs-com';
 import Fade from './Fade';
 import Button from './buttons/Button';
-import {Loading, Success, Failed} from './ContactStatus';
+import { Loading, Success, Failed } from './ContactStatus';
 
 export default function Contact() {
   const [formData, setFormData] = useState({

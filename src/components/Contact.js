@@ -61,17 +61,17 @@ export default function Contact() {
           <Fade from='bottom'>
             <form onSubmit={onSubmit}>
               <div className={fieldWrap}>
-                <label htmlFor='name' className={labelCtl}><Button textNoB='Name' addClassName='cursor-text' /></label>
+                <label htmlFor='name' className={labelCtl}><Button text='Name' addClassName='cursor-text' /></label>
                 <input id='name' type='text' maxLength='256' required name='fromName'
                   value={formData.fromName} onChange={handleChange} className={inputCtl} />
               </div>
               <div className={fieldWrap}>
-                <label htmlFor='email' className={labelCtl}><Button textNoB='Email' addClassName='cursor-text' /></label>
+                <label htmlFor='email' className={labelCtl}><Button text='Email' addClassName='cursor-text' /></label>
                 <input id='email' type='text' maxLength='256' aria-describedby='emailHelp' required name='fromEmail'
                   value={formData.fromEmail} onChange={handleChange} className={inputCtl} />
               </div>
               <div className={fieldWrap}>
-                <label htmlFor='message' className={labelCtl}><Button textNoB='Message' addClassName='cursor-text' /></label>
+                <label htmlFor='message' className={labelCtl}><Button text='Message' addClassName='cursor-text' /></label>
                 <textarea id='message' type='text' rows='5' required name='message'
                   value={formData.message} onChange={handleChange} className={inputCtl} />
               </div>

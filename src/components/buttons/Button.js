@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Button({ text, Bg, BgS, NoBg, addClassName }) {
+export default function Button({ text, Bg, BgS, addClassName }) {
   const btnBgOrBgSBase = 'font-bold inline-block relative leading-none z-10 ';
   const btnBgOrBgSDefaultSize = 'py-1 px-4 text-lg lg:text-xl';
   const btnBg = btnBgOrBgSBase + 'btn-bg';

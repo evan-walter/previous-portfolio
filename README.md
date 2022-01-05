@@ -17,13 +17,13 @@ For more information on this project, see the links below.
 
 ## 🎬 Getting Started
 
-To get started with React, visit [reactjs.org](https://reactjs.org/).
+💡 To get started with React, visit [reactjs.org](https://reactjs.org/).
 
-To get started with Gatsby, visit [gatsbyjs.com](https://www.gatsbyjs.com/).
+📖 To get started with Gatsby, visit [gatsbyjs.com](https://www.gatsbyjs.com/).
 
-To get started with Tailwind, visit [tailwindcss.com](https://tailwindcss.com/).
+💨 To get started with Tailwind, visit [tailwindcss.com](https://tailwindcss.com/).
 
-To get started with Web Development, including HTML, CSS, and JavaScript, visit
+🌐 To get started with Web Development, including HTML, CSS, and JavaScript, visit
 
 - [W3Schools](https://www.w3schools.com/)
 - [Mozilla Development Network](https://developer.mozilla.org/)

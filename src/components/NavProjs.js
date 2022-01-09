@@ -21,11 +21,6 @@ export default function NavProjs() {
           </MyLink>
         </div>
         <div className={link}>
-          <MyLink to='js'>
-            <Button text='Wine Pairing App (Vanilla JS)' NoBg />
-          </MyLink>
-        </div>
-        <div className={link}>
           <MyLink to='shopify'>
             <Button text='Syna Jewels (Web Dev & Shopify)' NoBg />
           </MyLink>
@@ -38,6 +33,11 @@ export default function NavProjs() {
         <div className={link}>
           <MyLink to='w3sales'>
             <Button text='W3 Sales (Web Dev & Shopify)' NoBg />
+          </MyLink>
+        </div>
+        <div className={link}>
+          <MyLink to='js'>
+            <Button text='Wine Pairing App (Vanilla JS)' NoBg />
           </MyLink>
         </div>
       </div>

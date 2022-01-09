@@ -137,26 +137,8 @@ const projects = [
     ],
   },
   {
-    type: 'js',
-    subtitle1: 'Vanilla JavaScript',
-    subtitle2: 'Personal Project',
-    items: [
-      {
-        number: 1,
-        id: 'wine',
-        title: 'Wine Pairing App',
-        desc1: 'A custom API app to pair wines with popular dishes, developed with the Spoonacular API',
-        desc2: null,
-        img: wineImg,
-        video: 'https://www.loom.com/embed/b65b0fb0d9a94902a272216645706fb4',
-        website: 'https://evan-walter.github.io/wine-pairing',
-        repo: 'https://github.com/Evan-Walter/wine-pairing',
-      },
-    ],
-  },
-  {
     type: 'shopify',
-    subtitle1: 'Web Development and Shopify Development',
+    subtitle1: 'Web Development and Shopify',
     subtitle2: 'Client Projects',
     items: [
       {
@@ -192,6 +174,24 @@ const projects = [
         website: 'https://w3salesonline.com/',
         repo: null,
       },
-    ]
+    ],
+  },
+  {
+    type: 'js',
+    subtitle1: 'Vanilla JavaScript',
+    subtitle2: 'Personal Project',
+    items: [
+      {
+        number: 1,
+        id: 'wine',
+        title: 'Wine Pairing App',
+        desc1: 'A custom API app to pair wines with popular dishes, developed with the Spoonacular API',
+        desc2: null,
+        img: wineImg,
+        video: 'https://www.loom.com/embed/b65b0fb0d9a94902a272216645706fb4',
+        website: 'https://evan-walter.github.io/wine-pairing',
+        repo: 'https://github.com/Evan-Walter/wine-pairing',
+      },
+    ],
   },
 ];

@@ -65,7 +65,7 @@ export default function Projects() {
                 {items.map(
                   ({ number, id, title, desc1, desc2, img, video, website, repo }) => {
                     return (
-                      <div id={id} className='py-4 lg:pt-12 lg:pb-28 grid grid-cols-1 lg:grid-cols-5' key={number}>
+                      <div id={id} className='pt-6 pb-20 lg:pt-12 lg:pb-28 grid grid-cols-1 lg:grid-cols-5' key={number}>
                         <div className='py-4 lg:py-8 lg:pr-16 grid-cols-1 lg:col-start-1 lg:col-end-3'>
                           <Fade from='left'>
                             <h3 className='pb-4 font-bold text-xl text-center lg:text-left'>{title}</h3>

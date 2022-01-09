@@ -10,8 +10,6 @@ import confcoImg from '../assets/images/confco-1000.png';
 import w3Img from '../assets/images/w3-1000.png';
 
 export default function Projects() {
-  const sub1CName = 'pt-4 pb-4 lg:pt-12 lg:pb-4 text-3xl font-bold text-center';
-  const sub2CName = 'pb-4 lg:pb-8 text-2xl font-bold text-center';
   const btnBase = 'mx-4 lg:ml-0 lg:mr-8 whitespace-nowrap ';
   const btnB = btnBase + 'py-2 px-4';
   const btnNoB = btnBase + 'py-4 transform hover:translate-x-1 transition duration-300 ease-in';
@@ -59,15 +57,15 @@ export default function Projects() {
             return (
               <div key={type}>
                 <Fade from='bottom'>
-                  <h2 id={type} className={sub1CName}>{subtitle1}</h2>
+                  <h2 id={type} className='py-4 lg:pb-6 text-3xl font-bold text-center'>{subtitle1}</h2>
                 </Fade>
                 <Fade from='bottom'>
-                  <h3 className={sub2CName}>{subtitle2}</h3>
+                  <h3 className='pb-4 lg:pb-20 text-3xl font-bold text-center'>{subtitle2}</h3>
                 </Fade>
                 {items.map(
                   ({ number, id, title, desc1, desc2, img, video, website, repo }) => {
                     return (
-                      <div id={id} className='py-4 lg:py-12 grid grid-cols-1 lg:grid-cols-5' key={number}>
+                      <div id={id} className='py-4 lg:pt-0 lg:pb-40 grid grid-cols-1 lg:grid-cols-5' key={number}>
                         <div className='py-4 lg:py-8 lg:pr-16 grid-cols-1 lg:col-start-1 lg:col-end-3'>
                           <Fade from='left'>
                             <h3 className='pb-4 font-bold text-xl text-center lg:text-left'>{title}</h3>
@@ -120,8 +118,8 @@ export default function Projects() {
 const projects = [
   {
     type: 'react',
-    subtitle1: 'React Projects',
-    subtitle2: 'Client Project',
+    subtitle1: 'React',
+    subtitle2: 'Client Projects',
     items: [
       {
         number: 1,

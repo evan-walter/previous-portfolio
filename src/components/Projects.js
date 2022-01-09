@@ -5,6 +5,7 @@ import A from './buttons/A';
 import Button from './buttons/Button';
 import heyfioImg from '../assets/images/heyfio-1000.png';
 import wineImg from '../assets/images/wine-pairing-1000.png';
+import synaImg from '../assets/images/syna-1000.png';
 import confcoImg from '../assets/images/confco-1000.png';
 import w3Img from '../assets/images/w3-1000.png';
 
@@ -160,6 +161,17 @@ const projects = [
     items: [
       {
         number: 1,
+        id: 'syna',
+        title: 'Syna Jewels',
+        desc1: 'Web development with JSON and Shopify app implementation to prepare products to scale the store',
+        desc2: null,
+        img: synaImg,
+        video: '',
+        website: 'https://synajewels.com/',
+        repo: null,
+      },
+      {
+        number: 2,
         id: 'confco',
         title: 'Confidence Co',
         desc1: 'Custom web development and theme development to implement a new design for a health and wellness Shopify store',
@@ -170,10 +182,10 @@ const projects = [
         repo: null,
       },
       {
-        number: 2,
+        number: 3,
         id: 'w3sales',
         title: 'W3 Sales',
-        desc1: 'Custom web development and Shopify development for a food services factory and distributor group with a large inventory of products',
+        desc1: 'Web development and Shopify development with Python for a food services factory and distributor group with a large inventory of products',
         desc2: null,
         img: w3Img,
         video: 'https://www.loom.com/embed/3b0aa0cd448b4e41964e8e2cb5cffdf1',

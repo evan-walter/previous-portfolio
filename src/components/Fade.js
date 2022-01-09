@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 
-export default function Fade({ children, from }) {
+export default function Fade({ from, children }) {
   const fadeBase = (
     from === 'top' ? 'fade-from-top ' : 
     from === 'right' ? 'fade-from-right ' :

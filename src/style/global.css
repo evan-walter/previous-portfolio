@@ -235,6 +235,16 @@ section {
   transform: none;
   visibility: visible;
 }
+@media only screen and (max-width: 1024px) {
+  .fade-from-right {
+    opacity: 0;
+    transform: translateY(9%);
+    visibility: hidden;
+    transition: opacity 600ms ease-out, transform 900ms ease-out,
+      visibility 900ms ease-out;
+    will-change: opacity, transform, visibility;
+  }
+}
 .fade-from-bottom {
   opacity: 0;
   transform: translateY(9%);
@@ -260,4 +270,14 @@ section {
   opacity: 1;
   transform: none;
   visibility: visible;
+}
+@media only screen and (max-width: 1024px) {
+  .fade-from-left {
+    opacity: 0;
+    transform: translateY(9%);
+    visibility: hidden;
+    transition: opacity 600ms ease-out, transform 900ms ease-out,
+      visibility 900ms ease-out;
+    will-change: opacity, transform, visibility;
+  }
 }

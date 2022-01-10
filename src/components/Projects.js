@@ -6,6 +6,7 @@ import Button from './buttons/Button';
 import heyfioImg from '../assets/images/heyfio-1000.png';
 import wineImg from '../assets/images/wine-pairing-1000.png';
 import synaImg from '../assets/images/syna-1000.png';
+import villainImg from '../assets/images/villain-1000.png';
 import confcoImg from '../assets/images/confco-1000.png';
 import w3Img from '../assets/images/w3-1000.png';
 
@@ -152,6 +153,17 @@ const projects = [
       },
       {
         number: 2,
+        id: 'villain',
+        title: 'Villain Codes',
+        desc1: 'Web development with Shopify Liquid Code, HTML, and CSS to customize add-to-cart options based on product types',
+        desc2: null,
+        img: villainImg,
+        video: 'https://www.loom.com/embed/928d3245c61f402eb9f4d302cb995ce1',
+        website: 'https://villain-codes.myshopify.com/',
+        repo: null,
+      },
+      {
+        number: 3,
         id: 'confco',
         title: 'Confidence Co',
         desc1: 'Custom web development and theme development to implement a new design for a health and wellness Shopify store',
@@ -162,7 +174,7 @@ const projects = [
         repo: null,
       },
       {
-        number: 3,
+        number: 4,
         id: 'w3sales',
         title: 'W3 Sales',
         desc1: 'Web development and Shopify development with Python for a food services factory and distributor group with a large inventory of products',

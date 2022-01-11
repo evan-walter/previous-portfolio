@@ -129,7 +129,7 @@ const projects = [
         desc1: 'A Full Stack Software Engineering Contract for a Blockchain web application',
         desc2: 'React + MySQL + NodeJS + ExpressJS',
         img: heyfioImg,
-        video: 'https://www.loom.com/embed/6449ed124a8d476fa2b0ff9215b03427',
+        video: 'https://www.loom.com/embed/fb82239929bd4518b793ab911eb313ea',
         website: 'https://beta.heyfio.com',
         repo: null,
       },

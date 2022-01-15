@@ -6,6 +6,7 @@ import Button from './buttons/Button';
 import heyfioImg from '../assets/images/heyfio-1000.png';
 import wineImg from '../assets/images/wine-pairing-1000.png';
 import synaImg from '../assets/images/syna-1000.png';
+import seafoodsImg from '../assets/images/seafoods-1000.png';
 import villainImg from '../assets/images/villain-1000.png';
 import confcoImg from '../assets/images/confco-1000.png';
 import w3Img from '../assets/images/w3-1000.png';
@@ -153,6 +154,17 @@ const projects = [
       },
       {
         number: 2,
+        id: 'seafoods',
+        title: 'Global Seafoods',
+        desc1: 'Web development with Sass, CSS, HTML, and Shopify Liquid to redesign membership pages',
+        desc2: null,
+        img: seafoodsImg,
+        video: '',
+        website: 'https://globalseafoods.com/',
+        repo: null,
+      },
+      {
+        number: 3,
         id: 'villain',
         title: 'Villain Codes',
         desc1: 'Web development with Shopify Liquid, HTML, and CSS to customize add-to-cart options based on product types',
@@ -163,7 +175,7 @@ const projects = [
         repo: null,
       },
       {
-        number: 3,
+        number: 4,
         id: 'confco',
         title: 'Confidence Co',
         desc1: 'Custom web development and theme development with CSS and Liquid to implement a new design for a health and wellness Shopify store',
@@ -174,7 +186,7 @@ const projects = [
         repo: null,
       },
       {
-        number: 4,
+        number: 5,
         id: 'w3sales',
         title: 'W3 Sales',
         desc1: 'Web development and Shopify development with Python for a food services factory and distributor group with a large inventory of products',

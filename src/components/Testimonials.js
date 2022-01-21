@@ -2,7 +2,7 @@ import React from 'react';
 import Fade from './Fade';
 
 export default function Testimonials() {
-  const p = 'p-4 md:text-lg lg:text-xl text-center'; // add italics
+  const p = 'p-4 md:text-lg lg:text-xl text-center';
   return (
     <div className='m-auto lg:max-w-5xl'>
       <Fade from='bottom'>

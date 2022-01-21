@@ -59,6 +59,11 @@ export default function Contact() {
         </div> :
         (!loading ?
           <Fade from='bottom'>
+            <div className='text-center'>
+              <p className='p-4 inline-block font-bold text-lg text-center text-primary bg-white bg-opacity-10 rounded-xl shadow-2xl'>
+                I would love to be in touch with you!
+              </p>
+            </div>
             <form onSubmit={onSubmit}>
               <div className={fieldWrap}>
                 <label htmlFor='name' className={labelCtl}><Button text='Name' addClassName='cursor-text' /></label>

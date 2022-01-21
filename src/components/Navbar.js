@@ -2,10 +2,11 @@ import React, { useState } from 'react';
 import Button from './buttons/Button';
 import MyLink from './buttons/MyLink';
 import NavProjs from './NavProjs';
+import Socials from './buttons/Socials';
 import logo from '../assets/images/logo.png';
 
 export default function Navbar({ projsExpanded, handleProjs }) {
-  const links = ['home', 'about', 'projects', 'testimonials', 'contact'];
+  const links = ['home', 'about', 'projects', 'testimonials', 'contact', 'socials'];
   
   const [barsExpanded, setBarsExpanded] = useState(false);
   
@@ -48,6 +49,10 @@ export default function Navbar({ projsExpanded, handleProjs }) {
                     <div className={'pt-2 m-auto w-max lg:absolute z-50 ' + (projsExpanded ? 'block' : 'hidden')}>
                       <NavProjs />
                     </div>
+                  </div> : (value === 'socials') ?
+                  <div>
+                    <Socials addClassName='mx-4 text-2xl' /> 
+                    {/* mx-4 my-4 text-3xl */}
                   </div> :
                   <div className='text-center transform hover:-translate-y-1 transition duration-200 ease-in focus:outline-none'>
                     <MyLink to={value}>

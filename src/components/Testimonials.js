@@ -23,7 +23,7 @@ export default function Testimonials() {
       </Fade>
       <Fade from='bottom'>
         <p className={p + ' italic'}>
-          Startup Redding, Shasta EDC, and Brand Science Co
+          Shasta EDC, Brand Science Co, and Startup Redding
         </p>
       </Fade>
     </div>

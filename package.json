@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "emailjs-com": "^3.2.0",
-    "gatsby": "^4.5.4",
+    "gatsby": "^4.5.5",
     "gatsby-plugin-image": "^2.5.2",
     "gatsby-plugin-manifest": "^4.5.2",
     "gatsby-plugin-offline": "^5.5.2",
@@ -26,7 +26,7 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-helmet": "^6.1.0",
-    "react-parallax-tilt": "^1.5.88",
+    "react-parallax-tilt": "^1.5.89",
     "react-scripts": "^5.0.0",
     "react-scroll": "^1.8.4"
   },
@@ -38,6 +38,6 @@
     "autoprefixer": "^10.4.2",
     "gatsby-plugin-postcss": "^5.5.0",
     "postcss": "^8.4.5",
-    "tailwindcss": "^3.0.15"
+    "tailwindcss": "^3.0.16"
   }
 }

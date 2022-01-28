@@ -211,7 +211,7 @@ section {
 }
 .fade-from-top {
   opacity: 0;
-  transform: translateY(-9%); /* -25% */
+  transform: translateY(-50px); /* -25% */
   visibility: hidden;
   transition: opacity 600ms ease-out, transform 900ms ease-out,
     visibility 900ms ease-out;
@@ -224,7 +224,7 @@ section {
 }
 .fade-from-right {
   opacity: 0;
-  transform: translateX(9%);
+  transform: translateX(50px);
   visibility: hidden;
   transition: opacity 600ms ease-out, transform 900ms ease-out,
     visibility 900ms ease-out;
@@ -238,7 +238,7 @@ section {
 @media only screen and (max-width: 1024px) {
   .fade-from-right {
     opacity: 0;
-    transform: translateY(9%);
+    transform: translateY(50px);
     visibility: hidden;
     transition: opacity 600ms ease-out, transform 900ms ease-out,
       visibility 900ms ease-out;
@@ -247,7 +247,7 @@ section {
 }
 .fade-from-bottom {
   opacity: 0;
-  transform: translateY(9%);
+  transform: translateY(50px);
   visibility: hidden;
   transition: opacity 600ms ease-out, transform 900ms ease-out,
     visibility 900ms ease-out;
@@ -260,7 +260,7 @@ section {
 }
 .fade-from-left {
   opacity: 0;
-  transform: translateX(-9%);
+  transform: translateX(-50px);
   visibility: hidden;
   transition: opacity 600ms ease-out, transform 900ms ease-out,
     visibility 900ms ease-out;
@@ -274,7 +274,7 @@ section {
 @media only screen and (max-width: 1024px) {
   .fade-from-left {
     opacity: 0;
-    transform: translateY(9%);
+    transform: translateY(50px);
     visibility: hidden;
     transition: opacity 600ms ease-out, transform 900ms ease-out,
       visibility 900ms ease-out;

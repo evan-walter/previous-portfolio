@@ -17,7 +17,7 @@ export default function Section({
     (bgColored ? 'bg-gradient-to-br from-primary to-secondarybg text-white ' : null);
 
   const tBaseCName = 'pb-8 lg:pb-12 text-3xl lg:text-4xl font-bold text-center ';
-  const tGradientCName = 'text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary';
+  const tGradientCName = 'text-primary lg:text-transparent lg:bg-clip-text lg:bg-gradient-to-r lg:from-primary lg:to-secondary';
   
   return (
     <section id={id} className={containerCName}>

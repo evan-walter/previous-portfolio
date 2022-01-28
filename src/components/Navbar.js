@@ -43,7 +43,7 @@ export default function Navbar({ projsExpanded, handleProjs }) {
                 {(value === 'projects') ?
                   <div>
                     <div onClick={handleProjs} className='flex items-center justify-center transform hover:-translate-y-1 transition duration-200 ease-in'>
-                      <i className={'text-center w-4 pr-1 fa fa-caret-' + (projsExpanded ? 'down' : 'right') + ' text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary focus:outline-none'} aria-hidden='true' />
+                      <i className={'text-center w-4 pr-1 fa fa-caret-' + (projsExpanded ? 'down' : 'right') + ' text-primary lg:text-transparent lg:bg-clip-text lg:bg-gradient-to-r lg:from-primary lg:to-secondary focus:outline-none'} aria-hidden='true' />
                       <Button text={value.charAt(0).toUpperCase() + value.slice(1)} NoBg />
                     </div>
                     <div className={'pt-2 m-auto w-max lg:absolute z-50 ' + (projsExpanded ? 'block' : 'hidden')}>

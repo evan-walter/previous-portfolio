@@ -9,7 +9,7 @@ export default function Hero({ next }) {
   const textBigBase = 'text-center lg:text-left font-bold py-4 leading-relaxed '
   const textBigN = 'text-xl sm:text-3xl lg:text-4xl ';
   const textBigL = 'text-2xl sm:text-4xl lg:text-5xl ';
-  const gradient = 'text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary'; // pr-0.5
+  const gradient = 'text-primary lg:text-transparent lg:bg-clip-text lg:bg-gradient-to-r lg:from-primary lg:to-secondary'; // pr-0.5
 
   const textLink = 'italic hover:text-secondarybg';
 

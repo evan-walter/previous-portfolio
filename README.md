@@ -30,7 +30,7 @@ For more information on this project, see the links below.
 
 These resources offer documentation, tutorials, samples, and guidance on web development.
 
-🙏 Design inspired by [Cobi](https://github.com/cobiwave)
+🙏 Design inspired by [COBI](https://github.com/cobiwave)
 
 Initiated with...
 

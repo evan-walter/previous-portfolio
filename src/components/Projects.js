@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Tilt from 'react-parallax-tilt';
+import loadable from "@loadable/component";
 import Fade from './Fade';
 import A from './buttons/A';
 import Button from './buttons/Button';
@@ -16,18 +17,18 @@ export default function Projects() {
   const btnB = btnBase + 'py-2 px-4';
   const btnNoB = btnBase + 'py-4 transform hover:translate-x-1 transition duration-300 ease-in';
   const p = 'text-center px-0 md:px-16 lg:px-0 lg:text-left';
-
+  
   const [showModal, setShowModal] = useState(false);
   const [whichVideo, setWhichVideo] = useState(null);
-
+  
   function handleModal(video) {
     if (video) {
       setShowModal(s => !s);
       setWhichVideo(video);
     }
   }
-
-  showModal ? document.body.style.overflow = 'hidden' : document.body.style.overflow = 'visible';
+  
+  loadable(() => showModal ? document.body.style.overflow = 'hidden' : document.body.style.overflow = 'visible');
   
   return (
     <div>

@@ -43,7 +43,7 @@ export default function Contact() {
   };
 
   const fieldWrap = 'grid grid-cols-1';
-  const labelCtl = 'py-1 text-lg';
+  const labelCtl = 'pt-3 text-lg';
   const inputCtl = 'p-2 focus:outline-none rounded shadow-2xl';
 
   return (
@@ -71,7 +71,7 @@ export default function Contact() {
                   value={formData.fromEmail} onChange={handleChange} className={inputCtl} />
               </div>
               <div className={fieldWrap}>
-                <label htmlFor='message' className={labelCtl}><Button text='Message' addClassName='cursor-text' /></label>
+                <label htmlFor='message' className={labelCtl}><Button text="What's on your mind?" addClassName='cursor-text' /></label>
                 <textarea id='message' type='text' rows='5' required name='message'
                   value={formData.message} onChange={handleChange} className={inputCtl} />
               </div>

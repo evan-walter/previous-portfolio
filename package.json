@@ -14,7 +14,12 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "ansi-html": "^0.0.7",
+    "ansi-regex": "^6.0.1",
+    "browserslist": "^4.19.1",
     "emailjs-com": "^3.2.0",
+    "engine.io": "^6.1.2",
+    "follow-redirects": "^1.14.7",
     "gatsby": "^4.6.0",
     "gatsby-plugin-image": "^2.6.0",
     "gatsby-plugin-manifest": "^4.6.0",
@@ -23,12 +28,19 @@
     "gatsby-plugin-sharp": "^4.6.0",
     "gatsby-source-filesystem": "^4.6.0",
     "gatsby-transformer-sharp": "^4.6.0",
+    "immer": "^9.0.12",
+    "nanoid": "^3.2.0",
+    "node-fetch": "^3.2.0",
+    "nth-check": "^2.0.1",
+    "object-path": "^0.11.8",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-helmet": "^6.1.0",
     "react-parallax-tilt": "^1.5.90",
     "react-scripts": "^5.0.0",
-    "react-scroll": "^1.8.4"
+    "react-scroll": "^1.8.4",
+    "simple-get": "^4.0.1",
+    "ws": "^8.4.2"
   },
   "devDependencies": {
     "@tailwindcss/aspect-ratio": "^0.4.0",

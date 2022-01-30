@@ -32,10 +32,8 @@ export default function Hero({ next }) {
         <Fade from='right'>
           <div>
             <iframe
-              width='560'
-              height='315'
-              // width='590'
-              // height='345'
+              width='560' // '590'
+              height='315' // '345'
               className='hero-vid m-auto'
               title='Welcome Video'
               frameBorder='0'

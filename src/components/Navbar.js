@@ -17,7 +17,7 @@ export default function Navbar({ projsExpanded, handleProjs }) {
   return (
     <header id='home' className='text-lg lg:flex lg:justify-between py-4 px-8 sm:px-20 xl:pl-44 border-b shadow-lg'>
       <div className='flex items-center justify-between'>
-        <div className='flex items-center'>
+        <div className='flex items-center transform hover:-translate-y-1 transition duration-200 ease-in'>
           <a href='https://evanwalter.dev'>
             <img src={logo} alt='logo' />
           </a>
@@ -52,7 +52,6 @@ export default function Navbar({ projsExpanded, handleProjs }) {
                   </div> : (value === 'socials') ?
                   <div className='text-center'>
                     <Socials addClassName='mx-4 text-2xl' /> 
-                    {/* mx-4 my-4 text-3xl */}
                   </div> :
                   <div className='text-center transform hover:-translate-y-1 transition duration-200 ease-in focus:outline-none'>
                     <MyLink to={value}>

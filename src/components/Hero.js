@@ -22,7 +22,7 @@ export default function Hero({ next }) {
           </Fade>
           <Fade from='left'>
             <h2 className={textBigBase + textBigN}>
-              I am a Software Engineer specializing in React.
+              I am a web-focused Software Engineer.
             </h2>
           </Fade>
           <Fade from='left'>

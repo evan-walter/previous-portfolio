@@ -22,17 +22,16 @@ export default function About() {
       <Fade from='right'>
         <div className='self-center'>
           <p className={p}>
-            I am a Software Engineer specializing in React. With over 10 years
-            of experience delivering technical solutions, I bring real business
-            value in a timely manner.
+            I am a Software Engineer specializing in React and Shopify. With
+            over 10 years of experience delivering technical solutions, I bring
+            real business value in a timely manner.
           </p>
           <p className={p}>
             With experience managing technical projects, I leverage leadership
             skills to serve teams with Full Stack, Front End, and React
             solutions. I recently served as a Contract Full Stack Software
             Engineer and currently as a Web Developer and Shopify Developer. I
-            am excited to grow my skills in a new, full time, Software
-            Engineering role.
+            am available for freelance and contract projects.
           </p>
           <div className='mt-4 text-center lg:text-left'>
             <A h={resume}>

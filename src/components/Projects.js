@@ -26,6 +26,8 @@ export default function Projects() {
       setWhichVideo(video);
     }
   }
+
+  showModal ? document.body.style.overflow = 'hidden' : document.body.style.overflow = 'visible';
   
   return (
     <div>

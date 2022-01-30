@@ -67,7 +67,7 @@ export default function Contact() {
               </div>
               <div className={fieldWrap}>
                 <label htmlFor='email' className={labelCtl}><Button text='Email' addClassName='cursor-text' /></label>
-                <input id='email' type='text' maxLength='256' aria-describedby='emailHelp' required name='fromEmail'
+                <input id='email' type='email' maxLength='256' aria-describedby='emailHelp' required name='fromEmail'
                   value={formData.fromEmail} onChange={handleChange} className={inputCtl} />
               </div>
               <div className={fieldWrap}>

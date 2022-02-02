@@ -21,7 +21,7 @@
     "emailjs-com": "^3.2.0",
     "engine.io": "^6.1.2",
     "follow-redirects": "^1.14.7",
-    "gatsby": "^4.6.0",
+    "gatsby": "^4.6.1",
     "gatsby-plugin-image": "^2.6.0",
     "gatsby-plugin-manifest": "^4.6.0",
     "gatsby-plugin-offline": "^5.6.0",
@@ -50,7 +50,7 @@
     "@tailwindcss/typography": "^0.5.1",
     "autoprefixer": "^10.4.2",
     "gatsby-plugin-postcss": "^5.6.0",
-    "postcss": "^8.4.5",
+    "postcss": "^8.4.6",
     "tailwindcss": "^3.0.18"
   }
 }

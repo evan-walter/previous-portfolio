@@ -9,8 +9,8 @@ export default function Footer() {
   const textLink = 'hover:text-white transition duration-150 ease-in';
 
   return (
-    <div id='footer' className='py-16 px-8 sm:px-36 xl:px-32 bg-footerbg text-center text-footertext'>
-      <div className='text-white grid justify-items-center'>
+    <div id='footer' className='px-8 py-16 text-center sm:px-36 xl:px-32 bg-footerbg text-footertext'>
+      <div className='grid text-white justify-items-center'>
         <MyLink to='top'>
           <UpArrow />
         </MyLink>
@@ -18,7 +18,7 @@ export default function Footer() {
       <Socials addClassName='fa-inverse mt-16 mb-8 mx-8 social-32' />
       <div className='w-11/12 m-auto text-sm'>
         <hr className='border-footerhr' />
-        <div className='pt-8 m-auto grid grid-cols-1 lg:grid-cols-3 grid-flow-row'>
+        <div className='grid grid-flow-row grid-cols-1 pt-8 m-auto lg:grid-cols-3'>
           <div>
             <div className={text}>I built this portfolio from scratch</div>
             <div className={text}>with{' '}
@@ -41,7 +41,7 @@ export default function Footer() {
           <div>
             <div className={text}>Design inspired by{' '}</div>
             <div className={text}>
-              <A h='https://github.com/cobiwave' addClassName={textLink}>COBI</A>
+              <A h='https://github.com/cobiwave' addClassName={textLink}>Jacobo Martínez</A>
             </div>
           </div>
         </div>

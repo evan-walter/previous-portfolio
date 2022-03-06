@@ -41,7 +41,7 @@ export default function Footer() {
           <div>
             <div className={text}>Design inspired by{' '}</div>
             <div className={text}>
-              <A h='https://github.com/cobiwave' addClassName={textLink}>Jacobo Martínez</A>
+              <A h='https://github.com/cobiwave' addClassName={textLink}>cobiwave</A>
             </div>
           </div>
         </div>

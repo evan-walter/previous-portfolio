@@ -56,66 +56,64 @@ export default function Projects() {
           </div>
         </div> : null
       }
-      <div className='pb-12'>
-        {projects.map(
-          ({ type, subtitle1, subtitle2, items }) => {
-            return (
-              <div key={type}>
-                <Fade from='bottom'>
-                  <h2 id={type} className='py-4 lg:pb-6 text-3xl font-bold text-center'>{subtitle1}</h2>
-                </Fade>
-                <Fade from='bottom'>
-                  <h3 className='pb-4 lg:pb-16 text-3xl font-bold text-center'>{subtitle2}</h3>
-                </Fade>
-                {items.map(
-                  ({ number, id, title, desc1, desc2, img, video, website, repo }) => {
-                    return (
-                      <div id={id} className='pt-6 pb-20 lg:pt-12 lg:pb-28 grid grid-cols-1 lg:grid-cols-5' key={number}>
-                        <div className='py-4 lg:py-8 lg:pr-16 grid-cols-1 lg:col-start-1 lg:col-end-3'>
-                          <Fade from='left'>
-                            <h3 className='pb-4 font-bold text-xl text-center lg:text-left'>{title}</h3>
-                            <p className={p}>{desc1}</p>
-                            <p className={p}>{desc2}</p>
-                            <div className='my-4 flex flex-wrap items-center justify-center lg:justify-start'>
-                              {video ?
-                                <div onClick={() => handleModal(video)}>
-                                  <Button text='Demo Video' addClassName={btnB} Bg />
-                                </div> : null
-                              }
-                              {website ?
-                                <A h={website}>
-                                  <Button text='See Live' addClassName={btnNoB} NoBg />
-                                </A> : null
-                              }
-                              {repo ?
-                                <A h={repo}>
-                                  <Button text='Source Code' addClassName={btnNoB} NoBg />
-                                </A> : null
-                              }
-                            </div>
-                          </Fade>
-                        </div>
-                          <Tilt className='lg:col-start-3 lg:col-end-6'>
-                            <Fade from='right'>
-                              {video ?
-                                <div onClick={() => handleModal(video)} className='cursor-pointer'>
-                                  <img src={img} alt={title + ' image'} width='1000' />
-                                </div> :
-                                <A h={website}>
-                                  <img src={img} alt={title + ' image'} width='1000' />
-                                </A>
-                              }
-                            </Fade>
-                          </Tilt>
+      {projects.map(
+        ({ type, subtitle1, subtitle2, items }) => {
+          return (
+            <div key={type}>
+              <Fade from='bottom'>
+                <h2 id={type} className='py-4 lg:pb-6 text-3xl font-bold text-center'>{subtitle1}</h2>
+              </Fade>
+              <Fade from='bottom'>
+                <h3 className='pb-4 lg:pb-16 text-3xl font-bold text-center'>{subtitle2}</h3>
+              </Fade>
+              {items.map(
+                ({ number, id, title, desc1, desc2, img, video, website, repo }) => {
+                  return (
+                    <div id={id} className='pt-6 pb-20 lg:pt-12 lg:pb-28 grid grid-cols-1 lg:grid-cols-5' key={number}>
+                      <div className='py-4 lg:py-8 lg:pr-16 grid-cols-1 lg:col-start-1 lg:col-end-3'>
+                        <Fade from='left'>
+                          <h3 className='pb-4 font-bold text-xl text-center lg:text-left'>{title}</h3>
+                          <p className={p}>{desc1}</p>
+                          <p className={p}>{desc2}</p>
+                          <div className='my-4 flex flex-wrap items-center justify-center lg:justify-start'>
+                            {video ?
+                              <div onClick={() => handleModal(video)}>
+                                <Button text='Demo Video' addClassName={btnB} Bg />
+                              </div> : null
+                            }
+                            {website ?
+                              <A h={website}>
+                                <Button text='See Live' addClassName={btnNoB} NoBg />
+                              </A> : null
+                            }
+                            {repo ?
+                              <A h={repo}>
+                                <Button text='Source Code' addClassName={btnNoB} NoBg />
+                              </A> : null
+                            }
+                          </div>
+                        </Fade>
                       </div>
-                    );
-                  }
-                )}
-              </div>
-            );
-          }
-        )}
-      </div>
+                        <Tilt className='lg:col-start-3 lg:col-end-6'>
+                          <Fade from='right'>
+                            {video ?
+                              <div onClick={() => handleModal(video)} className='cursor-pointer'>
+                                <img src={img} alt={title + ' image'} width='1000' />
+                              </div> :
+                              <A h={website}>
+                                <img src={img} alt={title + ' image'} width='1000' />
+                              </A>
+                            }
+                          </Fade>
+                        </Tilt>
+                    </div>
+                  );
+                }
+              )}
+            </div>
+          );
+        }
+      )}
     </div>
   );
 }

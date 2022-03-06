@@ -23,14 +23,14 @@ For more information on this project, see the links below.
 
 💨 To get started with Tailwind, visit [tailwindcss.com](https://tailwindcss.com/).
 
-🌐 To get started with Web Development, including HTML, CSS, and JavaScript, visit
+🌐 To get started with Web Development, including HTML, CSS, and JavaScript, visit...
 
 - [W3Schools](https://www.w3schools.com/)
 - [Mozilla Development Network](https://developer.mozilla.org/)
 
 These resources offer documentation, tutorials, samples, and guidance on web development.
 
-🙏 Design inspired by [COBI](https://github.com/cobiwave)
+🙏 Design inspired by [cobiwave](https://github.com/cobiwave)
 
 Initiated with...
 

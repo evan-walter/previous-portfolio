@@ -19,7 +19,7 @@ export default function Footer() {
       <div className='w-11/12 m-auto text-sm'>
         <hr className='border-footerhr' />
         <div className='grid grid-flow-row grid-cols-1 pt-8 m-auto lg:grid-cols-3'>
-          <div>
+          <div className='mb-3'>
             <div className={text}>I built this portfolio from scratch</div>
             <div className={text}>with{' '}
               <A h='https://reactjs.org/' addClassName={textLink}>React,</A>
@@ -31,10 +31,10 @@ export default function Footer() {
             </div>
           </div>
           <div>
-            <div className={text}>
+            <div className={text + ' mb-3 lg:mb-0'}>
               <A h='https://github.com/Evan-Walter/portfolio/' addClassName={textLink}>Source Code</A>
             </div>
-            <div className={text}>© {new Date().getFullYear()}{' '}
+            <div className={text + ' mb-3 lg:mb-0'}>© {new Date().getFullYear()}{' '}
               <A h='https://github.com/Evan-Walter' addClassName={textLink}>Evan Walter</A>
             </div>
           </div>

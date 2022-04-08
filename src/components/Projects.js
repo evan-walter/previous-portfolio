@@ -11,6 +11,7 @@ import seafoodsImg from '../assets/images/seafoods-1000.png';
 import villainImg from '../assets/images/villain-1000.png';
 import confcoImg from '../assets/images/confco-1000.png';
 import w3Img from '../assets/images/w3-1000.png';
+import ghostbedImg from '../assets/images/ghostbed-1000.png';
 
 export default function Projects() {
   const btnBase = 'mx-4 lg:ml-0 lg:mr-8 whitespace-nowrap ';
@@ -33,13 +34,13 @@ export default function Projects() {
   return (
     <div>
       {showModal ?
-        <div className='z-30 p-4 sm:p-12 lg:p-24 w-screen fixed inset-0 bg-black bg-opacity-60'>
+        <div className='fixed inset-0 z-30 w-screen p-4 bg-black sm:p-12 lg:p-24 bg-opacity-60'>
           <div onClick={handleModal}>
-            <div className='z-40 w-screen h-screen fixed inset-0 top-0 bg-transparent'></div>
+            <div className='fixed inset-0 top-0 z-40 w-screen h-screen bg-transparent'></div>
           </div>
-          <div className='flex max-h-full items-center'>
-            <div className='z-50 max-h-full w-full border-2 border-black'>
-              <div className='p-2 m-auto bg-white flex items-center justify-end border-b border-gray-400'>
+          <div className='flex items-center max-h-full'>
+            <div className='z-50 w-full max-h-full border-2 border-black'>
+              <div className='flex items-center justify-end p-2 m-auto bg-white border-b border-gray-400'>
                 <button onClick={handleModal}>
                   <i className='fa fa-times' aria-hidden='true' />
                 </button>
@@ -61,21 +62,21 @@ export default function Projects() {
           return (
             <div key={type}>
               <Fade from='bottom'>
-                <h2 id={type} className='py-4 lg:pb-6 text-3xl font-bold text-center'>{subtitle1}</h2>
+                <h2 id={type} className='py-4 text-3xl font-bold text-center lg:pb-6'>{subtitle1}</h2>
               </Fade>
               <Fade from='bottom'>
-                <h3 className='pb-4 lg:pb-16 text-3xl font-bold text-center'>{subtitle2}</h3>
+                <h3 className='pb-4 text-3xl font-bold text-center lg:pb-16'>{subtitle2}</h3>
               </Fade>
               {items.map(
                 ({ number, id, title, desc1, desc2, img, video, website, repo }) => {
                   return (
-                    <div id={id} className='pt-6 pb-20 lg:pt-12 lg:pb-28 grid grid-cols-1 lg:grid-cols-5' key={number}>
-                      <div className='py-4 lg:py-8 lg:pr-16 grid-cols-1 lg:col-start-1 lg:col-end-3'>
+                    <div id={id} className='grid grid-cols-1 pt-6 pb-20 lg:pt-12 lg:pb-28 lg:grid-cols-5' key={number}>
+                      <div className='grid-cols-1 py-4 lg:py-8 lg:pr-16 lg:col-start-1 lg:col-end-3'>
                         <Fade from='left'>
-                          <h3 className='pb-4 font-bold text-xl text-center lg:text-left'>{title}</h3>
+                          <h3 className='pb-4 text-xl font-bold text-center lg:text-left'>{title}</h3>
                           <p className={p}>{desc1}</p>
                           <p className={p}>{desc2}</p>
-                          <div className='my-4 flex flex-wrap items-center justify-center lg:justify-start'>
+                          <div className='flex flex-wrap items-center justify-center my-4 lg:justify-start'>
                             {video ?
                               <div onClick={() => handleModal(video)}>
                                 <Button text='Demo Video' addClassName={btnB} Bg />
@@ -126,6 +127,17 @@ const projects = [
     items: [
       {
         number: 1,
+        id: 'ghostbed',
+        title: 'GhostBed',
+        desc1: 'A thriving eCommerce store build together by our team of developers',
+        desc2: 'React + Next.js GraphQL + Shopify',
+        img: ghostbedImg,
+        video: null,
+        website: 'https://ghostbed.com',
+        repo: null,
+      },
+      {
+        number: 2,
         id: 'heyfio',
         title: 'HeyFIO',
         desc1: 'A Full Stack Software Engineering Contract for a Blockchain web application',
@@ -149,7 +161,7 @@ const projects = [
         desc1: 'Web development with JSON and Shopify app implementation to prepare products to scale the store',
         desc2: null,
         img: synaImg,
-        video: '',
+        video: null,
         website: 'https://synajewels.com/',
         repo: null,
       },
@@ -160,7 +172,7 @@ const projects = [
         desc1: 'Web development with Sass, CSS, HTML, and Shopify Liquid to redesign membership pages',
         desc2: null,
         img: seafoodsImg,
-        video: '',
+        video: null,
         website: 'https://globalseafoods.com/',
         repo: null,
       },

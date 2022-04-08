@@ -1,12 +1,12 @@
-import React from 'react';
-import { StaticImage } from 'gatsby-plugin-image';
-import Fade from './Fade';
-import A from './buttons/A';
-import Button from './buttons/Button';
-import resume from '../assets/resume.pdf';
+import React from 'react'
+import { StaticImage } from 'gatsby-plugin-image'
+import Fade from './Fade'
+import A from './buttons/A'
+import Button from './buttons/Button'
+import resume from '../assets/resume.pdf'
 
 export default function About() {
-  const p = 'py-2 md:text-lg lg:text-xl text-center lg:text-left';
+  const p = 'py-2 md:text-lg lg:text-xl text-center lg:text-left'
 
   return (
     <div className='grid grid-cols-1 gap-12 justify-items-center lg:grid-cols-2 lg:gap-32 lg:justify-items-end'>
@@ -30,8 +30,11 @@ export default function About() {
             With experience managing technical projects, I leverage leadership
             skills to serve teams with Full Stack, Front End, and React
             solutions. I recently served as a Contract Full Stack Software
-            Engineer and currently as a Web Developer and Shopify Developer. I
-            am available for freelance and contract projects.
+            Engineer and currently as a Web Developer at{' '}
+            <A addClassName='hover:text-tertiary' h='https://ghostbed.com'>
+              <i>GhostBed</i>
+            </A>
+            . I am available for freelance and contract projects.
           </p>
           <div className='mt-4 text-center lg:text-left'>
             <A h={resume}>
@@ -41,5 +44,5 @@ export default function About() {
         </div>
       </Fade>
     </div>
-  );
+  )
 }

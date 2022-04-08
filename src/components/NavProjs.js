@@ -17,16 +17,16 @@ export default function NavProjs() {
       <div className='px-4 pt-2 pb-1 pl-4 lg:pr-8'>
         <div className={link}>
           <MyLink to='ghostbed'>
-            <Button text='GhostBed (React & Shopify)' NoBg />
+            <Button text='GhostBed (Full Stack with React)' NoBg />
           </MyLink>
         </div>
         <div className={link}>
-          <MyLink to='react'>
-            <Button text='HeyFIO (React)' NoBg />
+          <MyLink to='heyfio'>
+            <Button text='HeyFIO (Full Stack with React)' NoBg />
           </MyLink>
         </div>
         <div className={link}>
-          <MyLink to='shopify'>
+          <MyLink to='syna'>
             <Button text='Syna Jewels (Web Dev & Shopify)' NoBg />
           </MyLink>
         </div>
@@ -51,7 +51,7 @@ export default function NavProjs() {
           </MyLink>
         </div>
         <div className={link}>
-          <MyLink to='js'>
+          <MyLink to='wine'>
             <Button text='Wine Pairing App (Vanilla JS)' NoBg />
           </MyLink>
         </div>

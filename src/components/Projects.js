@@ -121,9 +121,9 @@ export default function Projects() {
 
 const projects = [
   {
-    type: 'react',
-    subtitle1: 'React',
-    subtitle2: 'Client Projects',
+    type: 'full-time',
+    subtitle1: 'Full Stack Engineering',
+    subtitle2: 'Full Time Team Member',
     items: [
       {
         number: 1,
@@ -136,6 +136,13 @@ const projects = [
         website: 'https://ghostbed.com',
         repo: null,
       },
+    ],
+  },
+  {
+    type: 'contract-full-stack',
+    subtitle1: 'Full Stack Engineering',
+    subtitle2: 'Client Project',
+    items: [
       {
         number: 2,
         id: 'heyfio',
@@ -150,8 +157,8 @@ const projects = [
     ],
   },
   {
-    type: 'shopify',
-    subtitle1: 'Web Development and Shopify',
+    type: 'contract-web-dev',
+    subtitle1: 'Web Development & Shopify',
     subtitle2: 'Client Projects',
     items: [
       {

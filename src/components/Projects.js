@@ -130,7 +130,7 @@ const projects = [
         id: 'ghostbed',
         title: 'GhostBed',
         desc1: 'A thriving eCommerce store build together by our team of developers',
-        desc2: 'React + Next.js GraphQL + Shopify',
+        desc2: 'React + Next.js + GraphQL + Shopify',
         img: ghostbedImg,
         video: null,
         website: 'https://ghostbed.com',

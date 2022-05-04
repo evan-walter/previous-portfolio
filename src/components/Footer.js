@@ -11,7 +11,7 @@ export default function Footer() {
   return (
     <div id='footer' className='px-8 py-16 text-center sm:px-36 xl:px-32 bg-footerbg text-footertext'>
       <div className='grid text-white justify-items-center'>
-        <MyLink to='top'>
+        <MyLink to='home'>
           <UpArrow />
         </MyLink>
       </div>

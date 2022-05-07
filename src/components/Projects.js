@@ -123,7 +123,7 @@ const projects = [
   {
     type: 'full-time',
     subtitle1: 'Full Stack Engineering',
-    subtitle2: 'Full Time Team Member',
+    subtitle2: 'Full Time Web Developer',
     items: [
       {
         number: 1,

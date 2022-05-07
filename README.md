@@ -7,7 +7,7 @@
   </a>
 </div>
 
-🔥 I built this portfolio with [React](https://reactjs.org/), [Gatsby](https://www.gatsbyjs.com/), and [Tailwind](https://tailwindcss.com/).
+🔥 I built this portfolio with [React](https://reactjs.org/), [Gatsby](https://www.gatsbyjs.com/), and [Tailwind](https://tailwindcss.com/). I deploy with [Netlify](https://netlify.com/).
 
 🎙️ To view the live version of this project, visit [evanwalter.dev](https://evanwalter.dev).
 
@@ -27,8 +27,6 @@ For more information on this project, see the links below.
 
 - [W3Schools](https://www.w3schools.com/)
 - [Mozilla Development Network](https://developer.mozilla.org/)
-
-These resources offer documentation, tutorials, samples, and guidance on web development.
 
 🙏 Design inspired by [cobiwave](https://github.com/cobiwave)
 

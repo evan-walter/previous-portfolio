@@ -8,7 +8,7 @@ export default function Testimonials() {
     <div className='m-auto lg:max-w-5xl'>
       <Fade from='bottom'>
         <div>
-          <img src={meganImg} className='rounded-full m-auto' alt='Megan Spaulding' width='100' />
+          <img src={meganImg} className='m-auto rounded-full' alt='Megan Spaulding' width='100' />
         </div>
           <p className={p}>
             "Evan is a hard worker and is extremely savvy. Even if he doesn't know
@@ -23,7 +23,7 @@ export default function Testimonials() {
       </Fade>
       <Fade from='bottom'>
         <p className={p + ' italic'}>
-          Shasta EDC, Brand Science Co, and Startup Redding
+        Formerly Shasta EDC, Startup Redding, and Brand Science Co
         </p>
       </Fade>
     </div>

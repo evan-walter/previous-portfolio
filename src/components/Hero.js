@@ -22,7 +22,7 @@ export default function Hero({ next }) {
           </Fade>
           <Fade from='left'>
             <h2 className={textBigBase + textBigN}>
-              I am a web-focused Software Engineer.
+              I am a Full Stack Software Engineer.
             </h2>
           </Fade>
           <Fade from='left'>
@@ -34,7 +34,7 @@ export default function Hero({ next }) {
             <iframe
               width='560' // '590'
               height='315' // '345'
-              className='hero-vid m-auto'
+              className='m-auto hero-vid'
               title='Welcome Video'
               frameBorder='0'
               allow='accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
@@ -45,8 +45,8 @@ export default function Hero({ next }) {
         </Fade>
       </div>
       <Fade from='bottom'>
-        <div className='mt-12 flex justify-center'>
-          <p className='p-4 inline-block font-bold text-lg text-center text-primary bg-white bg-opacity-10 rounded-xl shadow-2xl'>
+        <div className='flex justify-center mt-12'>
+          <p className='inline-block p-4 text-lg font-bold text-center bg-white shadow-2xl text-primary bg-opacity-10 rounded-xl'>
             I built this portfolio with{' '}
             <A h='https://reactjs.org/' addClassName={textLink}>React,</A>
             {' '}

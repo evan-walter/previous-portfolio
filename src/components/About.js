@@ -22,19 +22,23 @@ export default function About() {
       <Fade from='right'>
         <div className='self-center'>
           <p className={p}>
-            I am a Software Engineer specializing in React and Shopify. With
-            over 10 years of experience delivering technical solutions, I bring
-            real business value in a timely manner.
+            Full Stack Engineer with a Front End focus. 3+ years of web
+            development experience specializing in Node.js, React, and
+            TypeScript. Enjoy building scalable web infrastructure with
+            excellent user interfaces. Passionate about open source and
+            developer tooling.
           </p>
           <p className={p}>
-            With experience managing technical projects, I leverage leadership
-            skills to serve teams with Full Stack, Front End, and React
-            solutions. I recently served as a Contract Full Stack Software
-            Engineer and currently as a Web Developer at{' '}
-            <A addClassName='hover:text-tertiary' h='https://ghostbed.com'>
-              <i>GhostBed</i>
-            </A>
-            . I am available for freelance and contract projects.
+            I am currently a full time Web Developer at{' '}
+            <A
+              h='https://ghostbed.com'
+              addClassName='hover:text-tertiary italic'
+            >
+              GhostBed
+            </A>{' '}
+            building our headless e-commerce store with React, Next.js, and
+            TypeScript. I am proud and excited to be part of this fun and
+            creative team.
           </p>
           <div className='mt-4 text-center lg:text-left'>
             <A h={resume}>

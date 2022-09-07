@@ -34,7 +34,7 @@
     "gatsby-source-filesystem": "^4.22.0",
     "gatsby-transformer-sharp": "^4.22.0",
     "glob-parent": "^6.0.2",
-    "got": "^12.3.1",
+    "got": "^12.4.1",
     "immer": "^9.0.15",
     "jpeg-js": "^0.4.4",
     "minimist": "^1.2.6",
@@ -48,7 +48,6 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
-    "react-parallax-tilt": "^1.7.60",
     "react-scripts": "^5.0.1",
     "react-scroll": "^1.8.7",
     "simple-get": "^4.0.1",
@@ -57,13 +56,14 @@
     "ws": "^8.8.1"
   },
   "devDependencies": {
-    "@tailwindcss/aspect-ratio": "^0.4.0",
-    "@tailwindcss/forms": "^0.5.2",
-    "@tailwindcss/line-clamp": "^0.4.0",
-    "@tailwindcss/typography": "^0.5.4",
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "@tailwindcss/forms": "^0.5.3",
+    "@tailwindcss/line-clamp": "^0.4.2",
+    "@tailwindcss/typography": "^0.5.7",
     "autoprefixer": "^10.4.8",
     "gatsby-plugin-postcss": "^5.22.0",
     "postcss": "^8.4.16",
+    "react-parallax-tilt": "^1.7.62",
     "tailwindcss": "^3.1.8"
   }
 }

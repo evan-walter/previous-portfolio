@@ -22,7 +22,7 @@ export default function About() {
       <Fade from='right'>
         <div className='self-center'>
           <p className={p}>
-            Full Stack Engineer with 3+ years of experience specializing in
+            Full Stack Engineer with 3+ years of experience. Specialize in
             Node.js, Next.js, React.js, TypeScript, and GraphQL. Enjoy building
             scalable web infrastructure with excellent user interfaces.
             Passionate about open source and developer tooling.

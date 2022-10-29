@@ -37,7 +37,7 @@ export default function About() {
             </A>{' '}
             building our headless e-commerce store with Next.js, React,
             TypeScript, GraphQL, Tailwind, and Craft CMS. I am proud and excited
-            to be part of this fun and thriving team!
+            to be a member of our fun and thriving team!
           </p>
           <div className='mt-4 text-center lg:text-left'>
             <A h={resume}>

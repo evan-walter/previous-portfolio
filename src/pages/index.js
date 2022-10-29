@@ -8,10 +8,10 @@ export default function IndexPage() {
       <Helmet>
         <meta charSet='utf-8' />
         <html lang='en' />
-        <title>Evan Walter | Software Engineer</title>
+        <title>Evan Walter | Full Stack Engineer</title>
         <meta
           name='description'
-          content='I am a Software Engineer specializing in React. I recently served as a Contract Full Stack Software Engineer and previously as a Shopify Developer and Web Developer. I am excited to grow my skills in a new, full time Software Engineering role.'
+          content='I am a Full Stack Engineer specializing in Node.js, React, and TypeScript. I recently served as a Contract Full Stack Software Engineer and previously as a Shopify Developer and Web Developer. I am excited to grow my skills in a new, full time Software Engineering role.'
         />
       </Helmet>
       <App />

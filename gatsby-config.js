@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Evan Walter | Software Engineer`,
+    title: `Evan Walter | Full Stack Engineer`,
     siteUrl: `https://evanwalter.dev`,
-    description: `I am a Software Engineer specializing in React.`,
+    description: `I am a Full Stack specializing in Node.js, React, and TypeScript.`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -28,7 +28,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Evan Walter | Software Engineer`,
+        name: `Evan Walter | Full Stack Engineer`,
         short_name: `Evan Walter`,
         start_url: `/`,
         background_color: `#fff`,

@@ -22,11 +22,10 @@ export default function About() {
       <Fade from='right'>
         <div className='self-center'>
           <p className={p}>
-            Full Stack Engineer with a Front End focus. 3+ years of web
-            development experience specializing in Node.js, React, and
-            TypeScript. Enjoy building scalable web infrastructure with
-            excellent user interfaces. Passionate about open source and
-            developer tooling.
+            Full Stack Engineer with 3+ years of experience specializing in
+            Node.js, Next.js, React.js, TypeScript, and GraphQL. Enjoy building
+            scalable web infrastructure with excellent user interfaces.
+            Passionate about open source and developer tooling.
           </p>
           <p className={p}>
             I am currently a full time Web Developer at{' '}
@@ -36,9 +35,9 @@ export default function About() {
             >
               GhostBed
             </A>{' '}
-            building our headless e-commerce store with React, Next.js, and
-            TypeScript. I am proud and excited to be part of this fun and
-            creative team.
+            building our headless e-commerce store with Next.js, React,
+            TypeScript, GraphQL, Tailwind, and Craft CMS. I am proud and excited
+            to be part of this fun and thriving team!
           </p>
           <div className='mt-4 text-center lg:text-left'>
             <A h={resume}>

@@ -54,7 +54,7 @@ export default function Hero({ next }) {
             {' '}and{' '}
             <A h='https://tailwindcss.com/' addClassName={textLink}>Tailwind</A>
             . Check out my source code{' '}
-            <A h='https://github.com/Evan-Walter/portfolio/' addClassName={textLink}>
+            <A h='https://github.com/Evan-Walter/previous-portfolio/' addClassName={textLink}>
               here
             </A>.
           </p>

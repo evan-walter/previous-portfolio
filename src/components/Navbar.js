@@ -18,7 +18,7 @@ export default function Navbar({ projsExpanded, handleProjs }) {
     <header id='home' className='text-lg lg:flex lg:justify-between py-4 px-8 sm:px-20 xl:pl-44 border-b shadow-lg'>
       <div className='flex items-center justify-between'>
         <div className='flex items-center transform hover:-translate-y-1 transition duration-200 ease-in'>
-          <a href='https://evanwalter.dev'>
+          <a href='https://previous.evanwalter.dev'>
             <img src={logo} alt='logo' />
           </a>
         </div>
